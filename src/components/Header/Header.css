@@ -1,0 +1,13 @@
+.header {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-color: var(--main-bg-color);
+  max-width: 1200px;
+}
+
+.div {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}

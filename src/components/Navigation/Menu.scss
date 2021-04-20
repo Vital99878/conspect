@@ -1,0 +1,27 @@
+@import '../../css/mixins';
+.menu {
+  // border: 0.4px solid rgb(146, 146, 146);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-bottom: 1em;
+  li {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0.4em;
+    min-width: 2rem;
+  }
+  a {
+    color: rgba(134, 134, 134, 0.712);
+  }
+  .active {
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: rgba(128, 8, 8, 0.884);
+  }
+  a:hover {
+    border-bottom: 1px solid rgba(61, 61, 61, 0.712);
+    color: rgba(61, 61, 61, 0.712);
+    // transition: all 0.4s;
+  }
+}
