@@ -1,0 +1,10 @@
+.ball {
+  border-radius: 50%;
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: palevioletred;
+  transform: translate(-50%, -50%);
+}
