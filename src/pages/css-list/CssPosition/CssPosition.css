@@ -1,0 +1,56 @@
+.mainParent {
+  /* position: relative; */
+  padding: 2rem;
+  width: 100%;
+  background-color: yellowgreen;
+}
+.parent {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  overflow: hidden;
+  text-align: center;
+  /* padding: 2rem; */
+  width: 100%;
+  border-collapse: collapse;
+}
+.child {
+  font-size: 1.6rem;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  padding: 1em;
+  /* width: 50%; */
+  background-color: rgb(199, 72, 72);
+}
+/* .child:not(:last-child) {
+  margin-bottom: -1px;
+} */
+.child-1 {
+  width: 60%;
+  /* position: fixed;
+  top: 1rem;
+  left: 2rem; */
+  /* background-color: blue; */
+}
+.child-2 {
+  /* position: fixed; */
+  /* width: 60%; */
+  top: 1rem;
+  left: 5rem;
+  background-color: tomato;
+}
+.child-3 {
+  /* position: absolute; */
+  background-color: yellow;
+  top: 0;
+  transition: all 1s ease-in-out;
+}
+.parent:hover .child-3 {
+  cursor: pointer;
+}
+.sticky {
+  background-color: brown;
+  position: sticky;
+  top: 50rem;
+}
