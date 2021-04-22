@@ -1,24 +1,19 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-import { useAppSelector, useAppDispatch } from "../../app/hooks";
-import {
-  nextPage,
-  prevPage,
-  selectBook
-} from "./bookSlice";
-import styles from "./Book.module.css";
+import { useAppSelector, useAppDispatch } from '../../app/hooks'
+import { nextPage, prevPage, selectBook } from './bookSlice'
+import styles from './Book.module.css'
 
-export function Book() {
-  const page = useAppSelector(selectBook);
-  const dispatch = useAppDispatch();
-  const [incrementPage, setIncrementPage] = useState(1);
-
-  const incrementValue = Number(incrementPage) || 0;
+export default function Book() {
+  const page = useAppSelector(selectBook)
+  const dispatch = useAppDispatch()
+  const [incrementPage, setIncrementPage] = useState(1)
 
   return (
     <div className={styles.bookWrapper}>
       <div className={styles.row}>
         <button
+          type="button"
           className={styles.button}
           aria-label="Decrement value"
           onClick={() => dispatch(prevPage())}
@@ -27,6 +22,7 @@ export function Book() {
         </button>
         <span className={styles.value}>{page}</span>
         <button
+          type="button"
           className={styles.button}
           aria-label="Increment value"
           onClick={() => dispatch(nextPage())}
@@ -41,8 +37,7 @@ export function Book() {
           value={incrementPage}
           onChange={(e) => setIncrementPage(Number(e.target.value))}
         />
-
       </div>
     </div>
-  );
+  )
 }

@@ -1,6 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RootState } from "../../app/store";
-import { counterSlice } from "../counter/counterSlice";
+import { createSlice } from '@reduxjs/toolkit';
+import { RootState } from '../../app/store';
 
 export interface BookState {
   title: string;
@@ -8,12 +7,12 @@ export interface BookState {
 }
 
 const initialState: BookState = {
-  title: "English",
+  title: 'English',
   page: 1,
 };
 
 export const bookSlice = createSlice({
-  name: "book",
+  name: 'book',
   initialState,
   reducers: {
     nextPage: (state) => {
