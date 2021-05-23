@@ -5,15 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46762edd-88cf-47d2-96e1-6a8832f3fad4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/diagram/Diagram.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/diagram/Diagram.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/diagram/ListOfDiagrams.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/book/Test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Person.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/bookProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/counterAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/counterAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/counterSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/counterSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/book/Book.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/book/Book.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,21 +59,34 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.eslint" value="W:\ts-app\node_modules\eslint" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\ts-app\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="ts.external.directory.path" value="W:\ts-app\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\ts-app\" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="W:\ts-app\src\features\book\Utils.tsx" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\ts-app\src\components\diagram" />
+      <recent name="W:\ts-app\src\features\book" />
       <recent name="W:\ts-app" />
       <recent name="W:\ts-app\src\features" />
       <recent name="W:\ts-app\src\features\counter" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="npm run start" />
+    </option>
   </component>
   <component name="RunManager" selected="npm.lint">
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -78,6 +109,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="prettier" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -90,9 +131,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.lint:fix" />
-        <item itemvalue="npm.lint" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.lint:fix" />
+        <item itemvalue="npm.prettier" />
       </list>
     </recent_temporary>
   </component>
@@ -106,65 +148,84 @@
       <updated>1618903693124</updated>
       <workItem from="1618903694451" duration="824000" />
       <workItem from="1618904528287" duration="8325000" />
-      <workItem from="1619086474126" duration="1390000" />
+      <workItem from="1619086474126" duration="8917000" />
+      <workItem from="1619178638677" duration="1000" />
+      <workItem from="1619247163727" duration="8578000" />
+      <workItem from="1620983027076" duration="5829000" />
+      <workItem from="1621761404748" duration="886000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.module" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="603" y="299" key="#ESLint" timestamp="1619087781861">
+    <state x="305" y="103" width="942" height="660" key="#ESLint" timestamp="1619269076743">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="603" y="299" key="#ESLint/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619087781861" />
+    <state x="305" y="103" width="942" height="660" key="#ESLint/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619269076743" />
     <state x="511" y="257" width="553" height="486" key="#Scopes" timestamp="1618904970620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="511" y="257" width="553" height="486" key="#Scopes/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618904970620" />
-    <state x="496" y="127" key="FileChooserDialogImpl" timestamp="1619086571283">
+    <state x="410" y="193" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620983225089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="496" y="127" key="FileChooserDialogImpl/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619086571283" />
-    <state width="1220" height="390" key="GridCell.Tab.0.bottom" timestamp="1619087532594">
+    <state x="410" y="193" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1620983225089" />
+    <state x="496" y="127" key="FileChooserDialogImpl" timestamp="1620986768135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1220" height="390" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619087532594" />
-    <state width="1220" height="390" key="GridCell.Tab.0.center" timestamp="1619087532594">
+    <state x="496" y="127" key="FileChooserDialogImpl/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1620986768135" />
+    <state width="1220" height="179" key="GridCell.Tab.0.bottom" timestamp="1621761532414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1220" height="390" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619087532594" />
-    <state width="1220" height="390" key="GridCell.Tab.0.left" timestamp="1619087532594">
+    <state width="1220" height="179" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1621761532414" />
+    <state width="1220" height="179" key="GridCell.Tab.0.center" timestamp="1621761532413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1220" height="390" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619087532594" />
-    <state width="1220" height="390" key="GridCell.Tab.0.right" timestamp="1619087532594">
+    <state width="1220" height="179" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1621761532413" />
+    <state width="1220" height="179" key="GridCell.Tab.0.left" timestamp="1621761532413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1220" height="390" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619087532594" />
-    <state width="623" height="498" key="SwitcherDM" timestamp="1619087767128">
+    <state width="1220" height="179" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1621761532413" />
+    <state width="1220" height="179" key="GridCell.Tab.0.right" timestamp="1621761532414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="623" height="498" key="SwitcherDM/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619087767128" />
+    <state width="1220" height="179" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1621761532414" />
+    <state x="153" y="0" key="SettingsEditor" timestamp="1619268630550">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="153" y="0" key="SettingsEditor/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619268630550" />
+    <state width="623" height="498" key="SwitcherDM" timestamp="1621761514744">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="623" height="498" key="SwitcherDM/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1621761514744" />
     <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618925115642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="288" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618925115642" />
+    <state x="-1605" y="0" width="1235" height="823" key="dock-window-1" timestamp="1620987322928">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1605" y="0" width="1235" height="823" key="dock-window-1/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1620987322928" />
     <state x="407" y="99" width="721" height="666" key="find.popup" timestamp="1619087822340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="99" width="721" height="666" key="find.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619087822340" />
-    <state width="750" height="535" key="javadoc.popup" timestamp="1618920892146">
+    <state width="750" height="535" key="javadoc.popup" timestamp="1619247797633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="750" height="535" key="javadoc.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618920892146" />
-    <state x="348" y="197" width="840" height="1034" key="run.anything.popup" timestamp="1619086522659">
+    <state width="750" height="535" key="javadoc.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619247797633" />
+    <state x="348" y="197" width="840" height="1034" key="run.anything.popup" timestamp="1619094918746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="348" y="197" width="840" height="1034" key="run.anything.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619086522659" />
-    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1619087440542">
+    <state x="348" y="197" width="840" height="1034" key="run.anything.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619094918746" />
+    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1620986759792">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1619087440542" />
+    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1620986759792" />
   </component>
 </project>

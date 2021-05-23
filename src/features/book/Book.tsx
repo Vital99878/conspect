@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react';
+import { useAppDispatch, useAppSelector } from '../../app/hooks';
+import { nextPage, prevPage, selectBook } from './bookSlice';
+import styles from './Book.module.css';
+import { BookProps } from '../../types/bookProps';
 
-import { useAppSelector, useAppDispatch } from '../../app/hooks'
-import { nextPage, prevPage, selectBook } from './bookSlice'
-import styles from './Book.module.css'
-
-export default function Book() {
-  const page = useAppSelector(selectBook)
+const Book:FC<BookProps> = () => {
+  const page = useAppSelector<number>(selectBook)
   const dispatch = useAppDispatch()
   const [incrementPage, setIncrementPage] = useState(1)
 
@@ -41,3 +41,5 @@ export default function Book() {
     </div>
   )
 }
+
+export default Book
