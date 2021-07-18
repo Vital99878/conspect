@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 
-function Header({ str }: { str: number }) {
-  return <div className="header">`Header ${str}`</div>
+function Header() {
+  return <div className="header">Header components</div>
 }
 export default Header

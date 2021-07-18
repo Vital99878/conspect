@@ -1,0 +1,21 @@
+@mixin button {
+  height: 20px;
+  justify-self: flex-end;
+  padding: 0 4px;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+@mixin card {
+  padding: 0 4px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+@mixin borderWithRadius {
+  border: 1px solid grey;
+  border-radius: 4px;
+}
