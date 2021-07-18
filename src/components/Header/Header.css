@@ -4,3 +4,8 @@
   place-items: center;
 }
 
+.div {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}

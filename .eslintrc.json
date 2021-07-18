@@ -22,6 +22,8 @@
     "require-jsdoc": "off",
     "object-curly-spacing": "off",
     "max-len": "off",
-    "semi": "off"
+    "semi": "off",
+    "no-unused-vars": "off",
+    "react/prop-types": "off"
   }
 }
