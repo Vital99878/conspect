@@ -1,0 +1,25 @@
+@import '../../app/mixins.scss';
+.todo {
+  width: 100%;
+  padding: 8px 4px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+  align-items: baseline;
+  border: 1px solid black;
+  border-radius: 4px;
+
+  &__label {
+    padding-right: 4px;
+  }
+  &__status {
+    padding-right: 4px;
+  }
+  &__deleteButton {
+    @include button;
+  }
+}
+.todolist {
+  border: 2xp solid green;
+  border-radius: 6px;
+}
