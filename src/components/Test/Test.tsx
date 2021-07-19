@@ -1,32 +1,39 @@
 import React, { useState } from 'react'
 import './Test.css'
-import { TodoProps, TodosProps, TodoType } from '../../types/todosCompTypes'
+import { TodoProps, TodosProps } from '../../types/todosCompTypes'
 
-const Todo = ({ todo }: TodoProps) => {
+const Todo: React.FC<TodoProps> = ({ todo, deleteTodo }) => {
   return (
     <li>
       <div>{todo.label}</div>
       <div>{todo.status}</div>
-      <button>Delete</button>
+      <button onClick={() => deleteTodo(todo.id)}>Delete</button>
     </li>
   )
 }
-const defaultTodos: TodoType[] = [
-  { label: 'Coffe', id: 1, status: 'done' },
-  { label: 'Tea', id: 2, status: 'doing' },
-  { label: 'Cookie', id: 3, status: 'doing' },
-  { label: 'Get ts', id: 4, status: 'done' },
-]
 
-const Todos = ({ todos }: TodosProps) => {
-  const [todoList, setTodoList] = useState(defaultTodos.map((todo) => <Todo todo={todo} key={todo.id} />))
-  function deleteTodo(id: number) {
-    console.log(id)
+const Todos: React.FC<TodosProps> = ({ todos }) => {
+  const [todoList, setTodoList] = useState(todos)
+
+  function addRandom() {
+    setTodoList((list) => {
+      return [...list, { label: 'Tea', id: Math.random(), status: 'doing' }]
+    })
   }
+  function deleteTodo(id: number) {
+    setTodoList((list) => {
+      return list.filter((todo) => todo.id !== id)
+    })
+  }
+
   return (
     <div className="test">
-      <ul>{todoList}</ul>
-      <button onClick={() => setTodoList}>List</button>
+      <ul>
+        {todoList.map((todo) => (
+          <Todo todo={todo} key={todo.id} deleteTodo={deleteTodo} />
+        ))}
+      </ul>
+      <button onClick={() => addRandom()}>List</button>
     </div>
   )
 }
