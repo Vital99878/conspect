@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../components/Header/Header'
 import Todos from '../components/Test/Test'
-import logo from '../img/logo.svg'
 import './App.scss'
 import { defaultTodos } from '../app/mockaData'
 
