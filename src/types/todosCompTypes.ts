@@ -1,8 +1,10 @@
-export type Statuses = 'done' | 'doing'
-export type TodoType = { label: string; id: number; status: Statuses }
+export type TodoType = { label: string; id: number; status: 'done' | 'doing' }
 
 export type TodoProps = {
-  todo: TodoType
-  deleteTodo: (id: number) => void
+  props: { todo: TodoType; deleteTodo: (id: number) => void }
 }
 export type TodosProps = { todos: TodoType[] }
+
+export type AddTodoProps = {
+  addTodo: (text: string) => void
+}

@@ -13,6 +13,24 @@
                     "column": 1
                 }
             ]
+        },
+        {
+            "name": "TodoList",
+            "orientation": 0,
+            "documents": [
+                {
+                    "fsPath": "w:\\ts-my-components\\src\\types\\todosCompTypes.ts",
+                    "column": 1
+                },
+                {
+                    "fsPath": "w:\\ts-my-components\\src\\app\\mockaData.tsx",
+                    "column": 1
+                },
+                {
+                    "fsPath": "w:\\ts-my-components\\src\\components\\TodoList\\TodoList.tsx",
+                    "column": 1
+                }
+            ]
         }
     ]
 }
