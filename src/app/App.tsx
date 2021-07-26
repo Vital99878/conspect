@@ -1,8 +1,9 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import './App.scss'
 import TodoList from '../components/TodoList/TodoList'
 import Test from '../components/Test/Test'
+import PositionCss from '../components/PositionCss/PositionCss'
+import './App.scss'
 
 const MenuItem = ({ title }: { title: string }) => {
   return <li>Menu item</li>
@@ -11,7 +12,7 @@ const MenuItem = ({ title }: { title: string }) => {
 const App: React.FC = () => {
   return (
     <div className="App">
-      <TodoList />
+      <PositionCss />
     </div>
   )
 }
