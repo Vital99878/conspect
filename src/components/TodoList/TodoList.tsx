@@ -1,44 +1,73 @@
-import React, { useState, useRef } from 'react'
-import { AddTodoProps, TodoProps, TodosProps, TodoType } from '../../types/todosCompTypes'
+import React from 'react'
+import { useState } from 'react'
+import './TodoList.scss'
 
-export const Todo: React.FC<TodoProps> = ({ props }) => {
+type TodoType = {
+  id: number
+  label: string
+  status: 'doing' | 'done'
+}
+type TodoProps = {
+  props: {
+    todo: TodoType
+    deleteTodo: (id: number) => void
+  }
+}
+type AddTodoFormProps = {
+  props: {
+    addTodo: (label: string) => void
+  }
+}
+type TodoListProps = {
+  props?: {
+    todos: TodoType[]
+  }
+}
+const Todo: React.FC<TodoProps> = ({ props }) => {
   const { todo, deleteTodo } = props
-
+  const { id, label, status } = todo
   return (
     <li>
-      <div>{todo.label}</div>
-      <div>{todo.status}</div>
-      <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+      <div className="todo__label">{label}</div>
+      <div>{status}</div>
+      <button onClick={() => deleteTodo(id)}>Delete Todo</button>
     </li>
   )
 }
 
-const AddTodoForm: React.FC<AddTodoProps> = ({ addTodo }) => {
+const AddTodoForm: React.FC<AddTodoFormProps> = ({ props }) => {
+  const { addTodo } = props
   const [label, setLabel] = useState('')
   return (
     <div>
       <input
-        onChange={(evt) => {
-          setLabel(evt.target.value)
+        type="text"
+        value={label}
+        onChange={(evt: React.ChangeEvent<HTMLInputElement>) => {
+          const label = evt.target.value
+          setLabel(label)
         }}
-      ></input>
-      <button onClick={() => addTodo(label)}>Add Todo</button>
+      />
+      <button
+        onClick={() => {
+          addTodo(label)
+          setLabel('')
+        }}
+      >
+        Add Todo
+      </button>
     </div>
   )
 }
-
-const TodoList: React.FC<TodosProps> = ({ todos }) => {
+const TodoList: React.FC<TodoListProps> = ({ props = { todos: [{ id: 1, label: 'new', status: 'doing' }] } }) => {
+  const { todos } = props
   const [todoList, setTodoList] = useState(todos)
   const deleteTodo = (id: number) => {
-    setTodoList((list) => {
-      return list.filter((todo) => todo.id !== id)
-    })
+    setTodoList((todos) => todos.filter((todo) => todo.id !== id))
   }
   const addTodo = (label: string) => {
-    setTodoList((list) => {
-      const newTodo: TodoType = { id: Math.random(), label, status: 'doing' }
-      return [...list, newTodo]
-    })
+    const newTodo: TodoType = { id: Math.random(), label, status: 'doing' }
+    setTodoList((todos) => [...todos, newTodo])
   }
   return (
     <>
@@ -47,9 +76,8 @@ const TodoList: React.FC<TodosProps> = ({ todos }) => {
           <Todo props={{ todo, deleteTodo }} key={todo.id} />
         ))}
       </ul>
-      <AddTodoForm addTodo={addTodo} />
+      <AddTodoForm props={{ addTodo }} />
     </>
   )
 }
-
 export default TodoList
