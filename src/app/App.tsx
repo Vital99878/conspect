@@ -11,13 +11,7 @@ const MenuItem = ({ title }: { title: string }) => {
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Header />
       <TodoList />
-      <Test>
-        <MenuItem title="mew menu" />
-        <MenuItem title="mew get" />
-        <MenuItem title="mew let" />
-      </Test>
     </div>
   )
 }
