@@ -1,17 +1,23 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Todos from '../components/Test/Test'
 import './App.scss'
-import { defaultTodos } from '../app/mockaData'
+import TodoList from '../components/TodoList/TodoList'
+import Test from '../components/Test/Test'
 
-const App = () => {
+const MenuItem = ({ title }: { title: string }) => {
+  return <li>Menu item</li>
+}
+
+const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header> */}
-      <Todos todos={defaultTodos} />
+      <TodoList />
+      <Test>
+        <MenuItem title="mew menu" />
+        <MenuItem title="mew get" />
+        <MenuItem title="mew let" />
+      </Test>
     </div>
   )
 }

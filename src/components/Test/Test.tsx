@@ -1,33 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, ReactElement } from 'react'
 import './Test.css'
-import { TodoProps, TodosProps, TodoType } from '../../types/todosCompTypes'
 
-const Todo = ({ todo }: TodoProps) => {
-  return (
-    <li>
-      <div>{todo.label}</div>
-      <div>{todo.status}</div>
-      <button>Delete</button>
-    </li>
-  )
-}
-const defaultTodos: TodoType[] = [
-  { label: 'Coffe', id: 1, status: 'done' },
-  { label: 'Tea', id: 2, status: 'doing' },
-  { label: 'Cookie', id: 3, status: 'doing' },
-  { label: 'Get ts', id: 4, status: 'done' },
-]
+// type TestProps = {
+//   props: any
+// }
 
-const Todos = ({ todos }: TodosProps) => {
-  const [todoList, setTodoList] = useState(defaultTodos.map((todo) => <Todo todo={todo} key={todo.id} />))
-  function deleteTodo(id: number) {
-    console.log(id)
-  }
-  return (
-    <div className="test">
-      <ul>{todoList}</ul>
-      <button onClick={() => setTodoList}>List</button>
-    </div>
-  )
+// const Test: React.FC<TestProps> = ({ props }) => {
+//   const children: any = props.children
+//   return <div className="test">{children}</div>
+// }
+
+type TestPropsChildren = {
+  children: React.ReactNode[] | React.ReactNode
 }
-export default Todos
+
+const Menu: React.FC<TestPropsChildren> = ({ children }) => {
+  return <ul className="list">{children}</ul>
+}
+
+export default Menu

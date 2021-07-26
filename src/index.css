@@ -1,9 +1,15 @@
-/* Reset Style */
+/*  -------------------- Reset styles --------------------  */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+li {
+  list-style: none;
+}
+
+/* -------------------- Main styles --------------------  */
 
 body {
   margin: 0;
@@ -11,8 +17,20 @@ body {
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  width: 100%;
+  background-color: var(--body-bg-color);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+#root {
+  width: 100%;
+  max-width: 1200px;
+}
+:root {
+  --main-bg-color: rgb(189, 172, 172);
+  --body-bg-color: rgb(139, 195, 218);
 }

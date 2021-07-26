@@ -24,6 +24,8 @@
     "max-len": "off",
     "semi": "off",
     "no-unused-vars": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "indent": "off",
+    "comma-dangle": "off"
   }
 }
