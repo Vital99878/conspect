@@ -1,44 +1,50 @@
 {
-<<<<<<< HEAD
-  "editor.quickSuggestions": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "files.eol": "\n"
-}
-=======
-    "saveEditorLayout.list": [
+  "saveEditorLayout.list": [
+    {
+      "name": "Test",
+      "orientation": 0,
+      "documents": [
         {
-            "name": "Test",
-            "orientation": 0,
-            "documents": [
-                {
-                    "fsPath": "w:\\ts-my-components\\src\\app\\mockaData.tsx",
-                    "column": 1
-                },
-                {
-                    "fsPath": "w:\\ts-my-components\\src\\components\\Test\\Test.tsx",
-                    "column": 1
-                }
-            ]
+          "fsPath": "w:\\ts-my-components\\src\\app\\mockaData.tsx",
+          "column": 1
         },
         {
-            "name": "TodoList",
-            "orientation": 0,
-            "documents": [
-                {
-                    "fsPath": "w:\\ts-my-components\\src\\types\\todosCompTypes.ts",
-                    "column": 1
-                },
-                {
-                    "fsPath": "w:\\ts-my-components\\src\\app\\mockaData.tsx",
-                    "column": 1
-                },
-                {
-                    "fsPath": "w:\\ts-my-components\\src\\components\\TodoList\\TodoList.tsx",
-                    "column": 1
-                }
-            ]
+          "fsPath": "w:\\ts-my-components\\src\\components\\Test\\Test.tsx",
+          "column": 1
         }
-    ]
+      ]
+    },
+    {
+      "name": "TodoList",
+      "orientation": 0,
+      "documents": [
+        {
+          "fsPath": "w:\\ts-my-components\\src\\types\\todosCompTypes.ts",
+          "column": 1
+        },
+        {
+          "fsPath": "w:\\ts-my-components\\src\\app\\mockaData.tsx",
+          "column": 1
+        },
+        {
+          "fsPath": "w:\\ts-my-components\\src\\components\\TodoList\\TodoList.tsx",
+          "column": 1
+        }
+      ]
+    },
+    {
+      "name": "Prepair",
+      "orientation": 0,
+      "documents": [
+        {
+          "fsPath": "c:\\Users\\Office\\AppData\\Roaming\\Code - Insiders\\User\\globalStorage\\buenon.scratchpads\\scratchpads\\ab1a30077d818f206c1ec33ef6685555\\prepairToJs.md",
+          "column": 1
+        },
+        {
+          "fsPath": "w:\\ts-my-components\\.vscode\\settings.json",
+          "column": 1
+        }
+      ]
+    }
+  ]
 }
->>>>>>> todoList

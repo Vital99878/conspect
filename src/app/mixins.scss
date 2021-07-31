@@ -1,21 +1,34 @@
+// -------------- Items -------------- //
 @mixin button {
-  height: 20px;
-  justify-self: flex-end;
-  padding: 0 4px;
+  padding: 0 0.2em;
   cursor: pointer;
   border: 1px solid grey;
   border-radius: 4px;
-  margin-left: auto;
 }
 
 @mixin card {
-  padding: 0 4px;
+  padding: 0 0.2em;
   border: 1px solid grey;
   border-radius: 4px;
   margin-left: auto;
 }
 
+// -------------- Most usefull css properties -------------- //
+
 @mixin borderWithRadius {
-  border: 1px solid grey;
+  border: 1px solid rgba(128, 128, 128, 0.527);
   border-radius: 4px;
 }
+
+// -------------- Centered item i -------------- //
+@mixin item_in_the_center--Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin item_in_the_center--Grid {
+  display: grid;
+  place-items: center;
+}
+
+// -------------- Next -------------- //

@@ -1,0 +1,15 @@
+@import '../../app/mixins.scss';
+.tags {
+  width: 100%;
+  padding: 1em;
+  @include borderWithRadius;
+}
+
+.tags::before {
+  content: 'tags';
+}
+.details {
+  font-size: 1.6rem;
+  background-color: var(--body-text-color);
+  cursor: pointer;
+}

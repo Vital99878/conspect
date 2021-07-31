@@ -1,0 +1,18 @@
+@import '../../app/mixins.scss';
+.display {
+  background-color: blanchedalmond;
+  @include borderWithRadius;
+}
+p {
+  font-size: 1.6rem;
+}
+span {
+  // @include borderWithRadius;
+  // display: inline-block;
+  padding: 0.2em;
+  text-align: center;
+  // @include item_in_the_center--Flex;
+  color: tomato;
+  height: 16rem;
+  // font-size: 2.6rem;
+}

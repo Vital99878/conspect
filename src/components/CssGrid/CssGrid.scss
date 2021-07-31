@@ -1,0 +1,30 @@
+@import '../../app/mixins.scss';
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'a a nav'
+    'a a nav'
+    'a a nav';
+  width: 100%;
+  grid-gap: 1 em;
+  padding: 1em;
+  background-color: rgba(134, 230, 198, 0.774);
+  @include borderWithRadius;
+
+  > * {
+    @include borderWithRadius;
+  }
+
+  .grid-item {
+    // margin-bottom: -1px;
+    font-size: 1.6rem;
+    padding: 1em;
+    // @include borderWithRadius;
+  }
+}
+nav {
+  // background-color: chartreuse;
+  grid-area: nav;
+  min-width: 6rem;
+  @include item_in_the_center--Grid;
+}
