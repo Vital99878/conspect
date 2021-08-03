@@ -1,34 +1,28 @@
 import React from 'react'
-import { withRouter, useParams, RouteComponentProps } from 'react-router-dom'
-import { History } from 'history'
-
+import { useHistory } from 'react-router-dom'
 import './Menu.scss'
-type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay'
+
+type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
 interface MenuItemProps {
   props: {
     label: CssListForMenu
-    history?: History
+    active?: boolean
   }
 }
 type MenuProps = {
-  children: React.ReactNode[] | React.ReactNode
+  children: React.ReactElement<MenuItemProps>[]
 }
-
 export const MenuItem: React.FC<MenuItemProps> = ({ props }) => {
-  const { label, history } = props
-
-  function linkTo(params: any) {
-    console.log(params)
-  }
+  const { label, active } = props
+  const history = useHistory()
   return (
-    <li>
-      <a className="menu" onClick={() => linkTo(history)}>
+    <li key={label}>
+      <a className={active ? 'active' : 'notActive'} onClick={() => history.push(label)}>
         {label}
       </a>
     </li>
   )
 }
-
 const Menu: React.FC<MenuProps> = ({ children }) => {
   return (
     <nav>

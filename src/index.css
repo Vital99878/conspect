@@ -29,11 +29,9 @@ body {
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
   display: grid;
   place-items: center;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  width: 100%;
   background-color: var(--body-bg-color);
 }
 
