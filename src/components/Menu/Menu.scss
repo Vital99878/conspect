@@ -15,7 +15,8 @@
     color: rgba(134, 134, 134, 0.712);
   }
   .active {
-    color: rgba(146, 12, 12, 0.712);
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: rgba(128, 8, 8, 0.884);
   }
   a:hover {
     border-bottom: 1px solid rgba(61, 61, 61, 0.712);

@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setActiveMenuItem } from '../../app/adtiveMenuItemReducer'
 import './Menu.scss'
 
-type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
+export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
 export interface MenuItemProps {
   props: {
     label: CssListForMenu

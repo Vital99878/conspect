@@ -16,19 +16,21 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setActiveMenuItem } from './adtiveMenuItemReducer'
 
 const App: React.FC = () => {
-  const count = useSelector((state: RootState) => state.activeMenuItem.menuItems)
+  const [home, cssDisplay, cssPosition, cssFlex, cssGrid, cssTags] = useSelector(
+    (state: RootState) => state.activeMenuItem.menuItems
+  )
   return (
     <Router>
       <div className="App">
         {/* {'Menu tabs' */}
         <>
           <Menu>
-            <MenuItem props={{ label: '/', active: true }} />
-            <MenuItem props={{ label: 'cssDisplay' }} />
-            <MenuItem props={{ label: 'cssPosition' }} />
-            <MenuItem props={{ label: 'cssFlex' }} />
-            <MenuItem props={{ label: 'cssGrid' }} />
-            <MenuItem props={{ label: 'cssTags' }} />
+            <MenuItem props={home} />
+            <MenuItem props={cssDisplay} />
+            <MenuItem props={cssPosition} />
+            <MenuItem props={cssFlex} />
+            <MenuItem props={cssGrid} />
+            <MenuItem props={cssTags} />
           </Menu>
           <Switch>
             <Route path="/cssDisplay" exact component={CssDisplay} />
@@ -36,7 +38,7 @@ const App: React.FC = () => {
             <Route path="/cssFlex" exact component={CssFlex} />
             <Route path="/cssGrid" exact component={CssGrid} />
             <Route path="/cssTags" exact component={CssTags} />
-            <Route path="/" exact render={() => <h1>{`Home /${count}`}</h1>} />
+            <Route path="/" exact render={() => <h1>Home page</h1>} />
           </Switch>
         </>
       </div>
