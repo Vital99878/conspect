@@ -11,8 +11,12 @@ import CssFlex from '../components/CssFlex/CssFlex'
 import CssGrid from '../components/CssGrid/CssGrid'
 import Menu, { MenuItem } from '../components/Menu/Menu'
 import { useHistory } from 'react-router-dom'
+import { RootState } from './store'
+import { useSelector, useDispatch } from 'react-redux'
+import { setActiveMenuItem } from './adtiveMenuItemReducer'
 
 const App: React.FC = () => {
+  const count = useSelector((state: RootState) => state.activeMenuItem.value)
   return (
     <Router>
       <div className="App">
@@ -32,7 +36,7 @@ const App: React.FC = () => {
             <Route path="/cssFlex" exact component={CssFlex} />
             <Route path="/cssGrid" exact component={CssGrid} />
             <Route path="/cssTags" exact component={CssTags} />
-            <Route path="/" exact render={() => <h1>Home /</h1>} />
+            <Route path="/" exact render={() => <h1>{`Home /${count}`}</h1>} />
           </Switch>
         </>
       </div>
