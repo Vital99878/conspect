@@ -16,7 +16,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setActiveMenuItem } from './adtiveMenuItemReducer'
 
 const App: React.FC = () => {
-  const count = useSelector((state: RootState) => state.activeMenuItem.value)
+  const count = useSelector((state: RootState) => state.activeMenuItem.menuItems)
   return (
     <Router>
       <div className="App">

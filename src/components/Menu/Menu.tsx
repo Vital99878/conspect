@@ -6,7 +6,7 @@ import { setActiveMenuItem } from '../../app/adtiveMenuItemReducer'
 import './Menu.scss'
 
 type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
-interface MenuItemProps {
+export interface MenuItemProps {
   props: {
     label: CssListForMenu
     active?: boolean
@@ -27,7 +27,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({ props }) => {
         className={active ? 'active' : 'notActive'}
         onClick={() => {
           history.push(label)
-          dispatch(setActiveMenuItem(5))
+          dispatch(setActiveMenuItem(label))
         }}
       >
         {label}

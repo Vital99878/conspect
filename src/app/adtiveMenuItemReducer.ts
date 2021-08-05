@@ -1,20 +1,23 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-export interface CounterState {
-  value: number
-}
-
-const initialState: CounterState = {
-  value: 0,
+const initialState = {
+  menuItems: [
+    { label: '/', active: true },
+    { label: 'cssDisplay' },
+    { label: 'cssPosition' },
+    { label: 'cssFlex' },
+    { label: 'cssGrid' },
+    { label: 'cssTags' },
+  ],
 }
 
 export const activeMenuItemReducer = createSlice({
   name: 'activeMenu',
   initialState,
   reducers: {
-    setActiveMenuItem: (state, action: PayloadAction<number>) => {
-      state.value += action.payload
+    setActiveMenuItem: (state, action: PayloadAction<string>) => {
+      state.menuItems
     },
   },
 })
