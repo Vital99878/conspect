@@ -5,7 +5,9 @@
 .app-budget {
   display: grid;
   padding: 0 0;
-
+  font-size: 1.6rem;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto auto;
   grid-template-areas:
     'header header header header'
     'expenses expenses expenses expenses'
@@ -19,34 +21,28 @@
 .expenses {
   background-color: bisque;
   grid-area: expenses;
+  height: 100%;
 }
 .expense {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  @include borderWithoutRadius;
-  padding: 1rem 6rem;
-
-  &__total {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.8rem;
-    font-size: 1.6rem;
+  justify-content: space-between;
+  // @include borderWithoutRadius;
+  padding: var(--p-for-item);
+  &__label--totalDay,
+  &__sum--totalDay {
+    font-weight: 700;
   }
-
-  &__actions {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__plus {
-    width: 20%;
-  }
-  &__settings {
-    width: 20%;
+  &__label--totalWeek,
+  &__sum--totalWeek {
+    font-weight: 700;
   }
 }
+
 .showStatistic {
+  min-height: 4rem;
   grid-area: statistic;
+  border: none;
+  // @include borderWithoutRadius;
 }
 .header {
   background-color: aquamarine;
@@ -64,6 +60,7 @@
 .footer {
   background-color: aquamarine;
   grid-area: footer;
+  margin-top: auto;
 }
 
 .calendar {

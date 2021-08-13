@@ -6,80 +6,44 @@ const LayoutBudget: React.FC = () => {
     <div className="app-budget">
       <header className="header">
         <div className="logo">Logo</div>
-        <div className="showNavigation">show Navigation</div>
+        <div className="showNavigation">NavIcon</div>
         <div className="user">user</div>
-        <div className="date">13 августа 2021</div>
+        {/* <div className="date">13 августа 2021</div> */}
       </header>
       <ul className="expenses">
         <li className="expense">
-          <div className="expense__total">
-            <div className="expense__label">Проезд</div>
-            <div className="expense__currentDay">1 000</div>
-          </div>
-
-          <div className="expense__actions">
-            <button className="expense__settings">Наст</button>
-            <button className="expense__plus">+</button>
-          </div>
+          <div className="expense__label">Проезд</div>
+          <div className="expense__sum">1 000</div>
         </li>
         <li className="expense">
-          <div className="expense__total">
-            <div className="expense__label">Проезд</div>
-            <div className="expense__currentDay">1 000</div>
-          </div>
-
-          <div className="expense__actions">
-            <button className="expense__settings">Наст</button>
-            <button className="expense__plus">+</button>
-          </div>
+          <div className="expense__label">Проезд</div>
+          <div className="expense__sum">1 000</div>
         </li>
         <li className="expense">
-          <div className="expense__total">
-            <div className="expense__label">Проезд</div>
-            <div className="expense__currentDay">1 000</div>
-          </div>
-
-          <div className="expense__actions">
-            <button className="expense__settings">Наст</button>
-            <button className="expense__plus">+</button>
-          </div>
+          <div className="expense__label">Проезд</div>
+          <div className="expense__sum">1 000</div>
         </li>
         <li className="expense">
-          <div className="expense__total">
-            <div className="expense__label">Проезд</div>
-            <div className="expense__currentDay">1 000</div>
-          </div>
-
-          <div className="expense__actions">
-            <button className="expense__settings">Наст</button>
-            <button className="expense__plus">+</button>
-          </div>
+          <div className="expense__label">Проезд</div>
+          <div className="expense__sum">1 000</div>
         </li>
         <li className="expense">
-          <div className="expense__total">
-            <div className="expense__label">Проезд</div>
-            <div className="expense__currentDay">1 000</div>
-          </div>
-
-          <div className="expense__actions">
-            <button className="expense__settings">Наст</button>
-            <button className="expense__plus">+</button>
-          </div>
+          <div className="expense__label">Проезд</div>
+          <div className="expense__sum">1 000</div>
         </li>
         <li className="expense">
-          <div className="expense__total">
-            <div className="expense__label">За день</div>
-            <div className="expense__sum">6 000</div>
-          </div>
+          <div className="expense__label--totalDay">13 августа</div>
+          <div className="expense__sum--totalDay">6 000</div>
         </li>
         <li className="expense">
-          <div className="expense__total">
-            <div className="expense__label">За неделю</div>
-            <div className="expense__sum">1500</div>
-          </div>
+          <div className="expense__label--totalWeek">За неделю</div>
+          <div className="expense__sum--totalWeek">10 500</div>
+        </li>
+        <li className="expense">
+          <div className="expense__label--totalWeek">За месяц</div>
+          <div className="expense__sum--totalWeek">30 500</div>
         </li>
       </ul>
-      <div className="showStatistic">Всего за день</div>
       <button className="showStatistic">Статистика за месяц</button>
       {/* <div className="calendar">Calendar</div> */}
       {/* <nav className="nav">
