@@ -38,7 +38,8 @@ body {
 #root {
   width: 100%;
   max-width: 1200px;
-  padding: 1rem 1.6rem;
+  /* padding: 1em 1.6em; */
+  padding-block: min(10vw, 5rem);
 }
 :root {
   --main-bg-color: rgb(189, 172, 172);

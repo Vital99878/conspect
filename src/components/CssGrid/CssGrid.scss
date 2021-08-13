@@ -22,9 +22,3 @@
     // @include borderWithRadius;
   }
 }
-nav {
-  // background-color: chartreuse;
-  grid-area: nav;
-  min-width: 6rem;
-  @include item_in_the_center--Grid;
-}

@@ -14,9 +14,10 @@ import { useHistory } from 'react-router-dom'
 import { RootState } from './store'
 import { useSelector, useDispatch } from 'react-redux'
 import { setActiveMenuItem } from './adtiveMenuItemReducer'
+import LayoutBudget from '../components/LayoutBudget/LayoutBudget'
 
 const App: React.FC = () => {
-  const [home, cssDisplay, cssPosition, cssFlex, cssGrid, cssTags] = useSelector(
+  const [home, cssDisplay, cssPosition, cssFlex, cssGrid, cssTags, layoutBudget] = useSelector(
     (state: RootState) => state.activeMenuItem.menuItems
   )
   return (
@@ -31,6 +32,7 @@ const App: React.FC = () => {
             <MenuItem props={cssFlex} />
             <MenuItem props={cssGrid} />
             <MenuItem props={cssTags} />
+            <MenuItem props={layoutBudget} />
           </Menu>
           <Switch>
             <Route path="/cssDisplay" exact component={CssDisplay} />
@@ -38,6 +40,7 @@ const App: React.FC = () => {
             <Route path="/cssFlex" exact component={CssFlex} />
             <Route path="/cssGrid" exact component={CssGrid} />
             <Route path="/cssTags" exact component={CssTags} />
+            <Route path="/layoutBudget" exact component={LayoutBudget} />
             <Route path="/" exact render={() => <h1>Home page</h1>} />
           </Switch>
         </>

@@ -1,23 +1,26 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, RouteComponentProps } from 'react-router-dom'
 import { RootState } from '../../app/store'
 import { useSelector, useDispatch } from 'react-redux'
 import { setActiveMenuItem } from '../../app/adtiveMenuItemReducer'
 import './Menu.scss'
 
 export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
+export type CssLayoutList = 'layoutBudget' | '/'
+export interface MenuItemType {
+  label?: string
+  path: CssListForMenu | CssLayoutList
+  active?: boolean
+}
 export interface MenuItemProps {
-  props: {
-    label: CssListForMenu
-    active?: boolean
-  }
+  props: MenuItemType
 }
 type MenuProps = {
   children: React.ReactElement<MenuItemProps>[]
 }
 
 export const MenuItem: React.FC<MenuItemProps> = ({ props }) => {
-  const { label, active } = props
+  const { label, active, path } = props
   const history = useHistory()
   const dispatch = useDispatch()
 
@@ -26,8 +29,8 @@ export const MenuItem: React.FC<MenuItemProps> = ({ props }) => {
       <a
         className={active ? 'active' : 'notActive'}
         onClick={() => {
-          history.push(label)
-          dispatch(setActiveMenuItem(label))
+          history.push(path)
+          dispatch(setActiveMenuItem(path))
         }}
       >
         {label}

@@ -1,7 +1,0 @@
-@import '../app/mixins.scss';
-.layout {
-  width: 100%;
-  padding: 1rem;
-  background-color: tomato;
-  @include borderWithRadius;
-}

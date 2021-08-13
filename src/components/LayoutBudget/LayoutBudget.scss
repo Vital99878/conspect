@@ -1,0 +1,71 @@
+@import '../../app/mixins.scss';
+:root {
+  --p-for-item: 0.6em 0.2em;
+}
+.app-budget {
+  display: grid;
+  padding: 0 0;
+
+  grid-template-areas:
+    'header header header header'
+    'expenses expenses expenses expenses'
+    'statistic statistic statistic statistic'
+    'footer footer footer footer';
+
+  @media (min-width: 376px) {
+    padding: calc(min(3vh, 1rem)) calc(min(3vw, 3rem));
+  }
+}
+.expenses {
+  background-color: bisque;
+  grid-area: expenses;
+}
+.expense {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include borderWithoutRadius;
+  padding: 1rem 6rem;
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__plus {
+    width: 20%;
+  }
+  &__settings {
+    width: 20%;
+  }
+}
+.showStatistic {
+  grid-area: statistic;
+}
+.header {
+  background-color: aquamarine;
+  display: flex;
+  grid-area: header;
+
+  > * {
+    padding: var(--p-for-item);
+    max-width: (10%, 300px);
+  }
+  .user {
+    margin-left: auto;
+  }
+}
+.footer {
+  background-color: aquamarine;
+  grid-area: footer;
+}
+
+.calendar {
+  @include borderWithoutRadius;
+}

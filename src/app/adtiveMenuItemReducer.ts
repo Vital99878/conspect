@@ -1,22 +1,20 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { CssListForMenu } from '../components/Menu/Menu'
-type menuItem = {
-  label: CssListForMenu
-  active?: boolean
-}
+import { MenuItemType } from '../components/Menu/Menu'
+
 type InitialState = {
-  menuItems: menuItem[]
+  menuItems: MenuItemType[]
 }
 
 const initialState: InitialState = {
   menuItems: [
-    { label: '/', active: true },
-    { label: 'cssDisplay' },
-    { label: 'cssPosition' },
-    { label: 'cssFlex' },
-    { label: 'cssGrid' },
-    { label: 'cssTags' },
+    { label: 'Home', path: '/', active: true },
+    { label: 'CSS: Display', path: 'cssDisplay' },
+    { label: 'CSS: Position', path: 'cssPosition' },
+    { label: 'CSS: Flex', path: 'cssFlex' },
+    { label: 'CSS: Grid', path: 'cssGrid' },
+    { label: 'CSS: Tags', path: 'cssTags' },
+    { label: 'Layout: Budget', path: 'layoutBudget' },
   ],
 }
 
@@ -26,7 +24,7 @@ export const activeMenuItemReducer = createSlice({
   reducers: {
     setActiveMenuItem: (state, action: PayloadAction<string>) => {
       state.menuItems.map((menuItem) => {
-        if (menuItem.label === action.payload) {
+        if (menuItem.path === action.payload) {
           menuItem.active = true
         } else {
           delete menuItem.active

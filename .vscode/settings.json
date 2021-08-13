@@ -45,6 +45,24 @@
           "column": 1
         }
       ]
+    },
+    {
+      "name": "Budget : layoutr",
+      "orientation": 0,
+      "documents": [
+        {
+          "fsPath": "w:\\ts-my-components\\src\\components\\LayoutBudget\\layoutBudget.scss",
+          "column": 1
+        },
+        {
+          "fsPath": "w:\\ts-my-components\\src\\app\\App.tsx",
+          "column": 1
+        },
+        {
+          "fsPath": "w:\\ts-my-components\\src\\components\\LayoutBudget\\LayoutBudget.tsx",
+          "column": 1
+        }
+      ]
     }
   ]
 }
