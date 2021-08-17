@@ -1,21 +1,12 @@
 import React, { useState, ReactElement } from 'react'
 import './Test.css'
 
-// type TestProps = {
-//   props: any
-// }
-
-// const Test: React.FC<TestProps> = ({ props }) => {
-//   const children: any = props.children
-//   return <div className="test">{children}</div>
-// }
-
 type TestPropsChildren = {
-  children: React.ReactNode[] | React.ReactNode
+  children?: React.ReactNode[] | React.ReactNode
 }
 
-const Menu: React.FC<TestPropsChildren> = ({ children }) => {
-  return <ul className="list">{children}</ul>
+const Test: React.FC<TestPropsChildren> = () => {
+  return <div className="list">Test componente</div>
 }
 
-export default Menu
+export default Test

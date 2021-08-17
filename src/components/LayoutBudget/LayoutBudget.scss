@@ -1,33 +1,157 @@
 @import '../../app/mixins.scss';
 :root {
   --p-for-item: 0.6em 0.2em;
+  --br-default: 6px;
+  --link-color: rgba(134, 134, 134, 0.712);
+  --margin-from-header: 4rem;
+  --padding-app-left-right: calc(min(3vw, 3rem));
+  --default-left-transititon: left 0.6s ease-in-out;
+}
+
+.body--fixed {
+  overflow-y: hidden;
 }
 .app-budget {
+  border-radius: var(--br-default);
+  position: relative;
   display: grid;
   padding: 0 0;
   font-size: 1.6rem;
   min-height: 100vh;
-  grid-template-rows: auto 1fr auto auto;
+  grid-template-rows: var(--margin-from-header) 1fr auto auto;
   grid-template-areas:
-    'header header header header'
+    '... ... ... ...'
     'expenses expenses expenses expenses'
     'statistic statistic statistic statistic'
     'footer footer footer footer';
 
-  @media (min-width: 376px) {
-    padding: calc(min(3vh, 1rem)) calc(min(3vw, 3rem));
+  @media screen and (min-width: 376px) {
+    padding: 0 var(--padding-app-left-right);
+
+    .header {
+      padding: 0 var(--padding-app-left-right);
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    grid-template-areas:
+      '... ... ... ...'
+      'expenses expenses expenses ....'
+      'statistic statistic statistic ....'
+      'footer footer footer footer';
+
+    grid-template-columns: repeat(3, auto) 25rem;
+    .calendar {
+      position: fixed;
+      top: var(--margin-from-header);
+      right: var(--padding-app-left-right);
+      width: 25rem;
+      left: unset;
+      // inset: 0;
+      padding: 0;
+      margin: 0;
+      max-height: 36rem;
+
+      .closeButton {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 776px) {
+    grid-template-areas:
+      'header header header header'
+      '.... expenses expenses ....'
+      '.... statistic statistic ....'
+      'footer footer footer footer';
+    grid-template-columns: 20rem repeat(2, auto) 25rem;
+    .nav {
+      position: fixed;
+      text-align: left;
+      top: var(--margin-from-header);
+      left: var(--padding-app-left-right);
+      transition: unset;
+      width: 20rem;
+      padding: 0;
+      margin: 0;
+
+      .closeButton {
+        display: none;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .calendar {
+      right: calc(-webkit-calc(100% - 1200px) / 2 + var(--padding-app-left-right));
+      right: calc(-moz-calc(100% - 1200px) / 2 + var(--padding-app-left-right));
+      right: calc(calc(100% - 1200px) / 2 + var(--padding-app-left-right));
+    }
+    .nav {
+      left: calc(-webkit-calc(100% - 1200px) / 2 + var(--padding-app-left-right));
+      left: calc(-moz-calc(100% - 1200px) / 2 + var(--padding-app-left-right));
+      left: calc(calc(100% - 1200px) / 2 + var(--padding-app-left-right));
+    }
+  }
+
+  overflow: hidden;
+}
+.header {
+  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  padding: 0 0;
+
+  > * {
+    padding: var(--p-for-item) 0;
+    max-width: (10%, 300px);
+  }
+  .user {
+    margin-left: auto;
   }
 }
+.nav {
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  font-size: 1.4rem;
+  position: absolute;
+  padding-top: 10vh;
+  text-align: center;
+  background-color: aquamarine;
+  transition: var((--default-left-transititon));
+  margin: auto;
+  z-index: 100;
+
+  &__list {
+    padding-left: 0.6em;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: var(--link-color);
+    }
+  }
+}
+.nav--show {
+  left: 0;
+}
+
 .expenses {
   background-color: bisque;
   grid-area: expenses;
-  height: 100%;
 }
 .expense {
   display: flex;
   justify-content: space-between;
-  // @include borderWithoutRadius;
   padding: var(--p-for-item);
+
   &__label--totalDay,
   &__sum--totalDay {
     font-weight: 700;
@@ -37,32 +161,39 @@
     font-weight: 700;
   }
 }
-
 .showStatistic {
   min-height: 4rem;
   grid-area: statistic;
   border: none;
   // @include borderWithoutRadius;
 }
-.header {
-  background-color: aquamarine;
-  display: flex;
-  grid-area: header;
 
-  > * {
-    padding: var(--p-for-item);
-    max-width: (10%, 300px);
-  }
-  .user {
-    margin-left: auto;
-  }
-}
 .footer {
   background-color: aquamarine;
   grid-area: footer;
   margin-top: auto;
 }
-
 .calendar {
-  @include borderWithoutRadius;
+  position: absolute;
+  text-align: center;
+  font-size: 32px;
+  inset: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  padding: 2em;
+  // margin: auto;
+  border-radius: 6px;
+  background-color: rgba(127, 255, 212, 1);
+  transition: var((--default-left-transititon));
+}
+
+.calendar--show {
+  left: 0;
+}
+
+.closeButton {
+  position: absolute;
+  top: calc(2vh);
+  right: calc(3vw);
 }

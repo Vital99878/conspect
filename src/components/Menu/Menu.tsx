@@ -6,7 +6,7 @@ import { setActiveMenuItem } from '../../app/adtiveMenuItemReducer'
 import './Menu.scss'
 
 export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
-export type CssLayoutList = 'layoutBudget' | '/'
+export type CssLayoutList = 'layoutBudget' | 'test' | '/'
 export interface MenuItemType {
   label?: string
   path: CssListForMenu | CssLayoutList
