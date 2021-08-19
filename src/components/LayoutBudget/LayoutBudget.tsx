@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useStore } from 'react-redux'
 import './LayoutBudget.scss'
+import DayPicker from 'react-day-picker'
+import 'react-day-picker/lib/style.css'
 
 const LayoutBudget: React.FC = () => {
   function showNavigation() {
@@ -110,7 +112,9 @@ const LayoutBudget: React.FC = () => {
       </ul>
       <button className="showStatistic">Статистика за месяц</button>
       <div className="calendar">
-        <input type="date" className="calendar__date" />
+        <DayPicker />
+
+        {/* <input type="date" className="calendar__date" /> */}
         <button className="closeButton" onClick={toggleCalendar}>
           Close button
         </button>

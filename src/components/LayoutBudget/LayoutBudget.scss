@@ -6,6 +6,7 @@
   --margin-from-header: 4rem;
   --padding-app-left-right: calc(min(3vw, 3rem));
   --default-left-transititon: left 0.6s ease-in-out;
+  --min-footer-height: 4rem;
 }
 
 .body--fixed {
@@ -18,7 +19,7 @@
   padding: 0 0;
   font-size: 1.6rem;
   min-height: 100vh;
-  grid-template-rows: var(--margin-from-header) 1fr auto auto;
+  grid-template-rows: var(--margin-from-header) 1fr auto var(--min-footer-height);
   grid-template-areas:
     '... ... ... ...'
     'expenses expenses expenses expenses'
@@ -51,6 +52,8 @@
       padding: 0;
       margin: 0;
       max-height: 36rem;
+      height: auto;
+      background-color: unset;
 
       .closeButton {
         display: none;
@@ -72,6 +75,7 @@
       left: var(--padding-app-left-right);
       transition: unset;
       width: 20rem;
+      height: fit-content;
       padding: 0;
       margin: 0;
 
@@ -169,20 +173,21 @@
 }
 
 .footer {
-  background-color: aquamarine;
+  background-color: rgb(134, 134, 134);
   grid-area: footer;
   margin-top: auto;
+  height: 100%;
 }
 .calendar {
   position: absolute;
   text-align: center;
   font-size: 32px;
-  inset: 0;
+  // @include item_in_the_center--Flex;
+  // @include borderWithoutRadius;
   left: -100%;
   width: 100%;
   height: 100vh;
-  padding: 2em;
-  // margin: auto;
+  padding: 1em;
   border-radius: 6px;
   background-color: rgba(127, 255, 212, 1);
   transition: var((--default-left-transititon));

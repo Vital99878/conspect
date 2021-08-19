@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from '../components/Header/Header'
 import TodoList from '../components/TodoList/TodoList'
@@ -13,13 +13,13 @@ import Menu, { MenuItem } from '../components/Menu/Menu'
 import { useHistory } from 'react-router-dom'
 import { RootState } from './store'
 import { useSelector, useDispatch } from 'react-redux'
-import { setActiveMenuItem } from './adtiveMenuItemReducer'
 import LayoutBudget from '../components/LayoutBudget/LayoutBudget'
 
 const App: React.FC = () => {
   const [home, cssDisplay, cssPosition, cssFlex, cssGrid, cssTags, layoutBudget, testComponent] = useSelector(
     (state: RootState) => state.activeMenuItem.menuItems
   )
+  const [value, onChange] = useState(new Date())
   return (
     <Router>
       <div className="App">
