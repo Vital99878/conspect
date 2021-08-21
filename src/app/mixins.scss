@@ -34,3 +34,16 @@
 }
 
 // -------------- Next -------------- //
+
+@mixin hidden-modal--left {
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  font-size: 1.4rem;
+  padding-top: 10vh;
+  text-align: center;
+  background-color: aquamarine;
+  transition: var((--default-left-transititon));
+  margin: auto;
+}

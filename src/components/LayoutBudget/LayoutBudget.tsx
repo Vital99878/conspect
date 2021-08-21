@@ -5,16 +5,15 @@ import DayPicker from 'react-day-picker'
 import 'react-day-picker/lib/style.css'
 
 const LayoutBudget: React.FC = () => {
+  const body = document.querySelector('body')
   window.addEventListener('scroll', hideSearchPanel)
   function showNavigation() {
-    const body = document.querySelector('body')
     const navigation = document.querySelector('.nav') as HTMLElement
     navigation.style.top = window.scrollY + 'px'
     body?.classList.toggle('body--fixed')
     navigation?.classList.toggle('nav--show')
   }
   function toggleCalendar() {
-    const body = document.querySelector('body')
     body?.classList.toggle('body--fixed')
     const calendar = document.querySelector('.calendar') as HTMLElement
     calendar.style.top = window.scrollY + 'px'
@@ -24,6 +23,19 @@ const LayoutBudget: React.FC = () => {
     const searchPanel = document.querySelector('.search-and-sort')
     searchPanel?.classList.toggle('search-and-sort--hidden')
   }
+  function showExpenseSettings() {
+    const expenseSettings = document.querySelector('.expense-settings') as HTMLElement
+    // expenseSettings.style.top = window.scrollY + 'px'
+    // body?.classList.toggle('body--fixed')
+    expenseSettings?.classList.toggle('expense-settings--show')
+  }
+  function showAddForm() {
+    const expenseAddForm = document.querySelector('.expense-add-form') as HTMLElement
+    // expenseAddForm.style.top = window.scrollY + 'px'
+    // body?.classList.toggle('body--fixed')
+    expenseAddForm?.classList.toggle('expense-add-form--show')
+  }
+
   return (
     <div className="app-budget">
       <header className="header">
@@ -34,7 +46,7 @@ const LayoutBudget: React.FC = () => {
         <div className="searchTrigger" onClick={hideSearchPanel}>
           Search trigger
         </div>
-        <div className="user">user</div>
+        <div className="user">John Dow</div>
       </header>
       <nav className="nav">
         <ul className="nav__list">
@@ -70,8 +82,12 @@ const LayoutBudget: React.FC = () => {
         </form>
         <ul className="expenses">
           <li className="expense">
-            <div className="expense__label">Проезд</div>
-            <div className="expense__sum">1 00</div>
+            <div className="expense__label" onClick={showExpenseSettings}>
+              Проезд
+            </div>
+            <div className="expense__sum" onClick={showAddForm}>
+              1 00
+            </div>
           </li>
           <li className="expense">
             <div className="expense__label">Проезд</div>
@@ -82,8 +98,12 @@ const LayoutBudget: React.FC = () => {
             <div className="expense__sum">1 000</div>
           </li>
           <li className="expense">
-            <div className="expense__label">Проезд</div>
-            <div className="expense__sum">1 000</div>
+            <div className="expense__label" onClick={showExpenseSettings}>
+              Здесь обработчики
+            </div>
+            <div className="expense__sum" onClick={showAddForm}>
+              1 000
+            </div>
           </li>
           <li className="expense">
             <div className="expense__label">Проезд</div>
@@ -130,15 +150,39 @@ const LayoutBudget: React.FC = () => {
         </ul>
       </div>
       <button className="showStatistic">Статистика за месяц</button>
+      <footer className="footer">Footer</footer>
+
+      <article className="expense-settings">
+        <h2 className="expense-settings__label">Expense lable</h2>
+        <ul className="expense-settings__list">
+          <li className="expense-settings__item">
+            <button>Переименовать</button>
+          </li>
+          <li className="expense-settings__item">
+            <button>Добавить категорию</button>
+          </li>
+          <li className="expense-settings__item">
+            <button>Удалить</button>
+          </li>
+        </ul>
+        <button className="closeButton" onClick={showExpenseSettings}>
+          close settings
+        </button>
+      </article>
+      <article className="expense-add-form">
+        <h2 className="expense-add-form__label">Expense lable</h2>
+        <div className="expense-add-form__total">1500</div>
+        <input type="number" />
+        <button className="closeButton" onClick={showAddForm}>
+          close settings
+        </button>
+      </article>
       <div className="calendar">
         <DayPicker />
-
-        {/* <input type="date" className="calendar__date" /> */}
         <button className="closeButton" onClick={toggleCalendar}>
           Close button
         </button>
       </div>
-      <footer className="footer">Footer</footer>
     </div>
   )
 }
