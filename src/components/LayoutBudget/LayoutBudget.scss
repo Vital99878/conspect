@@ -8,7 +8,6 @@
   --default-left-transititon: left 0.6s ease-in-out;
   --min-footer-height: 4rem;
 }
-
 .body--fixed {
   overflow-y: hidden;
 }
@@ -22,7 +21,7 @@
   grid-template-rows: var(--margin-from-header) 1fr auto var(--min-footer-height);
   grid-template-areas:
     '... ... ... ...'
-    'expenses expenses expenses expenses'
+    'expenses-component expenses-component expenses-component expenses-component'
     'statistic statistic statistic statistic'
     'footer footer footer footer';
 
@@ -37,7 +36,7 @@
   @media screen and (min-width: 576px) {
     grid-template-areas:
       '... ... ... ...'
-      'expenses expenses expenses ....'
+      'expenses-component expenses-component expenses-component ....'
       'statistic statistic statistic ....'
       'footer footer footer footer';
 
@@ -64,7 +63,7 @@
   @media screen and (min-width: 776px) {
     grid-template-areas:
       'header header header header'
-      '.... expenses expenses ....'
+      '.... expenses-component expenses-component ....'
       '.... statistic statistic ....'
       'footer footer footer footer';
     grid-template-columns: 20rem repeat(2, auto) 25rem;
@@ -96,8 +95,6 @@
       left: calc(calc(100% - 1200px) / 2 + var(--padding-app-left-right));
     }
   }
-
-  overflow: hidden;
 }
 .header {
   background-color: aquamarine;
@@ -116,7 +113,8 @@
     padding: var(--p-for-item) 0;
     max-width: (10%, 300px);
   }
-  .user {
+
+  .searchTrigger {
     margin-left: auto;
   }
 }
@@ -146,10 +144,45 @@
 .nav--show {
   left: 0;
 }
+.search-and-sort {
+  position: sticky;
+  top: var(--margin-from-header);
 
-.expenses {
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: height 0.6s cubic-bezier(0.075, 0.82, 0.165, 0.96);
+  overflow: hidden;
+
+  .search,
+  .sort {
+    border: none;
+    min-height: 3rem;
+    padding: 0 var(--p-for-item);
+    @include borderWithoutRadius;
+  }
+  .search {
+    width: 70%;
+    border-right: none;
+  }
+  .sort {
+    width: 30%;
+    option {
+      background-color: aquamarine;
+    }
+  }
+}
+
+.search-and-sort--hidden {
+  height: 3rem;
+  // opacity: 1;
+}
+.expenses-component {
+  // overflow: hidden;
   background-color: bisque;
-  grid-area: expenses;
+  grid-area: expenses-component;
+  display: flex;
+  flex-direction: column;
 }
 .expense {
   display: flex;

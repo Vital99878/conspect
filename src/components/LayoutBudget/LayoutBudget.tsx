@@ -5,6 +5,7 @@ import DayPicker from 'react-day-picker'
 import 'react-day-picker/lib/style.css'
 
 const LayoutBudget: React.FC = () => {
+  window.addEventListener('scroll', hideSearchPanel)
   function showNavigation() {
     const body = document.querySelector('body')
     const navigation = document.querySelector('.nav') as HTMLElement
@@ -19,12 +20,19 @@ const LayoutBudget: React.FC = () => {
     calendar.style.top = window.scrollY + 'px'
     calendar?.classList.toggle('calendar--show')
   }
+  function hideSearchPanel() {
+    const searchPanel = document.querySelector('.search-and-sort')
+    searchPanel?.classList.toggle('search-and-sort--hidden')
+  }
   return (
     <div className="app-budget">
       <header className="header">
         <div className="logo">Logo</div>
         <div className="showNavigation" onClick={showNavigation}>
           NavIcon
+        </div>
+        <div className="searchTrigger" onClick={hideSearchPanel}>
+          Search trigger
         </div>
         <div className="user">user</div>
       </header>
@@ -50,66 +58,77 @@ const LayoutBudget: React.FC = () => {
           close nav
         </button>
       </nav>
-      <ul className="expenses">
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label">Проезд</div>
-          <div className="expense__sum">1 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label--totalDay" onClick={toggleCalendar}>
-            13 августа
-          </div>
-          <div className="expense__sum--totalDay">6 000</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label--totalWeek">За неделю</div>
-          <div className="expense__sum--totalWeek">10 500</div>
-        </li>
-        <li className="expense">
-          <div className="expense__label--totalWeek">За месяц</div>
-          <div className="expense__sum--totalWeek">30 500</div>
-        </li>
-      </ul>
+      <div className="expenses-component">
+        <form className="search-and-sort">
+          <input className="search" defaultValue="поиск" type="text" />
+          <select className="sort">
+            <option value="default">По частоте использования</option>
+            <option value="a-z">По алфавиту</option>
+            <option value="max-min">По убыванию</option>
+            <option value="min-max">По возрастанию</option>
+          </select>
+        </form>
+        <ul className="expenses">
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 00</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label">Проезд</div>
+            <div className="expense__sum">1 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label--totalDay" onClick={toggleCalendar}>
+              13 августа
+            </div>
+            <div className="expense__sum--totalDay">6 000</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label--totalWeek">За неделю</div>
+            <div className="expense__sum--totalWeek">10 500</div>
+          </li>
+          <li className="expense">
+            <div className="expense__label--totalWeek">За месяц</div>
+            <div className="expense__sum--totalWeek">30 500</div>
+          </li>
+        </ul>
+      </div>
       <button className="showStatistic">Статистика за месяц</button>
       <div className="calendar">
         <DayPicker />
