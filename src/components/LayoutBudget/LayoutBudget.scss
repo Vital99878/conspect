@@ -59,7 +59,7 @@
       }
     }
     .expense-settings,
-    .expense-add-form {
+    .add-form {
       position: fixed;
       top: var(--margin-from-header);
       right: calc(var(--padding-app-left-right) - 60%);
@@ -78,7 +78,7 @@
     }
 
     .expense-settings--show,
-    .expense-add-form--show {
+    .add-form--show {
       right: var(--padding-app-left-right);
       visibility: visible;
     }
@@ -117,7 +117,7 @@
     .header {
       padding: 0 0;
     }
-    .expense-add-form,
+    .add-form,
     .expense-settings {
       right: calc(-webkit-calc(100% - 1200px) / 2 + var(--padding-app-left-right) -20%);
       right: calc(-moz-calc(100% - 1200px) / 2 + var(--padding-app-left-right) -20%);
@@ -125,7 +125,7 @@
     }
     .calendar,
     .expense-settings--show,
-    .expense-add-form--show {
+    .add-form--show {
       right: calc(-webkit-calc(100% - 1200px) / 2 + var(--padding-app-left-right));
       right: calc(-moz-calc(100% - 1200px) / 2 + var(--padding-app-left-right));
       right: calc(calc(100% - 1200px) / 2 + var(--padding-app-left-right));
@@ -184,17 +184,50 @@
 .expense-settings {
   z-index: 200;
   @include hidden-modal--left;
+
+  &__item {
+    padding: 0.6em 0.3em;
+  }
+  &__item > * {
+    text-align: inherit;
+    margin: 0.4rem;
+    min-height: 3rem;
+    width: 80%;
+  }
+  &__categories {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    > * {
+      padding: 0.3em 0.6em;
+    }
+  }
 }
-.expense-add-form {
+.add-form {
   z-index: 200;
   @include hidden-modal--left;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+
+  > * {
+    min-height: 3rem;
+    text-align: inherit;
+    max-width: 80%;
+    margin-bottom: 0.6em;
+  }
 }
-.expense-add-form--show {
+.add-form--show {
   left: 0;
+  overflow-y: auto;
 }
 
 .expense-settings--show {
   left: 0;
+  overflow-y: auto;
 }
 .search-and-sort {
   position: sticky;

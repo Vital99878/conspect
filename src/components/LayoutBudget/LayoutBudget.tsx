@@ -30,10 +30,10 @@ const LayoutBudget: React.FC = () => {
     expenseSettings?.classList.toggle('expense-settings--show')
   }
   function showAddForm() {
-    const expenseAddForm = document.querySelector('.expense-add-form') as HTMLElement
+    const expenseAddForm = document.querySelector('.add-form') as HTMLElement
     // expenseAddForm.style.top = window.scrollY + 'px'
     // body?.classList.toggle('body--fixed')
-    expenseAddForm?.classList.toggle('expense-add-form--show')
+    expenseAddForm?.classList.toggle('add-form--show')
   }
 
   return (
@@ -153,12 +153,22 @@ const LayoutBudget: React.FC = () => {
       <footer className="footer">Footer</footer>
 
       <article className="expense-settings">
-        <h2 className="expense-settings__label">Expense lable</h2>
+        <h2 className="expense-settings__label">Здесь обработчики</h2>
         <ul className="expense-settings__list">
           <li className="expense-settings__item">
-            <button>Переименовать</button>
+            <input type="text" defaultValue="change name" />
+            <button>Переименовать: месяц</button>
+            <button>Переименовать: весь год</button>
           </li>
           <li className="expense-settings__item">
+            <ul className="expense-settings__categories">
+              <li>подкатегория 1</li>
+              <li>подкатегория 2</li>
+              <li>подкатегория 3</li>
+              <li>подкатегория 4</li>
+              <li>подкатегория 5</li>
+            </ul>
+            <input type="text" defaultValue="new category" />
             <button>Добавить категорию</button>
           </li>
           <li className="expense-settings__item">
@@ -169,10 +179,26 @@ const LayoutBudget: React.FC = () => {
           close settings
         </button>
       </article>
-      <article className="expense-add-form">
-        <h2 className="expense-add-form__label">Expense lable</h2>
-        <div className="expense-add-form__total">1500</div>
+      <article className="add-form">
+        <h2 className="add-form__label">Expense lable</h2>
+        <div className="add-form__total">1500</div>
         <input type="number" />
+        <input type="text" defaultValue="заметка" />
+        <button>Прибавить</button>
+        <ul className="add-form__categories">
+          <li>
+            <label htmlFor="scales">Категория</label>
+            <input name="scales" type="checkbox" />
+          </li>
+          <li>
+            <label htmlFor="scales">Категория</label>
+            <input name="scales" type="checkbox" />
+          </li>
+          <li>
+            <label htmlFor="scales">Категория</label>
+            <input name="scales" type="checkbox" />
+          </li>
+        </ul>
         <button className="closeButton" onClick={showAddForm}>
           close settings
         </button>
