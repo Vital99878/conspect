@@ -1,0 +1,11 @@
+.testNoTs {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.testNoTs > * {
+  margin: 0.6em 0;
+}

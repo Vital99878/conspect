@@ -15,6 +15,7 @@ const initialState: InitialState = {
     { label: 'CSS: Tags', path: 'cssTags' },
     { label: 'Layout: Budget', path: 'layoutBudget' },
     { label: 'Test Component', path: 'test' },
+    { label: 'Test Component NO TS', path: 'testNoTs' },
   ],
 }
 

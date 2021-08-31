@@ -10,13 +10,14 @@ import CssTags from '../components/CssTags/CssTags'
 import CssFlex from '../components/CssFlex/CssFlex'
 import CssGrid from '../components/CssGrid/CssGrid'
 import Menu, { MenuItem } from '../components/Menu/Menu'
+import TestPureReact from '../components/TestPureReact/TestPureReact'
 import { useHistory } from 'react-router-dom'
 import { RootState } from './store'
 import { useSelector, useDispatch } from 'react-redux'
 import LayoutBudget from '../components/LayoutBudget/LayoutBudget'
 
 const App: React.FC = () => {
-  const [home, cssDisplay, cssPosition, cssFlex, cssGrid, cssTags, layoutBudget, testComponent] = useSelector(
+  const [home, cssDisplay, cssPosition, cssFlex, cssGrid, cssTags, layoutBudget, testComponent, testNoTs] = useSelector(
     (state: RootState) => state.activeMenuItem.menuItems
   )
   const [value, onChange] = useState(new Date())
@@ -34,6 +35,7 @@ const App: React.FC = () => {
             <MenuItem props={cssTags} />
             <MenuItem props={layoutBudget} />
             <MenuItem props={testComponent} />
+            <MenuItem props={testNoTs} />
           </Menu>
           <Switch>
             <Route path="/cssDisplay" exact component={CssDisplay} />
@@ -44,6 +46,7 @@ const App: React.FC = () => {
             <Route path="/" exact component={LayoutBudget} />
             <Route path="/layoutBudget" exact component={LayoutBudget} />
             <Route path="/test" exact component={Test} />
+            <Route path="/testNoTs" exact component={TestPureReact} />
             <Route path="/" exact render={() => <h1>Home page</h1>} />
           </Switch>
         </>
