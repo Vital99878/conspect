@@ -63,6 +63,20 @@
           "column": 1
         }
       ]
+    },
+    {
+      "name": "Store",
+      "orientation": 0,
+      "documents": [
+        {
+          "fsPath": "w:\\ts-my-components\\src\\app\\store.ts",
+          "column": 1
+        },
+        {
+          "fsPath": "w:\\ts-my-components\\src\\app\\App.scss",
+          "column": 2
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,6 @@
 import React from 'react'
-import { useHistory, RouteComponentProps } from 'react-router-dom'
-import { RootState } from '../../app/store'
-import { useSelector, useDispatch } from 'react-redux'
+import { useHistory } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import { setActiveMenuItem } from '../../app/adtiveMenuItemReducer'
 import './Menu.scss'
 
@@ -12,11 +11,11 @@ export interface MenuItemType {
   path: CssListForMenu | CssLayoutList
   active?: boolean
 }
-export interface MenuItemProps {
-  props: MenuItemType
-}
 type MenuProps = {
   children: React.ReactElement<MenuItemProps>[]
+}
+export interface MenuItemProps {
+  props: MenuItemType
 }
 
 export const MenuItem: React.FC<MenuItemProps> = ({ props }) => {

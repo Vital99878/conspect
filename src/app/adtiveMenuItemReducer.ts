@@ -1,4 +1,3 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { MenuItemType } from '../components/Menu/Menu'
 

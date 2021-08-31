@@ -25,7 +25,7 @@ const App: React.FC = () => {
       <div className="App">
         {/* {'Menu tabs' */}
         <>
-          {/* <Menu>
+          <Menu>
             <MenuItem props={home} />
             <MenuItem props={cssDisplay} />
             <MenuItem props={cssPosition} />
@@ -34,7 +34,7 @@ const App: React.FC = () => {
             <MenuItem props={cssTags} />
             <MenuItem props={layoutBudget} />
             <MenuItem props={testComponent} />
-          </Menu> */}
+          </Menu>
           <Switch>
             <Route path="/cssDisplay" exact component={CssDisplay} />
             <Route path="/cssPosition" exact component={CssPosition} />
