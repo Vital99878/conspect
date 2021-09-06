@@ -1,12 +1,14 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setActiveMenuItem } from '../../app/adtiveMenuItemReducer'
 import './Menu.scss'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
 export type CssLayoutList = 'layoutBudget' | '/'
-export type TestList = 'test' | 'testNoTs' | '/'
+export type TestList = 'test' | 'testHooks' | 'testTypescript' | 'testEmptyComponent' | '/'
 export interface MenuItemType {
   label?: string
   path: CssListForMenu | CssLayoutList | TestList
@@ -38,7 +40,18 @@ export const MenuItem: React.FC<MenuItemProps> = ({ props }) => {
     </li>
   )
 }
+
 const Menu: React.FC<MenuProps> = ({ children }) => {
+  const useActiveMenuPath = () => {
+    const dispatch = useDispatch()
+    const location = useLocation()
+    useEffect(() => {
+      const currentPath = location.pathname.substring(1)
+      dispatch(setActiveMenuItem(currentPath))
+    }, [])
+  }
+  useActiveMenuPath()
+
   return (
     <nav>
       <ul className="menu">{children}</ul>

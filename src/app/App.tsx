@@ -10,17 +10,28 @@ import CssTags from '../components/CssTags/CssTags'
 import CssFlex from '../components/CssFlex/CssFlex'
 import CssGrid from '../components/CssGrid/CssGrid'
 import Menu, { MenuItem } from '../components/Menu/Menu'
-import TestPureReact from '../components/TestPureReact/TestPureReact'
+import TestHooks from '../components/TestPureReact/TestPureReact'
 import { useHistory } from 'react-router-dom'
 import { RootState } from './store'
 import { useSelector, useDispatch } from 'react-redux'
 import LayoutBudget from '../components/LayoutBudget/LayoutBudget'
+import TestTS from '../components/TestTS/TestTS'
+import TestEmptyComponent from '../components/TestEmpty/TestEmpty'
 
 const App: React.FC = () => {
-  const [home, cssDisplay, cssPosition, cssFlex, cssGrid, cssTags, layoutBudget, testComponent, testNoTs] = useSelector(
-    (state: RootState) => state.activeMenuItem.menuItems
-  )
-  const [value, onChange] = useState(new Date())
+  const [
+    home,
+    cssDisplay,
+    cssPosition,
+    cssFlex,
+    cssGrid,
+    cssTags,
+    layoutBudget,
+    testComponent,
+    testHooks,
+    testTypescript,
+    testEmptyComponent,
+  ] = useSelector((state: RootState) => state.activeMenuItem.menuItems)
   return (
     <Router>
       <div className="App">
@@ -35,18 +46,22 @@ const App: React.FC = () => {
             <MenuItem props={cssTags} />
             <MenuItem props={layoutBudget} />
             <MenuItem props={testComponent} />
-            <MenuItem props={testNoTs} />
+            <MenuItem props={testHooks} />
+            <MenuItem props={testTypescript} />
+            <MenuItem props={testEmptyComponent} />
           </Menu>
           <Switch>
-            <Route path="/cssDisplay" exact component={CssDisplay} />
-            <Route path="/cssPosition" exact component={CssPosition} />
-            <Route path="/cssFlex" exact component={CssFlex} />
-            <Route path="/cssGrid" exact component={CssGrid} />
-            <Route path="/cssTags" exact component={CssTags} />
-            <Route path="/" exact component={LayoutBudget} />
-            <Route path="/layoutBudget" exact component={LayoutBudget} />
-            <Route path="/test" exact component={Test} />
-            <Route path="/testNoTs" exact component={TestPureReact} />
+            <Route path={`/${cssDisplay.path}`} exact component={CssDisplay} />
+            <Route path={`/${cssPosition.path}`} exact component={CssPosition} />
+            <Route path={`/${cssFlex.path}`} exact component={CssFlex} />
+            <Route path={`/${cssGrid.path}`} exact component={CssGrid} />
+            <Route path={`/${cssTags.path}`} exact component={CssTags} />
+            <Route path={`/${layoutBudget.path}`} exact component={LayoutBudget} />
+            <Route path={`/${testComponent.path}`} exact component={Test} />
+            <Route path={`/${testHooks.path}`} exact component={TestHooks} />
+            <Route path={`/${testTypescript.path}`} exact component={TestTS} />
+            <Route path={`/${testEmptyComponent.path}`} exact component={TestEmptyComponent} />
+            {/* <Route path="/" exact component={LayoutBudget} /> */}
             <Route path="/" exact render={() => <h1>Home page</h1>} />
           </Switch>
         </>

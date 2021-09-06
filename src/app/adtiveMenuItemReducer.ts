@@ -15,7 +15,9 @@ const initialState: InitialState = {
     { label: 'CSS: Tags', path: 'cssTags' },
     { label: 'Layout: Budget', path: 'layoutBudget' },
     { label: 'Test Component', path: 'test' },
-    { label: 'Test Component NO TS', path: 'testNoTs' },
+    { label: 'Test Hooks', path: 'testHooks' },
+    { label: 'Test Typescript', path: 'testTypescript' },
+    { label: 'Empty Test Component', path: 'testEmptyComponent' },
   ],
 }
 
@@ -27,9 +29,7 @@ export const activeMenuItemReducer = createSlice({
       state.menuItems.map((menuItem) => {
         if (menuItem.path === action.payload) {
           menuItem.active = true
-        } else {
-          delete menuItem.active
-        }
+        } else delete menuItem.active
       })
     },
   },
