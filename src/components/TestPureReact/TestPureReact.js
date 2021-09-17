@@ -14,9 +14,9 @@ function reducer(state, action) {
   }
 }
 
-const TestPureReact = () => {
+const TestHooks = () => {
   const inputRef = useRef(null)
-  const [state, dispatch] = useReducer(reducer, { count: 0 })
+  const [state, dispatch] = useReducer(reducer, { count: 10 })
   const [string, setString] = useState(() => 'initial state')
   const [numberForSlowFunction, setNumberForSlowFunction] = useState(0)
 
@@ -29,13 +29,11 @@ const TestPureReact = () => {
   const inputRefKey = useRef(null)
   const inputRefMemo = useRef(null)
   const personRef = useRef({ name: 'John', age: 0 })
+  const slowResult = useMemo(() => slowFunction(numberForSlowFunction), [numberForSlowFunction])
 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value))
   }, [value])
-  useEffect(() => {
-    const input = inputRef.current
-  }, [inputRef, personRef.current.age])
 
   function checkUseRef() {
     setString(inputRef.current.value)
@@ -61,23 +59,28 @@ const TestPureReact = () => {
     console.log(`slowFunction result is ${number} ${i}`)
     return (i - 2) * number
   }
-  const slowResult = useMemo(() => slowFunction(numberForSlowFunction), [numberForSlowFunction])
-  console.log('numberForSlowFunction: ', numberForSlowFunction)
 
   return (
     <div className="testNoTs">
       <h2 className="testNoTs__header">Test Component wihout ts</h2>
       <section className="testNoTs__useRef">
         <h2 className="testNoTs__header">useRef hook</h2>
-        <div>Component will be here!</div>
+        <div>{string}</div>
+        <div>{personRef.current.age}</div>
         <button onClick={changeRefObj}>Change Ref Obj</button>
         <button onClick={checkUseRef}>Rerender with UseState</button>
         <input ref={inputRef}></input>
+        <details className="details">
+          <summary>Ref Details</summary>
+          Изменение рефа не вызывает ререндер компонента. Его изменения отобразятся только тогда, когда что-то заставит
+          компонент отрендерится
+        </details>
       </section>
       <section className="testNoTs__useReducer">
         <h2 className="testNoTs__header">useReducer hook and hold Button for increment</h2>
         <div>{`Count ${state.count}`} </div>
         <button onClick={() => dispatch({ type: 'increment' })}>inc count</button>
+        <button onClick={() => dispatch({ type: 'decrement' })}>decrement coutn</button>
         <button
           onMouseDown={setInt}
           onMouseUp={() => {
@@ -87,7 +90,6 @@ const TestPureReact = () => {
         >
           hold for increment count
         </button>
-        <button onClick={() => dispatch({ type: 'decrement' })}>decrement coutn</button>
       </section>
       <section className="testNoTs__uselocalStorage">
         <h2>useLocalStorage custom hook</h2>
@@ -97,7 +99,7 @@ const TestPureReact = () => {
       </section>
       <section className="testNoTs__useMemo">
         <h2>useMemo hook</h2>
-        <p>{`Slow evaluation result: ${slowResult}`}</p>
+        <p>{`Slow calcing result: ${slowResult}`}</p>
         <input
           ref={inputRefMemo}
           onChange={() => setNumberForSlowFunction(inputRefMemo.current.value)}
@@ -108,4 +110,4 @@ const TestPureReact = () => {
   )
 }
 
-export default TestPureReact
+export default TestHooks

@@ -23,6 +23,19 @@ type TodoListProps = {
     todos: TodoType[]
   }
 }
+
+function useTodos(todos: TodoType[]) {
+  const [todoList, setTodoList] = useState(todos)
+  const addTodo = (label: string) => {
+    const newTodo: TodoType = { id: Math.random(), label, status: 'doing' }
+    setTodoList((todos) => [...todos, newTodo])
+  }
+  const deleteTodo = (id: number) => {
+    setTodoList((todos) => todos.filter((todo) => todo.id !== id))
+  }
+  return { todoList, setTodoList, addTodo, deleteTodo }
+}
+
 const Todo: React.FC<TodoProps> = ({ props }) => {
   const { todo, deleteTodo } = props
   const { id, label, status } = todo
@@ -59,16 +72,10 @@ const AddTodoForm: React.FC<AddTodoFormProps> = ({ props }) => {
     </div>
   )
 }
+
 const TodoList: React.FC<TodoListProps> = ({ props = { todos: [{ id: 1, label: 'new', status: 'doing' }] } }) => {
   const { todos } = props
-  const [todoList, setTodoList] = useState(todos)
-  const deleteTodo = (id: number) => {
-    setTodoList((todos) => todos.filter((todo) => todo.id !== id))
-  }
-  const addTodo = (label: string) => {
-    const newTodo: TodoType = { id: Math.random(), label, status: 'doing' }
-    setTodoList((todos) => [...todos, newTodo])
-  }
+  const { todoList, deleteTodo, addTodo } = useTodos(todos)
   return (
     <>
       <ul>
@@ -80,4 +87,5 @@ const TodoList: React.FC<TodoListProps> = ({ props = { todos: [{ id: 1, label: '
     </>
   )
 }
+
 export default TodoList

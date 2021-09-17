@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Header from '../components/Header/Header'
-import TodoList from '../components/TodoList/TodoList'
 import Test from '../components/Test/Test'
 import CssPosition from '../components/CssPosition/CssPosition'
 // import './App.scss'
@@ -11,12 +9,12 @@ import CssFlex from '../components/CssFlex/CssFlex'
 import CssGrid from '../components/CssGrid/CssGrid'
 import Menu, { MenuItem } from '../components/Menu/Menu'
 import TestHooks from '../components/TestPureReact/TestPureReact'
-import { useHistory } from 'react-router-dom'
 import { RootState } from './store'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import LayoutBudget from '../components/LayoutBudget/LayoutBudget'
 import TestTS from '../components/TestTS/TestTS'
 import TestEmptyComponent from '../components/TestEmpty/TestEmpty'
+import TodoList from '../components/TodoList/TodoList'
 
 const App: React.FC = () => {
   const [
@@ -61,7 +59,7 @@ const App: React.FC = () => {
             <Route path={`/${testHooks.path}`} exact component={TestHooks} />
             <Route path={`/${testTypescript.path}`} exact component={TestTS} />
             <Route path={`/${testEmptyComponent.path}`} exact component={TestEmptyComponent} />
-            {/* <Route path="/" exact component={LayoutBudget} /> */}
+            <Route path="/" exact component={TodoList} />
             <Route path="/" exact render={() => <h1>Home page</h1>} />
           </Switch>
         </>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useDebugValue } from 'react'
 
 function useLocalStorage(key, initialValue) {
   const [value, setValue] = useState(() => {
@@ -10,6 +10,8 @@ function useLocalStorage(key, initialValue) {
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value))
   }, [key, value])
+
+  useDebugValue(value ? 'Local Storage contain some key' : 'LS empty')
 
   return [value, setValue]
 }
