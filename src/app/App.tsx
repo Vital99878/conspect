@@ -59,7 +59,7 @@ const App: React.FC = () => {
             <Route path={`/${testHooks.path}`} exact component={TestHooks} />
             <Route path={`/${testTypescript.path}`} exact component={TestTS} />
             <Route path={`/${testEmptyComponent.path}`} exact component={TestEmptyComponent} />
-            <Route path="/" exact component={TodoList} />
+            {/* <Route path="/" exact component={TodoList} /> */}
             <Route path="/" exact render={() => <h1>Home page</h1>} />
           </Switch>
         </>

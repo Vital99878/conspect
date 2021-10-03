@@ -16,4 +16,13 @@ function useLocalStorage(key, initialValue) {
   return [value, setValue]
 }
 
-export { useLocalStorage }
+function useWindowWidth() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    window.addEventListener('resize', () => setWindowWidth(window.innerWidth))
+  })
+  return windowWidth
+}
+
+export { useLocalStorage, useWindowWidth }

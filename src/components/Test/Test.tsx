@@ -1,17 +1,35 @@
-import React, { useState, ReactElement } from 'react'
+import React, { useEffect, useRef } from 'react'
+import { useWindowWidth } from '../../app/customHooks'
 import './Test.css'
+import { createPortal } from 'react-dom'
 
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode
 }
 
-const Test: React.FC<TestPropsChildren> = () => {
-  const tuple: [string, number] = ['age', 25]
-  tuple[0] = 'ffff'
-  tuple[1] = 58
-  tuple.pop()
+const Modal = ({ data }: any) => {
+  console.log(data)
+  const modal = (
+    <div className="modal">
+      <div className="modal__content">Modal window</div>
+    </div>
+  )
+  return createPortal(modal, document.getElementById('root') as Element)
+}
 
-  return <div className="list">Test componente</div>
+const ModalWidth = <>Modal Width</>
+
+const Test: React.FC<TestPropsChildren> = () => {
+  const windowWidth = useWindowWidth()
+  return (
+    <div className="list">
+      <div>
+        <p>{`width: ${windowWidth}`}</p>
+      </div>
+      <Modal data={'data from outer'} />
+      Test component
+    </div>
+  )
 }
 
 export default Test
