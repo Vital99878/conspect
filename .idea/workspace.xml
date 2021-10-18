@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/adtiveMenuItemReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adtiveMenuItemReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/customHooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/customHooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Test/Test.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test/Test.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Test/Test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test/Test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestEmpty/TestEmpty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestPureReact/TestPureReact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPureReact/TestPureReact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestTS/TestTS.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/types" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -49,6 +58,11 @@
     <property name="ts.external.directory.path" value="W:\ts-my-components\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\ts-my-components\src\types" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,7 +71,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633257343199</updated>
-      <workItem from="1633257344784" duration="5484000" />
+      <workItem from="1633257344784" duration="6185000" />
+      <workItem from="1633608460614" duration="2644000" />
+      <workItem from="1633672984899" duration="11000" />
+      <workItem from="1633847391335" duration="2131000" />
+      <workItem from="1633932984104" duration="5413000" />
+      <workItem from="1634113166408" duration="20000" />
+      <workItem from="1634113213520" duration="12716000" />
+      <workItem from="1634212603142" duration="2365000" />
+      <workItem from="1634282461513" duration="3716000" />
+      <workItem from="1634313961535" duration="645000" />
+      <workItem from="1634362980347" duration="1272000" />
+      <workItem from="1634482975595" duration="745000" />
+      <workItem from="1634547468334" duration="1627000" />
     </task>
     <servers />
   </component>

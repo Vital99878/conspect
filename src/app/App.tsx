@@ -29,6 +29,7 @@ const App: React.FC = () => {
     testHooks,
     testTypescript,
     testEmptyComponent,
+    testTS,
   ] = useSelector((state: RootState) => state.activeMenuItem.menuItems)
   return (
     <Router>
@@ -47,6 +48,7 @@ const App: React.FC = () => {
             <MenuItem props={testHooks} />
             <MenuItem props={testTypescript} />
             <MenuItem props={testEmptyComponent} />
+            <MenuItem props={testTS} />
           </Menu>
           <Switch>
             <Route path={`/${cssDisplay.path}`} exact component={CssDisplay} />
@@ -57,7 +59,7 @@ const App: React.FC = () => {
             <Route path={`/${layoutBudget.path}`} exact component={LayoutBudget} />
             <Route path={`/${testComponent.path}`} exact component={Test} />
             <Route path={`/${testHooks.path}`} exact component={TestHooks} />
-            <Route path={`/${testTypescript.path}`} exact component={TestTS} />
+            <Route path={`/${testTS.path}`} exact component={TestTS} />
             <Route path={`/${testEmptyComponent.path}`} exact component={TestEmptyComponent} />
             {/* <Route path="/" exact component={TodoList} /> */}
             <Route path="/" exact render={() => <h1>Home page</h1>} />

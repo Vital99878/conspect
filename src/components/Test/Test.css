@@ -6,7 +6,7 @@
   height: 100%;
   display: grid;
   place-items: center;
-  background: cadetblue;
+  background: #f1f1f1;
   position: fixed;
   top: 0;
 }

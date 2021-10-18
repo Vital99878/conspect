@@ -3,6 +3,13 @@ import { useLocalStorage } from '../../app/customHooks'
 
 import './TestPureReact.css'
 
+class Person {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+}
+
 function reducer(state, action) {
   switch (action.type) {
     case 'increment':
@@ -38,19 +45,23 @@ const TestHooks = () => {
   function checkUseRef() {
     setString(inputRef.current.value)
   }
+
   function changeRefObj() {
     personRef.current.age += 50
     console.log(personRef.current)
   }
+
   function holdInc() {
     dispatch({ type: 'increment' })
   }
+
   function setInt() {
     if (intervalRef.current) {
       return
     }
     intervalRef.current = setInterval(holdInc, 50)
   }
+
   function slowFunction(number) {
     let i = 0
     for (i = 0; i <= 10_00_000_000; i++) {

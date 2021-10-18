@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
 export type CssLayoutList = 'layoutBudget' | '/'
-export type TestList = 'test' | 'testHooks' | 'testTypescript' | 'testEmptyComponent' | '/'
+export type TestList = 'test' | 'testHooks' | 'testTypescript' | 'testEmptyComponent' | 'testTS' | '/'
 export interface MenuItemType {
   label?: string
   path: CssListForMenu | CssLayoutList | TestList

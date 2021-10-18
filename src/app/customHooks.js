@@ -1,6 +1,6 @@
 import { useState, useEffect, useDebugValue } from 'react'
 
-function useLocalStorage(key, initialValue) {
+const useLocalStorage = (key, initialValue) => {
   const [value, setValue] = useState(() => {
     const jsonValue = localStorage.getItem(key)
     if (jsonValue != null) return JSON.parse(jsonValue)
@@ -16,7 +16,7 @@ function useLocalStorage(key, initialValue) {
   return [value, setValue]
 }
 
-function useWindowWidth() {
+const useWindowWidth = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   useEffect(() => {
