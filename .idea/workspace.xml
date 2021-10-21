@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TestTS/TS.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TestTS/useAttachStyle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/adtiveMenuItemReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/adtiveMenuItemReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/customHooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/customHooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Test/Test.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test/Test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Test/Test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test/Test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestEmpty/TestEmpty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TestPureReact/TestPureReact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPureReact/TestPureReact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestTS/TestTS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestTS/TestTS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestTS/TestTS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/types" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/TestTS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,23 +51,24 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\ts-my-components\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="W:\ts-my-components\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\ts-my-components\src\components\TestTS" />
       <recent name="W:\ts-my-components\src\types" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
       <created>1633257343199</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1633257343199</updated>
+      <updated>1634811941538</updated>
       <workItem from="1633257344784" duration="6185000" />
       <workItem from="1633608460614" duration="2644000" />
       <workItem from="1633672984899" duration="11000" />
@@ -83,11 +81,32 @@
       <workItem from="1634313961535" duration="645000" />
       <workItem from="1634362980347" duration="1272000" />
       <workItem from="1634482975595" duration="745000" />
-      <workItem from="1634547468334" duration="1627000" />
+      <workItem from="1634547468334" duration="4751000" />
+      <workItem from="1634631306277" duration="1212000" />
+      <workItem from="1634724218273" duration="948000" />
+      <workItem from="1634801285528" duration="640000" />
+      <workItem from="1634811676527" duration="263000" />
     </task>
+    <task active="true" id="LOCAL-00001" summary="Learn TS">
+      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
+      <created>1634811935932</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634811941538</updated>
+      <workItem from="1634811941832" duration="6270000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <option name="clearContext" value="false" />
+    <option name="createChangelist" value="false" />
+    <option name="createBranch" value="false" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
