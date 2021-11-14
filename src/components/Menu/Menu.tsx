@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux'
 import { setActiveMenuItem } from '../../app/adtiveMenuItemReducer'
 import './Menu.scss'
 import { useEffect } from 'react'
-import { useState } from 'react'
 
 export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
 export type CssLayoutList = 'layoutBudget' | '/'

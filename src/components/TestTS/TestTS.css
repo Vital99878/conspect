@@ -2,7 +2,7 @@
     background-color: aquamarine;
     padding: 1em 2em;
     display: grid;
-    place-items: center;
+    /*place-items: center;*/
 }
 
 .box {
@@ -10,4 +10,5 @@
     width: 10rem;
     height: 10rem;
     color: saddlebrown;
+    margin-left: 10rem;
 }

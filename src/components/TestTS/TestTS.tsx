@@ -5,7 +5,7 @@ import {useAttachStyle} from './useAttachStyle';
 
 const TestTS: React.FC = () => {
     const refElement = useRef(document.createElement('div'))
-    const s = useAttachStyle(refElement.current)
+    const s = useAttachStyle(refElement.current, ['left', 'top'])
     return (
     <div className="test-typescript" >
       <div ref={refElement} className="box">Box</div>

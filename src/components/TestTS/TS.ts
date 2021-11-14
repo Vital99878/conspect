@@ -13,3 +13,8 @@ export const o: AnyNameOfKey = {anyV: 'name'}
 export const oo: NotAnyNameOfKey = {first: 'name', second: 'age', third: 'age'}
 
 
+class Data {
+    static myName = 'name'
+}
+
+

@@ -14,7 +14,6 @@ import { useSelector } from 'react-redux'
 import LayoutBudget from '../components/LayoutBudget/LayoutBudget'
 import TestTS from '../components/TestTS/TestTS'
 import TestEmptyComponent from '../components/TestEmpty/TestEmpty'
-import TodoList from '../components/TodoList/TodoList'
 
 const App: React.FC = () => {
   const [

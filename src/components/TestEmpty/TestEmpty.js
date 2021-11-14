@@ -12,6 +12,7 @@ const TestEmptyComponent = () => {
   return (
     <div className="testEmpty">
       <h1>Empty Test React component</h1>
+      <input autoFocus={true} defaultValue={'test '} />
       <ul>
         {renderEl.map((number) => (
           <li key={number}>{number}</li>
