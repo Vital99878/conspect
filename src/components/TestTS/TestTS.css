@@ -1,14 +1,14 @@
 .test-typescript {
-    background-color: aquamarine;
-    padding: 1em 2em;
-    display: grid;
-    /*place-items: center;*/
+  background-color: aquamarine;
+  padding: 1em 2em;
+  display: grid;
+  /*place-items: center;*/
 }
 
 .box {
-    border: 1px black solid;
-    width: 10rem;
-    height: 10rem;
-    color: saddlebrown;
-    margin-left: 10rem;
+  border: 1px black solid;
+  width: 10rem;
+  height: 10rem;
+  color: saddlebrown;
+  margin-left: 10rem;
 }

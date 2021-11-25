@@ -7,12 +7,13 @@ import { useEffect } from 'react'
 
 export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
 export type CssLayoutList = 'layoutBudget' | '/'
-export type TestList = 'test' | 'testHooks' | 'testTypescript' | 'testEmptyComponent' | 'testTS' | '/'
+export type TestList = 'test' | 'testHooks' | 'testTypescript' | 'testEmptyComponent' | 'testTS' | 'testRxjs' | '/'
 export interface MenuItemType {
   label?: string
   path: CssListForMenu | CssLayoutList | TestList
   active?: boolean
 }
+
 type MenuProps = {
   children: React.ReactElement<MenuItemProps>[]
 }

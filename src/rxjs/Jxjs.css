@@ -1,5 +1,6 @@
 .rxjs {
   background-color: aquamarine;
+  position: relative;
 }
 .modal {
   width: 100%;

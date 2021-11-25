@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/rxjs/Jxjs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/rxjs/RXjsTest.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/rxjs/useRXBind.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/types/classStaticMethods.ts" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="rxjs not work useSubject">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestEmpty/TestEmpty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TestTS/TS.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestTS/TS.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TestTS/TestTS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestTS/TestTS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestTS/TestTS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TestTS/useAttachStyle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestTS/useAttachStyle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rxjs/RXjsTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/rxjs/RXjsTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rxjs/components/subject/Subject.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/rxjs/components/subject/SubTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rxjs/components/subject/hooks/useSubject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rxjs/components/subject/hooks/useSubject.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rxjs/components/subject/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rxjs/components/subject/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -55,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/rxjs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/rxjs/components/subject/hooks" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -69,21 +61,40 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="W:\ts-my-components\src\components\rxjs" />
-      <recent name="W:\ts-my-components\src\components" />
-      <recent name="W:\ts-my-components\src\components\TestTS" />
-      <recent name="W:\ts-my-components\src\types" />
+      <recent name="W:\ts-my-components\src\rxjs\components\subject\hooks" />
+      <recent name="W:\ts-my-components\src\rxjs\components" />
+      <recent name="W:\ts-my-components\src\rxjs\components\Ball" />
+      <recent name="W:\ts-my-components\src\rxjs\components\Ball\models" />
+      <recent name="W:\ts-my-components\src\rxjs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="W:\ts-my-components\src\components" />
+      <recent name="W:\ts-my-components\src\rxjs\components\subject\hooks" />
+      <recent name="W:\ts-my-components\src\rxjs\components\Ball" />
+      <recent name="W:\ts-my-components\src\rxjs\components" />
+      <recent name="W:\ts-my-components\src\rxjs" />
+      <recent name="W:\ts-my-components\src\rxjs\components\ball" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.classStaticMethods.js">
     <configuration name="classStaticMethods.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/types/classStaticMethods.js" working-dir="$PROJECT_DIR$/src/components/types">
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="Node.js.classStaticMethods.js" />
+        <item itemvalue="Node.js.classStaticMethods.js" />
+        <item itemvalue="Node.js.classStaticMethods.js" />
         <item itemvalue="Node.js.classStaticMethods.js" />
       </list>
     </recent_temporary>
@@ -114,32 +125,53 @@
       <workItem from="1634801285528" duration="640000" />
       <workItem from="1634811676527" duration="263000" />
     </task>
-    <task active="true" id="LOCAL-00001" summary="Learn TS">
+    <task id="LOCAL-00001" summary="Learn TS">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
       <created>1634811935932</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1636903062765</updated>
+      <updated>1637248352676</updated>
       <workItem from="1634811941832" duration="10960000" />
       <workItem from="1635761412234" duration="3210000" />
       <workItem from="1635832456845" duration="28000" />
       <workItem from="1636308314601" duration="270000" />
-      <workItem from="1636903062896" duration="1964000" />
+      <workItem from="1636903062896" duration="2059000" />
+      <workItem from="1637248348039" duration="5000" />
     </task>
-    <task id="LOCAL-00002" summary="Rxjs">
+    <task active="true" id="LOCAL-00002" summary="Rxjs">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
       <created>1636308584115</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1636903062765</updated>
+      <updated>1637761874883</updated>
       <workItem from="1636308586879" duration="1689000" />
       <workItem from="1636351123983" duration="19000" />
       <workItem from="1636453418531" duration="701000" />
       <workItem from="1636903016396" duration="46000" />
+      <workItem from="1637248353073" duration="818000" />
+      <workItem from="1637303224671" duration="91000" />
+      <workItem from="1637761060599" duration="245000" />
+      <workItem from="1637761461945" duration="18000" />
+      <workItem from="1637761550708" duration="3000" />
+      <workItem from="1637761730134" duration="23000" />
+      <workItem from="1637761875382" duration="2077000" />
+      <workItem from="1637832805517" duration="16239000" />
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Menu">
+      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
+      <created>1637761305440</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637761874883</updated>
+      <workItem from="1637761307661" duration="153000" />
+      <workItem from="1637761480110" duration="70000" />
+      <workItem from="1637761553777" duration="175000" />
+      <workItem from="1637761753355" duration="121000" />
+    </task>
+    <option name="localTasksCounter" value="4" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -152,6 +184,18 @@
         <option value="$PROJECT_DIR$/src/components/types/classStaticMethods.js" />
       </list>
     </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

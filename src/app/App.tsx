@@ -14,6 +14,7 @@ import { useSelector } from 'react-redux'
 import LayoutBudget from '../components/LayoutBudget/LayoutBudget'
 import TestTS from '../components/TestTS/TestTS'
 import TestEmptyComponent from '../components/TestEmpty/TestEmpty'
+import RXjsTest from '../rxjs/RXjsTest'
 
 const App: React.FC = () => {
   const [
@@ -29,6 +30,7 @@ const App: React.FC = () => {
     testTypescript,
     testEmptyComponent,
     testTS,
+    testRxjs,
   ] = useSelector((state: RootState) => state.activeMenuItem.menuItems)
   return (
     <Router>
@@ -48,6 +50,7 @@ const App: React.FC = () => {
             <MenuItem props={testTypescript} />
             <MenuItem props={testEmptyComponent} />
             <MenuItem props={testTS} />
+            <MenuItem props={testRxjs} />
           </Menu>
           <Switch>
             <Route path={`/${cssDisplay.path}`} exact component={CssDisplay} />
@@ -60,6 +63,7 @@ const App: React.FC = () => {
             <Route path={`/${testHooks.path}`} exact component={TestHooks} />
             <Route path={`/${testTS.path}`} exact component={TestTS} />
             <Route path={`/${testEmptyComponent.path}`} exact component={TestEmptyComponent} />
+            <Route path={`/${testRxjs.path}`} exact component={RXjsTest} />
             {/* <Route path="/" exact component={TodoList} /> */}
             <Route path="/" exact render={() => <h1>Home page</h1>} />
           </Switch>
