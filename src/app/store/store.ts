@@ -9,6 +9,6 @@ export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, RootState, unk
 
 export const store = configureStore({
   reducer: {
-    activeMenuItem: activeMenuItemReducer,
+    navList: activeMenuItemReducer,
   },
 })

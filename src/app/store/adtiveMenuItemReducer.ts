@@ -1,38 +1,37 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { MenuItemType } from '../../components/Navigation/Navigation'
+import {createSlice, PayloadAction} from '@reduxjs/toolkit'
+import {TNavigation, TNavLabels} from '../../components/Navigation/models/Nagation';
 
-type InitialState = {
-  menuItems: MenuItemType[]
-}
-
-const initialState: InitialState = {
-  menuItems: [
-    { label: 'Home', path: '/', active: true },
-    { label: 'CSS: Display', path: 'cssDisplay' },
-    { label: 'CSS: Position', path: 'cssPosition' },
-    { label: 'CSS: Flex', path: 'cssFlex' },
-    { label: 'CSS: Grid', path: 'cssGrid' },
-    { label: 'CSS: Tags', path: 'cssTags' },
-    { label: 'Layout: Budget', path: 'layoutBudget' },
-    { label: 'Test Component', path: 'test' },
-    { label: 'Test Hooks', path: 'testHooks' },
-    { label: 'Test Typescript', path: 'testTypescript' },
-    { label: 'Empty Test Component', path: 'testEmptyComponent' },
-    { label: 'TS Learn', path: 'testTS' },
-    { label: 'Rxjs Learn', path: 'testRxjs' },
-  ],
+const initialState: TNavigation = {
+    Home: {
+      label: 'Home',
+      active: false,
+      path: '',
+    },
+    Css: {
+      label: 'Css',
+      active: false,
+      path: 'css',
+    },
+    Test: {
+      label: 'Test',
+      active: false,
+      path: 'test',
+    },
+    RXjs: {
+      label: 'RXjs',
+      path: 'RXjs',
+      active: false,
+    },
 }
 
 export const activeMenuItemReducer = createSlice({
   name: 'activeMenu',
-  initialState,
+    initialState,
   reducers: {
-    setActiveMenuItem: (state, action: PayloadAction<string>) => {
-      state.menuItems.map((menuItem) => {
-        if (menuItem.path === action.payload) {
-          menuItem.active = true
-        } else delete menuItem.active
-      })
+    setActiveMenuItem: (state, action: PayloadAction<TNavLabels>) => {
+        const activeItem = {...initialState[action.payload]}
+        activeItem.active = true;
+        return {...initialState, ...{[action.payload]: activeItem}}
     },
   },
 })

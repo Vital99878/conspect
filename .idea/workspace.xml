@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="new structure">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(Navigation): написал типы и редюсер для навигации.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prettier.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/prettier.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Test/Test.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Test/Test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestEmpty/TestEmpty.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestPureReact/TestPureReact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestPureReact/TestPureReact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestPureReact/TestPureReact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestPureReact/TestPureReact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestTS/TS.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TS.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestTS/TestTS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestTS/useAttachStyle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/useAttachStyle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/Jxjs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjsTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/models/Nagation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/models/Nagation.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="structure" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -107,7 +99,7 @@
       <list>
         <item itemvalue="npm.start" />
         <item itemvalue="Node.js.classStaticMethods.js" />
-        <item itemvalue="Node.js.classStaticMethods.js" />
+        <item itemvalue="npm.start" />
         <item itemvalue="Node.js.classStaticMethods.js" />
         <item itemvalue="Node.js.classStaticMethods.js" />
       </list>
@@ -202,7 +194,35 @@
       <option name="project" value="LOCAL" />
       <updated>1637920632649</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(Navigation): пишу типы">
+      <created>1637929683654</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637929683654</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(Navigation): написал типы.">
+      <created>1637936960705</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637936960705</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat(Navigation): написал типы и редюсер для навигации.">
+      <created>1637937079893</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637937079893</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(Navigation): написал типы и редюсер для навигации.">
+      <created>1637940324782</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637940324782</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -227,7 +247,11 @@
     <MESSAGE value="rxjs work useSubject" />
     <MESSAGE value="rxjs not work useSubject" />
     <MESSAGE value="new structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="new structure" />
+    <MESSAGE value="feat(Navigation): пишу типы" />
+    <MESSAGE value="feat(Navigation): reducer updated" />
+    <MESSAGE value="feat(Navigation): написал типы." />
+    <MESSAGE value="feat(Navigation): написал типы и редюсер для навигации." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Navigation): написал типы и редюсер для навигации." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
