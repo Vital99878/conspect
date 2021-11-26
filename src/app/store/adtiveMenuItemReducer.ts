@@ -1,7 +1,7 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 import {TNavigation, TNavLabels} from '../../components/Navigation/models/Nagation';
 
-const initialState: TNavigation = {
+export const initialNavigation: TNavigation = {
     Home: {
       label: 'Home',
       active: false,
@@ -26,12 +26,12 @@ const initialState: TNavigation = {
 
 export const activeMenuItemReducer = createSlice({
   name: 'activeMenu',
-    initialState,
+    initialState: initialNavigation,
   reducers: {
     setActiveMenuItem: (state, action: PayloadAction<TNavLabels>) => {
-        const activeItem = {...initialState[action.payload]}
+        const activeItem = {...initialNavigation[action.payload]}
         activeItem.active = true;
-        return {...initialState, ...{[action.payload]: activeItem}}
+        return {...initialNavigation, ...{[action.payload]: activeItem}}
     },
   },
 })

@@ -4,12 +4,18 @@
 /node_modules
 /.pnp
 .pnp.js
+/.idea
+!/.idea/workspace.xml
+react-app-env.d.ts
+
 
 # testing
 /coverage
 
 # production
 /build
+/.idea
+react-app-env.d.ts
 
 # misc
 .DS_Store
