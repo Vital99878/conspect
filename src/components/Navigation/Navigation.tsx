@@ -1,33 +1,9 @@
-import React, {useState} from 'react'
-import {useHistory, useLocation} from 'react-router-dom'
-import {MenuItemType} from './models/Nagation';
-import DropdownMenu from '../DropdownMenu';
+import React from 'react'
 import './Navigation.scss'
+import {TNavigationItemProps} from './components/NavigationItem/NavigationItem';
 
 type MenuProps = {
-  children: React.ReactElement<MenuItemProps>[]
-}
-export interface MenuItemProps {
-  props: MenuItemType
-}
-
-export const NavigationItem: React.FC<MenuItemProps> = ({ props }) => {
-    const {pathname} = useLocation()
-    const history = useHistory()
-
-  return (
-    <li key={props.label}>
-      <a
-        className={(pathname === `/${props.path}`) ? 'active' : 'notActive'}
-        onClick={() => {
-          history.push(props.path)
-        }}
-      >
-        {props.label}
-      </a>
-        {/*<DropdownMenu/>*/}
-    </li>
-  )
+  children: React.ReactElement<TNavigationItemProps>[]
 }
 
 const Navigation: React.FC<MenuProps> = ({ children }) => {
