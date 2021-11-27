@@ -1,0 +1,29 @@
+@import '../../../css/mixins';
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  width: 100%;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: stretch;
+  @include borderWithRadius;
+  gap: 0.6rem;
+  color: var(--secondary-text-color);
+  // white-space: pre-line;
+}
+
+.flex-item {
+  padding: 1em;
+  // min-height: 1rem;
+  flex-basis: 0;
+  // max-width: 15rem;
+  @include borderWithRadius;
+  flex-grow: 1;
+  min-height: 20rem;
+  @include item_in_the_center--Grid;
+}
+.flex-item:nth-child(5),
+.flex-item:nth-child(1) {
+  // flex-grow: 2;
+}

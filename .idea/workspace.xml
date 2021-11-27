@@ -4,77 +4,90 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46762edd-88cf-47d2-96e1-6a8832f3fad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ts-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/Counter.tsx" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(Navigation): редюсер для навигации. Можно использовать объект initialNavigation для плоской (без вложений) навигации по меню">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="navigation" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="NamedScopeManager">
-    <scope name="src" pattern="file[ts-app]:src//*" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="ProjectId" id="1rQM7Qa8qRZu4CLO5ux7j1TN9cU" />
+  <component name="NamedScopeManager">
+    <scope name="src" pattern="file[ts-my-components]:src//*" />
+  </component>
+  <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/@reduxjs/toolkit/dist/typings.d.ts" />
-    <property name="eslint.code.style.apply.dismiss" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/features" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="W:\ts-app\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
-    <property name="ts.external.directory.path" value="W:\ts-app\node_modules\typescript\lib" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="W:\ts-my-components\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
+    <property name="ts.external.directory.path" value="W:\conspect\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="W:\ts-app\src\features" />
-      <recent name="W:\ts-app\src\features\counter" />
-      <recent name="W:\ts-app" />
+      <recent name="W:\conspect\src" />
+      <recent name="W:\ts-my-components\src\rxjs\components\subject\hooks" />
+      <recent name="W:\ts-my-components\src\rxjs\components" />
+      <recent name="W:\ts-my-components\src\rxjs\components\Ball" />
+      <recent name="W:\ts-my-components\src\rxjs\components\Ball\models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\Test\components" />
+      <recent name="W:\conspect\src\app\store" />
+      <recent name="W:\conspect\src\css" />
+      <recent name="W:\conspect\src\hooks" />
+      <recent name="W:\conspect\src\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint">
-    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="lint" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+  <component name="RunManager" selected="npm.start">
+    <configuration name="classStaticMethods.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/types/classStaticMethods.js" working-dir="$PROJECT_DIR$/src/components/types">
       <method v="2" />
     </configuration>
-    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="lint:fix" />
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -82,55 +95,132 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.lint:fix" />
-        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="Node.js.classStaticMethods.js" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="Node.js.classStaticMethods.js" />
+        <item itemvalue="Node.js.classStaticMethods.js" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="46762edd-88cf-47d2-96e1-6a8832f3fad4" name="Default Changelist" comment="" />
-      <created>1618903693124</created>
+    <task id="Default" summary="Default task">
+      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
+      <created>1633257343199</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618903693124</updated>
-      <workItem from="1618903694451" duration="824000" />
-      <workItem from="1618904528287" duration="6398000" />
+      <updated>1634811941538</updated>
+      <workItem from="1633257344784" duration="6185000" />
+      <workItem from="1633608460614" duration="2644000" />
+      <workItem from="1633672984899" duration="11000" />
+      <workItem from="1633847391335" duration="2131000" />
+      <workItem from="1633932984104" duration="5413000" />
+      <workItem from="1634113166408" duration="20000" />
+      <workItem from="1634113213520" duration="12716000" />
+      <workItem from="1634212603142" duration="2365000" />
+      <workItem from="1634282461513" duration="3716000" />
+      <workItem from="1634313961535" duration="645000" />
+      <workItem from="1634362980347" duration="1272000" />
+      <workItem from="1634482975595" duration="745000" />
+      <workItem from="1634547468334" duration="4751000" />
+      <workItem from="1634631306277" duration="1212000" />
+      <workItem from="1634724218273" duration="948000" />
+      <workItem from="1634801285528" duration="640000" />
+      <workItem from="1634811676527" duration="263000" />
     </task>
+    <task id="LOCAL-00001" summary="Learn TS">
+      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
+      <created>1634811935932</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637248352676</updated>
+      <workItem from="1634811941832" duration="10960000" />
+      <workItem from="1635761412234" duration="3210000" />
+      <workItem from="1635832456845" duration="28000" />
+      <workItem from="1636308314601" duration="270000" />
+      <workItem from="1636903062896" duration="2059000" />
+      <workItem from="1637248348039" duration="5000" />
+    </task>
+    <task active="true" id="LOCAL-00002" summary="Rxjs">
+      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
+      <created>1636308584115</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637761874883</updated>
+      <workItem from="1636308586879" duration="1689000" />
+      <workItem from="1636351123983" duration="19000" />
+      <workItem from="1636453418531" duration="701000" />
+      <workItem from="1636903016396" duration="46000" />
+      <workItem from="1637248353073" duration="818000" />
+      <workItem from="1637303224671" duration="91000" />
+      <workItem from="1637761060599" duration="245000" />
+      <workItem from="1637761461945" duration="18000" />
+      <workItem from="1637761550708" duration="3000" />
+      <workItem from="1637761730134" duration="23000" />
+      <workItem from="1637761875382" duration="2077000" />
+      <workItem from="1637832805517" duration="16239000" />
+      <workItem from="1637909065563" duration="3046000" />
+      <workItem from="1637917505115" duration="3132000" />
+      <workItem from="1637925596769" duration="1078000" />
+    </task>
+    <task id="LOCAL-00003" summary="Menu">
+      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
+      <created>1637761305440</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637761874883</updated>
+      <workItem from="1637761307661" duration="153000" />
+      <workItem from="1637761480110" duration="70000" />
+      <workItem from="1637761553777" duration="175000" />
+      <workItem from="1637761753355" duration="121000" />
+    </task>
+    <task id="LOCAL-00004" summary="rxjs not work useSubject">
+      <created>1637851266761</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637851266761</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new structure">
+      <created>1637920632649</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637920632649</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <option name="clearContext" value="false" />
+    <option name="createChangelist" value="false" />
+    <option name="createBranch" value="false" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="511" y="257" width="553" height="486" key="#Scopes" timestamp="1618904970620">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="511" y="257" width="553" height="486" key="#Scopes/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618904970620" />
-    <state width="1220" height="376" key="GridCell.Tab.0.bottom" timestamp="1618904821867">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1220" height="376" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618904821867" />
-    <state width="1220" height="376" key="GridCell.Tab.0.center" timestamp="1618904821867">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1220" height="376" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618904821867" />
-    <state width="1220" height="376" key="GridCell.Tab.0.left" timestamp="1618904821867">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1220" height="376" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618904821867" />
-    <state width="1220" height="376" key="GridCell.Tab.0.right" timestamp="1618904821867">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1220" height="376" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618904821867" />
-    <state width="750" height="535" key="javadoc.popup" timestamp="1618920892146">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="750" height="535" key="javadoc.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618920892146" />
-    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1618921272009">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1618921272009" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rxjs work useSubject" />
+    <MESSAGE value="rxjs not work useSubject" />
+    <MESSAGE value="new structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="new structure" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

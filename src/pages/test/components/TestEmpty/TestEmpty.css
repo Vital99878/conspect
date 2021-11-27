@@ -1,0 +1,12 @@
+/* @import '../../app/mixins.scss'; */
+.testEmpty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 0.6px solid greenyellow;
+}
+
+.testEmpty > * {
+  margin: 0.6em 0;
+}
