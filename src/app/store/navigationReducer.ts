@@ -24,7 +24,7 @@ export const initialNavigation: TNavigation = {
     },
 }
 
-export const activeMenuItemReducer = createSlice({
+export const navigationReducer = createSlice({
   name: 'activeMenu',
     initialState: initialNavigation,
   reducers: {
@@ -37,6 +37,6 @@ export const activeMenuItemReducer = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { setActiveMenuItem } = activeMenuItemReducer.actions
+export const { setActiveMenuItem } = navigationReducer.actions
 
-export default activeMenuItemReducer.reducer
+export default navigationReducer.reducer

@@ -7,7 +7,7 @@ import { RootState } from './store/store'
 import { useSelector } from 'react-redux'
 import TestEmpty from '../pages/test/components/TestEmpty/TestEmpty'
 import RXjsPage from '../pages/rxjs/RXjs-page'
-import {initialNavigation} from './store/adtiveMenuItemReducer';
+import {initialNavigation} from './store/navigationReducer';
 
 const App: React.FC = () => {
   // const {Home, Css, Test, RXjs} = useSelector((state: RootState) => state.navList)
@@ -38,3 +38,4 @@ const App: React.FC = () => {
   )
 }
 export default App
+

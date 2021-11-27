@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
-import activeMenuItemReducer from './adtiveMenuItemReducer'
+import activeMenuItemReducer from './navigationReducer'
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type AppDispatch = typeof store.dispatch

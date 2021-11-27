@@ -1,6 +1,7 @@
 @import '../../css/mixins';
 .menu {
   // border: 0.4px solid rgb(146, 146, 146);
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -22,6 +23,5 @@
   a:hover {
     border-bottom: 1px solid rgba(61, 61, 61, 0.712);
     color: rgba(61, 61, 61, 0.712);
-    // transition: all 0.4s;
   }
 }
