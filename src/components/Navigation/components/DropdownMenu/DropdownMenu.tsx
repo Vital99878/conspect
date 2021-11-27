@@ -1,23 +1,29 @@
 import React from 'react'
-import {useHistory, useLocation} from 'react-router-dom'
-import {MenuItemType} from './models/Dropdown';
 import './DropdownMenu.scss'
+import {TNavItem} from '../../models/Navigation.model';
+import {useHistory, useLocation} from 'react-router-dom';
 
-// type DropdownMenuProps = {
-//     props: MenuItemType[]
-// }
+type TDropdownProps = {
+    items: TNavItem [],
+    className: string
+}
 
-export const DropdownMenu: React.FC = () => {
-    // const {pathname} = useLocation()
-    // const history = useHistory()
+export const DropdownMenu: React.FC<TDropdownProps> = ({items, className }) => {
+    const {pathname} = useLocation()
+    const history = useHistory()
 
-  return (
-    <ul className='dropdown'>
-      <a>
-        Dropdown menu
-      </a>
-    </ul>
-  )
+    return (
+        <ul className={className}>
+            {items.map((item) => {
+                return (
+                    <li key={item.path} >
+                        <a className={(pathname === `/${item.path}`) ? 'dropdownItem--active' : ''}
+                           onClick={() => history.push(item.path)}> {item.label} </a>
+                    </li>
+                )
+            })}
+        </ul>
+      )
 }
 
 export default DropdownMenu

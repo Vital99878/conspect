@@ -1,7 +1,14 @@
 @import '../../../../css/mixins';
-.dropdown {
+.dropdown-list {
   position: absolute;
-  top: calc(100%+ 1rem);
-  background-color: palevioletred;
-
+  top: calc(100%);
+  background-color: antiquewhite;
+  border-radius: 6px;
+  padding: 2rem 1rem;
+  z-index: 2;
+  .dropdownItem--active {
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: rgba(128, 8, 8, 0.884);
+  }
 }
+

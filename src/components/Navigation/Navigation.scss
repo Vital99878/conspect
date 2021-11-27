@@ -24,4 +24,14 @@
     border-bottom: 1px solid rgba(61, 61, 61, 0.712);
     color: rgba(61, 61, 61, 0.712);
   }
+  .dropdown-list {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+  }
+  .nav-item:hover .dropdown-list {
+    height: max-content;
+    transition: all 1s ease-in-out;
+  }
 }

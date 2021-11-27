@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(DropdownMenu): если в Навигации есть подменю, то при hover должен выпадать DropdownMenu.tsx">
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/components/NavigationItem/NavigationItem.tsx" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(dropdown) DropdownMenu.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropdownMenu/DropdownMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropdownMenu/DropdownMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropdownMenu/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropdownMenu/models/Dropdown.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/models/Dropdown.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/components/NavigationItem/NavigationItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/NavigationItem/NavigationItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +154,7 @@
       <workItem from="1637761753355" duration="121000" />
       <workItem from="1638016421708" duration="6000" />
       <workItem from="1638016690273" duration="4355000" />
+      <workItem from="1638039776151" duration="2689000" />
     </task>
     <task id="LOCAL-00004" summary="rxjs not work useSubject">
       <created>1637851266761</created>
@@ -207,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638021616118</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat(dropdown) DropdownMenu.tsx">
+      <created>1638041592579</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638041592579</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -237,7 +242,8 @@
     <MESSAGE value="feat(Navigation): написал типы." />
     <MESSAGE value="feat(Navigation): написал типы и редюсер для навигации." />
     <MESSAGE value="feat(DropdownMenu): если в Навигации есть подменю, то при hover должен выпадать DropdownMenu.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(DropdownMenu): если в Навигации есть подменю, то при hover должен выпадать DropdownMenu.tsx" />
+    <MESSAGE value="feat(dropdown) DropdownMenu.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(dropdown) DropdownMenu.tsx" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
