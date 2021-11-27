@@ -1,7 +1,7 @@
 .test-typescript {
   background-color: aquamarine;
   padding: 1em 2em;
-  display: grid;
+  display: flex;
   /*place-items: center;*/
 }
 

@@ -18,7 +18,7 @@ const initialState: InitialState = {
     { label: 'Test Hooks', path: 'testHooks' },
     { label: 'Test Typescript', path: 'testTypescript' },
     { label: 'Empty Test Component', path: 'testEmptyComponent' },
-    { label: 'TS Learn', path: 'testTS' },
+    { label: 'TS Test', path: 'testTS' },
     { label: 'Rxjs Learn', path: 'testRxjs' },
   ],
 }

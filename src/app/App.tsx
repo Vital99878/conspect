@@ -10,7 +10,7 @@ import Navigation, { NavigationItem } from '../components/Navigation/Navigation'
 import TestHooks from '../pages/test/components/TestPureReact/TestPureReact'
 import { RootState } from './store/store'
 import { useSelector } from 'react-redux'
-import TestTS from '../pages/test/components/TestTS/TestTS'
+import TestTS from '../pages/test/components/TS/TestTS'
 import TestEmpty from '../pages/test/components/TestEmpty/TestEmpty'
 import RXjsPage from '../pages/rxjs/RXjs-page'
 
