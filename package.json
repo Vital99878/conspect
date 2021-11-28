@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write ./src"
+    "prettier-fix": "prettier --write ./src"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -66,17 +66,10 @@
     }
   },
   "lint-staged": {
-    "*{.js, jsx, tsx}": [
-      "npm run format",
+    "*{.js, ts, jsx, tsx }": [
+      "npm run prettier-fix",
       "pretty-quick --staged",
       "git add"
     ]
-  },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "endOfLine": "lf",
-    "printWidth": 120,
-    "semi": false
   }
 }
