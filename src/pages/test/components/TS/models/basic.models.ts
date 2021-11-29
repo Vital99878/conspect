@@ -1,3 +1,5 @@
+export type Primitive = string | number | boolean | null
+
 export type Person = {
   name: string
   age: number
