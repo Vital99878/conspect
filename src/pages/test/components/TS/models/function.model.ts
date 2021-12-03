@@ -5,3 +5,4 @@ export function tTest(data: number | string): number | string {
     console.log(data)
     return data
 }
+

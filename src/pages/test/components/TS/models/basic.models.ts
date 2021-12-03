@@ -1,5 +1,13 @@
 export type Primitive = string | number | boolean | null
-
+export type Todo = {
+  id: string
+  label?: {
+    name?: string
+  }
+}
+export type StoreTodos = {
+  store: Todo[]
+}
 export type Person = {
   name: string
   age: number
@@ -20,9 +28,6 @@ type TNumbersMethods = keyof DictionaryOfNumbers
 
 const NumbersMethods: TNumbersMethods = 'toExponential'
 
-
 type PersonKeys = keyof Person // takes keys from Person
 type AnyNameOfKey = { [key: string]: PersonKeys }
 type NotAnyNameOfKey = { [key in Dictionary]: PersonKeys }
-
-
