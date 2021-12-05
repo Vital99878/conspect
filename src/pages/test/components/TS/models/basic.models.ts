@@ -22,9 +22,9 @@ type DictionaryKeys = {
   [key in Dictionary]: number
 }
 
+type TNumbersMethods = keyof DictionaryOfNumbers
 type TStringMethods_1 = keyof Dictionary
 type TStringMethods_2 = keyof Person
-type TNumbersMethods = keyof DictionaryOfNumbers
 
 const NumbersMethods: TNumbersMethods = 'toExponential'
 
