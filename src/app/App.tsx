@@ -4,12 +4,11 @@ import TestPage from '../pages/test/test-page'
 import CssFlex from '../pages/css-list/components/CssFlex/CssFlex'
 import Navigation, { NavigationItem } from '../components/Navigation/Navigation'
 import RXjsPage from '../pages/rxjs/RXjs-page'
-import {pages} from './store/adtiveMenuItemReducer';
-import CssPage from '../pages/css-list/css-page';
-
+import { pages } from './store/adtiveMenuItemReducer'
+import CssPage from '../pages/css-list/css-page'
 
 const App: React.FC = () => {
-  const {home, css, ts, test, rxjs} = pages
+  const { home, css, ts, test, rxjs } = pages
   return (
     <Router>
       <div className="App">
@@ -21,7 +20,6 @@ const App: React.FC = () => {
             <NavigationItem props={ts} />
             <NavigationItem props={test} />
             <NavigationItem props={rxjs} />
-
           </Navigation>
           <Switch>
             <Route path={`/${css.path}`} exact component={CssPage} />

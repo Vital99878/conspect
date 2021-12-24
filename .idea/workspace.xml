@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="update(useObservableValue)">
-      <change afterPath="$PROJECT_DIR$/src/pages/css-list/css-page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/test/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/adtiveMenuItemReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/adtiveMenuItemReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TodoList/TodoList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/TodoList.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TodoList/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/TodoList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssDisplay/CssDisplay.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssDisplay/CssDisplay.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssDisplay/CssDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssDisplay/CssDisplay.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssFlex/CssFlex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssFlex/CssFlex.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssFlex/CssFlex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssFlex/CssFlex.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssGrid/CssGrid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssGrid/CssGrid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssGrid/CssGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssGrid/CssGrid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssPosition/CssPosition.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssPosition/CssPosition.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssPosition/CssPosition.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssPosition/CssPosition.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssTags/CssTags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssTags/CssTags.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssTags/CssTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssTags/CssTags.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +49,7 @@
     <scope name="src" pattern="file[ts-my-components]:src//*" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
   <component name="ProjectViewState">
@@ -84,25 +62,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/css-list" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Todos/components" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="W:\ts-my-components\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="W:\conspect\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components\Todos\components" />
+      <recent name="W:\conspect\src\components\Todos\components\Todo" />
       <recent name="W:\conspect\src\pages\css-list" />
       <recent name="W:\conspect\src\pages\rxjs\components\subject" />
       <recent name="W:\conspect\src" />
-      <recent name="W:\ts-my-components\src\rxjs\components\subject\hooks" />
-      <recent name="W:\ts-my-components\src\rxjs\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\css-list\components" />
@@ -239,7 +220,51 @@
       <option name="project" value="LOCAL" />
       <updated>1640338022913</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update(Navigation)">
+      <created>1640343701521</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640343701521</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update(Todolist)">
+      <created>1640344875275</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640344875275</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update(Todolist) need filter">
+      <created>1640348416355</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640348416355</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update(Todolist) need filter">
+      <created>1640348790937</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640348790937</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update(Todolist) need filter">
+      <created>1640354666520</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640354666520</updated>
+    </task>
+    <task active="true" id="LOCAL-00013" summary="Layout">
+      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
+      <created>1640354686765</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640354689214</updated>
+      <workItem from="1640354690102" duration="64000" />
+    </task>
+    <option name="localTasksCounter" value="14" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -265,7 +290,11 @@
     <MESSAGE value="new structure" />
     <MESSAGE value="Initialize project using Create React App" />
     <MESSAGE value="update(useObservableValue)" />
-    <option name="LAST_COMMIT_MESSAGE" value="update(useObservableValue)" />
+    <MESSAGE value="update(Navigation)" />
+    <MESSAGE value="update(Todolist)" />
+    <MESSAGE value="update(Todolist) не работает как надо AddTodoForm.tsx&#10;После добавления todo сразу ререндерится." />
+    <MESSAGE value="update(Todolist) need filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="update(Todolist) need filter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
