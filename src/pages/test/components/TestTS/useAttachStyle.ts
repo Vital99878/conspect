@@ -12,11 +12,11 @@ const sideReverse = (side: Side) => {
 
 export function useAttachStyle(el: HTMLElement, fixedTo: Position = initialPosition) {
   const [position, setPosition] = useState(el.getBoundingClientRect())
-  console.log(position)
+  const setPos = () => setPosition(el.getBoundingClientRect())
+
   useEffect(() => {
-    window.addEventListener('resize', () => {
-      setPosition(el.getBoundingClientRect())
-    })
+    window.addEventListener('resize', setPos)
+    return () => window.removeEventListener('resize', setPos)
   }, [])
 
   // return fixedTo.reduce((style, side) => {

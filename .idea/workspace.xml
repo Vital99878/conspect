@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(Navigation): редюсер для навигации. Можно использовать объект initialNavigation для плоской (без вложений) навигации по меню">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="update(useObservableValue)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useObservableValue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useObservableValue.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/observableValue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/observableValue.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/subtest.comp.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/subtest.comp.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/useAttachStyle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/useAttachStyle.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="284a40d" />
+    <option name="OPTIONS">
+      <set>
+        <option value="INTERACTIVE" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -28,6 +42,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="284a40dca478e5d9b69b19f87be9646ce50798ee" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -51,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/rxjs/components/subject" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -65,11 +82,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\rxjs\components\subject" />
       <recent name="W:\conspect\src" />
       <recent name="W:\ts-my-components\src\rxjs\components\subject\hooks" />
       <recent name="W:\ts-my-components\src\rxjs\components" />
       <recent name="W:\ts-my-components\src\rxjs\components\Ball" />
-      <recent name="W:\ts-my-components\src\rxjs\components\Ball\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\Test\components" />
@@ -192,7 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637920632649</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update(useObservableValue)">
+      <created>1640336626964</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1640336626964</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update(useObservableValue)">
+      <created>1640338022913</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640338022913</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -211,13 +242,14 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rxjs work useSubject" />
     <MESSAGE value="rxjs not work useSubject" />
     <MESSAGE value="new structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="new structure" />
+    <MESSAGE value="Initialize project using Create React App" />
+    <MESSAGE value="update(useObservableValue)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update(useObservableValue)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

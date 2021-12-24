@@ -1,2 +1,2 @@
-import { useSubject } from './useSubject'
-export default useSubject
+import { useObservableValue } from './useObservableValue'
+export default useObservableValue

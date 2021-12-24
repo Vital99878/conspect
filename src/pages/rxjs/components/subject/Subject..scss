@@ -1,10 +1,6 @@
-.ball {
-  border-radius: 50%;
-  position: fixed;
-  left: 1rem;
-  top: 1rem;
-  width: 10rem;
-  height: 10rem;
-  background-color: palevioletred;
-  transform: translate(-50%, -50%);
+.subject {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 4px;
 }
