@@ -1,16 +1,18 @@
 import React from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { setActiveMenuItem } from '../../app/store/adtiveMenuItemReducer'
+// import { setActiveMenuItem } from '../../app/store/adtiveMenuItemReducer'
 import './Menu.scss'
 import { useEffect } from 'react'
 
-export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
-export type CssLayoutList = 'layoutBudget' | '/'
-export type TestList = 'test' | 'testHooks' | 'testTypescript' | 'testEmptyComponent' | 'testTS' | 'testRxjs' | '/'
+export type Pages = '/' | 'test' | 'rxjs' | 'css' | 'ts'
+
+// export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
+// export type CssLayoutList = 'layoutBudget' | '/'
+// export type TestList = 'test' | 'testHooks' | 'testTypescript' | 'testEmptyComponent' | 'testTS' | 'testRxjs' | '/'
 export interface MenuItemType {
   label?: string
-  path: CssListForMenu | CssLayoutList | TestList
+  path: Pages
   active?: boolean
 }
 
@@ -24,7 +26,7 @@ export interface MenuItemProps {
 export const NavigationItem: React.FC<MenuItemProps> = ({ props }) => {
   const { label, active, path } = props
   const history = useHistory()
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
 
   return (
     <li key={label}>
@@ -32,7 +34,6 @@ export const NavigationItem: React.FC<MenuItemProps> = ({ props }) => {
         className={active ? 'active' : 'notActive'}
         onClick={() => {
           history.push(path)
-          dispatch(setActiveMenuItem(path))
         }}
       >
         {label}
@@ -43,11 +44,10 @@ export const NavigationItem: React.FC<MenuItemProps> = ({ props }) => {
 
 const Navigation: React.FC<MenuProps> = ({ children }) => {
   const useActivePage = () => {
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
     const location = useLocation()
     useEffect(() => {
       const currentPath = location.pathname.substring(1)
-      dispatch(setActiveMenuItem(currentPath))
     }, [])
   }
   useActivePage()

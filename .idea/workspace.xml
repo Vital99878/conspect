@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="update(useObservableValue)">
+      <change afterPath="$PROJECT_DIR$/src/pages/css-list/css-page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/test/components/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useObservableValue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useObservableValue.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/observableValue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/observableValue.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/subtest.comp.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/subtest.comp.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/useAttachStyle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/useAttachStyle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/adtiveMenuItemReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/adtiveMenuItemReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TodoList/TodoList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/TodoList.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TodoList/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/TodoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssDisplay/CssDisplay.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssDisplay/CssDisplay.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssDisplay/CssDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssDisplay/CssDisplay.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssFlex/CssFlex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssFlex/CssFlex.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssFlex/CssFlex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssFlex/CssFlex.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssGrid/CssGrid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssGrid/CssGrid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssGrid/CssGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssGrid/CssGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssPosition/CssPosition.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssPosition/CssPosition.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssPosition/CssPosition.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssPosition/CssPosition.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssTags/CssTags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssTags/CssTags.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css-list/CssTags/CssTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css-list/components/CssTags/CssTags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +70,9 @@
   <component name="NamedScopeManager">
     <scope name="src" pattern="file[ts-my-components]:src//*" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
@@ -68,7 +84,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/rxjs/components/subject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/css-list" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -82,18 +98,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\css-list" />
       <recent name="W:\conspect\src\pages\rxjs\components\subject" />
       <recent name="W:\conspect\src" />
       <recent name="W:\ts-my-components\src\rxjs\components\subject\hooks" />
       <recent name="W:\ts-my-components\src\rxjs\components" />
-      <recent name="W:\ts-my-components\src\rxjs\components\Ball" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\css-list\components" />
+      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\pages\Test\components" />
       <recent name="W:\conspect\src\app\store" />
       <recent name="W:\conspect\src\css" />
-      <recent name="W:\conspect\src\hooks" />
-      <recent name="W:\conspect\src\pages" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">

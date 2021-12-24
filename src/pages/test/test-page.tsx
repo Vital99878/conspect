@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useWindowWidth } from '../../hooks/customHooks'
 import './index.css'
+import {TestTS, TestPureReact, TestEmpty} from './components'
+
 
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode
@@ -9,11 +11,10 @@ type TestPropsChildren = {
 const TestPage: React.FC<TestPropsChildren> = () => {
   const windowWidth = useWindowWidth()
   return (
-    <div className="list">
-      <div>
-        <p>{`width: ${windowWidth}`}</p>
-      </div>
-      Test component
+    <div className="test-components">
+        <TestTS/>
+        {/* <TestEmpty/>*/}
+        {/* <TestPureReact/>*/}
     </div>
   )
 }
