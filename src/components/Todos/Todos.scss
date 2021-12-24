@@ -20,8 +20,12 @@
     @include button;
   }
 }
-.todolist {
+.todos {
+  padding: 1.6rem;
   border: 2px solid green;
   border-radius: 6px;
   background-color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }

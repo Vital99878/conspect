@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="update(Navigation)&#10;feat(Layout) create">
+      <change afterPath="$PROJECT_DIR$/src/pages/test/test-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Todos/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -79,11 +84,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\test" />
+      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\components\Todos\components" />
       <recent name="W:\conspect\src\components\Todos\components\Todo" />
       <recent name="W:\conspect\src\pages\css-list" />
-      <recent name="W:\conspect\src\pages\rxjs\components\subject" />
-      <recent name="W:\conspect\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\css-list\components" />
@@ -113,7 +118,7 @@
         <item itemvalue="Node.js.classStaticMethods.js" />
         <item itemvalue="npm.start" />
         <item itemvalue="Node.js.classStaticMethods.js" />
-        <item itemvalue="Node.js.classStaticMethods.js" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +168,7 @@
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1637761874883</updated>
+      <updated>1640356298697</updated>
       <workItem from="1636308586879" duration="1689000" />
       <workItem from="1636351123983" duration="19000" />
       <workItem from="1636453418531" duration="701000" />
@@ -179,6 +184,7 @@
       <workItem from="1637909065563" duration="3046000" />
       <workItem from="1637917505115" duration="3132000" />
       <workItem from="1637925596769" duration="1078000" />
+      <workItem from="1640356299145" duration="2432000" />
     </task>
     <task id="LOCAL-00003" summary="Menu">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
@@ -255,16 +261,58 @@
       <option name="project" value="LOCAL" />
       <updated>1640354666520</updated>
     </task>
-    <task active="true" id="LOCAL-00013" summary="Layout">
+    <task id="LOCAL-00013" summary="Layout">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
       <created>1640354686765</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1640354689214</updated>
-      <workItem from="1640354690102" duration="64000" />
+      <updated>1640356298697</updated>
+      <workItem from="1640354690102" duration="1595000" />
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update(Todolist) need filter">
+      <created>1640354768853</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1640354768853</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update(Navigation)">
+      <created>1640357198564</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1640357198564</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update(Navigation)&#10;feat(Layout) create">
+      <created>1640357254129</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1640357254129</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update(Navigation)&#10;feat(Layout) create">
+      <created>1640357285976</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1640357285976</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update(Navigation)&#10;feat(Layout) create">
+      <created>1640357568796</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1640357568796</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update(Navigation)&#10;feat(Layout) create">
+      <created>1640357578319</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1640357578319</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -290,11 +338,12 @@
     <MESSAGE value="new structure" />
     <MESSAGE value="Initialize project using Create React App" />
     <MESSAGE value="update(useObservableValue)" />
-    <MESSAGE value="update(Navigation)" />
     <MESSAGE value="update(Todolist)" />
     <MESSAGE value="update(Todolist) не работает как надо AddTodoForm.tsx&#10;После добавления todo сразу ререндерится." />
     <MESSAGE value="update(Todolist) need filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="update(Todolist) need filter" />
+    <MESSAGE value="update(Navigation)" />
+    <MESSAGE value="update(Navigation)&#10;feat(Layout) create" />
+    <option name="LAST_COMMIT_MESSAGE" value="update(Navigation)&#10;feat(Layout) create" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

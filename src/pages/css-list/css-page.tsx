@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../../components/Layout/Layout'
 import CssFlex from './components/CssFlex/CssFlex'
 import CssGrid from './components/CssGrid/CssGrid'
 import CssDisplay from './components/CssDisplay/CssDisplay'
@@ -11,13 +12,15 @@ type TestPropsChildren = {
 
 const CssPage: React.FC<TestPropsChildren> = () => {
   return (
-    <div className="css-page">
-       <CssFlex/>
-      <CssGrid/>
-      <CssPosition/>
-      <CssDisplay/>
-      <CssTags/>
-    </div>
+    <Layout pageHeading="CSS Page">
+      <div className="css-page">
+        <CssFlex />
+        <CssGrid />
+        <CssPosition />
+        <CssDisplay />
+        <CssTags />
+      </div>
+    </Layout>
   )
 }
 

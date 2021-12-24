@@ -1,9 +1,7 @@
 import React from 'react'
-import { useHistory, useLocation } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-// import { setActiveMenuItem } from '../../app/store/adtiveMenuItemReducer'
+import { useHistory } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Menu.scss'
-import { useEffect } from 'react'
 
 export type Pages = '/' | 'test' | 'rxjs' | 'css' | 'ts'
 
@@ -24,34 +22,20 @@ export interface MenuItemProps {
 }
 
 export const NavigationItem: React.FC<MenuItemProps> = ({ props }) => {
-  const { label, active, path } = props
+  const { label, path } = props
   const history = useHistory()
-  // const dispatch = useDispatch()
+  const goToPage = () => history.push(path)
 
   return (
     <li key={label}>
-      <a
-        className={active ? 'active' : 'notActive'}
-        onClick={() => {
-          history.push(path)
-        }}
-      >
+      <NavLink to={path} onClick={goToPage}>
         {label}
-      </a>
+      </NavLink>
     </li>
   )
 }
 
 const Navigation: React.FC<MenuProps> = ({ children }) => {
-  const useActivePage = () => {
-    // const dispatch = useDispatch()
-    const location = useLocation()
-    useEffect(() => {
-      const currentPath = location.pathname.substring(1)
-    }, [])
-  }
-  useActivePage()
-
   return (
     <nav>
       <ul className="menu">{children}</ul>
