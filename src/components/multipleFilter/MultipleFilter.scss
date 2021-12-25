@@ -1,0 +1,12 @@
+.singleFilter {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  //flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid lightcoral;
+
+  input:hover, label:hover {
+    cursor: pointer;
+  }
+}

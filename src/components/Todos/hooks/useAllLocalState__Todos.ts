@@ -6,7 +6,7 @@ const initialTodos: TodoType[] = [
   { id: 2, label: 'new 2', status: 'doing' },
 ]
 
-export function useTodos(todos: TodoType[] = initialTodos) {
+export function useAllLocalStateTodos(todos: TodoType[] = initialTodos) {
   const [todoList, setTodoList] = useState(todos)
 
   const addTodo = (label: string) => {

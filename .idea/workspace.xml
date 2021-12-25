@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(SingleFilter) not working state normally,&#10;update(Todos) create updateStatusTodo">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(MultipleFilter) have done logic that shows filtered items. Component need to structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/singleFilter/SingleFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFilter/SingleFilter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/singleFilter/hooks/useFilter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFilter/hooks/useFilter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +69,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/z_new-component" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,10 +85,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\components\z_new-component" />
       <recent name="W:\conspect\src\components\z_new-component\hooks" />
       <recent name="W:\conspect\src\components\z_new-component\models" />
-      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\pages\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -365,7 +363,42 @@
       <option name="project" value="LOCAL" />
       <updated>1640424021585</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feat(SingleFilter) not working state normally,&#10;update(Todos) create updateStatusTodo">
+      <created>1640425086979</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1640425086979</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat(MultipleFilter) need to create All checkbox">
+      <created>1640429494806</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1640429494806</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat(MultipleFilter) need to create All checkbox">
+      <created>1640435511437</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1640435511437</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat(MultipleFilter) have done logic that shows filtered items. Component need to structure">
+      <created>1640442926912</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1640442926912</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat(MultipleFilter) have done logic that shows filtered items. Component need to structure">
+      <created>1640444031556</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1640444031556</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -401,7 +434,10 @@
     <MESSAGE value="feat(z_new-component) update" />
     <MESSAGE value="feat(SingleFilter) not working state normally" />
     <MESSAGE value="feat(SingleFilter) not working state normally,&#10;update(Todos) create updateStatusTodo" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(SingleFilter) not working state normally,&#10;update(Todos) create updateStatusTodo" />
+    <MESSAGE value="feat(MultipleFilter)" />
+    <MESSAGE value="feat(MultipleFilter) need to create All checkbox" />
+    <MESSAGE value="feat(MultipleFilter) have done logic that shows filtered items. Component need to structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(MultipleFilter) have done logic that shows filtered items. Component need to structure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

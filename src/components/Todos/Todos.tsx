@@ -2,10 +2,10 @@ import React from 'react'
 import './Todos.scss'
 import Todo from './components/Todo/Todo'
 import AddTodoForm from './components/AddTodoForm/AddTodoForm'
-import { useTodos } from './hooks/useAllLocalState__Todos'
+import { useAllLocalStateTodos } from './hooks/useAllLocalState__Todos'
 
 const Todos: React.FC = () => {
-  const { todoList, deleteTodo, addTodo, renameTodo } = useTodos()
+  const { todoList, deleteTodo, addTodo, renameTodo } = useAllLocalStateTodos()
   return (
     <article className="todos">
       <ul>

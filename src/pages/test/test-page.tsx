@@ -5,6 +5,7 @@ import Layout from '../../components/Layout/Layout'
 import { TestTS, TestPureReact, TestEmpty } from './components'
 import Todos from '../../components/Todos/Todos'
 import SingleFilter from '../../components/singleFilter/SingleFilter'
+import MultipleFilter from '../../components/multipleFilter/MultipleFilter'
 
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode
@@ -16,9 +17,9 @@ const TestPage: React.FC<TestPropsChildren> = () => {
     <Layout pageHeading="Test page">
       <div className="test-components">
         <SingleFilter />
-        <SingleFilter />
+        <MultipleFilter />
         <Todos />
-        {/* <TestTS />*/}
+        <TestTS />
         {/* <TestEmpty />*/}
         {/* <TestPureReact />*/}
       </div>
