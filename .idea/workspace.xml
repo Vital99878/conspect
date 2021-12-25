@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(singleFilter) logic have done. without style">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(z_new-component) update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/singleFilter/SingleFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFilter/SingleFilter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/z_new-component/hooks/useHook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/z_new-component/hooks/useHook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/z_new-component/mock/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/z_new-component/mock/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/z_new-component/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/z_new-component/models/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/z_new-component/models/new.model..ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/z_new-component/models/new.model..ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="NamedScopeManager">
     <scope name="src" pattern="file[ts-my-components]:src//*" />
   </component>
@@ -66,7 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/z_new-component" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -82,11 +88,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components\z_new-component" />
+      <recent name="W:\conspect\src\components\z_new-component\hooks" />
+      <recent name="W:\conspect\src\components\z_new-component\models" />
       <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\pages\test" />
-      <recent name="W:\conspect\src\components\Todos\components" />
-      <recent name="W:\conspect\src\components\Todos\components\Todo" />
-      <recent name="W:\conspect\src\pages\css-list" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\css-list\components" />
@@ -182,7 +188,8 @@
       <workItem from="1637909065563" duration="3046000" />
       <workItem from="1637917505115" duration="3132000" />
       <workItem from="1637925596769" duration="1078000" />
-      <workItem from="1640356299145" duration="8856000" />
+      <workItem from="1640356299145" duration="8981000" />
+      <workItem from="1640418964020" duration="699000" />
     </task>
     <task id="LOCAL-00003" summary="Menu">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
@@ -331,7 +338,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640366854907</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat(singleFilter) logic have done. without style">
+      <created>1640367231545</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1640367231545</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat(z_new-component) update">
+      <created>1640419331676</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1640419331676</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -364,7 +385,8 @@
     <MESSAGE value="update(Navigation)&#10;feat(Layout) create" />
     <MESSAGE value="feat(singleFilter) create" />
     <MESSAGE value="feat(singleFilter) logic have done. without style" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(singleFilter) logic have done. without style" />
+    <MESSAGE value="feat(z_new-component) update" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(z_new-component) update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
