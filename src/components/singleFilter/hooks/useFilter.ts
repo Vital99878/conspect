@@ -3,20 +3,20 @@ import { LabelItem } from '../SingleFilter'
 
 const initialFilter: LabelItem[] = [
   { label: 'first', isActive: false },
-  { label: 'second', isActive: false },
+  { label: 'second', isActive: true },
   { label: 'third', isActive: false },
 ]
 
 export const useFilter = () => {
   const [filter, setFilter] = useState(initialFilter)
+
   const updateFilter = (label: string) => {
-    setFilter((filter) => {
-      return filter.map((item) => {
-        item.isActive = false
-        if (item.label === label) item.isActive = !item.isActive
+    setFilter((filter) =>
+      filter.map((item) => {
+        item.label === label ? (item.isActive = !item.isActive) : (item.isActive = false)
         return item
       })
-    })
+    )
   }
 
   return { filter, updateFilter }

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(z_new-component) update">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat(SingleFilter) not working state normally,&#10;update(Todos) create updateStatusTodo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/z_new-component/hooks/useHook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/z_new-component/hooks/useHook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/z_new-component/mock/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/z_new-component/mock/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/z_new-component/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/z_new-component/models/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/z_new-component/models/new.model..ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/z_new-component/models/new.model..ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/singleFilter/SingleFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFilter/SingleFilter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/singleFilter/hooks/useFilter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFilter/hooks/useFilter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +351,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640419331676</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat(SingleFilter) not working state normally">
+      <created>1640423565980</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1640423565980</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat(SingleFilter) not working state normally,&#10;update(Todos) create updateStatusTodo">
+      <created>1640424021585</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1640424021585</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -386,7 +399,9 @@
     <MESSAGE value="feat(singleFilter) create" />
     <MESSAGE value="feat(singleFilter) logic have done. without style" />
     <MESSAGE value="feat(z_new-component) update" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(z_new-component) update" />
+    <MESSAGE value="feat(SingleFilter) not working state normally" />
+    <MESSAGE value="feat(SingleFilter) not working state normally,&#10;update(Todos) create updateStatusTodo" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(SingleFilter) not working state normally,&#10;update(Todos) create updateStatusTodo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

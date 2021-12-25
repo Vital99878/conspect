@@ -27,6 +27,17 @@ export function useTodos(todos: TodoType[] = initialTodos) {
       })
     )
   }
+  const changeStatusTodo = (updatedTodo: TodoType) => {
+    setTodoList((todos) =>
+      todos.map((todo) => {
+        if (todo.id === updatedTodo.id) {
+          todo.status = updatedTodo.status
+          return todo
+        }
+        return todo
+      })
+    )
+  }
   const filterTodo = (id: number) => {
     setTodoList((todos) => todos.filter((todo) => todo.id !== id))
   }
