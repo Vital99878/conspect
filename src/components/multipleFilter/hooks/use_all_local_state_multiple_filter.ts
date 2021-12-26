@@ -1,25 +1,63 @@
-import { useState } from 'react'
+import { ChangeEvent, useEffect, useMemo, useState } from 'react'
+import { useLocalStorage } from '../../../hooks/customHooks'
+import { isAllCheckedOrUnchecked, queriesToFilter } from '../utils'
+import { useHistory, useLocation } from 'react-router-dom'
 
-const initialFilter: { [key: string]: boolean } = {
-  first: false,
-  second: false,
-  third: false,
-}
+type MultipleFilter = { [key: string]: boolean }
+// type Props = {
+//   filter: MultipleFilter
+// }
+//
+// type Returned = {
+//   filter: MultipleFilter
+//   updateFilter: React.Dispatch<React.SetStateAction<MultipleFilter>>
+//   setAll: React.Dispatch<React.SetStateAction<MultipleFilter>>
+//   isAllChecked: boolean
+// }
 
-export function useAllLocalStateMultipleFilter() {
-  const [filter, setFilter] = useState(initialFilter)
-
-  const checkIsAll = (): boolean => {
-    const isAllChecked = Object.values(filter).reduce((count, isChecked) => {
-      count += Number(isChecked)
-      return count
-    }, 0)
-    return isAllChecked === Object.values(filter).length
+export function useAllLocalStateMultipleFilter(
+  initialFilter = {
+    first: false,
+    second: false,
+    third: false,
   }
-  const updateFilter = (label: string) => {
+) {
+  const history = useHistory()
+  const { search } = useLocation()
+  // const [lsFilter, setLSFilter] = useLocalStorage('filter', initialFilter)
+  const [filter, setFilter] = useState<MultipleFilter>(initialFilter)
+
+  useEffect(() => {
+    // use search queries params to set filter
+    if (!search) return
+    if (search) {
+      const checkedFieldsFromSearchQueries = queriesToFilter(search as `?${string}`)
+      setFilter((filter) => ({ ...filter, ...checkedFieldsFromSearchQueries }))
+    }
+  }, [])
+
+  useEffect(() => {
+    // use filter to update url search queries params
+    const checkedFilters = Object.entries(filter).filter((item) => item[1])
+    if (!checkedFilters.length) {
+      history.push(`/test`)
+      return
+    }
+    const queries = checkedFilters.reduce((acc, filter, index) => {
+      const query = filter[0]
+      const param = filter[1]
+      const isLastItem = !Boolean(checkedFilters[index + 1])
+      if (filter[1] && !isLastItem) acc += `${query}=${param}&`
+      if (filter[1] && isLastItem) acc += `${query}=${param}`
+      return acc
+    }, '')
+    history.push(`/test?${queries}`)
+  }, [filter])
+
+  const updateFilter = (label: string): void => {
     setFilter((state) => ({ ...state, ...{ [label]: !state[label] } }))
   }
-  const setAll = (evt: any) => {
+  const setAllFilter = (evt: ChangeEvent<HTMLInputElement>): void => {
     setFilter((filter) => {
       const filterKeys = Object.keys(filter)
       return filterKeys.reduce((acc, filterKey) => {
@@ -29,5 +67,10 @@ export function useAllLocalStateMultipleFilter() {
     })
   }
 
-  return { filter: filter, updateFilter, setAll, isAllChecked: checkIsAll() }
+  return {
+    filter,
+    updateFilter,
+    setAllFilter,
+    ...isAllCheckedOrUnchecked(filter),
+  }
 }

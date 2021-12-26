@@ -16,11 +16,11 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   return (
     <Layout pageHeading="Test page">
       <div className="test-components">
-        <SingleFilter />
+        {/* <SingleFilter />*/}
         <MultipleFilter />
-        <Todos />
-        <TestTS />
-        {/* <TestEmpty />*/}
+        {/* <Todos />*/}
+        {/* <TestTS />*/}
+        <TestEmpty />
         {/* <TestPureReact />*/}
       </div>
     </Layout>
