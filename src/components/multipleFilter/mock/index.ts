@@ -1,3 +1,12 @@
+import useObservableValue from '../../../pages/rxjs/components/subject/hooks'
+import { BehaviorSubject } from 'rxjs'
+
+const initialFilter = {
+  first: false,
+  second: false,
+  third: false,
+}
+
 export const mock = [
   {
     label: '1',
@@ -26,3 +35,5 @@ export const mock = [
     categories: ['first', 'third'],
   },
 ]
+
+export const filter$ = new BehaviorSubject(initialFilter)

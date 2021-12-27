@@ -10,17 +10,20 @@ import { useHistory, useLocation } from 'react-router-dom'
  */
 
 const MultipleFilter: React.FC = () => {
-  const { filter, updateFilter, setAllFilter, isAllChecked, isAllUnchecked } = useAllLocalStateMultipleFilter()
-  const filters = Object.entries(filter)
+  const { updateFilter, setAllFilter, isAllChecked, isAllUnchecked, filterStream$, filter } =
+    useAllLocalStateMultipleFilter()
+  const filters = Object.entries(filterStream$ as { [k: string]: boolean })
+  // const filters = Object.entries(filter)
+  console.log('filterStream$: ', filterStream$)
 
   // <editor-fold desc="Логика для проверки работы фильтра. Имитрует отображение данных после фитрации. Нужно будет перенести ее куда-нибудь позже">
   function isAllCategoriesMatch(item: { categories: string[] }): boolean {
-    const quantityEnabledFilterKeys = Object.values(filter).filter((item) => item).length
+    const quantityEnabledFilterKeys = Object.values(filterStream$).filter((item) => item).length
     let quantityItemCategories = item.categories.length
     if (quantityEnabledFilterKeys !== quantityItemCategories) return false
 
     item.categories.forEach((item) => {
-      if (filter[item]) quantityItemCategories--
+      if (filterStream$[item]) quantityItemCategories--
     })
     return quantityItemCategories === 0
   }

@@ -1,9 +1,10 @@
 import { ChangeEvent, useEffect, useMemo, useState } from 'react'
-import { useLocalStorage } from '../../../hooks/customHooks'
 import { isAllCheckedOrUnchecked, queriesToFilter } from '../utils'
 import { useHistory, useLocation } from 'react-router-dom'
+import useObservableValue from '../../../pages/rxjs/components/subject/hooks'
+import { filter$ } from '../mock'
 
-type MultipleFilter = { [key: string]: boolean }
+export type MultipleFilter = { [key: string]: boolean }
 // type Props = {
 //   filter: MultipleFilter
 // }
@@ -27,8 +28,11 @@ export function useAllLocalStateMultipleFilter(
   // const [lsFilter, setLSFilter] = useLocalStorage('filter', initialFilter)
   const [filter, setFilter] = useState<MultipleFilter>(initialFilter)
 
+  const { field: filterStream$, updateField } = useObservableValue(filter$, initialFilter)
+
   useEffect(() => {
-    // use search queries params to set filter
+    updateField(initialFilter)
+    // set filter if search queries exist in the url
     if (!search) return
     if (search) {
       const checkedFieldsFromSearchQueries = queriesToFilter(search as `?${string}`)
@@ -37,7 +41,12 @@ export function useAllLocalStateMultipleFilter(
   }, [])
 
   useEffect(() => {
-    // use filter to update url search queries params
+    // update observable if filter changes
+    updateField(filter)
+  }, [filter])
+
+  useEffect(() => {
+    // updating url search queries params if filter changes
     const checkedFilters = Object.entries(filter).filter((item) => item[1])
     if (!checkedFilters.length) {
       history.push(`/test`)
@@ -55,7 +64,9 @@ export function useAllLocalStateMultipleFilter(
   }, [filter])
 
   const updateFilter = (label: string): void => {
-    setFilter((state) => ({ ...state, ...{ [label]: !state[label] } }))
+    setFilter((state) => {
+      return { ...state, ...{ [label]: !state[label] } }
+    })
   }
   const setAllFilter = (evt: ChangeEvent<HTMLInputElement>): void => {
     setFilter((filter) => {
@@ -72,5 +83,6 @@ export function useAllLocalStateMultipleFilter(
     updateFilter,
     setAllFilter,
     ...isAllCheckedOrUnchecked(filter),
+    filterStream$,
   }
 }

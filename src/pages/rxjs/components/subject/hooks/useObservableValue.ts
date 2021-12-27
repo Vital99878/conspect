@@ -1,19 +1,22 @@
 import { BehaviorSubject } from 'rxjs'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 
 /**
  * Хук, который получает BehaviorSubject. Позволяет использовать состояние.
  */
 
-export const useObservableValue = (value$: BehaviorSubject<any>): { field: string; updateField: any } => {
-  const [field, setFiled] = useState<string>('initial')
+export const useObservableValue = (
+  value$: BehaviorSubject<any>,
+  initialData?: any
+): { field: any; updateField(data: any): void } => {
+  const [field, setFiled] = useState((initialData = ''))
 
-  const updateField = (text: string) => {
-    value$.next(text)
-  }
+  const updateField = useCallback((data: any) => {
+    value$.next(data)
+  }, [])
 
   useEffect(() => {
-    const subscription = value$.subscribe((data) => setFiled(data as string))
+    const subscription = value$.subscribe((data) => setFiled(data))
     return () => subscription.unsubscribe()
   }, [])
 

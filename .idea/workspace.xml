@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="test(MultipleFilter)">
-      <change afterPath="$PROJECT_DIR$/src/components/multipleFilter/test/queriesToFilter.test.ts" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="update (useAllLocalStateMultipleFilter hook) подключил stream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -468,7 +465,28 @@
       <option name="project" value="LOCAL" />
       <updated>1640590019912</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="test(MultipleFilter)">
+      <created>1640594291861</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1640594291861</updated>
+    </task>
+    <task id="LOCAL-00038" summary="update (useAllLocalStateMultipleFilter hook) подключил stream">
+      <created>1640600233373</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1640600233373</updated>
+    </task>
+    <task id="LOCAL-00039" summary="update (useAllLocalStateMultipleFilter hook) подключил stream">
+      <created>1640600247717</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1640600247717</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -510,7 +528,8 @@
     <MESSAGE value="feat(MultipleFilter) update hook useAllLocalStateMultipleFilter" />
     <MESSAGE value="feat(MultipleFilter) update hook useAllLocalStateMultipleFilter: add queries params to setFilter" />
     <MESSAGE value="test(MultipleFilter)" />
-    <option name="LAST_COMMIT_MESSAGE" value="test(MultipleFilter)" />
+    <MESSAGE value="update (useAllLocalStateMultipleFilter hook) подключил stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="update (useAllLocalStateMultipleFilter hook) подключил stream" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

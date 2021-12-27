@@ -18,9 +18,9 @@ const TestPage: React.FC<TestPropsChildren> = () => {
       <div className="test-components">
         {/* <SingleFilter />*/}
         <MultipleFilter />
-        {/* <Todos />*/}
+        <Todos />
         {/* <TestTS />*/}
-        <TestEmpty />
+        {/* <TestEmpty />*/}
         {/* <TestPureReact />*/}
       </div>
     </Layout>
