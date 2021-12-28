@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useReducer, useLayoutEffect } from 'react'
 import './TestEmpty.css'
+import { interval, fromEvent } from 'rxjs'
+import { switchMap } from 'rxjs/operators'
 
 const TestEmpty = () => {
   const [renderEl, setRenderEl] = useState([])
@@ -14,6 +16,7 @@ const TestEmpty = () => {
       <h1>Empty Test React component</h1>
       <input autoFocus={true} defaultValue={'test '} />
       <ul>
+        `
         {renderEl.map((number) => (
           <li key={number}>{number}</li>
         ))}

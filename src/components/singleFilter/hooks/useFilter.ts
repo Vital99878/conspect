@@ -10,13 +10,22 @@ const initialFilter: LabelItem[] = [
 export const useFilter = () => {
   const [filter, setFilter] = useState(initialFilter)
 
-  const updateFilter = (label: string) => {
-    setFilter((filter) =>
-      filter.map((item) => {
-        item.label === label ? (item.isActive = !item.isActive) : (item.isActive = false)
+  // const updateFilter = (label: string) => {
+  //   setFilter((filter) =>
+  //     filter.map((item) => {
+  //       item.label === label ? (item.isActive = !item.isActive) : (item.isActive = false)
+  //       return item
+  //     })
+  //   )
+  // }
+
+  const updateFilter = (label: string): void => {
+    setFilter((state) => {
+      return state.map(((item) => {
+        item.label === label ? item.isActive = !item.isActive : item.isActive = false
         return item
-      })
-    )
+      }))
+    })
   }
 
   return { filter, updateFilter }
