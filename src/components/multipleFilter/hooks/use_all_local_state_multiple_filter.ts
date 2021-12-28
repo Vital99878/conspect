@@ -16,6 +16,11 @@ export type MultipleFilter = { [key: string]: boolean }
 //   isAllChecked: boolean
 // }
 
+/**
+ * Вся логика фильтра в этом хуке.
+ * При использовании filter$ рендер работает неправильно.Рендерятся все MultipleFilter при апдейте одного
+ */
+
 export function useAllLocalStateMultipleFilter(
   initialFilter = {
     first: false,
@@ -28,11 +33,11 @@ export function useAllLocalStateMultipleFilter(
   // const [lsFilter, setLSFilter] = useLocalStorage('filter', initialFilter)
   const [filter, setFilter] = useState<MultipleFilter>(initialFilter)
 
+  // Todo При использовании filter$ рендер работает неправильно.Рендерятся все MultipleFilter при апдейте одного
   const { field: filterStream$, updateField } = useObservableValue(filter$, initialFilter)
 
   useEffect(() => {
-    updateField(initialFilter)
-    // set filter if search queries exist in the url
+    // set filter if search queries exist in the url. need to Redirect from link
     if (!search) return
     if (search) {
       const checkedFieldsFromSearchQueries = queriesToFilter(search as `?${string}`)
@@ -41,19 +46,10 @@ export function useAllLocalStateMultipleFilter(
   }, [])
 
   useEffect(() => {
-    // update observable if filter changes
-    updateField(filter)
-  }, [filter])
-
-  useEffect(() => {
-    // updating url search queries params if filter changes
+    // updateField(filter)
     const queries = filterToQueries(filter)
-    console.log('queries: ', queries)
-    if (!queries) {
-      history.push('/test')
-      return
-    }
-    history.push(`/test?${queries}`)
+    // window.history.pushState({path: `/test?${queries}`}, 'undefined');
+    // history.push(`/test?${queries}`)
   }, [filter])
 
   const updateFilter = (label: string): void => {
@@ -64,15 +60,15 @@ export function useAllLocalStateMultipleFilter(
   const setAllFilter = (evt: ChangeEvent<HTMLInputElement>): void => {
     setFilter((filter) => {
       const filterKeys = Object.keys(filter)
-      return filterKeys.reduce((acc, filterKey) => {
+      return filterKeys.reduce<Record<string, boolean>>((acc, filterKey) => {
         acc[filterKey] = evt.target.checked
         return acc
-      }, {} as { [key: string]: boolean })
+      }, {})
     })
   }
 
   return {
-    filter,
+    filter: Object.entries(filter as { [k: string]: boolean }),
     updateFilter,
     setAllFilter,
     ...isAllCheckedOrUnchecked(filter),

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="test (MultipleFilter utils)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="refactoring (MultipleFilter)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
     <scope name="src" pattern="file[ts-my-components]:src//*" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
   <component name="ProjectViewState">
@@ -69,6 +67,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
@@ -102,7 +101,7 @@
       <recent name="W:\conspect\src\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.should be search query param string">
+  <component name="RunManager" selected="Jest.should check existing categories">
     <configuration name="возвращает фильтр из строки search queries" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -116,16 +115,16 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="два плюс два равно четыре" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="возвращает &lt;Partial&gt; фильтр из строки search queries" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/multipleFilter/test/queriesToFilter.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" />
       <test-names>
-        <test-name value="два плюс два равно четыре" />
+        <test-name value="возвращает &lt;Partial&gt; фильтр из строки search queries" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -155,16 +154,26 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
+    <configuration name="should check existing categories" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" />
+      <test-names>
+        <test-name value="should check existing categories" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.should check existing categories" />
+        <item itemvalue="Jest.возвращает &lt;Partial&gt; фильтр из строки search queries" />
         <item itemvalue="Jest.should be search query param string" />
         <item itemvalue="Jest.check object keys what all keys true or all false" />
         <item itemvalue="Jest.возвращает фильтр из строки search queries" />
-        <item itemvalue="Jest.два плюс два равно четыре" />
-        <item itemvalue="Node.js.scratch.js" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640600247717</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="refactoring (MultipleFilter)">
+      <created>1640682134801</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1640682134801</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -544,7 +560,8 @@
     <MESSAGE value="feat(MultipleFilter) update hook useAllLocalStateMultipleFilter: add queries params to setFilter" />
     <MESSAGE value="test(MultipleFilter)" />
     <MESSAGE value="update (useAllLocalStateMultipleFilter hook) подключил stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="update (useAllLocalStateMultipleFilter hook) подключил stream" />
+    <MESSAGE value="refactoring (MultipleFilter)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring (MultipleFilter)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

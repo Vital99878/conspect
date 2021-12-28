@@ -3,7 +3,7 @@ import { LabelItem } from '../SingleFilter'
 
 const initialFilter: LabelItem[] = [
   { label: 'first', isActive: false },
-  { label: 'second', isActive: true },
+  { label: 'second', isActive: false },
   { label: 'third', isActive: false },
 ]
 

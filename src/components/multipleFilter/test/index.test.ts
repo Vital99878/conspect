@@ -1,6 +1,7 @@
-import { queriesToFilter, isAllCheckedOrUnchecked, filterToQueries } from '../utils'
+import { queriesToFilter, isAllCheckedOrUnchecked, filterToQueries, isAllCategoriesMatch } from '../utils'
+import { items, initialFilter } from '../mock'
 
-test('возвращает <Partial> фильтр из строки search queries', () => {
+test('should return Partial filter from search queries string', () => {
   expect(queriesToFilter('?first=true&third=true')).toStrictEqual({
     first: true,
     third: true,
@@ -13,10 +14,10 @@ test('возвращает <Partial> фильтр из строки search queri
 
 test('should be search query param string', () => {
   expect(
-      filterToQueries({
-        first: true,
-        second: true,
-      })
+    filterToQueries({
+      first: true,
+      second: true,
+    })
   ).toEqual('first=true&second=true')
   expect(
     filterToQueries({
@@ -57,4 +58,19 @@ describe('should be check what all object\'s keys true or all false', () => {
       isAllUnchecked: false,
     })
   })
+})
+
+test('should check existing categories in item', () => {
+  expect(
+    isAllCategoriesMatch(
+      { categories: ['first', 'second'] },
+      { first: true, second: false, third: false }
+    )
+  ).toBeFalsy()
+  expect(
+    isAllCategoriesMatch(
+      { categories: ['first', 'second'] },
+      { first: true, second: true, third: false }
+    )
+  ).toBeTruthy()
 })

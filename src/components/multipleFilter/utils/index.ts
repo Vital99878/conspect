@@ -52,3 +52,22 @@ export function filterToQueries(object: { [k: string]: boolean }): string {
     return acc
   }, '')
 }
+
+/**
+ * проверяет, все ли включенные фильтры существуют у item.categories
+ * Используется в качестве колбека для фильтрации массива по совпадающим категориям.
+ * @param item { }
+ * @param filter: { [string]: boolean }
+ * @return Boolean
+ */
+
+export function isAllCategoriesMatch(item: { categories: string[] }, filter: MultipleFilter): boolean {
+  const quantityEnabledFilterKeys = Object.values(filter).filter((item) => item).length
+  let quantityItemCategories = item.categories.length
+  if (quantityEnabledFilterKeys !== quantityItemCategories) return false
+
+  item.categories.forEach((item) => {
+    if (filter[item]) quantityItemCategories--
+  })
+  return quantityItemCategories === 0
+}
