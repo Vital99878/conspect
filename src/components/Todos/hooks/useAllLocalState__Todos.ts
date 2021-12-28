@@ -9,20 +9,16 @@ const initialTodos: TodoType[] = [
 export function useAllLocalStateTodos(todos: TodoType[] = initialTodos) {
   const [todoList, setTodoList] = useState(todos)
 
-  const addTodo = (label: string) => {
-    const newTodo: TodoType = { id: Math.random(), label, status: 'doing' }
+  const addTodo = (newTodo: TodoType) => {
     setTodoList((todos) => [newTodo, ...todos])
   }
-  const deleteTodo = (id: number) => {
-    setTodoList((todos) => todos.filter((todo) => todo.id !== id))
+  const deleteTodo = (deletedTodo: TodoType) => {
+    setTodoList((todos) => todos.filter((todo) => todo.id !== deletedTodo.id))
   }
-  const renameTodo = (renamedTodo: Partial<TodoType>) => {
+  const renameTodo = (renamedTodo: TodoType) => {
     setTodoList((todos) =>
       todos.map((todo) => {
-        if (todo.id === renamedTodo.id) {
-          todo.label = 'new label'
-          return todo
-        }
+        todo.id === renamedTodo.id ? todo.label = 'new label' : null
         return todo
       })
     )
