@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="update (useAllLocalStateMultipleFilter hook) подключил stream">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="test (MultipleFilter utils)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,7 @@
       <recent name="W:\conspect\src\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.возвращает фильтр из строки search queries">
+  <component name="RunManager" selected="Jest.should be search query param string">
     <configuration name="возвращает фильтр из строки search queries" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -128,29 +129,42 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="classStaticMethods.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/types/classStaticMethods.js" working-dir="$PROJECT_DIR$/src/components/types">
+    <configuration name="check object keys what all keys true or all false" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" />
+      <test-names>
+        <test-name value="check object keys what all keys true or all false" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should be search query param string" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" />
+      <test-names>
+        <test-name value="should be search query param string" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.should be search query param string" />
+        <item itemvalue="Jest.check object keys what all keys true or all false" />
         <item itemvalue="Jest.возвращает фильтр из строки search queries" />
         <item itemvalue="Jest.два плюс два равно четыре" />
         <item itemvalue="Node.js.scratch.js" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="Node.js.classStaticMethods.js" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +233,7 @@
       <workItem from="1640356299145" duration="8981000" />
       <workItem from="1640418964020" duration="699000" />
       <workItem from="1640523463999" duration="3091000" />
+      <workItem from="1640670077645" duration="2527000" />
     </task>
     <task id="LOCAL-00003" summary="Menu">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />

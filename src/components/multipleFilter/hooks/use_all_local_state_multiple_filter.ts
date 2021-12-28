@@ -1,5 +1,5 @@
 import { ChangeEvent, useEffect, useMemo, useState } from 'react'
-import { isAllCheckedOrUnchecked, queriesToFilter } from '../utils'
+import { filterToQueries, isAllCheckedOrUnchecked, queriesToFilter } from '../utils'
 import { useHistory, useLocation } from 'react-router-dom'
 import useObservableValue from '../../../pages/rxjs/components/subject/hooks'
 import { filter$ } from '../mock'
@@ -47,19 +47,12 @@ export function useAllLocalStateMultipleFilter(
 
   useEffect(() => {
     // updating url search queries params if filter changes
-    const checkedFilters = Object.entries(filter).filter((item) => item[1])
-    if (!checkedFilters.length) {
-      history.push(`/test`)
+    const queries = filterToQueries(filter)
+    console.log('queries: ', queries)
+    if (!queries) {
+      history.push('/test')
       return
     }
-    const queries = checkedFilters.reduce((acc, filter, index) => {
-      const query = filter[0]
-      const param = filter[1]
-      const isLastItem = !Boolean(checkedFilters[index + 1])
-      if (filter[1] && !isLastItem) acc += `${query}=${param}&`
-      if (filter[1] && isLastItem) acc += `${query}=${param}`
-      return acc
-    }, '')
     history.push(`/test?${queries}`)
   }, [filter])
 
