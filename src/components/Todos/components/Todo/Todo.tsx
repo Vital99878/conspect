@@ -29,10 +29,16 @@ const Todo: React.FC<TodoProps> = ({ props }) => {
 
   return (
     <li>
-      {!isChangeLabel ? <h2 className="todo__label">{todo.label}</h2> :<RenameForm props={{updateTodo, setIsChangeLabel, todo}}/>}
+      {!isChangeLabel ? (
+        <h2 className="todo__label">{todo.label}</h2>
+      ) : (
+        <RenameForm props={{ updateTodo, setIsChangeLabel, todo }} />
+      )}
       <div>{todo.status}</div>
       <button onClick={() => deleteTodo(todo)}>Delete Todo</button>
-      <button disabled={isChangeLabel} onClick={() => setIsChangeLabel((prevState) => !prevState)}>Rename</button>
+      <button disabled={isChangeLabel} onClick={() => setIsChangeLabel((prevState) => !prevState)}>
+        Rename
+      </button>
       <button onClick={updateStatus}>done</button>
       <button onClick={updateStatus}>doing</button>
     </li>

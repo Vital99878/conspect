@@ -27,7 +27,7 @@ test('should be search query param string', () => {
   ).toEqual('first=true&third=true')
 })
 
-describe('should be check what all object\'s keys true or all false', () => {
+describe("should be check what all object's keys true or all false", () => {
   it('should be isAllChecked = true', () => {
     expect(isAllCheckedOrUnchecked({ firstKey: true })).toStrictEqual({
       isAllChecked: true,
@@ -62,15 +62,9 @@ describe('should be check what all object\'s keys true or all false', () => {
 
 test('should check existing categories in item', () => {
   expect(
-    isAllCategoriesMatch(
-      { categories: ['first', 'second'] },
-      { first: true, second: false, third: false }
-    )
+    isAllCategoriesMatch({ categories: ['first', 'second'] }, { first: true, second: false, third: false })
   ).toBeFalsy()
   expect(
-    isAllCategoriesMatch(
-      { categories: ['first', 'second'] },
-      { first: true, second: true, third: false }
-    )
+    isAllCategoriesMatch({ categories: ['first', 'second'] }, { first: true, second: true, third: false })
   ).toBeTruthy()
 })

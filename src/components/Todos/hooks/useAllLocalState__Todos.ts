@@ -18,17 +18,17 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos) {
   }
   const updateTodo = (updatedTodo: TodoType) => {
     setTodoList((todos) =>
-        todos.map((todo) => {
-          return todo.id === updatedTodo.id ? updatedTodo : todo
-        })
+      todos.map((todo) => {
+        return todo.id === updatedTodo.id ? updatedTodo : todo
+      })
     )
   }
 
   return {
-    todoList: todoList.filter((todo) => filter === '' ? true : todo.status === filter ),
+    todoList: todoList.filter((todo) => (filter === '' ? true : todo.status === filter)),
     addTodo,
     deleteTodo,
     updateTodo,
-    setFilter
+    setFilter,
   }
 }

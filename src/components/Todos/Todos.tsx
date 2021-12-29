@@ -15,7 +15,7 @@ const Todos: React.FC = () => {
           <Todo props={{ todo, deleteTodo, updateTodo }} key={todo.id} />
         ))}
       </ul>
-      <AddTodoForm props={{ addTodo }} >div</AddTodoForm>
+      <AddTodoForm props={{ addTodo }}>div</AddTodoForm>
       <TodosFilter props={{ setFilter }} />
     </article>
   )

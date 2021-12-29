@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="update (Todos) visible todolist logic">
-      <change afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Todos/components/TodosFilter/TodosFilter.tsx" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="update (RenameForm) useOutsideCallback not working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/singleFilter/hooks/useFilter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFilter/hooks/useFilter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +73,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hooks" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -100,10 +90,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\hooks" />
       <recent name="W:\conspect\src\components\Todos\components\Todo\components\RenameForm" />
       <recent name="W:\conspect\src\components\Todos\components" />
       <recent name="W:\conspect\src\hooks\test" />
-      <recent name="W:\conspect\src\hooks" />
       <recent name="W:\conspect\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -258,7 +248,7 @@
       <workItem from="1640523463999" duration="3091000" />
       <workItem from="1640670077645" duration="2527000" />
       <workItem from="1640705639149" duration="1473000" />
-      <workItem from="1640758814767" duration="11092000" />
+      <workItem from="1640758814767" duration="13934000" />
     </task>
     <task id="LOCAL-00003" summary="Menu">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
@@ -568,7 +558,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640706786828</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="update (Todos) visible todolist logic, create (RenameForm)">
+      <created>1640771752524</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1640771752524</updated>
+    </task>
+    <task id="LOCAL-00047" summary="update (RenameForm) useOutsideCallback not working">
+      <created>1640773738737</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1640773738737</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -589,8 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rxjs work useSubject" />
-    <MESSAGE value="rxjs not work useSubject" />
     <MESSAGE value="new structure" />
     <MESSAGE value="Initialize project using Create React App" />
     <MESSAGE value="update(useObservableValue)" />
@@ -614,7 +616,9 @@
     <MESSAGE value="refactoring (MultipleFilter)" />
     <MESSAGE value="create (hookLogicTemplate)" />
     <MESSAGE value="update (Todos) visible todolist logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="update (Todos) visible todolist logic" />
+    <MESSAGE value="update (Todos) visible todolist logic, create (RenameForm)" />
+    <MESSAGE value="update (RenameForm) useOutsideCallback not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="update (RenameForm) useOutsideCallback not working" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

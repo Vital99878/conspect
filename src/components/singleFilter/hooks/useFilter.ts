@@ -21,10 +21,10 @@ export const useFilter = () => {
 
   const updateFilter = (label: string): void => {
     setFilter((state) => {
-      return state.map(((item) => {
-        item.label === label ? item.isActive = !item.isActive : item.isActive = false
+      return state.map((item) => {
+        item.label === label ? (item.isActive = !item.isActive) : (item.isActive = false)
         return item
-      }))
+      })
     })
   }
 

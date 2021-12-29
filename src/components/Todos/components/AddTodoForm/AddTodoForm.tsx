@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {TodoType} from '../Todo/Todo';
+import { TodoType } from '../Todo/Todo'
 
 type AddTodoFormProps = {
   props: {
@@ -15,7 +15,7 @@ const AddTodoForm: React.FC<AddTodoFormProps> = ({ props }) => {
     evt.preventDefault()
     if (!label) return
     setLabel('')
-    addTodo({id: Math.random()*555, label, status: 'done'})
+    addTodo({ id: Math.random() * 555, label, status: 'done' })
   }
   const onChangeLabel = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newLabel = e.target.value

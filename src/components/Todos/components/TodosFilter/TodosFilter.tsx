@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { TodoType } from '../Todo/Todo'
 
 interface KonvaTextEventTarget extends EventTarget {
-    value: TodoType['status'] | ''
+  value: TodoType['status'] | ''
 }
 
 interface KonvaMouseEvent extends React.MouseEvent<HTMLButtonElement> {
-    target: KonvaTextEventTarget
+  target: KonvaTextEventTarget
 }
 
 type Props = {
@@ -20,22 +20,13 @@ const TodosFilter: React.FC<Props> = ({ props }) => {
 
   return (
     <article className="todos-filter">
-      <button
-        value="done"
-        onClick={(evt: KonvaMouseEvent) => setFilter(evt.target.value) }
-      >
+      <button value="done" onClick={(evt: KonvaMouseEvent) => setFilter(evt.target.value)}>
         Show done
       </button>
-      <button
-        value="doing"
-       onClick={(evt: KonvaMouseEvent) => setFilter(evt.target.value) }
-      >
+      <button value="doing" onClick={(evt: KonvaMouseEvent) => setFilter(evt.target.value)}>
         Show doing
       </button>
-      <button
-        value=""
-       onClick={(evt: KonvaMouseEvent) => setFilter(evt.target.value) }
-      >
+      <button value="" onClick={(evt: KonvaMouseEvent) => setFilter(evt.target.value)}>
         Show all
       </button>
     </article>
