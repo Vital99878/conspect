@@ -1,0 +1,12 @@
+.label  {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  //border: 1px solid lightcoral;
+  span {
+    top: 4rem;
+    left: 0rem;
+    position: absolute;
+    font-size: 1rem;
+  }
+}

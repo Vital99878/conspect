@@ -28,12 +28,12 @@ const RenameForm: React.FC<Props> = ({ props }) => {
   }, [])
 
   function onChangeLabel(evt: any) {
-    setNewLabel(evt.target.value.trim())
+    setNewLabel(evt.target.value)
   }
 
   function onSubmit() {
     if (!newLabel) return
-    updateTodo({ ...todo, label: newLabel })
+    updateTodo({ ...todo, label: newLabel.trim() })
     setIsChangeLabel(false)
   }
 
