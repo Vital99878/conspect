@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import './Menu.scss'
 
-export type Pages = '/' | 'test' | 'rxjs' | 'css' | 'ts'
+export type Pages = '/' | 'test' | 'rxjs' | 'css' | 'ts' | 'registration'
 
 // export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
 // export type CssLayoutList = 'layoutBudget' | '/'

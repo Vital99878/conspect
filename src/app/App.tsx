@@ -5,9 +5,10 @@ import Navigation, { NavigationItem } from '../components/Navigation/Navigation'
 import RXjsPage from '../pages/rxjs/RXjs-page'
 import { pages } from './store/adtiveMenuItemReducer'
 import CssPage from '../pages/css-list/css-page'
+import RegistrationPage from '../pages/registraiton/components/registration-form';
 
 const App: React.FC = () => {
-  const { home, css, ts, test, rxjs } = pages
+  const { home, css, test, rxjs, registration } = pages
   return (
     <Router>
       <div className="App">
@@ -16,12 +17,14 @@ const App: React.FC = () => {
           <NavigationItem props={css} />
           <NavigationItem props={test} />
           <NavigationItem props={rxjs} />
+          <NavigationItem props={registration} />
         </Navigation>
         <Switch>
+          <Route path="/" exact render={() => <h1>Home page</h1>} />
           <Route path={`/${css.path}`} exact component={CssPage} />
           <Route path={`/${test.path}`} exact component={TestPage} />
           <Route path={`/${rxjs.path}`} exact component={RXjsPage} />
-          <Route path="/" exact render={() => <h1>Home page</h1>} />
+          <Route path={`/${registration.path}`} exact component={RegistrationPage} />
         </Switch>
       </div>
     </Router>
