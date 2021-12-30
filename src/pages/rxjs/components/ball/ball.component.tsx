@@ -1,6 +1,7 @@
 import React from 'react'
 import './ball..scss'
 import { usePosition } from './usePosition'
+import AbsolutePositionMenu from '../../../../components/WraperComponent-HiddenButton/AbsolutePositionMenu'
 
 /**
  * Компонет, который можно перетаскивать по экрану мышью (RxJS)

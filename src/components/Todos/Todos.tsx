@@ -4,12 +4,14 @@ import Todo from './components/Todo/Todo'
 import AddTodoForm from './components/AddTodoForm/AddTodoForm'
 import TodosFilter from './components/TodosFilter/TodosFilter'
 import { useAllLocalStateTodos } from './hooks/useAllLocalState__Todos'
+import AbsolutePositionMenu from '../WraperComponent-HiddenButton/AbsolutePositionMenu';
 
 const Todos: React.FC = () => {
   const { todoList, addTodo, updateTodo, deleteTodo, setFilter } = useAllLocalStateTodos()
 
   return (
     <article className="todos">
+        <AbsolutePositionMenu/>
       <ul>
         {todoList.map((todo) => (
           <Todo props={{ todo, deleteTodo, updateTodo }} key={todo.id} />

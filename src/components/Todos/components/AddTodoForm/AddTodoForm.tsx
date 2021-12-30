@@ -22,11 +22,10 @@ const AddTodoForm: React.FC<AddTodoFormProps> = ({ props }) => {
     setLabel(newLabel)
   }
 
-
   return (
-    <form>
-        <input value={label} onChange={onChangeLabel} className="todo__label" />
-       <button onClick={createTodo}>Add Todo</button>
+    <form onSubmit={createTodo}>
+      <input value={label} onChange={onChangeLabel} className="todo__label" />
+      <button onClick={createTodo}>Add Todo</button>
     </form>
   )
 }

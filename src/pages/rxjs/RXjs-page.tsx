@@ -8,6 +8,7 @@ const RXjsPage: FC = () => {
   return (
     <Layout pageHeading="RxJS Page">
       <div className={styles.rxjs}>
+        <SubTest />
         <BallComponent />
         <SubTest />
       </div>

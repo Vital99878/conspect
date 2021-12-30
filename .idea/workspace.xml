@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="fix (absolute path)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat (Required Comp)">
+      <change afterPath="$PROJECT_DIR$/src/components/WraperComponent-HiddenButton/AbsolutePositionMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WraperComponent-HiddenButton/WrapperHiddenButton.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/singleFilter/SingleFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFilter/SingleFilter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/registration-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/registration-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/usePosition.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/usePosition.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/observableValue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/observableValue.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/Subject..scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/Subject..scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,13 +246,6 @@
       <workItem from="1640705639149" duration="1473000" />
       <workItem from="1640758814767" duration="23438000" />
       <workItem from="1640849569871" duration="3840000" />
-    </task>
-    <task id="LOCAL-00005" summary="new structure">
-      <created>1637920632649</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1637920632649</updated>
     </task>
     <task id="LOCAL-00006" summary="update(useObservableValue)">
       <created>1640336626964</created>
@@ -579,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640852837745</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="feat (Required Comp)">
+      <created>1640855541806</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1640855541806</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -600,7 +606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update(Todolist) не работает как надо AddTodoForm.tsx&#10;После добавления todo сразу ререндерится." />
     <MESSAGE value="update(Todolist) need filter" />
     <MESSAGE value="update(Navigation)" />
     <MESSAGE value="update(Navigation)&#10;feat(Layout) create" />
@@ -625,7 +630,8 @@
     <MESSAGE value="create (Required)" />
     <MESSAGE value="create (RegistrationPage)" />
     <MESSAGE value="fix (absolute path)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix (absolute path)" />
+    <MESSAGE value="feat (Required Comp)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat (Required Comp)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
