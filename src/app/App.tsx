@@ -1,11 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import TestPage from '../pages/test/test-page'
+import {TestPage, RXjsPage, RegistrationPage, CssPage} from '../pages/'
 import Navigation, { NavigationItem } from '../components/Navigation/Navigation'
-import RXjsPage from '../pages/rxjs/RXjs-page'
 import { pages } from './store/adtiveMenuItemReducer'
-import CssPage from '../pages/css-list/css-page'
-import RegistrationPage from '../pages/registraiton/components/registration-form';
 
 const App: React.FC = () => {
   const { home, css, test, rxjs, registration } = pages

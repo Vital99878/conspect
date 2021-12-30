@@ -1,4 +1,5 @@
-import { MenuItemType } from '../../components/Navigation/Navigation'
+import {MenuItemType} from '../../components/Navigation/Navigation';
+
 type MainPages = 'home' | 'rxjs' | 'css' | 'test' | 'ts' | 'registration'
 
 type PagesList = {

@@ -3,7 +3,7 @@ import './Layout.scss'
 
 type LayoutProps = {
   pageHeading?: string
-  children: React.ReactElement<any>
+  children: React.ReactElement
   Footer?: React.Component | React.ReactElement | null
   Header?: React.Component | React.ReactElement | null
 }

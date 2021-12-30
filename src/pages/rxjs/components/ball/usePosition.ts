@@ -14,7 +14,7 @@ export const usePosition = (): TBallPos => {
       })
     )
 
-    $down.pipe(switchMap((event) => $move.pipe(takeUntil($up)))).subscribe((position) => setPosition(position))
+    $down.pipe(switchMap(() => $move.pipe(takeUntil($up)))).subscribe((position) => setPosition(position))
   }, [])
 
   return position

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './SingleFilter.scss'
 import { useFilter } from './hooks/useFilter'
 
