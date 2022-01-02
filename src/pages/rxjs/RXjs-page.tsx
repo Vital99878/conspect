@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import styles from './RXjs.module.scss'
+import './RXjs.module.scss'
 import SubTest from './components/subject'
 import BallComponent from './components/ball'
 import Layout from '../../components/Layout/Layout'
@@ -7,7 +7,7 @@ import Layout from '../../components/Layout/Layout'
 const RXjsPage: FC = () => {
   return (
     <Layout pageHeading="RxJS Page">
-      <div className={styles.rxjs}>
+      <div className='rxjs'>
         <SubTest />
         <BallComponent />
         <SubTest />

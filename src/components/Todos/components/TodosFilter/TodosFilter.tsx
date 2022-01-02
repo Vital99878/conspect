@@ -1,34 +1,35 @@
-import React, { useEffect, useState } from 'react'
-import { TodoType } from '../Todo/Todo'
-
-interface KonvaTextEventTarget extends EventTarget {
-  value: TodoType['status'] | ''
-}
-
-interface KonvaMouseEvent extends React.MouseEvent<HTMLButtonElement> {
-  target: KonvaTextEventTarget
-}
+import React from 'react'
+import './TodosFilter.scss'
+import { R_2, TodoStatus, TodoType } from '../../models/index.model'
+import { ValueMouseEvent } from '../../../../types/ValueMouseEvent.model'
+import { ButtonFilter } from './hook/useButtonsFilter'
 
 type Props = {
   props: {
-    setFilter: (filter: TodoType['status'] | '') => void
+    buttons: ButtonFilter[]
+    toggleActiveButton: any
   }
 }
 
 const TodosFilter: React.FC<Props> = ({ props }) => {
-  const { setFilter } = props
+  const { buttons, toggleActiveButton } = props
 
   return (
     <article className="todos-filter">
-      <button value="done" onClick={(evt: KonvaMouseEvent) => setFilter(evt.target.value)}>
-        Show done
-      </button>
-      <button value="doing" onClick={(evt: KonvaMouseEvent) => setFilter(evt.target.value)}>
-        Show doing
-      </button>
-      <button value="" onClick={(evt: KonvaMouseEvent) => setFilter(evt.target.value)}>
-        Show all
-      </button>
+      {buttons.map((button) => {
+        const textContent = `${button.textContent}: ${button.statusCount}`
+        return (
+          <button
+            key={button.value}
+            className={button.isActive ? 'buttonFilter--active' : 'buttonFilter'}
+            value={button.value}
+            onClick={(evt: ValueMouseEvent<TodoStatus>) => toggleActiveButton(evt.target.value)}
+            disabled={button.statusCount < 1}
+          >
+            {textContent}
+          </button>
+        )
+      })}
     </article>
   )
 }

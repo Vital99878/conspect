@@ -27,7 +27,7 @@ test('should be search query param string', () => {
   ).toEqual('first=true&third=true')
 })
 
-describe("should be check what all object's keys true or all false", () => {
+describe('should be check what all object\'s keys true or all false', () => {
   it('should be isAllChecked = true', () => {
     expect(isAllCheckedOrUnchecked({ firstKey: true })).toStrictEqual({
       isAllChecked: true,

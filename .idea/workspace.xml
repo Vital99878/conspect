@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat (Required Comp)">
-      <change afterPath="$PROJECT_DIR$/src/components/WraperComponent-HiddenButton/AbsolutePositionMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WraperComponent-HiddenButton/WrapperHiddenButton.scss" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="refactoring (TodosFilter)">
+      <change afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/RegistrationForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/MultipleFilter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/Subject..scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/Subject..scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/registration-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/registration-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/registration-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/registration-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +61,7 @@
     <scope name="src" pattern="file[ts-my-components]:src//*" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
   <component name="ProjectViewState">
@@ -83,7 +76,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/registraiton/components/registration-form" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -94,17 +87,17 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="W:\conspect\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\registraiton\components\registration-form" />
+      <recent name="W:\conspect\src\components\Todos\components" />
+      <recent name="W:\conspect\src\components\Todos\components\TodosFilter" />
       <recent name="W:\conspect\src\pages\test" />
       <recent name="W:\conspect\src\pages\css-list" />
-      <recent name="W:\conspect\src\pages\rxjs" />
-      <recent name="W:\conspect\src\pages\registraiton" />
-      <recent name="W:\conspect\src\pages\registraiton\components\registration-form\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\registraiton" />
@@ -114,7 +107,7 @@
       <recent name="W:\conspect\src\pages\registraiton\components\registration-form\" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.should correctly work with items local state.should add new item">
+  <component name="RunManager" selected="Node.js.scratch.js">
     <configuration name="возвращает &lt;Partial&gt; фильтр из строки search queries" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -125,32 +118,6 @@
       <test-file value="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" />
       <test-names>
         <test-name value="возвращает &lt;Partial&gt; фильтр из строки search queries" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="check object keys what all keys true or all false" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" />
-      <test-names>
-        <test-name value="check object keys what all keys true or all false" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should be search query param string" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" />
-      <test-names>
-        <test-name value="should be search query param string" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -181,19 +148,32 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.scratch.js" />
+        <item itemvalue="npm.lint" />
         <item itemvalue="Jest.should correctly work with items local state.should add new item" />
         <item itemvalue="Jest.should check existing categories" />
         <item itemvalue="Jest.возвращает &lt;Partial&gt; фильтр из строки search queries" />
-        <item itemvalue="Jest.should be search query param string" />
-        <item itemvalue="Jest.check object keys what all keys true or all false" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
       <created>1633257343199</created>
       <option name="number" value="Default" />
@@ -216,108 +196,7 @@
       <workItem from="1634724218273" duration="948000" />
       <workItem from="1634801285528" duration="640000" />
       <workItem from="1634811676527" duration="263000" />
-    </task>
-    <task active="true" id="LOCAL-00002" summary="Rxjs">
-      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
-      <created>1636308584115</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1640356298697</updated>
-      <workItem from="1636308586879" duration="1689000" />
-      <workItem from="1636351123983" duration="19000" />
-      <workItem from="1636453418531" duration="701000" />
-      <workItem from="1636903016396" duration="46000" />
-      <workItem from="1637248353073" duration="818000" />
-      <workItem from="1637303224671" duration="91000" />
-      <workItem from="1637761060599" duration="245000" />
-      <workItem from="1637761461945" duration="18000" />
-      <workItem from="1637761550708" duration="3000" />
-      <workItem from="1637761730134" duration="23000" />
-      <workItem from="1637761875382" duration="2077000" />
-      <workItem from="1637832805517" duration="16239000" />
-      <workItem from="1637909065563" duration="3046000" />
-      <workItem from="1637917505115" duration="3132000" />
-      <workItem from="1637925596769" duration="1078000" />
-      <workItem from="1640356299145" duration="8981000" />
-      <workItem from="1640418964020" duration="699000" />
-      <workItem from="1640523463999" duration="3091000" />
-      <workItem from="1640670077645" duration="2527000" />
-      <workItem from="1640705639149" duration="1473000" />
-      <workItem from="1640758814767" duration="23438000" />
-      <workItem from="1640849569871" duration="3840000" />
-    </task>
-    <task id="LOCAL-00006" summary="update(useObservableValue)">
-      <created>1640336626964</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1640336626964</updated>
-    </task>
-    <task id="LOCAL-00007" summary="update(useObservableValue)">
-      <created>1640338022913</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1640338022913</updated>
-    </task>
-    <task id="LOCAL-00008" summary="update(Navigation)">
-      <created>1640343701521</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1640343701521</updated>
-    </task>
-    <task id="LOCAL-00009" summary="update(Todolist)">
-      <created>1640344875275</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1640344875275</updated>
-    </task>
-    <task id="LOCAL-00010" summary="update(Todolist) need filter">
-      <created>1640348416355</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1640348416355</updated>
-    </task>
-    <task id="LOCAL-00011" summary="update(Todolist) need filter">
-      <created>1640348790937</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1640348790937</updated>
-    </task>
-    <task id="LOCAL-00012" summary="update(Todolist) need filter">
-      <created>1640354666520</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1640354666520</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Layout">
-      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
-      <created>1640354686765</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1640356298697</updated>
-      <workItem from="1640354690102" duration="1595000" />
-    </task>
-    <task id="LOCAL-00014" summary="update(Todolist) need filter">
-      <created>1640354768853</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1640354768853</updated>
-    </task>
-    <task id="LOCAL-00015" summary="update(Navigation)">
-      <created>1640357198564</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1640357198564</updated>
+      <workItem from="1641292287630" duration="8884000" />
     </task>
     <task id="LOCAL-00016" summary="update(Navigation)&#10;feat(Layout) create">
       <created>1640357254129</created>
@@ -585,7 +464,84 @@
       <option name="project" value="LOCAL" />
       <updated>1640855541806</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="feat (AbsolutePositionMenu)">
+      <created>1640863354344</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1640863354344</updated>
+    </task>
+    <task id="LOCAL-00055" summary="refactoring (Todos types)">
+      <created>1641107664920</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1641107664920</updated>
+    </task>
+    <task id="LOCAL-00056" summary="refactoring (Todos types)">
+      <created>1641109729451</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1641109729451</updated>
+    </task>
+    <task id="LOCAL-00057" summary="refactoring (Todos types)">
+      <created>1641117450170</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1641117450170</updated>
+    </task>
+    <task id="LOCAL-00058" summary="refactoring (Todos types)">
+      <created>1641120832744</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1641120832745</updated>
+    </task>
+    <task id="LOCAL-00059" summary="refactoring (TodosFilter)">
+      <created>1641136597979</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1641136597980</updated>
+    </task>
+    <task id="LOCAL-00060" summary="refactoring (TodosFilter)">
+      <created>1641137321524</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1641137321524</updated>
+    </task>
+    <task id="LOCAL-00061" summary="refactoring (TodosFilter)">
+      <created>1641137900387</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1641137900387</updated>
+    </task>
+    <task id="LOCAL-00062" summary="refactoring (TodosFilter)">
+      <created>1641140040026</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1641140040026</updated>
+    </task>
+    <task id="LOCAL-00063" summary="refactoring (TodosFilter)">
+      <created>1641298844248</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1641298844248</updated>
+    </task>
+    <task id="LOCAL-00064" summary="refactoring (TodosFilter)">
+      <created>1641299121336</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1641299121336</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -606,9 +562,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update(Todolist) need filter" />
-    <MESSAGE value="update(Navigation)" />
-    <MESSAGE value="update(Navigation)&#10;feat(Layout) create" />
     <MESSAGE value="feat(singleFilter) create" />
     <MESSAGE value="feat(singleFilter) logic have done. without style" />
     <MESSAGE value="feat(z_new-component) update" />
@@ -631,7 +584,10 @@
     <MESSAGE value="create (RegistrationPage)" />
     <MESSAGE value="fix (absolute path)" />
     <MESSAGE value="feat (Required Comp)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat (Required Comp)" />
+    <MESSAGE value="feat (AbsolutePositionMenu)" />
+    <MESSAGE value="refactoring (Todos types)" />
+    <MESSAGE value="refactoring (TodosFilter)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring (TodosFilter)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

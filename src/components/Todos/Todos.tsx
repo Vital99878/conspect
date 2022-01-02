@@ -1,24 +1,26 @@
 import React from 'react'
 import './Todos.scss'
-import Todo from './components/Todo/Todo'
-import AddTodoForm from './components/AddTodoForm/AddTodoForm'
-import TodosFilter from './components/TodosFilter/TodosFilter'
+import { Todo, AddTodoForm, TodosFilter } from './components'
+import {initialButtonsFilters} from './components/TodosFilter/hook/useButtonsFilter';
 import { useAllLocalStateTodos } from './hooks/useAllLocalState__Todos'
-import AbsolutePositionMenu from '../WraperComponent-HiddenButton/AbsolutePositionMenu';
+import AbsolutePositionMenu from '../WraperComponent-HiddenButton/AbsolutePositionMenu'
+import { useButtonFilter } from './components/TodosFilter/hook/useButtonsFilter'
 
 const Todos: React.FC = () => {
-  const { todoList, addTodo, updateTodo, deleteTodo, setFilter } = useAllLocalStateTodos()
+  const { todoList, addTodo, updateTodo, deleteTodo } = useAllLocalStateTodos()
+  const { buttons, toggleActiveButton, isActiveButton } = useButtonFilter(initialButtonsFilters, todoList)
+  const visibleTodos = !isActiveButton ? todoList : todoList.filter((todo) => todo.status === isActiveButton)
 
   return (
     <article className="todos">
-        <AbsolutePositionMenu/>
+      <AbsolutePositionMenu />
+      <AddTodoForm props={{ addTodo }} />
       <ul>
-        {todoList.map((todo) => (
+        {visibleTodos.map((todo) => (
           <Todo props={{ todo, deleteTodo, updateTodo }} key={todo.id} />
         ))}
       </ul>
-      <AddTodoForm props={{ addTodo }}>div</AddTodoForm>
-      <TodosFilter props={{ setFilter }} />
+      <TodosFilter props={{ buttons, toggleActiveButton }} />
     </article>
   )
 }

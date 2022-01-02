@@ -2,7 +2,6 @@ import React from 'react'
 import './MultipleFilter.scss'
 import CheckBoxItem from './components/CheckBoxItem/CheckBoxItem'
 import { useAllLocalStateMultipleFilter } from './hooks/use_all_local_state_multiple_filter'
-import AbsolutePositionMenu from '../WraperComponent-HiddenButton/AbsolutePositionMenu'
 
 /**
  * Фильтр, который позволяет выбрать несколько значений для фильтрации.
@@ -16,7 +15,6 @@ const MultipleFilter: React.FC = () => {
 
   return (
     <form className="singleFilter">
-      <AbsolutePositionMenu />
       {checkboxes}
       <label>
         <input type="checkbox" checked={isAllChecked} value={'all'} onChange={setAllFilter} />

@@ -1,14 +1,22 @@
-import { TodoType } from '../components/Todo/Todo'
-import { useState } from 'react'
+import {TodoStatus, TodoType} from '../models/index.model'
+import {Dispatch, SetStateAction, useState} from 'react'
 
 const initialTodos: TodoType[] = [
-  { id: 1, label: 'new', status: 'done' },
-  { id: 2, label: 'new 2', status: 'doing' },
+  { id: 1, label: 'new', status: TodoStatus.notStarted },
+  { id: 2, label: 'new 2', status: TodoStatus.Doing },
 ]
 
-export function useAllLocalStateTodos(todos: TodoType[] = initialTodos) {
+export type R = {
+  todoList: TodoType[]
+  addTodo(newTodo: TodoType): void
+  deleteTodo(deletedTodo: TodoType): void
+  updateTodo(updatedTodo: TodoType): void
+  setFilter: Dispatch<SetStateAction<TodoStatus>>,
+}
+
+export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
   const [todoList, setTodoList] = useState(todos)
-  const [filter, setFilter] = useState<TodoType['status'] | ''>('')
+  const [filter, setFilter] = useState<TodoStatus>(TodoStatus.notStarted)
 
   const addTodo = (newTodo: TodoType) => {
     setTodoList((todos) => [newTodo, ...todos])
@@ -25,7 +33,7 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos) {
   }
 
   return {
-    todoList: todoList.filter((todo) => (filter === '' ? true : todo.status === filter)),
+    todoList: todoList.filter((todo) => (filter === TodoStatus.notStarted ? true : todo.status === filter)),
     addTodo,
     deleteTodo,
     updateTodo,

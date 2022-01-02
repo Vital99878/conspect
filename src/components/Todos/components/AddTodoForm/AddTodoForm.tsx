@@ -1,21 +1,23 @@
-import React, { useState } from 'react'
-import { TodoType } from '../Todo/Todo'
+import React, { FormEvent, useState } from 'react'
+import { R_2, TodoStatus } from '../../models/index.model'
 
-type AddTodoFormProps = {
-  props: {
-    addTodo: (todo: TodoType) => void
-  }
+type Props = {
+  props: Pick<R_2, 'addTodo'>
 }
 
-const AddTodoForm: React.FC<AddTodoFormProps> = ({ props }) => {
+const AddTodoForm: React.FC<Props> = ({ props }) => {
   const { addTodo } = props
   const [label, setLabel] = useState('')
 
-  const createTodo = (evt: any) => {
+  const createTodo = (evt: FormEvent) => {
     evt.preventDefault()
-    if (!label || label.trim().length <= 8) return
+    const isMinLength = label.trim().length < 3
+    if (!label || isMinLength) {
+      setLabel('меньше 2 символов!')
+      return
+    }
+    addTodo({ id: Math.random() * 555, label, status: TodoStatus.notStarted })
     setLabel('')
-    addTodo({ id: Math.random() * 555, label, status: 'done' })
   }
   const onChangeLabel = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newLabel = e.target.value

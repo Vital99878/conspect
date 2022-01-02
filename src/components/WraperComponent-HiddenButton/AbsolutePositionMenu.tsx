@@ -2,22 +2,25 @@ import React, { useEffect, useRef, useState } from 'react'
 import './WrapperHiddenButton.scss'
 
 type Props = {
-  // props?: {
-  //   isRequired: boolean
-  //   message: string
-  // }
   children?: JSX.Element
 }
 
 /**
- * util кмопонент, который добавляется в первым в родительский тег компонента.
+ * util комопонент, который добавляется первым в родительский тег компонента.
  * Добавляет position absolute menu для работы с основынм тегом компонета.
- * ! Должен быть один дочерний элемент.
+ * ! Должен быть хотя-бы один дочерний элемент.
  */
 
 const AbsolutePositionMenu: React.FC<Props> = () => {
   const buttonRef = useRef<HTMLButtonElement>(null)
   const [mainTag, setMainTag] = useState<HTMLElement | null>(null)
+
+  useEffect(() => {
+    if (buttonRef.current) {
+      const mainElement = buttonRef.current.parentElement as HTMLElement
+      setMainTag(mainElement)
+    }
+  }, [])
 
   function hideMenuSiblings() {
     if (mainTag) {
@@ -27,16 +30,16 @@ const AbsolutePositionMenu: React.FC<Props> = () => {
       }
     }
   }
-  useEffect(() => {
-    if (buttonRef.current) {
-      const mainElement = buttonRef.current.parentElement as HTMLElement
-      setMainTag(mainElement)
+  function hideMainTag() {
+    if (mainTag) {
+      mainTag.style.height = '0'
     }
-  }, [])
+  }
+
   return (
-      <button className="wrapper-hidden" onClick={hideMenuSiblings} ref={buttonRef}>
-        hide
-      </button>
+    <button className="wrapper-hidden" onClick={hideMenuSiblings} ref={buttonRef}>
+      hide
+    </button>
   )
 }
 
