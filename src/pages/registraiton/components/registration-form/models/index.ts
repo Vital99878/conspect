@@ -1,2 +1,2 @@
-import { NewModel } from './new.model.'
-export type { NewModel }
+import { Required } from './required'
+export type { Required }

@@ -20,6 +20,9 @@ a {
   color: var(--secondary-link-color);
   text-decoration: none;
 }
+a,p, span {
+  /*font-size: 1rem;*/
+}
 
 /* -------------------- Main styles --------------------  */
 
