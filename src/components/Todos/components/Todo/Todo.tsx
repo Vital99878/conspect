@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { RenameForm, TodoStatusForm } from './components'
+import { RenameForm, TodoStatusForm, TodoSettings } from './components'
 import { TodoType, R_2 } from '../../models/index.model'
 
 type Props = {
@@ -14,17 +14,13 @@ const Todo: React.FC<Props> = ({ props }) => {
   const [shouldShowLabel, setShouldShowLabel] = useState(true)
   const { todo, updateTodo, deleteTodo } = props
   const label = shouldShowLabel && <h2 className="todo__label">{todo.label}</h2>
-  function onRename() {
-    setShouldShowLabel(false)
-  }
 
   return (
-    <li>
+    <div className={'todoMenu'}>
       {label || <RenameForm props={{ updateTodo, setShouldShowLabel, todo }} />}
-      <button onClick={() => deleteTodo(todo)}>Delete Todo</button>
-      <button disabled={!shouldShowLabel} onClick={onRename}>Rename</button>
+      <TodoSettings props={{ todo, deleteTodo, shouldShowLabel, setShouldShowLabel }} />
       <TodoStatusForm props={{ todo, updateTodo }} />
-    </li>
+    </div>
   )
 }
 

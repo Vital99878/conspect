@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './Loading.scss'
 import { LOADING_STATUS } from '../../../../enums'
 import { loading$ } from './utils/mock/loadingState'
@@ -17,7 +17,7 @@ const Loading = (): JSX.Element | null => {
     return (
       <div className={'loading'}>
         <div>SUCCESS</div>
-        <div>{text+ ' some string'}</div>
+        <div>{text + ' some string'}</div>
         <button onClick={() => updateField('titititi')}></button>
       </div>
     )
