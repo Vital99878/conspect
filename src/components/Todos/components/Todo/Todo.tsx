@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-import RenameForm from './components/RenameForm/RenameForm'
-import TodoStatusForm from '../TodoStatus/Todo'
-import { TodoType, R_2, TodoStatus } from '../../models/index.model'
-import { ValueMouseEvent } from '../../../../types/ValueMouseEvent.model'
+import { RenameForm, TodoStatusForm } from './components'
+import { TodoType, R_2 } from '../../models/index.model'
 
 type Props = {
   props: {
@@ -13,25 +11,18 @@ type Props = {
 }
 
 const Todo: React.FC<Props> = ({ props }) => {
-  const [isChangeLabel, setIsChangeLabel] = useState(false)
+  const [shouldShowLabel, setShouldShowLabel] = useState(true)
   const { todo, updateTodo, deleteTodo } = props
-  const updateStatus = (evt: ValueMouseEvent<TodoStatus>) => {
-    const status = evt.target.value
-    if (todo.status === status) return
-    updateTodo({ ...todo, ...{ status } })
+  const label = shouldShowLabel && <h2 className="todo__label">{todo.label}</h2>
+  function onRename() {
+    setShouldShowLabel(false)
   }
 
   return (
     <li>
-      {!isChangeLabel ? (
-        <h2 className="todo__label">{todo.label}</h2>
-      ) : (
-        <RenameForm props={{ updateTodo, setIsChangeLabel, todo }} />
-      )}
+      {label || <RenameForm props={{ updateTodo, setShouldShowLabel, todo }} />}
       <button onClick={() => deleteTodo(todo)}>Delete Todo</button>
-      <button disabled={isChangeLabel} onClick={() => setIsChangeLabel((prevState) => !prevState)}>
-        Rename
-      </button>
+      <button disabled={!shouldShowLabel} onClick={onRename}>Rename</button>
       <TodoStatusForm props={{ todo, updateTodo }} />
     </li>
   )

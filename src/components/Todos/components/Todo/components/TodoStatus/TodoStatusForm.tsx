@@ -1,7 +1,7 @@
 import React from 'react'
-import { R_2, TodoStatus, TodoType } from '../../models/index.model'
-import { initialButtonsFilters } from '../TodosFilter/hook/useButtonsFilter'
-import { ValueMouseEvent } from '../../../../types/ValueMouseEvent.model'
+import { R_2, TodoStatus, TodoType } from '../../../../models/index.model'
+import { initialButtonsFilters } from '../../../TodosFilter/hook/useButtonsFilter'
+import { ValueMouseEvent } from '../../../../../../types/ValueMouseEvent.model'
 
 type Props = {
   props: {

@@ -1,9 +1,9 @@
 import React from 'react'
 import './Todos.scss'
 import { Todo, AddTodoForm, TodosFilter } from './components'
-import { initialButtonsFilters } from './components/TodosFilter/hook/useButtonsFilter'
 import { useAllLocalStateTodos } from './hooks/useAllLocalState__Todos'
 import AbsolutePositionMenu from '../WraperComponent-HiddenButton/AbsolutePositionMenu'
+import { initialButtonsFilters } from './components/TodosFilter/hook/useButtonsFilter'
 import { useButtonFilter } from './components/TodosFilter/hook/useButtonsFilter'
 
 const Todos: React.FC = () => {

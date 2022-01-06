@@ -6,7 +6,7 @@ import { useOutsideClickCallback } from '../../../../../../hooks/useClickOutside
 type Props = {
   props: {
     updateTodo: R_2['updateTodo']
-    setIsChangeLabel: Dispatch<SetStateAction<boolean>>
+    setShouldShowLabel: Dispatch<SetStateAction<boolean>>
     todo: TodoType
   }
 }
@@ -14,7 +14,7 @@ type Props = {
 const RenameForm: React.FC<Props> = ({ props }) => {
   // Todo useClickOutside для вызова onSubmit
   // Todo required input field
-  const { updateTodo, setIsChangeLabel, todo } = props
+  const { updateTodo, setShouldShowLabel, todo } = props
   const inputRef = useRef<HTMLInputElement>(null)
 
   const [label, setLabel] = useState(todo.label)
@@ -34,7 +34,7 @@ const RenameForm: React.FC<Props> = ({ props }) => {
   function onSubmit() {
     if (!label) return
     updateTodo({ ...todo, label: label.trim() })
-    setIsChangeLabel(false)
+    setShouldShowLabel(true)
   }
 
   return (
