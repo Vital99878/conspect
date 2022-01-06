@@ -1,2 +1,2 @@
-import RegistrationForm from './RegistrationForm';
-export {RegistrationForm}
+import RegistrationForm from './RegistrationForm'
+export { RegistrationForm }

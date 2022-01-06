@@ -13,26 +13,26 @@ type Props = {
 const TodoStatusForm: React.FC<Props> = ({ props }) => {
   const { updateTodo, todo } = props
   const updateStatus = (evt: ValueMouseEvent<TodoStatus>) => {
-      evt.preventDefault()
+    evt.preventDefault()
     const status = evt.target.value
-    updateTodo({...todo, status})
+    updateTodo({ ...todo, status })
   }
   return (
     <form>
       {initialButtonsFilters.map((button) => {
-          if (button.value) {
-              return (
-                  <button
-                      key={button.textContent}
-                      className={todo.status === button.value ? 'buttonFilter--active' : 'buttonFilter'}
-                      onClick={updateStatus}
-                      value={button.textContent}
-                  >
-                      {button.textContent}
-                  </button>
-              )
-          }
-})}
+        if (button.value) {
+          return (
+            <button
+              key={button.textContent}
+              className={todo.status === button.value ? 'buttonFilter--active' : 'buttonFilter'}
+              onClick={updateStatus}
+              value={button.textContent}
+            >
+              {button.textContent}
+            </button>
+          )
+        }
+      })}
     </form>
   )
 }

@@ -1,2 +1,2 @@
-import {todosStatusCount} from './todosStatusCount';
-export {todosStatusCount}
+import { todosStatusCount } from './todosStatusCount'
+export { todosStatusCount }

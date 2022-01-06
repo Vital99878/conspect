@@ -1,2 +1,2 @@
-import TestPage from './test-page';
+import TestPage from './test-page'
 export default TestPage

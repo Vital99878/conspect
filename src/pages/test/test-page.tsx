@@ -6,6 +6,7 @@ import Todos from '../../components/Todos/Todos'
 import SingleFilter from '../../components/singleFilter/SingleFilter'
 import MultipleFilter from '../../components/multipleFilter/MultipleFilter'
 import { RequiredInputWrapper } from '../registraiton/components/registration-form/components'
+import TestLoadingState from '../rxjs/components/Loading/TestLoadingState'
 
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode
@@ -16,6 +17,7 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   return (
     <Layout pageHeading="Test page">
       <div className="test-components">
+        <TestLoadingState />
         {/* <SingleFilter />*/}
         {/* <MultipleFilter />*/}
         <Todos />

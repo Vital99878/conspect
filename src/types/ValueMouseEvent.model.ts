@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 interface KonvaTextEventTarget<Type> extends EventTarget {
-    value: Type
+  value: Type
 }
 
 export interface ValueMouseEvent<Type> extends React.MouseEvent<HTMLButtonElement> {
-    target: KonvaTextEventTarget<Type>
+  target: KonvaTextEventTarget<Type>
 }

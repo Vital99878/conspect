@@ -6,7 +6,7 @@ import { observableValue } from '../../../rxjs/components/subject/observableValu
 import useSubject from '../../../rxjs/components/subject/hooks'
 
 const TestTS: React.FC = () => {
-  const { field, updateField } = useSubject(observableValue, 'initial')
+  const { field, updateField } = useSubject(observableValue)
   const refElement = useRef(document.createElement('div'))
   const s = useAttachStyle(refElement.current, ['left', 'top'])
 

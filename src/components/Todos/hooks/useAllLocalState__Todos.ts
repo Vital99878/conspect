@@ -1,5 +1,5 @@
-import {TodoStatus, TodoType} from '../models/index.model'
-import {Dispatch, SetStateAction, useState} from 'react'
+import { TodoStatus, TodoType } from '../models/index.model'
+import { Dispatch, SetStateAction, useState } from 'react'
 
 const initialTodos: TodoType[] = [
   { id: 1, label: 'new', status: TodoStatus.notStarted },
@@ -11,7 +11,7 @@ export type R = {
   addTodo(newTodo: TodoType): void
   deleteTodo(deletedTodo: TodoType): void
   updateTodo(updatedTodo: TodoType): void
-  setFilter: Dispatch<SetStateAction<TodoStatus>>,
+  setFilter: Dispatch<SetStateAction<TodoStatus>>
 }
 
 export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {

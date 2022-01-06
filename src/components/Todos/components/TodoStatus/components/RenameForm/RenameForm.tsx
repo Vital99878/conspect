@@ -1,5 +1,5 @@
-import React, {ChangeEvent, Dispatch, SetStateAction, useEffect, useRef, useState} from 'react'
-import {TodoType, R_2} from '../../../../models/index.model';
+import React, { ChangeEvent, Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
+import { TodoType, R_2 } from '../../../../models/index.model'
 import './RenameForm.scss'
 import { useOutsideClickCallback } from '../../../../../../hooks/useClickOutside'
 

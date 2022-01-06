@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import {TestPage, RXjsPage, RegistrationPage, CssPage} from '../pages/'
+import { TestPage, RXjsPage, RegistrationPage, CssPage } from '../pages/'
 import Navigation, { NavigationItem } from '../components/Navigation/Navigation'
 import { pages } from './store/adtiveMenuItemReducer'
 

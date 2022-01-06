@@ -9,6 +9,7 @@ type Props = {
 } & React.HTMLProps<HTMLSpanElement>
 /**
  * @description добавляет span сообщение если, введенные данные в инпуте не валидны или не заполнены.
+ * если props undefined, то компонент не отображается
  */
 
 const RequiredMessage: React.FC<Props> = ({ props = { isRequired: false }, className }) => {
