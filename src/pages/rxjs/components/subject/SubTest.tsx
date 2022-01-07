@@ -8,7 +8,7 @@ import { observableValue } from './observableValue'
  */
 
 const SubTest = (): JSX.Element => {
-  const { field, updateField } = useSubject(observableValue)
+  const { field, updateField } = useSubject(observableValue, '')
   return (
     <div className="subject">
       <input onChange={(evt: ChangeEvent<HTMLInputElement>) => updateField(evt.target.value)} />

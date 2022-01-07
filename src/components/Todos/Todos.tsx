@@ -7,7 +7,7 @@ import { initialButtonsFilters } from './components/TodosFilter/hook/useButtonsF
 import { useButtonFilter } from './components/TodosFilter/hook/useButtonsFilter'
 
 const Todos: React.FC = () => {
-  const { todoList, addTodo, updateTodo, deleteTodo } = useAllLocalStateTodos()
+  const { todoList, addTodo, updateTodo, deleteTodo, changeOrder, logDraggable, logOver } = useAllLocalStateTodos()
   const { buttons, toggleActiveButton, isActiveButton } = useButtonFilter(initialButtonsFilters, todoList)
   const visibleTodos = !isActiveButton ? todoList : todoList.filter((todo) => todo.status === isActiveButton)
 
@@ -17,7 +17,7 @@ const Todos: React.FC = () => {
       <AddTodoForm props={{ addTodo }} />
       <ul>
         {visibleTodos.map((todo) => (
-          <Todo props={{ todo, deleteTodo, updateTodo }} key={todo.id} />
+          <Todo props={{ todo, deleteTodo, updateTodo, logDraggable, logOver }} key={todo.id} />
         ))}
       </ul>
       <TodosFilter props={{ buttons, toggleActiveButton }} />

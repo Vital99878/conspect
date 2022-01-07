@@ -2,20 +2,22 @@ import React, { ChangeEvent, Dispatch, SetStateAction, useEffect, useRef, useSta
 import { TodoType, R_2 } from '../../../../models/index.model'
 import './RenameForm.scss'
 import { useOutsideClickCallback } from '../../../../../../hooks/useClickOutside'
+import useBehaviorSubject from '../../../../../../pages/rxjs/components/subject/hooks'
+import { shouldShowTodoSettings } from '../../../../hooks/useAllLocalState__Todos'
 
 type Props = {
   props: {
     updateTodo: R_2['updateTodo']
     setShouldShowLabel: Dispatch<SetStateAction<boolean>>
+    setShouldShowMenu: any
     todo: TodoType
   }
 }
 
 const RenameForm: React.FC<Props> = ({ props }) => {
-  // Todo useClickOutside для вызова onSubmit
-  // Todo required input field
-  const { updateTodo, setShouldShowLabel, todo } = props
+  const { updateTodo, setShouldShowLabel, todo, setShouldShowMenu } = props
   const inputRef = useRef<HTMLInputElement>(null)
+  const { updateField: set } = useBehaviorSubject(shouldShowTodoSettings, false)
 
   const [label, setLabel] = useState(todo.label)
 
@@ -35,6 +37,8 @@ const RenameForm: React.FC<Props> = ({ props }) => {
     if (!label) return
     updateTodo({ ...todo, label: label.trim() })
     setShouldShowLabel(true)
+    set(false)
+    setShouldShowMenu(false)
   }
 
   return (

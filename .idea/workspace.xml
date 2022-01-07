@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="refactoring (Todos)">
-      <change afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/TodoSettings/TodoSettings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/TodoSettings/TodoSettings.tsx" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat (Todos) TodoSettings.tsx with shouldShowMenu rxjs state">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/TodoSettings/TodoSettings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/TodoSettings/TodoSettings.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/TestLoadingState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/TestLoadingState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/utils/mock/loadingState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/utils/mock/loadingState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +116,12 @@
       <recent name="W:\conspect\src\pages\registraiton\components\registration-form\components\required-Input-wrapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.validateInput.test.ts">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="npm" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.should validate input form">
     <configuration name="should correctly work with items local state.should add new item" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -165,8 +174,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.validateInput.test.ts" />
         <item itemvalue="Jest.should validate input form" />
+        <item itemvalue="Jest.validateInput.test.ts" />
         <item itemvalue="Node.js.scratch.js" />
         <item itemvalue="npm.lint" />
         <item itemvalue="Jest.should correctly work with items local state.should add new item" />
@@ -201,20 +210,7 @@
       <workItem from="1641292287630" duration="13958000" />
       <workItem from="1641363372385" duration="10663000" />
       <workItem from="1641453265820" duration="17747000" />
-    </task>
-    <task id="LOCAL-00031" summary="feat(MultipleFilter) have done logic that shows filtered items. Component need to structure">
-      <created>1640444031556</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1640444031556</updated>
-    </task>
-    <task id="LOCAL-00032" summary="feat(MultipleFilter) update hook useAllLocalStateMultipleFilter">
-      <created>1640503922170</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1640503922170</updated>
+      <workItem from="1641545188795" duration="13863000" />
     </task>
     <task id="LOCAL-00033" summary="feat(MultipleFilter) update hook useAllLocalStateMultipleFilter">
       <created>1640504650663</created>
@@ -545,7 +541,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641495588576</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="feat (Todos) TodoSettings.tsx">
+      <created>1641497846324</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1641497846324</updated>
+    </task>
+    <task id="LOCAL-00081" summary="feat (Todos) TodoSettings.tsx with shouldShowMenu rxjs state">
+      <created>1641500190538</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1641500190538</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -566,8 +576,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(SingleFilter) not working state normally" />
-    <MESSAGE value="feat(SingleFilter) not working state normally,&#10;update(Todos) create updateStatusTodo" />
     <MESSAGE value="feat(MultipleFilter)" />
     <MESSAGE value="feat(MultipleFilter) need to create All checkbox" />
     <MESSAGE value="feat(MultipleFilter) have done logic that shows filtered items. Component need to structure" />
@@ -591,10 +599,15 @@
     <MESSAGE value="feat (Registration Form) not working delete" />
     <MESSAGE value="feat (Registration Form)" />
     <MESSAGE value="refactoring (Todos)" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring (Todos)" />
+    <MESSAGE value="feat (Todos) TodoSettings.tsx" />
+    <MESSAGE value="feat (Todos) TodoSettings.tsx with shouldShowMenu rxjs state" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat (Todos) TodoSettings.tsx with shouldShowMenu rxjs state" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/conspect$should_validate_input_form.info" NAME="should validate input form Coverage Results" MODIFIED="1641546288434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
