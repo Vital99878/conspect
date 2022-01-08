@@ -1,11 +1,11 @@
 import { TodoStatus, TodoType } from '../models/index.model'
-import { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
 import { BehaviorSubject } from 'rxjs'
 
 const initialTodos: TodoType[] = [
-  { id: 1, label: 'todo 1', status: TodoStatus.notStarted },
-  { id: 3, label: 'todo 3', status: TodoStatus.Doing },
-  { id: 2, label: 'todo 2', status: TodoStatus.Doing },
+  { id: 1, label: 'todo 1', status: TodoStatus.notStarted, order: 1 },
+  { id: 2, label: 'todo 2', status: TodoStatus.Done, order: 2 },
+  { id: 3, label: 'todo 3', status: TodoStatus.Doing, order: 3 },
 ]
 export const shouldShowTodoSettings = new BehaviorSubject(false)
 
@@ -14,7 +14,7 @@ export type R = {
   addTodo(newTodo: TodoType): void
   deleteTodo(deletedTodo: TodoType): void
   updateTodo(updatedTodo: TodoType): void
-  changeOrder([draggableTodo, changeTodo]: [TodoType, TodoType]): void
+  changeOrder: () => void
   setFilter: Dispatch<SetStateAction<TodoStatus>>
   logOver: (overTodo: TodoType) => void
   logDraggable: (draggableTodo: TodoType) => void
@@ -23,26 +23,10 @@ export type R = {
 export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
   const [todoList, setTodoList] = useState(todos)
   const [filter, setFilter] = useState<TodoStatus>(TodoStatus.notStarted)
-  const [draggableTodo, setDraggableTodo] = useState(todoList[0])
-  const [overTodo, setOverTodo] = useState(todoList[0])
+  const draggableTodoRef = useRef(todoList[0])
+  const overTodoRef = useRef(todoList[0])
 
-  useEffect(() => {
-    if (draggableTodo.id !== overTodo.id) {
-      setTodoList((todos) => {
-          return todos.map((todo) => {
-            if (todo.id === draggableTodo.id) {
-              todo.id = overTodo.id
-              return todo
-            }
-            if (todo.id === overTodo.id) {
-              todo.id = draggableTodo.id
-              return todo
-            }
-            return todo
-          })
-      })
-    }
-  }, [draggableTodo, overTodo])
+  // console.log('todoList: ', todoList)
 
   const addTodo = (newTodo: TodoType) => {
     setTodoList((todos) => [newTodo, ...todos])
@@ -58,34 +42,53 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
     )
   }
 
-  const changeOrder = ([draggableTodo, changeTodo]: [TodoType, TodoType]) => {
-    console.log(draggableTodo, changeTodo)
-    setTodoList((todos) => {
-      // console.log('sort')
-      //   return todos.map((todo) => {
-      //     if (todo.id === draggableTodo.id) {
-      //       todo.id = changeTodo.id
-      //       return todo
-      //     }
-      //     if (todo.id === changeTodo.id) {
-      //       todo.id = draggableTodo.id
-      //       return todo
-      //     }
-      //     return todo
-      //   })
-      return todos
-    })
-  }
-  const logOver = (todo: TodoType) => {
-    if (overTodo.id !== todo.id) setOverTodo(todo)
-  }
+  /**
+   * @description захватывает todo, который перетаскивается.
+   *
+   */
+
   const logDraggable = (todo: TodoType) => {
-    if (draggableTodo.id !== todo.id) setDraggableTodo(todo)
+    draggableTodoRef.current.id !== todo.id ? (draggableTodoRef.current = todo) : null
+  }
+
+  /**
+   * @description захватывает todo, который нужно поменять местами с перетаскиваемым todo.
+   *
+   */
+
+  const logOver = (todo: TodoType) => {
+    overTodoRef.current.id !== todo.id ? (overTodoRef.current = todo) : null
+  }
+  /**
+   * @description реализация draggable. Меняет перетаскиваемый туду на тот, который под ним. А тот который под ним становится на место перетаскиваемого.
+   * Нужно сделать, чтобы можно было перетащить todo между двумя другими!
+   *
+   */
+  const changeOrder = () => {
+    // при отпускании мыши почему-то срабатывает еще раз logDraggable
+    // из-за этого захватывается новый todo, который равен заменяемому
+
+    const first = draggableTodoRef.current.order
+    const second = overTodoRef.current.order
+
+    setTodoList((todos) =>
+      todos.map((todo) => {
+        if (todo.id === draggableTodoRef.current.id) {
+          todo.order = second
+          return todo
+        }
+        if (todo.id === overTodoRef.current.id) {
+          todo.order = first
+          return todo
+        }
+        return todo
+      })
+    )
   }
 
   return {
     // todoList,
-    todoList: todoList.sort((a, b) => a.id - b.id),
+    todoList: todoList.sort((a, b) => a.order - b.order),
     addTodo,
     deleteTodo,
     updateTodo,

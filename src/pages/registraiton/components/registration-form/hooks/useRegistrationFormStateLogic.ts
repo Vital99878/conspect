@@ -70,12 +70,12 @@ export const useRegistrationFormStateLogic = () => {
 
   return {
     firstName,
-    onChangeFirstName,
     lastName,
-    onChangeLastName,
     email,
-    onChangeEmail,
     phone,
+    onChangeFirstName,
+    onChangeLastName,
+    onChangeEmail,
     onChangePhone,
     onSubmit,
     isSubmit,

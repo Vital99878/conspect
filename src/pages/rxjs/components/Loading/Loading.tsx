@@ -1,16 +1,16 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './Loading.scss'
-import {LOADING_STATUS} from '../../../../enums'
-import {loading$} from './utils/mock/loadingState'
+import { LOADING_STATUS } from '../../../../enums'
+import { loading$ } from './utils/mock/loadingState'
 import useSubject from '../subject/hooks'
-import {observableValue} from '../subject/observableValue'
+import { observableValue } from '../subject/observableValue'
 
 const Loading = (): JSX.Element | null => {
   const { field: loading } = useSubject(loading$, LOADING_STATUS.SUCCESS)
   const { field: text, updateField } = useSubject(observableValue, '')
 
   useEffect(() => {
-    console.log('text: ', text)
+    // console.log('text: ', text)
   }, [text])
 
   if (loading === LOADING_STATUS.SUCCESS) {

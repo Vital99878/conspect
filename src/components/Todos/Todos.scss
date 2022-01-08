@@ -21,8 +21,10 @@
   }
 }
 .todos {
+  max-width: 90%;
+  min-width: 40%;
   position: relative;
-  padding: 1.6rem;
+  padding: 5vw;
   border: 2px solid green;
   border-radius: 6px;
   background-color: white;

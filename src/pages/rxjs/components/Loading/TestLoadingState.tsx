@@ -1,7 +1,7 @@
 import React from 'react'
 import './Loading.scss'
-import {loading$} from './utils/mock/loadingState'
-import {LOADING_STATUS} from '../../../../enums'
+import { loading$ } from './utils/mock/loadingState'
+import { LOADING_STATUS } from '../../../../enums'
 import useBehaviorSubject from '../subject/hooks'
 
 const TestLoadingState = () => {

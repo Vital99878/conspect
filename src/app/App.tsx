@@ -17,11 +17,11 @@ const App: React.FC = () => {
           <NavigationItem props={registration} />
         </Navigation>
         <Switch>
-          <Route path="/" exact render={() => <h1>Home page</h1>} />
           <Route path={`/${css.path}`} exact component={CssPage} />
           <Route path={`/${test.path}`} exact component={TestPage} />
           <Route path={`/${rxjs.path}`} exact component={RXjsPage} />
           <Route path={`/${registration.path}`} exact component={RegistrationPage} />
+          <Route path="/" exact render={() => <h1>Home page</h1>} />
         </Switch>
       </div>
     </Router>

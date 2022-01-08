@@ -12,7 +12,6 @@ const RXjsPage: FC = () => {
       <div className="rxjs">
         <Loading />
         <TestLoadingState />
-        <SubTest />
         {/* <BallComponent />*/}
         <SubTest />
       </div>

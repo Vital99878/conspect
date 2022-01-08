@@ -10,6 +10,7 @@ export type TodoType = {
   id: number
   label: string
   status: TodoStatus
+  order: number
 }
 
 export type R_2 = ReturnType<typeof useAllLocalStateTodos>

@@ -48,9 +48,12 @@ export function formatPhoneNumber(phone: string): string {
   return formatPhone
 }
 
+// export function reformatPhoneNumber(phone: string): string {
+//   return phone
+//     .split('-')
+//     .filter((item) => item !== '')
+//     .join('')
+// }
 export function reformatPhoneNumber(phone: string): string {
-  return phone
-    .split('-')
-    .filter((item) => item !== '')
-    .join('')
+  return phone.replaceAll('-', '')
 }
