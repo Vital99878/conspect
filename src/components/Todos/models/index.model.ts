@@ -1,5 +1,9 @@
 import { useAllLocalStateTodos } from '../hooks/useAllLocalState__Todos'
 
+export enum DropPosition {
+  before = 'before',
+  after = 'after',
+}
 export enum TodoStatus {
   Done = 'done',
   Doing = 'doing',

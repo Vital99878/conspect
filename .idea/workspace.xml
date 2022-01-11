@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat (Todos) Draggable.">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssOther/CssOther.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssOther/CssOther.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/css-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/css-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/components/required-Input-wrapper/RequiredInputWrapper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/components/required-Input-wrapper/RequiredInputWrapper.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/hooks/useRegistrationFormStateLogic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/hooks/useRegistrationFormStateLogic.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/utils/lengthChecker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/utils/lengthChecker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/TestLoadingState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/TestLoadingState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,77 +184,8 @@
       <workItem from="1641630826589" duration="4265000" />
       <workItem from="1641827599567" duration="5096000" />
       <workItem from="1641879571049" duration="2753000" />
-      <workItem from="1641887267616" duration="120000" />
-    </task>
-    <task id="LOCAL-00036" summary="feat(MultipleFilter) update hook useAllLocalStateMultipleFilter: add queries params to setFilter">
-      <created>1640590019911</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1640590019912</updated>
-    </task>
-    <task id="LOCAL-00037" summary="test(MultipleFilter)">
-      <created>1640594291861</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1640594291861</updated>
-    </task>
-    <task id="LOCAL-00038" summary="update (useAllLocalStateMultipleFilter hook) подключил stream">
-      <created>1640600233373</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1640600233373</updated>
-    </task>
-    <task id="LOCAL-00039" summary="update (useAllLocalStateMultipleFilter hook) подключил stream">
-      <created>1640600247717</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1640600247717</updated>
-    </task>
-    <task id="LOCAL-00040" summary="refactoring (MultipleFilter)">
-      <created>1640682134801</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1640682134801</updated>
-    </task>
-    <task id="LOCAL-00041" summary="refactoring (MultipleFilter)">
-      <created>1640689663662</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1640689663662</updated>
-    </task>
-    <task id="LOCAL-00042" summary="create (hookLogicTemplate)">
-      <created>1640694594874</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1640694594874</updated>
-    </task>
-    <task id="LOCAL-00043" summary="create (hookLogicTemplate)">
-      <created>1640695550711</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1640695550711</updated>
-    </task>
-    <task id="LOCAL-00044" summary="update (Todos) visible todolist logic">
-      <created>1640701703691</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1640701703691</updated>
-    </task>
-    <task id="LOCAL-00045" summary="update (Todos) visible todolist logic">
-      <created>1640706786828</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1640706786828</updated>
+      <workItem from="1641887267616" duration="6060000" />
+      <workItem from="1641967992407" duration="2740000" />
     </task>
     <task id="LOCAL-00046" summary="update (Todos) visible todolist logic, create (RenameForm)">
       <created>1640771752524</created>
@@ -543,7 +460,77 @@
       <option name="project" value="LOCAL" />
       <updated>1641662293143</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="feat (Todos) Draggable.">
+      <created>1641887415037</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1641887415037</updated>
+    </task>
+    <task id="LOCAL-00086" summary="feat (Todos) Draggable написал функции, которые ставит draggable туду над (под) выбранный">
+      <created>1641891640824</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1641891640824</updated>
+    </task>
+    <task id="LOCAL-00087" summary="feat (Todos) Draggable">
+      <created>1641904236402</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1641904236402</updated>
+    </task>
+    <task id="LOCAL-00088" summary="feat (Todos) Draggable">
+      <created>1641910061890</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1641910061890</updated>
+    </task>
+    <task id="LOCAL-00089" summary="feat (Todos) Draggable">
+      <created>1641910558546</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1641910558546</updated>
+    </task>
+    <task id="LOCAL-00090" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
+      <created>1641911918913</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1641911918914</updated>
+    </task>
+    <task id="LOCAL-00091" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
+      <created>1641923306720</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1641923306720</updated>
+    </task>
+    <task id="LOCAL-00092" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
+      <created>1641924109339</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1641924109339</updated>
+    </task>
+    <task id="LOCAL-00093" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
+      <created>1641968915547</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1641968915547</updated>
+    </task>
+    <task id="LOCAL-00094" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
+      <created>1641969943988</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1641969943988</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -564,9 +551,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(MultipleFilter) have done logic that shows filtered items. Component need to structure" />
-    <MESSAGE value="feat(MultipleFilter) update hook useAllLocalStateMultipleFilter" />
-    <MESSAGE value="feat(MultipleFilter) update hook useAllLocalStateMultipleFilter: add queries params to setFilter" />
     <MESSAGE value="test(MultipleFilter)" />
     <MESSAGE value="update (useAllLocalStateMultipleFilter hook) подключил stream" />
     <MESSAGE value="refactoring (MultipleFilter)" />
@@ -589,7 +573,10 @@
     <MESSAGE value="feat (Todos) TodoSettings.tsx with shouldShowMenu rxjs state" />
     <MESSAGE value="feat (Todos) Draggable. not work addForm and not correct draggable" />
     <MESSAGE value="feat (Todos) Draggable." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat (Todos) Draggable." />
+    <MESSAGE value="feat (Todos) Draggable написал функции, которые ставит draggable туду над (под) выбранный" />
+    <MESSAGE value="feat (Todos) Draggable" />
+    <MESSAGE value="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

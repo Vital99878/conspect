@@ -3,7 +3,7 @@
   width: 100%;
   padding: 8px 4px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 12px;
   align-items: baseline;
   border: 1px solid black;
@@ -21,6 +21,7 @@
   }
 }
 .todos {
+  margin: 0 auto;
   max-width: 90%;
   min-width: 40%;
   position: relative;
@@ -34,5 +35,4 @@
   justify-content: center;
   transition: all 1s ease;
   overflow: hidden;
-  margin: 0 auto;
 }

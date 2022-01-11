@@ -2,7 +2,7 @@ import React, { FormEvent, useState } from 'react'
 import { R_2, TodoStatus } from '../../models/index.model'
 
 type Props = {
-  props: Pick<R_2, 'addTodo'> & { order?: number }
+  props: Pick<R_2, 'addTodo'> & { order: number }
 }
 
 const AddTodoForm: React.FC<Props> = ({ props }) => {
@@ -16,7 +16,7 @@ const AddTodoForm: React.FC<Props> = ({ props }) => {
       setLabel('меньше 2 символов!')
       return
     }
-    addTodo({ id: Math.random() * 555, label, status: TodoStatus.notStarted, order: Math.random() * 555 })
+    addTodo({ id: Math.random() * 555, label, status: TodoStatus.notStarted, order})
     setLabel('')
   }
   const onChangeLabel = (e: React.ChangeEvent<HTMLInputElement>) => {
