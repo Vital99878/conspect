@@ -16,7 +16,7 @@ const AddTodoForm: React.FC<Props> = ({ props }) => {
       setLabel('меньше 2 символов!')
       return
     }
-    addTodo({ id: Math.random() * 555, label, status: TodoStatus.notStarted, order})
+    addTodo({ id: order, label, status: TodoStatus.notStarted, order})
     setLabel('')
   }
   const onChangeLabel = (e: React.ChangeEvent<HTMLInputElement>) => {
