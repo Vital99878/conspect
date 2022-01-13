@@ -36,3 +36,12 @@
   transition: all 1s ease;
   overflow: hidden;
 }
+.dragging {
+  opacity: 0.5;
+}
+.before {
+  margin-top: 2rem;
+}
+.after {
+  margin-bottom: 2rem;
+}

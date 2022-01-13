@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat (Singleton)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="refactoring (Todos) dragging style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/patterns/Singleton.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/patterns/Singleton.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,13 +187,6 @@
       <workItem from="1641879571049" duration="2753000" />
       <workItem from="1641887267616" duration="6060000" />
       <workItem from="1641967992407" duration="9687000" />
-    </task>
-    <task id="LOCAL-00048" summary="update (RenameForm) useOutsideCallback not working">
-      <created>1640774612858</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1640774612858</updated>
     </task>
     <task id="LOCAL-00049" summary="create (Required)">
       <created>1640789119545</created>
@@ -531,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641988939697</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="refactoring (Todos) dragging style">
+      <created>1642072105985</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1642072105986</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -552,7 +552,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring (MultipleFilter)" />
     <MESSAGE value="create (hookLogicTemplate)" />
     <MESSAGE value="update (Todos) visible todolist logic" />
     <MESSAGE value="update (Todos) visible todolist logic, create (RenameForm)" />
@@ -577,7 +576,8 @@
     <MESSAGE value="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно" />
     <MESSAGE value="feat (Todos) Draggable все виды перетаскивания по списку." />
     <MESSAGE value="feat (Singleton)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat (Singleton)" />
+    <MESSAGE value="refactoring (Todos) dragging style" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring (Todos) dragging style" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
