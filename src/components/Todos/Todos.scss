@@ -8,6 +8,7 @@
   align-items: baseline;
   border: 1px solid black;
   border-radius: 4px;
+  transition: opacity .1s ease-out;
 
   &__label {
     font-size: 1rem;
@@ -40,8 +41,10 @@
   opacity: 0.5;
 }
 .before {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  transition: all .4s ease-in;
 }
 .after {
-  margin-bottom: 2rem;
+  transition: all .4s ease-in;
+  margin-bottom: 4rem;
 }

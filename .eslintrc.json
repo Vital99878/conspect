@@ -19,6 +19,7 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks"],
   "rules": {
+    "camelcase": "off",
     "require-jsdoc": "off",
     "object-curly-spacing": "off",
     "max-len": "off",

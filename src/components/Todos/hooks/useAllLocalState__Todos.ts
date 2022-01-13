@@ -22,8 +22,8 @@ export type R = {
 
 export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
   const [todoList, setTodoList] = useState(todos)
-  const draggableTodoRef = useRef(todoList[0])
-  const replaceableTodoRef = useRef(todoList[0])
+  const draggableTodoRef = useRef<TodoType | null>(null)
+  const replaceableTodoRef = useRef<TodoType | null>(null)
   const dragPositionRef = useRef(DropPosition.before)
 
   console.log('todoList: ', todoList)
@@ -49,6 +49,7 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
    */
 
   const dragTodo = (todo: TodoType) => {
+    draggableTodoRef.current = todo
     draggableTodoRef.current.id !== todo.id ? (draggableTodoRef.current = todo) : null
   }
 
@@ -62,6 +63,7 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
    */
 
   const getReplaceableTodo = (todo: TodoType) => {
+    replaceableTodoRef.current = todo
     replaceableTodoRef.current.id !== todo.id ? (replaceableTodoRef.current = todo) : null
   }
 
@@ -72,12 +74,13 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
    */
 
   const insertDraggableBeforeTodo = (draggableOrder: number, underDraggableOrder: number) => {
+    const draggingTodo = draggableTodoRef.current as TodoType
     if (draggableOrder < underDraggableOrder) {
       if (underDraggableOrder - draggableOrder === 1) return
       setTodoList((todos) => {
         let newOrder = draggableOrder
         return todos.map((todo) => {
-          if (todo.id === draggableTodoRef.current.id) {
+          if (todo.id === draggingTodo.id) {
             todo.order = underDraggableOrder - 1
             return todo
           }
@@ -93,7 +96,7 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
       setTodoList((todos) => {
         let newOrder = underDraggableOrder
         return todos.map((todo) => {
-          if (todo.id === draggableTodoRef.current.id) {
+          if (todo.id === draggingTodo.id) {
             todo.order = underDraggableOrder
             return todo
           }
@@ -108,11 +111,12 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
   }
 
   const insertDraggableAfterTodo = (draggableOrder: number, underDraggableOrder: number) => {
+    const draggingTodo = draggableTodoRef.current as TodoType
     if (draggableOrder < underDraggableOrder) {
       setTodoList((todos) => {
         let newOrder = draggableOrder
         return todos.map((todo) => {
-          if (todo.id === draggableTodoRef.current.id) {
+          if (todo.id === draggingTodo.id) {
             todo.order = underDraggableOrder
             return todo
           }
@@ -129,7 +133,7 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
       setTodoList((todos) => {
         let newOrder = underDraggableOrder + 1
         return todos.map((todo) => {
-          if (todo.id === draggableTodoRef.current.id) {
+          if (todo.id === draggingTodo.id) {
             todo.order = underDraggableOrder + 1
             return todo
           }
@@ -146,16 +150,18 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
   function replaceTodos() {
     // при отпускании мыши почему-то срабатывает еще раз logDraggable
     // из-за этого захватывается новый todo, который равен заменяемому
-    const first = draggableTodoRef.current.order
-    const second = replaceableTodoRef.current.order
+    const draggingTodo = draggableTodoRef.current as TodoType
+    const replaceableTodo = replaceableTodoRef.current as TodoType
+    const first = draggingTodo.order
+    const second = replaceableTodo.order
 
     setTodoList((todos) =>
       todos.map((todo) => {
-        if (todo.id === draggableTodoRef.current.id) {
+        if (todo.id === draggingTodo.id) {
           todo.order = second
           return todo
         }
-        if (todo.id === replaceableTodoRef.current.id) {
+        if (todo.id === replaceableTodo.id) {
           todo.order = first
           return todo
         }
@@ -165,8 +171,10 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
   }
 
   const changeOrder = () => {
-    const draggableOrder = draggableTodoRef.current.order
-    const underDraggableOrder = replaceableTodoRef.current.order
+    const draggingTodo = draggableTodoRef.current as TodoType
+    const replaceableTodo = replaceableTodoRef.current as TodoType
+    const draggableOrder = draggingTodo.order
+    const underDraggableOrder = replaceableTodo.order
 
     if (DropPosition.before === dragPositionRef.current) {
       insertDraggableBeforeTodo(draggableOrder, underDraggableOrder)
