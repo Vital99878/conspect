@@ -94,7 +94,7 @@ export class Publisher implements Subject {
    * этого).
    */
   public someBusinessLogic(): void {
-    console.log('\nSubject: I\'m doing something important.')
+    console.log("\nSubject: I'm doing something important.")
     this.state += 1
 
     console.log(`Subject: My state has just changed to: ${this.state}`)
@@ -107,17 +107,17 @@ export class Publisher implements Subject {
  * которому они прикреплены.
  */
 export class ConcreteObserverA implements Observer {
-  public stateA = 10;
+  public stateA = 10
   public update(subjectState: number): void {
-      this.stateA += subjectState
-      console.log('this.stateA: ', this.stateA)
-      // console.log(`%c${subject.state} A`, 'color:tomato; font-size: 14px');
-    }
+    this.stateA += subjectState
+    console.log('this.stateA: ', this.stateA)
+    // console.log(`%c${subject.state} A`, 'color:tomato; font-size: 14px');
+  }
 }
 
 export class ConcreteObserverB implements Observer {
   public update(subjectState: number): void {
-      console.log(`%c${subjectState} B`, 'color:tomato; font-size: 14px');
+    console.log(`%c${subjectState} B`, 'color:tomato; font-size: 14px')
   }
 }
 

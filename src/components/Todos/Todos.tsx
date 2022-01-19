@@ -19,7 +19,10 @@ const Todos: React.FC = () => {
       <AddTodoForm props={{ addTodo, order: todoList.length + 1 }} />
       <ul>
         {visibleTodos.map((todo) => (
-          <Todo props={{ todo, deleteTodo, updateTodo, dragTodo, getReplaceableTodo, changeOrder, setDragPos }} key={todo.id} />
+          <Todo
+            props={{ todo, deleteTodo, updateTodo, dragTodo, getReplaceableTodo, changeOrder, setDragPos }}
+            key={todo.id}
+          />
         ))}
       </ul>
       <TodosFilter props={{ buttons, toggleActiveButton }} />

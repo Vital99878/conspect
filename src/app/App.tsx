@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { TestPage, RXjsPage, RegistrationPage, CssPage } from '../pages/'
 import Navigation, { NavigationItem } from '../components/Navigation/Navigation'
 import { pages } from './store/adtiveMenuItemReducer'
-import DesignPatternPage from '../pages/desing-pattern';
+import DesignPatternPage from '../pages/desing-pattern'
 
 const App: React.FC = () => {
   const { home, css, test, rxjs, registration, designPatterns } = pages

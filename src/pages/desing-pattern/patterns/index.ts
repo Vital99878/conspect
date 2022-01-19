@@ -1,2 +1,2 @@
-import {Counter} from './Singleton';
-export {Counter}
+import { Counter } from './Singleton'
+export { Counter }

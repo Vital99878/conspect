@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="refactoring (Todos) bad style for animation">
-      <change afterPath="$PROJECT_DIR$/src/hooks/useEscapeKey.ts" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="feat (useEscapeKey)">
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/Modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/hooks/useHook.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/mock/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/models/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/models/new.model..ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/tests/new.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/AddTodoForm/AddTodoForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/Observer/Conceptual/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/Observer/Conceptual/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/patterns/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/patterns/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +87,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hooks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -92,11 +104,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\hooks" />
       <recent name="W:\conspect\src\pages\desing-pattern" />
       <recent name="W:\conspect\src\pages\desing-pattern\patterns" />
       <recent name="W:\conspect\src\pages" />
-      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\exercises\ex_class" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\desing-pattern\patterns" />
@@ -191,14 +203,7 @@
       <workItem from="1642149555247" duration="12246000" />
       <workItem from="1642429200981" duration="1155000" />
       <workItem from="1642603231631" duration="326000" />
-      <workItem from="1642603574009" duration="1727000" />
-    </task>
-    <task id="LOCAL-00053" summary="feat (Required Comp)">
-      <created>1640855541806</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1640855541806</updated>
+      <workItem from="1642603574009" duration="4836000" />
     </task>
     <task id="LOCAL-00054" summary="feat (AbsolutePositionMenu)">
       <created>1640863354344</created>
@@ -536,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642430344467</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="feat (useEscapeKey)">
+      <created>1642605428953</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1642605428953</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -557,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update (Todos) visible todolist logic" />
     <MESSAGE value="update (Todos) visible todolist logic, create (RenameForm)" />
     <MESSAGE value="update (RenameForm) useOutsideCallback" />
     <MESSAGE value="update (RenameForm) useOutsideCallback not working" />
@@ -582,7 +593,8 @@
     <MESSAGE value="feat (Singleton)" />
     <MESSAGE value="refactoring (Todos) dragging style" />
     <MESSAGE value="refactoring (Todos) bad style for animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring (Todos) bad style for animation" />
+    <MESSAGE value="feat (useEscapeKey)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat (useEscapeKey)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
