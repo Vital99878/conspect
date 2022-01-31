@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import { Singleton } from '../../Singleton'
+import { Singleton } from './singleton'
 import '../../../../index.scss'
 
-export const SingletonTest = () => {
+export const StateTest = () => {
   useEffect(() => {
     return Singleton.destroyInstance
   }, [])
@@ -18,4 +18,4 @@ export const SingletonTest = () => {
   )
 }
 
-export default SingletonTest
+export default StateTest
