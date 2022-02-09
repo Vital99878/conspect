@@ -12,7 +12,7 @@ const Modal: React.FC<Props> = ({ props }) => {
   //     const data$ = of([1, 2, 3])
   //     data$.subscribe((data) => setData(data))
   // })
-  if (!shouldShow) null
+  if (shouldShow) null
 
   return (
     <div className={`modal-wrapper`}>
