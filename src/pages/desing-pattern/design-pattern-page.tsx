@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
+import AdapterTest from './components/Test-Adapter/AdapterTest'
 import BuilderTest from './components/Test-Builder/BuilderTest'
 import SingletonTest from './components/Test-Singleton/SingletonTest'
 import StateTest from './components/Test-State/StateTest'
@@ -10,7 +11,8 @@ const DesignPatternPage: React.FC = () => {
       <main className="designPattern-page">
         {/* <SingletonTest />*/}
         {/* <StateTest/>*/}
-        <BuilderTest/>
+        {/* <BuilderTest/>*/}
+        <AdapterTest/>
       </main>
     </Layout>
   )
