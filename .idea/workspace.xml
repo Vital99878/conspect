@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="pattern design (Adapter)">
+      <change afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Composite/CompositeTest.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Composite/composite_box.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/phoneAdapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/phoneAdapter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/desing-pattern/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -92,8 +93,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Adapter" />
       <recent name="W:\conspect\src\pages\desing-pattern\components" />
+      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Adapter" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Builder" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-State" />
       <recent name="W:\conspect\src\components" />
@@ -197,13 +198,6 @@
       <workItem from="1643297831150" duration="605000" />
       <workItem from="1643617665489" duration="388000" />
       <workItem from="1643618690409" duration="189000" />
-    </task>
-    <task id="LOCAL-00063" summary="refactoring (TodosFilter)">
-      <created>1641298844248</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1641298844248</updated>
     </task>
     <task id="LOCAL-00064" summary="refactoring (TodosFilter)">
       <created>1641299121336</created>
@@ -487,7 +481,7 @@
       <updated>1643618880718</updated>
       <workItem from="1643618881063" duration="6698000" />
       <workItem from="1643971549618" duration="3972000" />
-      <workItem from="1644406569807" duration="4035000" />
+      <workItem from="1644406569807" duration="8039000" />
     </task>
     <task id="LOCAL-00104" summary="pattern design ()">
       <created>1643632324294</created>
@@ -545,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644411588754</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="pattern design (Adapter)">
+      <created>1644411743625</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1644411743625</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
