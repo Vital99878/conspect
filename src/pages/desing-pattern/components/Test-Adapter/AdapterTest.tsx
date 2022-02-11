@@ -1,14 +1,14 @@
 import React from 'react'
 import '../../../../index.scss'
-import { Target, TargetB, Adapter } from './adapter_2'
+import { TargetA, TargetB, Adapter_AtoB } from './adapter_2'
 import { LightningToMicroUSBAdapter, IPhone7 } from './phoneAdapter'
 
 export const AdapterTest: React.FC = () => {
   // example 1
-  const target = new Target()
-  const adaptee = new TargetB()
-  const adapter = new Adapter(adaptee)
-  // console.log('target: ', target)
+  const targetA = new TargetA()
+  const targetB = new TargetB()
+  const adapter = new Adapter_AtoB(targetB)
+  // console.log('targetA: ', targetA)
   // console.log('adapter: ', adapter)
 
   // example 2 - Phone adapter
@@ -24,15 +24,15 @@ export const AdapterTest: React.FC = () => {
     <div className="AdapterTest">
       <h2>Example 1</h2>
       <div className={'my-buttons'}>
-        <button onClick={() => target.request()}>without adapter</button>
-        <button onClick={() => adapter.request()}>with adapter</button>
+        <button onClick={() => targetA.requestA()}>Target A request</button>
+        <button onClick={() => adapter.requestA()}>Target A request adapted to Target B</button>
       </div>
 
       <h2>Phone adapter</h2>
       <div className={'my-buttons'}>
         <button onClick={() => iphone.useLightning()}>Iphone</button>
-        <button onClick={() => chargeAdaptor.useMicroUSB()}>Iphone with adapter</button>
-        <button onClick={() => chargeAdaptor.iphoneDevice.useLightning()}>Iphone with adapter</button>
+        <button onClick={() => chargeAdaptor.useMicroUSB()}>Iphone with micro usb adapter</button>
+        <button onClick={() => chargeAdaptor.iphoneDevice.useLightning()}>Use IPhone from adapter(obj ref) </button>
       </div>
     </div>
   )
