@@ -20,8 +20,8 @@ export class LightningToMicroUSBAdapter implements Android {
     }
 
     useMicroUSB() {
+        console.log(`%cMicro USB converted to Lightning.`, 'color:tomato; font-size: 14px');
         this.iphoneDevice.useLightning();
-        console.log(`%cWant to use micro USB, converting...`, 'color:green; font-size: 14px');
     }
 }
 

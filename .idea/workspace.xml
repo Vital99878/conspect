@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="pattern design (Todos Singleton)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/todosSingleton.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/todosSingleton.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/AdapterTest.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter_2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter_2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adpter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/phoneAdapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/phoneAdapter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
