@@ -9,7 +9,7 @@ export const StateTest = () => {
 
   return (
     <div className="SingletonTest">
-      <div className={'my-buttons'} >
+      <div className={'my-buttons'}>
         <button onClick={() => Singleton.createInstance([1, 2, 3])}>Create instance</button>
         <button onClick={Singleton.getInstance}>Get instance</button>
         <button onClick={Singleton.destroyInstance}>Destroy instance</button>

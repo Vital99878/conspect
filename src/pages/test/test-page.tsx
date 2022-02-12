@@ -1,4 +1,5 @@
 import React from 'react'
+import TestIterableObj from '../../components/Test-IterableObject/TestIterableObj'
 import { useWindowWidth } from '../../hooks/customHooks'
 import './test-page.scss'
 import Layout from '../../components/Layout/Layout'
@@ -9,7 +10,7 @@ import { RequiredInputWrapper } from '../registraiton/components/registration-fo
 import TestLoadingState from '../rxjs/components/Loading/TestLoadingState'
 import { TestEmpty, TestTS } from './components'
 import Modal from '../../components/Modal/Modal'
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode
@@ -20,11 +21,12 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   return (
     <Layout pageHeading="Test page">
       <div className="test-components">
-          {ReactDOM.createPortal(<Modal props={{ show: false }} />, document.getElementById('root') as HTMLLIElement)}
+        {/* {ReactDOM.createPortal(<Modal props={{ show: false }} />, document.getElementById('root') as HTMLLIElement)}*/}
+        <TestIterableObj />
         {/* <TestTS />*/}
-        {/* <TestEmpty />*/}
         {/* <TestPureReact />*/}
-         <Todos />
+        {/* <Todos />*/}
+        {/* <TestEmpty />*/}
       </div>
       {/* <SingleFilter />*/}
       {/* <MultipleFilter />*/}

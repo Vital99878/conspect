@@ -1,4 +1,3 @@
-
 export interface Command {
   execute(): void
 }
@@ -58,7 +57,7 @@ export class Invoker {
     this.onFinish = command
   }
 
- public doSomethingImportant(): void {
+  public doSomethingImportant(): void {
     console.log('Invoker: Does anybody want something done before I begin?')
     if (this.isCommand(this.onStart)) {
       this.onStart.execute()
@@ -76,5 +75,3 @@ export class Invoker {
     return object.execute !== undefined
   }
 }
-
-

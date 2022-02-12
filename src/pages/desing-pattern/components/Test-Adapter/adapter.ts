@@ -9,7 +9,7 @@
  */
 export class Target {
   public request(): string {
-    return 'Target: The default target\'s behavior.'
+    return "Target: The default target's behavior."
   }
 }
 
@@ -45,4 +45,3 @@ class Adapter extends Target {
 /**
  * Клиентский код поддерживает все классы, использующие целевой интерфейс.
  */
-

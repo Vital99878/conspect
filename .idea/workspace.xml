@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="pattern design (Command)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="object learn (Iterable) without typing iterators">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Test-IterableObject/iterableGenerator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test-IterableObject/iterableGenerator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Test-IterableObject/iterableNext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test-IterableObject/iterableNext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command" />
+    <property name="last_opened_file_path" value="D:/!Загрузки/zadachi/node.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -91,11 +93,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components\Test-IterableObject" />
+      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Command" />
       <recent name="W:\conspect\src\components\Todos\hooks" />
       <recent name="W:\conspect\src\pages\desing-pattern\components" />
-      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Adapter" />
-      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Builder" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Adapter" />
@@ -110,7 +112,7 @@
       <command value="npm" />
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.scratch.js">
+  <component name="RunManager" selected="Node.js.node.js">
     <configuration name="should validate input form" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -124,20 +126,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="validateInput.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/tests/validateInput.test.ts" />
-      <method v="2" />
-    </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/exercises/ex_class/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="inheritance.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/exercises/ex_class/inheritance.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="node.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="D:/!Загрузки/zadachi/node.js" working-dir="D:/!Загрузки/zadachi">
       <method v="2" />
     </configuration>
     <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
@@ -145,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.node.js" />
         <item itemvalue="Node.js.scratch.js" />
         <item itemvalue="Node.js.inheritance.js" />
         <item itemvalue="Node.js.index.js" />
         <item itemvalue="Jest.should validate input form" />
-        <item itemvalue="Jest.validateInput.test.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -196,62 +191,6 @@
       <workItem from="1643297831150" duration="605000" />
       <workItem from="1643617665489" duration="388000" />
       <workItem from="1643618690409" duration="189000" />
-    </task>
-    <task id="LOCAL-00069" summary="feat (Registration Form) not working delete">
-      <created>1641377895966</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1641377895966</updated>
-    </task>
-    <task id="LOCAL-00070" summary="feat (Registration Form)">
-      <created>1641379733618</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1641379733618</updated>
-    </task>
-    <task id="LOCAL-00071" summary="feat (Registration Form)">
-      <created>1641407146977</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1641407146977</updated>
-    </task>
-    <task id="LOCAL-00072" summary="feat (Registration Form)">
-      <created>1641408231950</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1641408231950</updated>
-    </task>
-    <task id="LOCAL-00073" summary="feat (Registration Form)">
-      <created>1641408789465</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1641408789465</updated>
-    </task>
-    <task id="LOCAL-00074" summary="feat (Registration Form)">
-      <created>1641408894943</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1641408894944</updated>
-    </task>
-    <task id="LOCAL-00075" summary="feat (Registration Form)">
-      <created>1641458770255</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1641458770255</updated>
-    </task>
-    <task id="LOCAL-00076" summary="feat (Registration Form)">
-      <created>1641475347447</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1641475347448</updated>
     </task>
     <task id="LOCAL-00077" summary="feat (Registration Form)">
       <created>1641478661739</created>
@@ -445,6 +384,7 @@
       <workItem from="1643618881063" duration="6698000" />
       <workItem from="1643971549618" duration="3972000" />
       <workItem from="1644406569807" duration="11374000" />
+      <workItem from="1644648608788" duration="13111000" />
     </task>
     <task id="LOCAL-00104" summary="pattern design ()">
       <created>1643632324294</created>
@@ -544,7 +484,63 @@
       <option name="project" value="LOCAL" />
       <updated>1644593938874</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="pattern design (Command)">
+      <created>1644594500673</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1644594500673</updated>
+    </task>
+    <task id="LOCAL-00119" summary="pattern design (Iterable)">
+      <created>1644651863832</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1644651863833</updated>
+    </task>
+    <task id="LOCAL-00120" summary="object learn (Iterable)">
+      <created>1644653716250</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1644653716250</updated>
+    </task>
+    <task id="LOCAL-00121" summary="object learn (Iterable)">
+      <created>1644653864404</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1644653864404</updated>
+    </task>
+    <task id="LOCAL-00122" summary="object learn (Iterable)">
+      <created>1644654080676</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1644654080676</updated>
+    </task>
+    <task id="LOCAL-00123" summary="object learn (Iterable) without typing iterators">
+      <created>1644654884626</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1644654884626</updated>
+    </task>
+    <task id="LOCAL-00124" summary="object learn (Iterable) without typing iterators">
+      <created>1644655914574</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1644655914574</updated>
+    </task>
+    <task id="LOCAL-00125" summary="object learn (Iterable) without typing iterators">
+      <created>1644682172052</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1644682172052</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -565,9 +561,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring (Todos types)" />
-    <MESSAGE value="refactoring (TodosFilter)" />
-    <MESSAGE value="feat (Registration Form) not working delete" />
     <MESSAGE value="feat (Registration Form)" />
     <MESSAGE value="refactoring (Todos)" />
     <MESSAGE value="feat (Todos) TodoSettings.tsx" />
@@ -590,7 +583,10 @@
     <MESSAGE value="pattern design (Todos Singleton)" />
     <MESSAGE value="pattern design (Adapter) refactor" />
     <MESSAGE value="pattern design (Command)" />
-    <option name="LAST_COMMIT_MESSAGE" value="pattern design (Command)" />
+    <MESSAGE value="pattern design (Iterable)" />
+    <MESSAGE value="object learn (Iterable)" />
+    <MESSAGE value="object learn (Iterable) without typing iterators" />
+    <option name="LAST_COMMIT_MESSAGE" value="object learn (Iterable) without typing iterators" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

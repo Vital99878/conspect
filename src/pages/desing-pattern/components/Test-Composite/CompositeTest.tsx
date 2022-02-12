@@ -1,10 +1,10 @@
 import React from 'react'
 import '../../../../index.scss'
-import {MainBox} from './composite_box'
+import { MainBox } from './composite_box'
 
 export const CompositeTest: React.FC = () => {
   {
-  // example 1
+    // example 1
     const rootBox = new MainBox(100)
     const branchBox_1 = new MainBox(50)
     const branchBox_2 = new MainBox(50)

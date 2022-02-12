@@ -123,5 +123,3 @@ export class Director {
     this.builder.producePartC()
   }
 }
-
-

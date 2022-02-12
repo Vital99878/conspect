@@ -1,6 +1,6 @@
 import React, { FormEvent, useState } from 'react'
 import { R_2, TodoStatus } from '../../models/index.model'
-import {TodosSingleton} from '../../hooks/todosSingleton'
+import { TodosSingleton } from '../../hooks/todosSingleton'
 
 type Props = {
   props: Pick<R_2, 'addTodo'> & { order: number }
