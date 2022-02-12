@@ -4,6 +4,7 @@ import AdapterTest from './components/Test-Adapter/AdapterTest'
 import BuilderTest from './components/Test-Builder/BuilderTest'
 import CommandTest from './components/Test-Command/CommandTest'
 import CompositeTest from './components/Test-Composite/CompositeTest'
+import IteratorTest from './components/Test-Iterator/IteratorTest'
 import SingletonTest from './components/Test-Singleton/SingletonTest'
 import StateTest from './components/Test-State/StateTest'
 
@@ -16,7 +17,8 @@ const DesignPatternPage: React.FC = () => {
         {/* <BuilderTest/>*/}
         {/* <AdapterTest/>*/}
         {/* <CompositeTest/>*/}
-        <CommandTest />
+        {/* <CommandTest />*/}
+        <IteratorTest/>
       </main>
     </Layout>
   )

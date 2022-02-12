@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="object learn (Iterable) without typing iterators">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="design pattern (Iterator) begin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Test-IterableObject/iterableGenerator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test-IterableObject/iterableGenerator.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Test-IterableObject/iterableNext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test-IterableObject/iterableNext.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/iterator_2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/iterator_2.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="D:/!Загрузки/zadachi/node.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/desing-pattern/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -93,11 +91,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\desing-pattern\components" />
       <recent name="W:\conspect\src\components\Test-IterableObject" />
       <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Command" />
       <recent name="W:\conspect\src\components\Todos\hooks" />
-      <recent name="W:\conspect\src\pages\desing-pattern\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Adapter" />
@@ -191,20 +189,6 @@
       <workItem from="1643297831150" duration="605000" />
       <workItem from="1643617665489" duration="388000" />
       <workItem from="1643618690409" duration="189000" />
-    </task>
-    <task id="LOCAL-00077" summary="feat (Registration Form)">
-      <created>1641478661739</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1641478661739</updated>
-    </task>
-    <task id="LOCAL-00078" summary="refactoring (Todos)">
-      <created>1641494612583</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1641494612583</updated>
     </task>
     <task id="LOCAL-00079" summary="refactoring (Todos)">
       <created>1641495588576</created>
@@ -384,7 +368,7 @@
       <workItem from="1643618881063" duration="6698000" />
       <workItem from="1643971549618" duration="3972000" />
       <workItem from="1644406569807" duration="11374000" />
-      <workItem from="1644648608788" duration="13111000" />
+      <workItem from="1644648608788" duration="15027000" />
     </task>
     <task id="LOCAL-00104" summary="pattern design ()">
       <created>1643632324294</created>
@@ -540,7 +524,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644682172052</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="object learn (Iterable) without typing iterators">
+      <created>1644682797228</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1644682797228</updated>
+    </task>
+    <task id="LOCAL-00127" summary="design pattern (Iterator) begin">
+      <created>1644685195063</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1644685195063</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -561,7 +559,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat (Registration Form)" />
     <MESSAGE value="refactoring (Todos)" />
     <MESSAGE value="feat (Todos) TodoSettings.tsx" />
     <MESSAGE value="feat (Todos) TodoSettings.tsx with shouldShowMenu rxjs state" />
@@ -586,7 +583,8 @@
     <MESSAGE value="pattern design (Iterable)" />
     <MESSAGE value="object learn (Iterable)" />
     <MESSAGE value="object learn (Iterable) without typing iterators" />
-    <option name="LAST_COMMIT_MESSAGE" value="object learn (Iterable) without typing iterators" />
+    <MESSAGE value="design pattern (Iterator) begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="design pattern (Iterator) begin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

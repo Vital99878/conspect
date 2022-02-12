@@ -1,6 +1,6 @@
 import React from 'react'
 import './TestEmpty.css'
-import {} from './iterableNext'
+// import {} from './iterableNext'
 // import {} from './iterableGenerator'
 
 const TestIterableObj = () => {
