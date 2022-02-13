@@ -18,7 +18,7 @@ const DesignPatternPage: React.FC = () => {
         {/* <AdapterTest/>*/}
         {/* <CompositeTest/>*/}
         {/* <CommandTest />*/}
-        <IteratorTest/>
+        <IteratorTest />
       </main>
     </Layout>
   )

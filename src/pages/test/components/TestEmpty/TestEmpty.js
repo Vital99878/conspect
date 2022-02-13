@@ -23,11 +23,12 @@ const TestEmpty = () => {
       return count_1 === 0 && count_2 === 0 && count_3 === 0
     }
 
-    console.log(parentheses('({()()(})())'))
+    // console.log(parentheses('({()()(})())'))
     // console.log(parentheses('({})'))
     // console.log(parentheses('(({()()()()}))'))
     // console.log(parentheses('()()()[(]'))
   }
+
   return (
     <div className="testEmpty">
       <h2>Test everything</h2>

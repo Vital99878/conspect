@@ -11,6 +11,7 @@ import TestLoadingState from '../rxjs/components/Loading/TestLoadingState'
 import { TestEmpty, TestTS } from './components'
 import Modal from '../../components/Modal/Modal'
 import ReactDOM from 'react-dom'
+// import {root2} from './min-binary-heap-test'
 
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode
@@ -18,6 +19,7 @@ type TestPropsChildren = {
 
 const TestPage: React.FC<TestPropsChildren> = () => {
   // const windowWidth = useWindowWidth()
+  // console.log('root2: ', root2)
   return (
     <Layout pageHeading="Test page">
       <div className="test-components">

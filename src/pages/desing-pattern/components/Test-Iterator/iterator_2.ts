@@ -114,14 +114,14 @@ collection.addItem('Third')
 
 const collectionIterator = collection.getIterator()
 
-console.log('Straight traversal:')
+// console.log('Straight traversal:')
 while (collectionIterator.valid()) {
-  console.log(collectionIterator.next())
+  // console.log(collectionIterator.next())
 }
 
-console.log('')
-console.log('Reverse traversal:')
+// console.log('')
+// console.log('Reverse traversal:')
 const reverseIterator = collection.getReverseIterator()
 while (reverseIterator.valid()) {
-  console.log(reverseIterator.next())
+  // console.log(reverseIterator.next())
 }
