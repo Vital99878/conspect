@@ -1,14 +1,31 @@
 import React, { useState, ReactElement, useRef, ChangeEvent, useEffect } from 'react'
 import './TestTS.css'
+import { TodoType, R_2 } from '../../../../components/Todos/models/index.model'
 import { useAttachStyle } from './useAttachStyle'
 import { observableValue } from '../../../rxjs/components/subject/observableValue'
 import useSubject from '../../../rxjs/components/subject/hooks'
+import {useSingletonState} from '../../../desing-pattern/components/Test-Singleton/useSingletonState'
+
+
+const SingletonStateComponent: React.FC = () => {
+  const {instanceRef, updateInstanceRef} = useSingletonState()
+  console.log('render')
+  return (
+    <div className="test-typescript">
+      <ul>
+        {instanceRef.map((number) => {
+          return <li key={number}>{number}</li>
+        })}
+      </ul>
+      <button onClick={updateInstanceRef}>add new number</button>
+    </div>
+  )
+}
 
 const TestTS: React.FC = () => {
   const { field, updateField } = useSubject(observableValue, 'initial')
   const refElement = useRef(document.createElement('div'))
   const s = useAttachStyle(refElement.current, ['left', 'top'])
-
   function logAge(constructor: any, property: string, desc: PropertyDescriptor) {
     console.log('property: ', { property, desc })
   }
@@ -44,6 +61,7 @@ const TestTS: React.FC = () => {
 
   return (
     <div className="test-typescript">
+      <SingletonStateComponent />
       <div ref={refElement} className="box">
         {field}
       </div>

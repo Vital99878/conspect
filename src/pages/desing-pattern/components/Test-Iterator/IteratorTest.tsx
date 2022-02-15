@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../../../index.scss'
 // import {} from './iterator'
-import {} from './iterator_2'
+// import {} from './iterator_2'
 
 export const IteratorTest: React.FC = () => {
   // example 1

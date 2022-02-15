@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="design pattern (Iterator) begin">
-      <change afterPath="$PROJECT_DIR$/src/pages/test/min-binary-heap-test.ts" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (SingletonStateComponent) begin">
+      <change afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/iterator_2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/iterator_2.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/singletonState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/singletonState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -94,11 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
       <recent name="W:\conspect\src\pages\test" />
       <recent name="D:\!Загрузки\zadachi" />
       <recent name="W:\conspect\src\pages\desing-pattern\components" />
       <recent name="W:\conspect\src\components\Test-IterableObject" />
-      <recent name="W:\conspect\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Adapter" />
@@ -113,7 +113,7 @@
       <command value="npm" />
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.min-binary-heap.js">
+  <component name="RunManager" selected="Node.js.node.js">
     <configuration name="inheritance.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/exercises/ex_class/inheritance.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -138,9 +138,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.node.js" />
         <item itemvalue="npm.start" />
         <item itemvalue="Node.js.min-binary-heap.js" />
-        <item itemvalue="Node.js.node.js" />
         <item itemvalue="Node.js.scratch.js" />
         <item itemvalue="Node.js.inheritance.js" />
       </list>
@@ -189,27 +189,6 @@
       <workItem from="1643297831150" duration="605000" />
       <workItem from="1643617665489" duration="388000" />
       <workItem from="1643618690409" duration="189000" />
-    </task>
-    <task id="LOCAL-00080" summary="feat (Todos) TodoSettings.tsx">
-      <created>1641497846324</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1641497846324</updated>
-    </task>
-    <task id="LOCAL-00081" summary="feat (Todos) TodoSettings.tsx with shouldShowMenu rxjs state">
-      <created>1641500190538</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1641500190538</updated>
-    </task>
-    <task id="LOCAL-00082" summary="feat (Todos) Draggable. not work addForm and not correct draggable">
-      <created>1641634716464</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1641634716464</updated>
     </task>
     <task id="LOCAL-00083" summary="feat (Todos) Draggable.">
       <created>1641646381212</created>
@@ -362,7 +341,9 @@
       <workItem from="1643971549618" duration="3972000" />
       <workItem from="1644406569807" duration="11374000" />
       <workItem from="1644648608788" duration="15046000" />
-      <workItem from="1644747229713" duration="2713000" />
+      <workItem from="1644747229713" duration="3649000" />
+      <workItem from="1644838884726" duration="1327000" />
+      <workItem from="1644922149286" duration="8452000" />
     </task>
     <task id="LOCAL-00104" summary="pattern design ()">
       <created>1643632324294</created>
@@ -539,7 +520,28 @@
       <option name="project" value="LOCAL" />
       <updated>1644685725070</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="data structure (min-binary-heap-test.ts) begin">
+      <created>1644772615132</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1644772615132</updated>
+    </task>
+    <task id="LOCAL-00130" summary="data structure (min-binary-heap-test.ts) begin">
+      <created>1644772643481</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1644772643481</updated>
+    </task>
+    <task id="LOCAL-00131" summary=" (SingletonStateComponent) begin">
+      <created>1644951227304</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1644951227305</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -560,8 +562,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring (Todos)" />
-    <MESSAGE value="feat (Todos) TodoSettings.tsx" />
     <MESSAGE value="feat (Todos) TodoSettings.tsx with shouldShowMenu rxjs state" />
     <MESSAGE value="feat (Todos) Draggable. not work addForm and not correct draggable" />
     <MESSAGE value="feat (Todos) Draggable." />
@@ -585,7 +585,9 @@
     <MESSAGE value="object learn (Iterable)" />
     <MESSAGE value="object learn (Iterable) without typing iterators" />
     <MESSAGE value="design pattern (Iterator) begin" />
-    <option name="LAST_COMMIT_MESSAGE" value="design pattern (Iterator) begin" />
+    <MESSAGE value="data structure (min-binary-heap-test.ts) begin" />
+    <MESSAGE value=" (SingletonStateComponent) begin" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (SingletonStateComponent) begin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

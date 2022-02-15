@@ -13,6 +13,7 @@ import Modal from '../../components/Modal/Modal'
 import ReactDOM from 'react-dom'
 // import {root2} from './min-binary-heap-test'
 
+
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode
 }
@@ -24,8 +25,8 @@ const TestPage: React.FC<TestPropsChildren> = () => {
     <Layout pageHeading="Test page">
       <div className="test-components">
         {/* {ReactDOM.createPortal(<Modal props={{ show: false }} />, document.getElementById('root') as HTMLLIElement)}*/}
-        <TestIterableObj />
-        {/* <TestTS />*/}
+        {/* <TestIterableObj />*/}
+         <TestTS />
         {/* <TestPureReact />*/}
         {/* <Todos />*/}
         {/* <TestEmpty />*/}
