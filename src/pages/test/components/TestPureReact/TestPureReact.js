@@ -31,7 +31,6 @@ const TestHooks = () => {
   const [value, setValue] = useState('initialValue')
 
   const [lsKey, setLsKey] = useLocalStorage('key', 'key value')
-
   const intervalRef = useRef()
   const inputRefKey = useRef(null)
   const inputRefMemo = useRef(null)

@@ -13,6 +13,7 @@ const DesignPatternPage: React.FC = () => {
     <Layout pageHeading="Design patterns">
       <main className="designPattern-page">
         {/* <SingletonTest />*/}
+        {/* <SingletonTest />*/}
         {/* <StateTest/>*/}
         {/* <BuilderTest/>*/}
         {/* <AdapterTest/>*/}

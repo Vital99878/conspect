@@ -26,10 +26,10 @@ const TestPage: React.FC<TestPropsChildren> = () => {
       <div className="test-components">
         {/* {ReactDOM.createPortal(<Modal props={{ show: false }} />, document.getElementById('root') as HTMLLIElement)}*/}
         {/* <TestIterableObj />*/}
-         <TestTS />
+        {/* <TestTS />*/}
         {/* <TestPureReact />*/}
         {/* <Todos />*/}
-        {/* <TestEmpty />*/}
+         <TestEmpty />
       </div>
       {/* <SingleFilter />*/}
       {/* <MultipleFilter />*/}

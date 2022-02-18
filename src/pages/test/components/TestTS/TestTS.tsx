@@ -6,7 +6,6 @@ import { observableValue } from '../../../rxjs/components/subject/observableValu
 import useSubject from '../../../rxjs/components/subject/hooks'
 import {useSingletonState} from '../../../desing-pattern/components/Test-Singleton/useSingletonState'
 
-
 const SingletonStateComponent: React.FC = () => {
   const {instanceRef, updateInstanceRef} = useSingletonState()
   console.log('render')

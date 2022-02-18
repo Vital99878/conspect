@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (SingletonStateComponent) begin">
-      <change afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/shared/Person.class.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/singletonState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/singletonState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestPureReact/TestPureReact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestPureReact/TestPureReact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,7 @@
       <list>
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -88,7 +91,7 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="W:\conspect\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -101,11 +104,11 @@
       <recent name="W:\conspect\src\components\Test-IterableObject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
+      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\preparation" />
+      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\exercises\api" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Adapter" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
-      <recent name="W:\conspect\src\pages\desing-pattern\patterns" />
-      <recent name="W:\conspect\src\components\Todos\components\Todo\components" />
-      <recent name="W:\conspect\src\pages\rxjs\components" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -113,8 +116,8 @@
       <command value="npm" />
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.node.js">
-    <configuration name="inheritance.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/exercises/ex_class/inheritance.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="HTTP Request.rest-api_4 | #1">
+    <configuration name="rest-api_4 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/exercises/api/rest-api_4.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="min-binary-heap.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="D:/!Загрузки/zadachi/min-binary-heap.js" working-dir="D:/!Загрузки/zadachi">
@@ -138,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.rest-api_4 | #1" />
         <item itemvalue="Node.js.node.js" />
         <item itemvalue="npm.start" />
         <item itemvalue="Node.js.min-binary-heap.js" />
         <item itemvalue="Node.js.scratch.js" />
-        <item itemvalue="Node.js.inheritance.js" />
       </list>
     </recent_temporary>
   </component>
@@ -189,13 +192,6 @@
       <workItem from="1643297831150" duration="605000" />
       <workItem from="1643617665489" duration="388000" />
       <workItem from="1643618690409" duration="189000" />
-    </task>
-    <task id="LOCAL-00083" summary="feat (Todos) Draggable.">
-      <created>1641646381212</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1641646381212</updated>
     </task>
     <task id="LOCAL-00084" summary="feat (Todos) Draggable.">
       <created>1641662293142</created>
@@ -343,7 +339,14 @@
       <workItem from="1644648608788" duration="15046000" />
       <workItem from="1644747229713" duration="3649000" />
       <workItem from="1644838884726" duration="1327000" />
-      <workItem from="1644922149286" duration="8452000" />
+      <workItem from="1644922149286" duration="8515000" />
+      <workItem from="1645016305655" duration="56000" />
+      <workItem from="1645016578566" duration="5715000" />
+      <workItem from="1645078874115" duration="3012000" />
+      <workItem from="1645082579618" duration="11491000" />
+      <workItem from="1645165914588" duration="2804000" />
+      <workItem from="1645171198084" duration="103000" />
+      <workItem from="1645171318955" duration="14786000" />
     </task>
     <task id="LOCAL-00104" summary="pattern design ()">
       <created>1643632324294</created>
@@ -541,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644951227305</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary=" (SingletonStateComponent) begin">
+      <created>1644954870156</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1644954870156</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
