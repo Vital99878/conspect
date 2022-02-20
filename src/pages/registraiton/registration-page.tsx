@@ -1,14 +1,14 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
+import PageLayout from '../../components/Layout/PageLayout'
 import { RegistrationForm } from './components/registration-form'
 
 const RegistrationPage: React.FC = () => {
   return (
-    <Layout pageHeading="Registration">
+    <PageLayout pageHeading="Registration">
       <main className="registration-page">
         <RegistrationForm />
       </main>
-    </Layout>
+    </PageLayout>
   )
 }
 

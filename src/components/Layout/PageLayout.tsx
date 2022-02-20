@@ -12,7 +12,7 @@ type LayoutProps = {
  * Layout для страницы. Оборачивает компонент. Нужен для того, что не засорять логику страницы повторяющимся элементами
  */
 
-const Layout: React.FC<LayoutProps> = ({ children, pageHeading = '', Footer = null, Header = null }) => {
+const PageLayout: React.FC<LayoutProps> = ({ children, pageHeading = '', Footer = null, Header = null }) => {
   const PageHeading = pageHeading ? <h1>{pageHeading}</h1> : null
 
   return (
@@ -25,4 +25,4 @@ const Layout: React.FC<LayoutProps> = ({ children, pageHeading = '', Footer = nu
   )
 }
 
-export default Layout
+export default PageLayout

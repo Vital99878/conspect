@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (SingletonStateComponent) begin">
-      <change afterPath="$PROJECT_DIR$/src/pages/shared/Person.class.js" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (page Preparation) begin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestPureReact/TestPureReact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestPureReact/TestPureReact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +75,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -97,11 +92,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\scripts" />
+      <recent name="W:\conspect\src\pages" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
       <recent name="W:\conspect\src\pages\test" />
       <recent name="D:\!Загрузки\zadachi" />
-      <recent name="W:\conspect\src\pages\desing-pattern\components" />
-      <recent name="W:\conspect\src\components\Test-IterableObject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
@@ -116,7 +111,7 @@
       <command value="npm" />
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.rest-api_4 | #1">
+  <component name="RunManager" selected="Node.js.scratch.js">
     <configuration name="rest-api_4 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/exercises/api/rest-api_4.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -141,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.scratch.js" />
         <item itemvalue="HTTP Request.rest-api_4 | #1" />
         <item itemvalue="Node.js.node.js" />
         <item itemvalue="npm.start" />
         <item itemvalue="Node.js.min-binary-heap.js" />
-        <item itemvalue="Node.js.scratch.js" />
       </list>
     </recent_temporary>
   </component>
@@ -192,34 +187,6 @@
       <workItem from="1643297831150" duration="605000" />
       <workItem from="1643617665489" duration="388000" />
       <workItem from="1643618690409" duration="189000" />
-    </task>
-    <task id="LOCAL-00084" summary="feat (Todos) Draggable.">
-      <created>1641662293142</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1641662293143</updated>
-    </task>
-    <task id="LOCAL-00085" summary="feat (Todos) Draggable.">
-      <created>1641887415037</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1641887415037</updated>
-    </task>
-    <task id="LOCAL-00086" summary="feat (Todos) Draggable написал функции, которые ставит draggable туду над (под) выбранный">
-      <created>1641891640824</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1641891640824</updated>
-    </task>
-    <task id="LOCAL-00087" summary="feat (Todos) Draggable">
-      <created>1641904236402</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1641904236402</updated>
     </task>
     <task id="LOCAL-00088" summary="feat (Todos) Draggable">
       <created>1641910061890</created>
@@ -346,7 +313,9 @@
       <workItem from="1645082579618" duration="11491000" />
       <workItem from="1645165914588" duration="2804000" />
       <workItem from="1645171198084" duration="103000" />
-      <workItem from="1645171318955" duration="14786000" />
+      <workItem from="1645171318955" duration="23348000" />
+      <workItem from="1645250227364" duration="3558000" />
+      <workItem from="1645367573748" duration="3303000" />
     </task>
     <task id="LOCAL-00104" summary="pattern design ()">
       <created>1643632324294</created>
@@ -551,7 +520,35 @@
       <option name="project" value="LOCAL" />
       <updated>1644954870156</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary=" (prepair to JS) begin">
+      <created>1645190340244</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1645190340244</updated>
+    </task>
+    <task id="LOCAL-00134" summary=" (page Preparation) begin">
+      <created>1645368839900</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1645368839900</updated>
+    </task>
+    <task id="LOCAL-00135" summary=" (page Preparation) begin">
+      <created>1645369129937</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1645369129937</updated>
+    </task>
+    <task id="LOCAL-00136" summary=" (page Preparation) begin">
+      <created>1645369657264</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1645369657265</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -572,8 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat (Todos) TodoSettings.tsx with shouldShowMenu rxjs state" />
-    <MESSAGE value="feat (Todos) Draggable. not work addForm and not correct draggable" />
     <MESSAGE value="feat (Todos) Draggable." />
     <MESSAGE value="feat (Todos) Draggable написал функции, которые ставит draggable туду над (под) выбранный" />
     <MESSAGE value="feat (Todos) Draggable" />
@@ -597,7 +592,9 @@
     <MESSAGE value="design pattern (Iterator) begin" />
     <MESSAGE value="data structure (min-binary-heap-test.ts) begin" />
     <MESSAGE value=" (SingletonStateComponent) begin" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (SingletonStateComponent) begin" />
+    <MESSAGE value=" (prepair to JS) begin" />
+    <MESSAGE value=" (page Preparation) begin" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (page Preparation) begin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

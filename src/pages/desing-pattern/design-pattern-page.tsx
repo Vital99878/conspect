@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
+import PageLayout from '../../components/Layout/PageLayout'
 import AdapterTest from './components/Test-Adapter/AdapterTest'
 import BuilderTest from './components/Test-Builder/BuilderTest'
 import CommandTest from './components/Test-Command/CommandTest'
@@ -10,7 +10,7 @@ import StateTest from './components/Test-State/StateTest'
 
 const DesignPatternPage: React.FC = () => {
   return (
-    <Layout pageHeading="Design patterns">
+    <PageLayout pageHeading="Design patterns">
       <main className="designPattern-page">
         {/* <SingletonTest />*/}
         {/* <SingletonTest />*/}
@@ -21,7 +21,7 @@ const DesignPatternPage: React.FC = () => {
         {/* <CommandTest />*/}
         <IteratorTest />
       </main>
-    </Layout>
+    </PageLayout>
   )
 }
 

@@ -4,15 +4,15 @@ import { SingletonState } from '../desing-pattern/components/Test-Singleton/sing
 import { useSingletonState } from '../desing-pattern/components/Test-Singleton/useSingletonState'
 import SubTest from './components/subject'
 import BallComponent from './components/ball'
-import Layout from '../../components/Layout/Layout'
+import PageLayout from '../../components/Layout/PageLayout'
 import Loading from './components/Loading/Loading'
 import TestLoadingState from './components/Loading/TestLoadingState'
 
 const RXjsPage: FC = () => {
-  const {instanceRef} = useSingletonState()
+  const { instanceRef } = useSingletonState()
   console.log('i rxjs: ', instanceRef)
   return (
-    <Layout pageHeading="RxJS Page">
+    <PageLayout pageHeading="RxJS Page">
       <div className="rxjs">
         <ul>
           {instanceRef.map((number) => {
@@ -24,7 +24,7 @@ const RXjsPage: FC = () => {
         {/* <BallComponent />*/}
         <SubTest />
       </div>
-    </Layout>
+    </PageLayout>
   )
 }
 

@@ -104,11 +104,41 @@ const TestEmpty = () => {
     // console.log('It root prototype: ', Object.prototype === Math.__proto__)
     // console.log('It root prototype last: ', Object.prototype === Person.prototype.__proto__)
 
+    // console.log('Person.prototype: ', Person.prototype)
+    // Person.prototype.constructor.sm1()
+    // Person.sm1()
+    // Person.sm2()
+
     const me = new Person('Vital', 25)
-    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    console.log(me.__proto__ === Person.prototype)
-    console.log(Person.prototype.__proto__ === Object.prototype)
-    console.log(me.__proto__.__proto__ === Object.prototype)
+    const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    console.log('numbers.__proto__: ', numbers.__proto__)
+    const lastNum = numbers.at(1)
+    console.log('numbers: ', lastNum)
+    console.log(numbers.at(0))
+    console.log(numbers.at(1))
+    console.log(numbers.at(-10))
+    // console.log(me.__proto__ === Person.prototype)
+    // console.log(Person.prototype.__proto__ === Object.prototype)
+    // console.log(me.__proto__.__proto__ === Object.prototype)
+  }
+
+  {
+    // function this
+    function UseThis(name, age) {
+      this.name = name
+      console.log('this in a fn: ', this)
+    }
+
+    UseThis.prototype.show = function () {
+      console.log(this)
+    }
+    const t = new UseThis('Use this FN')
+    UseThis.st = function () {
+      console.log(this.name, this.length)
+    }
+    UseThis.st()
+    console.log('UseThis.prototype: ', UseThis.prototype)
+    t.show()
   }
 
   return (

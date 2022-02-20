@@ -4,10 +4,10 @@ import { TodoType, R_2 } from '../../../../components/Todos/models/index.model'
 import { useAttachStyle } from './useAttachStyle'
 import { observableValue } from '../../../rxjs/components/subject/observableValue'
 import useSubject from '../../../rxjs/components/subject/hooks'
-import {useSingletonState} from '../../../desing-pattern/components/Test-Singleton/useSingletonState'
+import { useSingletonState } from '../../../desing-pattern/components/Test-Singleton/useSingletonState'
 
 const SingletonStateComponent: React.FC = () => {
-  const {instanceRef, updateInstanceRef} = useSingletonState()
+  const { instanceRef, updateInstanceRef } = useSingletonState()
   console.log('render')
   return (
     <div className="test-typescript">
