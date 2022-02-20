@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "ES2021",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,7 +16,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "downlevelIteration": true
+    "downlevelIteration": true,
   },
   "include": ["src"]
 }

@@ -6,6 +6,7 @@ import PageLayout from '../../components/Layout/PageLayout'
 import Todos from '../../components/Todos/Todos'
 import SingleFilter from '../../components/singleFilter/SingleFilter'
 import MultipleFilter from '../../components/multipleFilter/MultipleFilter'
+import { useCloser } from '../Preparation/components/PreparationToJS/topics'
 import { RequiredInputWrapper } from '../registraiton/components/registration-form/components'
 import TestLoadingState from '../rxjs/components/Loading/TestLoadingState'
 import { TestEmpty, TestTS } from './components'
@@ -20,6 +21,7 @@ type TestPropsChildren = {
 const TestPage: React.FC<TestPropsChildren> = () => {
   // const windowWidth = useWindowWidth()
   // console.log('root2: ', root2)
+  const { n } = useCloser()
   return (
     <PageLayout pageHeading="Test page">
       <div className="test-components">
@@ -28,7 +30,7 @@ const TestPage: React.FC<TestPropsChildren> = () => {
         {/* <TestTS />*/}
         {/* <TestPureReact />*/}
         {/* <Todos />*/}
-        <TestEmpty />
+        <TestEmpty count={n} />
       </div>
       {/* <SingleFilter />*/}
       {/* <MultipleFilter />*/}

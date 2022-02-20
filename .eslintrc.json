@@ -29,6 +29,7 @@
     "indent": "off",
     "comma-dangle": "off",
     "linebreak-style": "off",
-    "@typescript-eslint/ban-ts-ignore": "off"
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "space-before-function-paren": "off"
   }
 }

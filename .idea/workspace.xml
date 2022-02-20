@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (page Preparation) begin">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (prepairTojs) begin">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -74,8 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -86,24 +89,27 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="ts.external.directory.path" value="W:\conspect\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics" />
+      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS" />
+      <recent name="W:\conspect\src\commonMockData" />
       <recent name="W:\scripts" />
       <recent name="W:\conspect\src\pages" />
-      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
-      <recent name="W:\conspect\src\pages\test" />
-      <recent name="D:\!Загрузки\zadachi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\preparation" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\exercises\api" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Adapter" />
-      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\CreateCloser.ts" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -188,104 +194,6 @@
       <workItem from="1643617665489" duration="388000" />
       <workItem from="1643618690409" duration="189000" />
     </task>
-    <task id="LOCAL-00088" summary="feat (Todos) Draggable">
-      <created>1641910061890</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1641910061890</updated>
-    </task>
-    <task id="LOCAL-00089" summary="feat (Todos) Draggable">
-      <created>1641910558546</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1641910558546</updated>
-    </task>
-    <task id="LOCAL-00090" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
-      <created>1641911918913</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1641911918914</updated>
-    </task>
-    <task id="LOCAL-00091" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
-      <created>1641923306720</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1641923306720</updated>
-    </task>
-    <task id="LOCAL-00092" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
-      <created>1641924109339</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1641924109339</updated>
-    </task>
-    <task id="LOCAL-00093" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
-      <created>1641968915547</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1641968915547</updated>
-    </task>
-    <task id="LOCAL-00094" summary="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно">
-      <created>1641969943988</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1641969943988</updated>
-    </task>
-    <task id="LOCAL-00095" summary="feat (Todos) Draggable все виды перетаскивания по списку.">
-      <created>1641970868566</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1641970868566</updated>
-    </task>
-    <task id="LOCAL-00096" summary="feat (Singleton)">
-      <created>1641988939697</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1641988939697</updated>
-    </task>
-    <task id="LOCAL-00097" summary="refactoring (Todos) dragging style">
-      <created>1642072105985</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1642072105986</updated>
-    </task>
-    <task id="LOCAL-00098" summary="refactoring (Todos) bad style for animation">
-      <created>1642085157429</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1642085157429</updated>
-    </task>
-    <task id="LOCAL-00099" summary="refactoring (Todos) bad style for animation">
-      <created>1642087194986</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1642087194986</updated>
-    </task>
-    <task id="LOCAL-00100" summary="refactoring (Todos) bad style for animation">
-      <created>1642089402123</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1642089402123</updated>
-    </task>
-    <task id="LOCAL-00101" summary="refactoring (Todos) bad style for animation">
-      <created>1642430344466</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1642430344467</updated>
-    </task>
     <task id="LOCAL-00102" summary="feat (useEscapeKey)">
       <created>1642605428953</created>
       <option name="number" value="00102" />
@@ -315,7 +223,11 @@
       <workItem from="1645171198084" duration="103000" />
       <workItem from="1645171318955" duration="23348000" />
       <workItem from="1645250227364" duration="3558000" />
-      <workItem from="1645367573748" duration="3303000" />
+      <workItem from="1645367573748" duration="5298000" />
+      <workItem from="1645430329272" duration="18454000" />
+      <workItem from="1645520672746" duration="5119000" />
+      <workItem from="1645603641972" duration="20460000" />
+      <workItem from="1645776725844" duration="10328000" />
     </task>
     <task id="LOCAL-00104" summary="pattern design ()">
       <created>1643632324294</created>
@@ -548,7 +460,105 @@
       <option name="project" value="LOCAL" />
       <updated>1645369657265</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary=" (page Preparation) begin">
+      <created>1645370956746</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1645370956746</updated>
+    </task>
+    <task id="LOCAL-00138" summary=" (prepairTojs) begin">
+      <created>1645442346288</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1645442346289</updated>
+    </task>
+    <task id="LOCAL-00139" summary=" (prepairTojs) begin">
+      <created>1645442887869</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1645442887870</updated>
+    </task>
+    <task id="LOCAL-00140" summary=" (prepairTojs) begin">
+      <created>1645448695766</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1645448695767</updated>
+    </task>
+    <task id="LOCAL-00141" summary=" (prepairTojs) begin">
+      <created>1645455662685</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1645455662685</updated>
+    </task>
+    <task id="LOCAL-00142" summary=" (prepairTojs) begin">
+      <created>1645458115491</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1645458115491</updated>
+    </task>
+    <task id="LOCAL-00143" summary=" (prepairTojs) begin">
+      <created>1645466169653</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1645466169653</updated>
+    </task>
+    <task id="LOCAL-00144" summary=" (prepairTojs) begin">
+      <created>1645529348837</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1645529348838</updated>
+    </task>
+    <task id="LOCAL-00145" summary=" (prepairTojs) begin">
+      <created>1645547453382</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1645547453382</updated>
+    </task>
+    <task id="LOCAL-00146" summary=" (prepairTojs) begin">
+      <created>1645551100090</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1645551100090</updated>
+    </task>
+    <task id="LOCAL-00147" summary=" (prepairTojs) begin">
+      <created>1645609435850</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1645609435851</updated>
+    </task>
+    <task id="LOCAL-00148" summary=" (prepairTojs) begin">
+      <created>1645713543119</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1645713543119</updated>
+    </task>
+    <task id="LOCAL-00149" summary=" (prepairTojs) begin">
+      <created>1645720619758</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1645720619758</updated>
+    </task>
+    <task id="LOCAL-00150" summary=" (prepairTojs) begin">
+      <created>1645780462772</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1645780462772</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -569,7 +579,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat (Todos) Draggable." />
     <MESSAGE value="feat (Todos) Draggable написал функции, которые ставит draggable туду над (под) выбранный" />
     <MESSAGE value="feat (Todos) Draggable" />
     <MESSAGE value="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно" />
@@ -594,7 +603,8 @@
     <MESSAGE value=" (SingletonStateComponent) begin" />
     <MESSAGE value=" (prepair to JS) begin" />
     <MESSAGE value=" (page Preparation) begin" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (page Preparation) begin" />
+    <MESSAGE value=" (prepairTojs) begin" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (prepairTojs) begin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
