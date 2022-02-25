@@ -1,4 +1,5 @@
 import { numbers } from '../../../../../commonMockData'
+import { binarySearch } from '../../../../../helpers/binarySearch'
 
 export function exercises() {
   // get first sum
@@ -53,31 +54,6 @@ export function exercises() {
 
   // get first warmer dat
   {
-    const firstWarnerDay = function firstWarnerDay(week: number[]) {
-      const result = []
-      const stack = []
-
-      result.push({ [week[week.length - 1]]: 0 })
-      stack.push({ temp: week[week.length - 1], pointer: week.length - 1 })
-
-      for (let i = week.length - 2; i >= 0; i--) {
-        const currentTemp = week[i]
-
-        while (currentTemp > stack[stack.length - 1].temp) {
-          stack.pop()
-        }
-
-        result.push({ [currentTemp]: stack[stack.length - 1].pointer - i })
-        stack.push({ temp: currentTemp, pointer: i })
-      }
-
-      return result
-    }
     // console.log(firstWarnerDay([1, 2, 3, 1, 5, 4, 8]))
-  }
-
-  // at
-  {
-    // console.log(numbers.at(-1))
   }
 }

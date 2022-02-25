@@ -2,7 +2,7 @@ import React from 'react'
 import { multicast } from 'rxjs/operators'
 import { numbers, person, objWithSymbol } from '../../../../commonMockData'
 // import { Person } from '../../../shared/Person.class'
-import { topicPrototypeChain, useCloser, eventLoop, topicPromise} from './topics'
+import { topicPrototypeChain, useCloser, eventLoop, topicPromise } from './topics'
 import { exercises } from './topics/exercises'
 
 const PreparationToJS: React.FC = () => {
@@ -133,6 +133,9 @@ const PreparationToJS: React.FC = () => {
 
   // topicPrototypeChain()
   // topicEventLoop()
+  // console.log(numbers.length)
+  // console.log(--numbers.length)
+
   exercises()
   const inMicroTask = () => console.log(`added in Micro Task from button}`)
 

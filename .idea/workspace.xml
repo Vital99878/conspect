@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (prepairTojs) begin">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (binarySearch) numbers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/binarySearch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/binarySearch.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -193,13 +189,6 @@
       <workItem from="1643297831150" duration="605000" />
       <workItem from="1643617665489" duration="388000" />
       <workItem from="1643618690409" duration="189000" />
-    </task>
-    <task id="LOCAL-00102" summary="feat (useEscapeKey)">
-      <created>1642605428953</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1642605428953</updated>
     </task>
     <task active="true" id="LOCAL-00103" summary="design pattern">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
@@ -558,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645780462772</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary=" (binarySearch) begin">
+      <created>1645797345670</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1645797345670</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -579,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat (Todos) Draggable написал функции, которые ставит draggable туду над (под) выбранный" />
     <MESSAGE value="feat (Todos) Draggable" />
     <MESSAGE value="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно" />
     <MESSAGE value="feat (Todos) Draggable все виды перетаскивания по списку." />
@@ -604,7 +599,8 @@
     <MESSAGE value=" (prepair to JS) begin" />
     <MESSAGE value=" (page Preparation) begin" />
     <MESSAGE value=" (prepairTojs) begin" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (prepairTojs) begin" />
+    <MESSAGE value=" (binarySearch) begin" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (binarySearch) begin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
