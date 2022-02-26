@@ -3,6 +3,10 @@ import { multicast } from 'rxjs/operators'
 import { numbers, person, objWithSymbol } from '../../../../commonMockData'
 // import { Person } from '../../../shared/Person.class'
 import { topicPrototypeChain, useCloser, eventLoop, topicPromise } from './topics'
+import DomEvent from './topics/components/domEvent'
+import topicCookie from './topics/Cookie'
+import topicEventLoop from './topics/eventLoop'
+// import DomEvent from './topics/components/domEvent'
 import { exercises } from './topics/exercises'
 
 const PreparationToJS: React.FC = () => {
@@ -82,25 +86,6 @@ const PreparationToJS: React.FC = () => {
     // const { counter1 } = useCloser()
     // counter1()
   }
-  // Event loop
-  {
-    // console.log(`%cEvent loop block start`, 'color:darkgreen; font-size: 16px')
-    // const fn = function() {
-    //   console.log('fn')
-    // }
-    // console.log('start')
-    //
-    // setTimeout(fn, 500)
-    // setTimeout(fn, 500)
-    //
-    // console.log('end')
-    //
-    // console.log(`%cEvent loop block finished`, 'color:tomato; font-size: 14px')
-  }
-
-  // Curry
-  {
-  }
 
   // ?? = variable is not null/undefined.
   {
@@ -114,35 +99,21 @@ const PreparationToJS: React.FC = () => {
     // }
   }
 
-  // setter
+  // topics
   {
-    const user = {
-      name: 'John',
-      surname: 'Smith',
-
-      get fullName() {
-        return `${this.name} ${this.surname}`
-      },
-      set fullName(value: string) {
-        [this.name, this.surname] = value.split(' ')
-      },
-    }
-    user.fullName = 'Vital Lihoy'
-    // console.log(user.fullName)
+    // topicPrototypeChain()
+    // topicEventLoop()
+    // topicCookie()
+    // exercises()
   }
 
-  // topicPrototypeChain()
-  // topicEventLoop()
-  // console.log(numbers.length)
-  // console.log(--numbers.length)
-
-  exercises()
-  const inMicroTask = () => console.log(`added in Micro Task from button}`)
+  // temporary
+  {
+  }
 
   return (
     <div className="test-components">
-      Preparation To JS
-      <button onClick={() => queueMicrotask(inMicroTask)}>Add to microtask</button>
+      <DomEvent />
     </div>
   )
 }

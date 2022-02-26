@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (binarySearch) numbers">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (dom event) numbers">
+      <change afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/Cookie.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/binarySearch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/binarySearch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     <scope name="src" pattern="file[ts-my-components]:src//*" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
   <component name="ProjectViewState">
@@ -92,10 +93,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics" />
+      <recent name="W:\conspect\src\helpers" />
+      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics\components" />
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS" />
       <recent name="W:\conspect\src\commonMockData" />
-      <recent name="W:\scripts" />
-      <recent name="W:\conspect\src\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics" />
@@ -148,7 +149,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
       <created>1633257343199</created>
       <option name="number" value="Default" />
@@ -189,62 +190,10 @@
       <workItem from="1643297831150" duration="605000" />
       <workItem from="1643617665489" duration="388000" />
       <workItem from="1643618690409" duration="189000" />
-    </task>
-    <task active="true" id="LOCAL-00103" summary="design pattern">
-      <changelist id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="" />
-      <created>1643618877624</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1643618880718</updated>
-      <workItem from="1643618881063" duration="6698000" />
-      <workItem from="1643971549618" duration="3972000" />
-      <workItem from="1644406569807" duration="11374000" />
-      <workItem from="1644648608788" duration="15046000" />
-      <workItem from="1644747229713" duration="3649000" />
-      <workItem from="1644838884726" duration="1327000" />
-      <workItem from="1644922149286" duration="8515000" />
-      <workItem from="1645016305655" duration="56000" />
-      <workItem from="1645016578566" duration="5715000" />
-      <workItem from="1645078874115" duration="3012000" />
-      <workItem from="1645082579618" duration="11491000" />
-      <workItem from="1645165914588" duration="2804000" />
-      <workItem from="1645171198084" duration="103000" />
-      <workItem from="1645171318955" duration="23348000" />
-      <workItem from="1645250227364" duration="3558000" />
-      <workItem from="1645367573748" duration="5298000" />
-      <workItem from="1645430329272" duration="18454000" />
-      <workItem from="1645520672746" duration="5119000" />
-      <workItem from="1645603641972" duration="20460000" />
-      <workItem from="1645776725844" duration="10328000" />
-    </task>
-    <task id="LOCAL-00104" summary="pattern design ()">
-      <created>1643632324294</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1643632324294</updated>
-    </task>
-    <task id="LOCAL-00105" summary="pattern design ()">
-      <created>1643632488593</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1643632488593</updated>
-    </task>
-    <task id="LOCAL-00106" summary="pattern design (State)">
-      <created>1643635439529</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1643635439529</updated>
-    </task>
-    <task id="LOCAL-00107" summary="pattern design (Builder)">
-      <created>1643972724686</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1643972724686</updated>
+      <workItem from="1645880136640" duration="8781000" />
+      <workItem from="1645948161028" duration="948000" />
+      <workItem from="1645957178526" duration="371000" />
+      <workItem from="1645957567301" duration="5276000" />
     </task>
     <task id="LOCAL-00108" summary="pattern design (Builder)">
       <created>1644406717450</created>
@@ -554,7 +503,42 @@
       <option name="project" value="LOCAL" />
       <updated>1645797345670</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary=" (binarySearch) numbers">
+      <created>1645806290067</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1645806290068</updated>
+    </task>
+    <task id="LOCAL-00153" summary=" (dom event) numbers">
+      <created>1645884549745</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1645884549745</updated>
+    </task>
+    <task id="LOCAL-00154" summary=" (dom event) numbers">
+      <created>1645887672785</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1645887672785</updated>
+    </task>
+    <task id="LOCAL-00155" summary=" (dom event) numbers">
+      <created>1645900041212</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1645900041212</updated>
+    </task>
+    <task id="LOCAL-00156" summary=" (dom event) numbers">
+      <created>1645958716997</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1645958716997</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -575,8 +559,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat (Todos) Draggable" />
-    <MESSAGE value="feat (Todos) Draggable вроде работает  drag todo, когда нужно добавить сверху. Проверить еще раз нужно" />
     <MESSAGE value="feat (Todos) Draggable все виды перетаскивания по списку." />
     <MESSAGE value="feat (Singleton)" />
     <MESSAGE value="refactoring (Todos) dragging style" />
@@ -600,7 +582,9 @@
     <MESSAGE value=" (page Preparation) begin" />
     <MESSAGE value=" (prepairTojs) begin" />
     <MESSAGE value=" (binarySearch) begin" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (binarySearch) begin" />
+    <MESSAGE value=" (binarySearch) numbers" />
+    <MESSAGE value=" (dom event) numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (dom event) numbers" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

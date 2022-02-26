@@ -1,0 +1,28 @@
+.root {
+  width: 60%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 4px;
+
+  .child-1 {
+    margin: 1rem 1rem;
+    padding: 1rem;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    .child-2 {
+      margin: 1rem 1rem;
+      padding: 1rem;
+      border: 1px solid green;
+      border-radius: 4px;
+      display: grid;
+      .button {
+        width: 50%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 4px;
+      }
+    }
+  }
+}

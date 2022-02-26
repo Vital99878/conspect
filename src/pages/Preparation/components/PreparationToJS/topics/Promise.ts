@@ -15,17 +15,17 @@ const topicPromise = () => {
 
   // Promise
   {
-    const delay = function(ms: number) {
+    const delay = function (ms: number) {
       return new Promise((resolve, reject) => setTimeout(resolve, ms))
     }
-    const promise = new Promise(function(resolve, reject) {
+    const promise = new Promise(function (resolve, reject) {
       setTimeout(() => resolve('done!'), 1000)
     })
   }
 
   // Await
   {
-    const getTodos = async function(url: string) {
+    const getTodos = async function (url: string) {
       const response = await fetch(url)
       const todos = await response.json()
       return todos

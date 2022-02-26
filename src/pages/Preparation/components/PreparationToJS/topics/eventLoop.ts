@@ -9,7 +9,7 @@ const topicEventLoop = () => {
 
   console.log('first')
 
-  const p = new Promise(function(resolve, reject) {
+  const p = new Promise(function (resolve, reject) {
     console.log('Создание промиса 1') // почему-то это выведется как синхронный код
     resolve('')
   })
@@ -18,7 +18,9 @@ const topicEventLoop = () => {
 
   queueMicrotask(inMicroTask)
 
-  p.then(() => console.log(`promise ${++count}`)).then(() => console.log(`promise ${++count}`)).then(() => console.log(`promise ${++count}`))
+  p.then(() => console.log(`promise ${++count}`))
+    .then(() => console.log(`promise ${++count}`))
+    .then(() => console.log(`promise ${++count}`))
 
   queueMicrotask(inMicroTask)
   queueMicrotask(inMicroTask)
