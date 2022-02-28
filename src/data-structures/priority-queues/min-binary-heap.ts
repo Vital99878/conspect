@@ -1,6 +1,6 @@
 import * as utils from '../utils'
 
-/*******************************************************************************
+/** *****************************************************************************
  * A min binary heap implements the Priority Queue ADT. It has constant access
  * to the min element of the heap, with logarithmic insertions and deletions.
  *
@@ -24,7 +24,7 @@ class MinBinaryHeap<T> {
     }
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
    HELPERS
    *****************************************************************************/
   /**
@@ -37,7 +37,7 @@ class MinBinaryHeap<T> {
    * 3. Если наименьший дочерний элемент больше родительство, то swap
    * 4. Так как у элемента теперь могут быть новые вечерние элементы, то проделываем всё заново
    * @param {number} index  родительского элемента
-   * @returns {void}
+   * @return {void}
    */
   private sink(index: number): void {
     // eslint-disable-next-line
@@ -49,8 +49,7 @@ class MinBinaryHeap<T> {
 
       // find the smallest childIndex
       let smallestChildIndex = leftChildIndex
-      const rightChildIsSmallerThanLeft =
-        rightChildIndex < this.size() && this.less(rightChildIndex, leftChildIndex)
+      const rightChildIsSmallerThanLeft = rightChildIndex < this.size() && this.less(rightChildIndex, leftChildIndex)
       if (rightChildIsSmallerThanLeft) smallestChildIndex = rightChildIndex
 
       // if the children indices are out of bounds or the current element is
@@ -69,7 +68,7 @@ class MinBinaryHeap<T> {
    * Swims an element with index k until heap invariant is satisfied - O(log(n))
    * O(log(n)) because in the worst case we swim the element up the entire tree
    * @param {number} k
-   * @returns {void}
+   * @return {void}
    */
   private swim(k: number): void {
     let parentIndex = this.getParentIndex(k)
@@ -97,7 +96,7 @@ class MinBinaryHeap<T> {
    *
    * O(log(n)) because in worst case we swink/swim element throughout the entire tree
    * @param {number} indexToRemove
-   * @returns {T}
+   * @return {T}
    */
   private removeAt(indexToRemove: number): T {
     const indexOfLastElement = this.size() - 1
@@ -168,12 +167,12 @@ class MinBinaryHeap<T> {
   // already removes half the work.
   // See more info on Floyd's heap construction here: https://en.wikipedia.org/wiki/Heapsort#Variations
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
    * Returns the size of the heap - O(1)
-   * @returns {number}
+   * @return {number}
    */
   size(): number {
     return this.heap.length
@@ -181,19 +180,19 @@ class MinBinaryHeap<T> {
 
   /**
    * Returns true if the heap is empty, false otherwise - O(1)
-   * @returns {boolean}
+   * @return {boolean}
    */
   isEmpty(): boolean {
     return this.size() == 0
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   /**
    * Adds an element to the heap, while maintaing the heap invariant - O(log(n))
    * @param {T} element
-   * @returns {void}
+   * @return {void}
    */
   add(element: T): void {
     this.heap.push(element)
@@ -204,7 +203,7 @@ class MinBinaryHeap<T> {
   /**
    * Removes element if it exists. Returns true if success, false otherwise - O(n)
    * @param {T} element
-   * @returns {boolean}
+   * @return {boolean}
    */
   remove(element: T): boolean {
     // O(n), linear scan to find elementIndex
@@ -218,7 +217,7 @@ class MinBinaryHeap<T> {
 
   /**
    * Removes and returns top most element of heap - O(log(n))
-   * @returns {T}
+   * @return {T}
    */
   removeRoot(): T | null {
     if (this.isEmpty()) return null
@@ -228,18 +227,18 @@ class MinBinaryHeap<T> {
 
   /**
    * Clears the heap - O(1)
-   * @returns {void}
+   * @return {void}
    */
   clear(): void {
     this.heap.length = 0
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   ACCESSING
   *****************************************************************************/
   /**
    * Peeks at the top most element in the heap - O(1)
-   * @returns {T}
+   * @return {T}
    */
   peekRoot(): T | null {
     if (this.isEmpty()) return null
@@ -247,13 +246,13 @@ class MinBinaryHeap<T> {
     return this.heap[0]
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   SEARCHING
   *****************************************************************************/
   /**
    * Returns true if element is in heap, false otherwise - O(n)
    * @param {T} element
-   * @returns {boolean}
+   * @return {boolean}
    */
   contains(element: T): boolean {
     return this.heap.includes(element)

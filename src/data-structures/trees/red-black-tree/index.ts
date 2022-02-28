@@ -2,7 +2,7 @@ import RBTreeNode from './red-black-tree-node'
 import Stack from '../../sequences/stack'
 import * as utils from '../../utils'
 
-/***************************************************************************************************
+/** *************************************************************************************************
 * A red-black tree is a binary tree that satisfies the red-black properties:
 
 * 1. Every node is either red or black
@@ -42,7 +42,7 @@ class RedBlackTree<T> {
     this.compare = compareFunction || utils.defaultCompare
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   size(): number {
@@ -65,7 +65,7 @@ class RedBlackTree<T> {
     return Math.max(this.heightHelper(root.left), this.heightHelper(root.right)) + 1
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   SEARCHING
   *****************************************************************************/
   // All search operations can be implemented iteratively and in O(logn) time.
@@ -152,7 +152,7 @@ class RedBlackTree<T> {
     return parent
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   // O(logn) time since we follow a path down the tree
@@ -416,7 +416,7 @@ class RedBlackTree<T> {
     if (v) v.parent = u.parent
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   READING
   *****************************************************************************/
   inorderTraversal(): { [Symbol.iterator](): Iterator<T> } {

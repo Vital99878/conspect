@@ -13,7 +13,7 @@ export class Person {
     console.log(this.name)
   }
   static staticMethod(): void {
-    console.log("Peron's static Method")
+    console.log('Peron\'s static Method')
   }
   constructor(public name: string, public age: number) {
     Person.addPerson(this)
@@ -42,7 +42,7 @@ class ITPerson extends Person {
     console.log(this.length)
   }
   static staticMethodITPerson(): void {
-    console.log("IT Peron's static Method")
+    console.log('IT Peron\'s static Method')
   }
   constructor(public name: string, public age: number, public it: string) {
     super(name, age) // вызывает конструктор наследуемого класса

@@ -30,6 +30,7 @@
     "comma-dangle": "off",
     "linebreak-style": "off",
     "@typescript-eslint/ban-ts-ignore": "off",
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "valid-jsdoc": "off"
   }
 }

@@ -9,12 +9,12 @@ class Stack<T> implements Iterable<T> {
     else this.list = new LinkedList()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
    * Returns size of stack - O(1)
-   * @returns {number}
+   * @return {number}
    */
   size(): number {
     return this.list.size()
@@ -22,7 +22,7 @@ class Stack<T> implements Iterable<T> {
 
   /**
    * Returns true if stack is empty, false otherwise - O(1)
-   * @returns {number}
+   * @return {number}
    */
   isEmpty(): boolean {
     return this.list.isEmpty()
@@ -35,7 +35,7 @@ class Stack<T> implements Iterable<T> {
     this.list.clear()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   /**
@@ -48,38 +48,38 @@ class Stack<T> implements Iterable<T> {
 
   /**
    * Pops an element off the stack - O(1)
-   * @returns {T} - Element which was popped off
+   * @return {T} - Element which was popped off
    */
   pop(): T | null {
     if (this.isEmpty()) return null
     return this.list.removeBack()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   ACCESSING
   *****************************************************************************/
   /**
    * Peeks at the top most element on the stack - O(1)
-   * @returns {T} - Topmost element
+   * @return {T} - Topmost element
    */
   peek(): T | null {
     if (this.isEmpty()) return null
     return this.list.peekBack()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   SEARCHING
   *****************************************************************************/
   /**
    * Checks if value is in stack - O(n)
    * @param {T} element  - element to search for
-   * @returns {boolean}
+   * @return {boolean}
    */
   contains(element: T): boolean {
     return this.list.contains(element)
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   HELPERS
   *****************************************************************************/
   [Symbol.iterator](): Iterator<T> {

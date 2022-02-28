@@ -36,7 +36,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
     this.valueList = new Array<V>(this.capacity)
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                         ABSTRACT
   *****************************************************************************/
   // These three methods are used to dictate how the probing is to actually
@@ -51,7 +51,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
 
   abstract probe(x: number): number
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                             INSPECTION
   *****************************************************************************/
   /**
@@ -128,7 +128,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
     return values
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                               MAIN
    ****************************************************************************/
   /**
@@ -180,7 +180,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * Adds the [K, V] pair to the hash table - O(1) amortized
    * @param {K} key
    * @param {V} value
-   * @returns {V | null}
+   * @return {V | null}
    */
   set(key: K, value: V | null): V | null {
     let output: V | null = null
@@ -246,7 +246,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
   /**
    * Deletes the entry with key K - O(1) amortized
    * @param {K} key
-   * @returns {V | null}
+   * @return {V | null}
    */
   delete(key: K): V | null {
     let output: V | null = null
@@ -279,7 +279,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
     return output
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                             HELPERS
   *****************************************************************************/
   // Converts a hash to an index by stripping the negative

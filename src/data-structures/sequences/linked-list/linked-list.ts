@@ -21,7 +21,7 @@ class LinkedList<T> implements Iterable<T> {
     if (equalsFunction) this.equalsF = equalsFunction
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
@@ -41,7 +41,7 @@ class LinkedList<T> implements Iterable<T> {
     return !this.list
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION
   *****************************************************************************/
   /**
@@ -136,12 +136,12 @@ class LinkedList<T> implements Iterable<T> {
     return true
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   ACCESSING
   *****************************************************************************/
   /**
    * Gets the value of head - O(1)
-   * @returns {T} value of head
+   * @return {T} value of head
    */
   peekFront(): T | null {
     if (!this.list) return null
@@ -149,7 +149,7 @@ class LinkedList<T> implements Iterable<T> {
   }
   /**
    * Gets the value of tail - O(1)
-   * @returns {T} value of tail
+   * @return {T} value of tail
    */
   peekBack(): T | null {
     if (!this.list) return null
@@ -158,7 +158,7 @@ class LinkedList<T> implements Iterable<T> {
   /**
    * Gets the element at index i - O(n)
    * @param {number} i - index of element
-   * @returns {T} value of element at index i
+   * @return {T} value of element at index i
    */
   get(i: number): T | null {
     if (i < 0 || i >= this.size() || !this.list) {
@@ -175,7 +175,7 @@ class LinkedList<T> implements Iterable<T> {
     return cur.val
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   SEARCHING
   *****************************************************************************/
   /**
@@ -204,7 +204,7 @@ class LinkedList<T> implements Iterable<T> {
   /**
    * Checks if value is in linked list.
    * @param {T} value  - value to search for
-   * @returns {boolean}
+   * @return {boolean}
    */
   contains(value: T): boolean {
     const index = this.indexOf(value)
@@ -212,7 +212,7 @@ class LinkedList<T> implements Iterable<T> {
     return index !== -1
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   DELETION
   *****************************************************************************/
   /**
@@ -268,7 +268,7 @@ class LinkedList<T> implements Iterable<T> {
    * Removes first occurence of node with specified value. Returns true if
    * removal was successful, and false otherwise. - O(n)
    * @param {T} val - value to remove
-   * @returns {T} - value of removed node
+   * @return {T} - value of removed node
    */
   remove(val: T): T | null {
     const index = this.indexOf(val) // O(n)
@@ -316,7 +316,7 @@ class LinkedList<T> implements Iterable<T> {
     this.list = undefined
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   HELPERS
   *****************************************************************************/
   /**
@@ -329,7 +329,7 @@ class LinkedList<T> implements Iterable<T> {
 
     return this
   }
-  *[Symbol.iterator](): Iterator<T> {
+  * [Symbol.iterator](): Iterator<T> {
     if (!this.list) return
 
     let cur: LinkedListNode<T> | null

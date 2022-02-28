@@ -24,7 +24,7 @@ class HashTableSeparateChaining<K extends Hashable, V> {
     this.table = new Array(this.capacity)
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
@@ -90,7 +90,7 @@ class HashTableSeparateChaining<K extends Hashable, V> {
     return values
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                       MAIN
    ****************************************************************************/
   /**
@@ -111,7 +111,7 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * Adds the [K, V] pair to the hash table - O(1) amortized
    * @param {K} key
    * @param {V} value
-   * @returns {V | null}
+   * @return {V | null}
    */
   set(key: K, value: V): V | null {
     const entry = new Entry<K, V>(key, value)
@@ -123,14 +123,14 @@ class HashTableSeparateChaining<K extends Hashable, V> {
   /**
    * Deletes the entry with key K - O(1) amortized
    * @param {K} key
-   * @returns {V | null}
+   * @return {V | null}
    */
   delete(key: K): V | null {
     const bucketIndex = this.normalizeIndex(key.hashCode())
     return this.bucketDeleteEntry(bucketIndex, key)
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                     HELPERS
   ******************************************************************************/
   // Converts a hash to an index by stripping the negative

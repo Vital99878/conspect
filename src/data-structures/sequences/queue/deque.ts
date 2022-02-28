@@ -9,7 +9,7 @@ class Deque<T> implements Iterable<T> {
     else this.list = new LinkedList()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
@@ -33,7 +33,7 @@ class Deque<T> implements Iterable<T> {
     this.list.clear()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   /**
@@ -54,7 +54,7 @@ class Deque<T> implements Iterable<T> {
 
   /**
    * Pops element from back queue - O(1)
-   * @returns {T | null}
+   * @return {T | null}
    */
   popFront(): T | null {
     if (this.isEmpty()) return null
@@ -63,19 +63,19 @@ class Deque<T> implements Iterable<T> {
 
   /**
    * Pops element from back queue - O(1)
-   * @returns {T | null}
+   * @return {T | null}
    */
   popBack(): T | null {
     if (this.isEmpty()) return null
     return this.list.removeBack()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   ACCESSING
   *****************************************************************************/
   /**
    * Peeks at the element at the front of the queue - O(1)
-   * @returns {T} - Frontmost element
+   * @return {T} - Frontmost element
    */
   peekFront(): T | null {
     if (this.isEmpty()) return null
@@ -84,26 +84,26 @@ class Deque<T> implements Iterable<T> {
 
   /**
    * Peeks at the element at the back of the queue - O(1)
-   * @returns {T} - Backmost element
+   * @return {T} - Backmost element
    */
   peekBack(): T | null {
     if (this.isEmpty()) return null
     return this.list.peekBack()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   SEARCHING
   *****************************************************************************/
   /**
    * Checks if value is in queue - O(n)
    * @param {T} element  - element to search for
-   * @returns {boolean}
+   * @return {boolean}
    */
   contains(element: T): boolean {
     return this.list.contains(element)
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   HELPERS
   *****************************************************************************/
   [Symbol.iterator](): Iterator<T> {

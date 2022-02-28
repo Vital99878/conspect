@@ -21,7 +21,7 @@ class CircularBuffer<T> {
     this.equalsF = equalsFunction || utils.defaultEquals
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
@@ -46,7 +46,7 @@ class CircularBuffer<T> {
     this.sz = 0
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   /**
@@ -68,7 +68,7 @@ class CircularBuffer<T> {
 
   /**
    * Dequeues element from queue - O(1)
-   * @returns {T}
+   * @return {T}
    */
   dequeue(): T | null {
     if (this.isEmpty()) return null
@@ -81,12 +81,12 @@ class CircularBuffer<T> {
     return removedVal
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   ACCESSING
   *****************************************************************************/
   /**
    * Peeks the element at the front of the buffer - O(1)
-   * @returns {T} - Frontmost element
+   * @return {T} - Frontmost element
    */
   peekFront(): T | null {
     if (this.isEmpty()) return null
@@ -96,7 +96,7 @@ class CircularBuffer<T> {
 
   /**
    * Peeks the element at the back of the buffer - O(1)
-   * @returns {T} - Back most element
+   * @return {T} - Back most element
    */
   peekBack(): T | null {
     if (this.isEmpty()) return null
@@ -107,13 +107,13 @@ class CircularBuffer<T> {
     return this.list[i]
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   SEARCHING
   *****************************************************************************/
   /**
    * Checks if element is in buffer - O(n)
    * @param {T} element  - element to search for
-   * @returns {boolean}
+   * @return {boolean}
    */
   contains(element: T): boolean {
     return this.list.some((val: T) => {

@@ -5,10 +5,7 @@ interface DoubleHashable extends Hashable {
   hashCode2(): number
 }
 
-class HashTableDoubleHashing<K extends DoubleHashable, V> extends HashTableOpenAddressingBase<
-  K,
-  V
-> {
+class HashTableDoubleHashing<K extends DoubleHashable, V> extends HashTableOpenAddressingBase<K, V> {
   private hash: number
 
   constructor(capacity: number, loadFactor: number) {

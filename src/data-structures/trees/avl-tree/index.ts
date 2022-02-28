@@ -15,7 +15,7 @@ class AVLTree<T> {
     this.compare = compareFunction || utils.defaultCompare
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   size(): number {
@@ -33,7 +33,7 @@ class AVLTree<T> {
     return this.root.height
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   SEARCHING
   *****************************************************************************/
   // All search operations can be implemented iteratively and in O(logn) time.
@@ -124,7 +124,7 @@ class AVLTree<T> {
     return parent
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   // O(logn) time since we follow a path down the tree
@@ -137,11 +137,7 @@ class AVLTree<T> {
     return this.root
   }
 
-  private insertHelper(
-    root: AVLTreeNode<T> | null,
-    value: T,
-    parent: AVLTreeNode<T> | null
-  ): AVLTreeNode<T> {
+  private insertHelper(root: AVLTreeNode<T> | null, value: T, parent: AVLTreeNode<T> | null): AVLTreeNode<T> {
     if (root === null) return new AVLTreeNode(value, parent)
 
     // regular BST insert first
@@ -383,7 +379,7 @@ class AVLTree<T> {
     if (v) v.parent = u.parent
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   READING
   *****************************************************************************/
   inorderTraversal(): { [Symbol.iterator](): Iterator<T> } {

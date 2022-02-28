@@ -9,7 +9,7 @@ class Queue<T> implements Iterable<T> {
     else this.list = new LinkedList()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
@@ -31,7 +31,7 @@ class Queue<T> implements Iterable<T> {
     this.list.clear()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   /**
@@ -43,19 +43,19 @@ class Queue<T> implements Iterable<T> {
   }
   /**
    * Dequeues element from queue - O(1)
-   * @returns {T}
+   * @return {T}
    */
   dequeue(): T | null {
     if (this.isEmpty()) return null
     return this.list.removeBack()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   ACCESSING
   *****************************************************************************/
   /**
    * Peeks at the element at the front of the queue - O(1)
-   * @returns {T} - Front most element
+   * @return {T} - Front most element
    */
   peekFront(): T | null {
     if (this.isEmpty()) return null
@@ -63,26 +63,26 @@ class Queue<T> implements Iterable<T> {
   }
   /**
    * Peeks at the element at the back of the queue - O(1)
-   * @returns {T} - Back most element
+   * @return {T} - Back most element
    */
   peekBack(): T | null {
     if (this.isEmpty()) return null
     return this.list.peekFront()
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   SEARCHING
   *****************************************************************************/
   /**
    * Checks if value is in queue - O(n)
    * @param {T} element  - element to search for
-   * @returns {boolean}
+   * @return {boolean}
    */
   contains(element: T): boolean {
     return this.list.contains(element)
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   HELPERS
   *****************************************************************************/
   [Symbol.iterator](): Iterator<T> {

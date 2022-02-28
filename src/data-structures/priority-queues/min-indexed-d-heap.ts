@@ -1,6 +1,6 @@
 import * as utils from '../utils'
 
-/*******************************************************************************
+/** *****************************************************************************
  * An indexed version of the min D-heap. For more information on D-heaps, see
  * ./min-d-heap.ts
  *
@@ -47,32 +47,32 @@ class MinIndexedDHeap<T> {
     this.compare = compareFunction || utils.defaultCompare
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   NICETIES
   *****************************************************************************/
   /**
    * Returns the size of the heap - O(1)
-   * @returns {number}
+   * @return {number}
    */
   size(): number {
     return this.sz
   }
   /**
    * Returns true if the heap is empty, false otherwise - O(1)
-   * @returns {boolean}
+   * @return {boolean}
    */
   isEmpty(): boolean {
     return this.size() == 0
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION
   *****************************************************************************/
   /**
    * Adds an value with index to the heap, while maintaing heap invariant - O(log_d(n))
    * @param {number} key - index of node
    * @param {T} value - value of node
-   * @returns {void}
+   * @return {void}
    */
   add(key: number, value: T): boolean {
     if (this.contains(key)) return false
@@ -90,12 +90,12 @@ class MinIndexedDHeap<T> {
     return true
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   ACCESSING
   *****************************************************************************/
   /**
    * Peeks at the top most element in the heap - O(1)
-   * @returns {T}
+   * @return {T}
    */
   peek(): T | null {
     if (this.isEmpty()) return null
@@ -112,7 +112,7 @@ class MinIndexedDHeap<T> {
     return value
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   UPDATING
   *****************************************************************************/
   updateKey(key: number, value: T): boolean {
@@ -168,25 +168,25 @@ class MinIndexedDHeap<T> {
     return true
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   SEARCHING
   *****************************************************************************/
   /**
    * Returns true if key is in heap, false otherwise - O(1)
    * @param {number} key
-   * @returns {boolean}
+   * @return {boolean}
    */
   contains(key: number): boolean {
     // position map tells us if key exists in heap
     return this.pm[key] !== undefined && this.pm[key] !== -1 // O(1) access! no linear search required
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   DELETION
   *****************************************************************************/
   /**
    * Removes and returns top most element of heap - O(log_d(n))
-   * @returns {T}
+   * @return {T}
    */
   poll(): T | null {
     if (this.isEmpty()) return null
@@ -228,7 +228,7 @@ class MinIndexedDHeap<T> {
 
   /**
    * Clears the heap - O(1)
-   * @returns {void}
+   * @return {void}
    */
   clear(): void {
     this.values.length = 0
@@ -237,7 +237,7 @@ class MinIndexedDHeap<T> {
     this.sz = 0
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   HELPERS
   *****************************************************************************/
   // O(1)
@@ -286,7 +286,7 @@ class MinIndexedDHeap<T> {
    * height of the tree. At each level, we have to do d comparisons to find
    * smallest child to swim down.
    * @param {number} k
-   * @returns {void}
+   * @return {void}
    */
   private sink(k: number): void {
     // eslint-disable-next-line
@@ -297,10 +297,7 @@ class MinIndexedDHeap<T> {
       let smallestChildPosition = childrenPositions[0] // assume left most child is smallest at first
       for (const childPosition of childrenPositions) {
         const childPositionIsInBounds = childPosition < this.size()
-        const currentChildIsSmallerThanCurrentMin = this.lessForPositions(
-          childPosition,
-          smallestChildPosition
-        )
+        const currentChildIsSmallerThanCurrentMin = this.lessForPositions(childPosition, smallestChildPosition)
 
         if (childPositionIsInBounds && currentChildIsSmallerThanCurrentMin) {
           smallestChildPosition = childPosition
@@ -320,7 +317,7 @@ class MinIndexedDHeap<T> {
    * Swims an element with index k until heap invariant is satisfied - O(log_d(n))
    * O(logd(n)) because in the worst case we swim the element up the entire tree
    * @param {number} k
-   * @returns {void}
+   * @return {void}
    */
   private swim(k: number): void {
     let parentPosition = this.getParentPosition(k)

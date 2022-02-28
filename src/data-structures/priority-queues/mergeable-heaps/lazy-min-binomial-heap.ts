@@ -1,7 +1,7 @@
 import BinomialNode from './binomial-node'
 import * as utils from '../../utils'
 
-/*******************************************************************************
+/** *****************************************************************************
  * A binomial heap is a forest of binomial trees.
  *
  * A binomial tree of degree 0 is a single node.
@@ -58,24 +58,24 @@ class LazyMinBinomialHeap<T> {
     this.compare = compareFunction || utils.defaultCompare
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
    * Returns true if the heap is empty, false otherwise - O(1)
-   * @returns {boolean}
+   * @return {boolean}
    */
   isEmpty(): boolean {
     return this.size === 0
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   /**
    * Enqueues element onto the heap - O(1)
    * @param {T} element
-   * @returns {void}
+   * @return {void}
    */
   enqueue(element: T): BinomialNode<T> {
     const newRoot = new BinomialNode(element)
@@ -96,7 +96,7 @@ class LazyMinBinomialHeap<T> {
   /**
    * Dequeues the smallest element from the heap // O(logn)
    * @param {T} element
-   * @returns {void}
+   * @return {void}
    */
   dequeue(): BinomialNode<T> | null {
     // remove smallest root of smallest tree B_k from heap
@@ -136,7 +136,7 @@ class LazyMinBinomialHeap<T> {
   /**
    * Deletes the given node - O(logn)
    * @param {BinomialNode<T>} node
-   * @returns {void}
+   * @return {void}
    */
   deleteNode(node: BinomialNode<T>): BinomialNode<T> | null {
     // make it the smallest node in the heap so it swims up
@@ -194,12 +194,12 @@ class LazyMinBinomialHeap<T> {
     this.minRoot = min
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   READING
   *****************************************************************************/
   /**
    * Returns the smallest node in the heap, null if the heap is empty O(1)
-   * @returns {BinomialNode<T> | null}
+   * @return {BinomialNode<T> | null}
    */
   peek(): BinomialNode<T> | null {
     if (!this.head) return null
@@ -207,14 +207,14 @@ class LazyMinBinomialHeap<T> {
     return this.minRoot
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   UPDATING
   *****************************************************************************/
   /**
    * Unions supplied heap with current heap - O(1). Current implementation
    * is destructive.
    * @param {BinomialHeap<T>} otherHeap
-   * @returns {BinomialHeap<T>}
+   * @return {BinomialHeap<T>}
    */
   union(otherHeap: LazyMinBinomialHeap<T>): LazyMinBinomialHeap<T> {
     const unionedHeap = new LazyMinBinomialHeap<T>(this.smallestValue)
@@ -236,7 +236,7 @@ class LazyMinBinomialHeap<T> {
   /**
    * Consolidates the current state of the heap such that only one tree exists
    * for degree k - O(t + logn)
-   * @returns {LazyMinBinomialHeap<T>}
+   * @return {LazyMinBinomialHeap<T>}
    */
   private consolidate(): BinomialNode<T> | null {
     // 1. sort the trees according to degree with bucket sort O(t + logn)
@@ -254,8 +254,7 @@ class LazyMinBinomialHeap<T> {
         const treeA = degreeKTrees.pop()!
         const treeB = degreeKTrees.pop()!
 
-        const linkedTree =
-          treeA.value < treeB.value ? this.linkTrees(treeA, treeB) : this.linkTrees(treeB, treeA)
+        const linkedTree = treeA.value < treeB.value ? this.linkTrees(treeA, treeB) : this.linkTrees(treeB, treeA)
 
         sortedTrees[k + 1].push(linkedTree)
 
@@ -332,7 +331,7 @@ class LazyMinBinomialHeap<T> {
    * successful, and false otherwise - O(logn)
    * @param {BinomialNode<T>} node
    * @param {T} newValue
-   * @returns {boolean}
+   * @return {boolean}
    */
   decreaseKey(node: BinomialNode<T>, newValue: T): boolean {
     // if newKey >= key, don't update

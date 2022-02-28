@@ -17,7 +17,6 @@ export const topicCookie = () => {
 
     document.cookie = 'user=John; max-age=7'
 
-
     // console.log('document.cookie: ', document.cookie)
   }
   console.log(`%cEvent loop block finished`, 'color:tomato; font-size: 14px')

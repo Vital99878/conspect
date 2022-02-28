@@ -1,7 +1,7 @@
 import BinomialNode from './binomial-node'
 import * as utils from '../../utils'
 
-/*******************************************************************************
+/** *****************************************************************************
  * A binomial heap is a forest of binomial trees.
  *
  * A binomial tree of degree 0 is a single node.
@@ -57,24 +57,24 @@ class MinBinomialHeap<T> {
     this.compare = compareFunction || utils.defaultCompare
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
    * Returns true if the heap is empty, false otherwise - O(1)
-   * @returns {boolean}
+   * @return {boolean}
    */
   isEmpty(): boolean {
     return this.size === 0
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   /**
    * Enqueues element onto the heap.
    * @param {T} element
-   * @returns {void}
+   * @return {void}
    */
   enqueue(element: T): BinomialNode<T> {
     // create a heap containing the single new element, hPrime
@@ -97,7 +97,7 @@ class MinBinomialHeap<T> {
   /**
    * Dequeues the smallest element from the heap // O(logn)
    * @param {T} element
-   * @returns {void}
+   * @return {void}
    */
   dequeue(): BinomialNode<T> | null {
     // remove smallest root of smallest tree B_k from heap
@@ -125,7 +125,7 @@ class MinBinomialHeap<T> {
   /**
    * Deletes the given node - O(logn)
    * @param {BinomialNode<T>} node
-   * @returns {void}
+   * @return {void}
    */
   deleteNode(node: BinomialNode<T>): BinomialNode<T> | null {
     // make it the smallest node in the heap so it swims up
@@ -198,12 +198,12 @@ class MinBinomialHeap<T> {
     this.minRoot = min
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   READING
   *****************************************************************************/
   /**
    * Returns the smallest node in the heap, null if the heap is empty O(1)
-   * @returns {BinomialNode<T> | null}
+   * @return {BinomialNode<T> | null}
    */
   peek(): BinomialNode<T> | null {
     if (!this.head) return null
@@ -211,13 +211,13 @@ class MinBinomialHeap<T> {
     return this.minRoot
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   UPDATING
   *****************************************************************************/
   /**
    * Unions supplied heap with current heap - O(logn + logm)
    * @param {MinBinomialHeap<T>} otherHeap
-   * @returns {MinBinomialHeap<T>}
+   * @return {MinBinomialHeap<T>}
    */
   union(otherHeap: MinBinomialHeap<T>): MinBinomialHeap<T> {
     // FIRST PHASE
@@ -245,8 +245,7 @@ class MinBinomialHeap<T> {
 
     while (nextRoot !== null) {
       const currentTwoRootsAreNotEqual = root.degree !== nextRoot.degree
-      const nextTwoRootsAreEqual =
-        nextRoot.sibling !== null && nextRoot.sibling.degree === nextRoot.degree
+      const nextTwoRootsAreEqual = nextRoot.sibling !== null && nextRoot.sibling.degree === nextRoot.degree
 
       const movePointers = currentTwoRootsAreNotEqual || nextTwoRootsAreEqual
 
@@ -358,7 +357,7 @@ class MinBinomialHeap<T> {
    * successful, and false otherwise - O(logn)
    * @param {BinomialNode<T>} node
    * @param {T} newValue
-   * @returns {boolean}
+   * @return {boolean}
    */
   decreaseKey(node: BinomialNode<T>, newValue: T): boolean {
     // if newKey >= key, don't update

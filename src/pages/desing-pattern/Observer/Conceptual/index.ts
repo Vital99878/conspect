@@ -94,7 +94,7 @@ export class Publisher implements Subject {
    * этого).
    */
   public someBusinessLogic(): void {
-    console.log("\nSubject: I'm doing something important.")
+    console.log('\nSubject: I\'m doing something important.')
     this.state += 1
 
     console.log(`Subject: My state has just changed to: ${this.state}`)

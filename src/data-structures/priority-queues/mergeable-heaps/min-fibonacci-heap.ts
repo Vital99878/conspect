@@ -1,7 +1,7 @@
 import FibonacciNode from './fibonacci-node'
 import * as utils from '../../utils'
 
-/*******************************************************************************
+/** *****************************************************************************
  * A fibonacci heap is a lazy binomial heap with lazy decreaseKey(). Some important
  * algorithms heavily rely on decreaseKey(). Dijkstra's shortest path, Prim's
  * minimum spanning tree. Fibonacci heaps give the theoretically optimal implementation
@@ -73,24 +73,24 @@ class MinFibonacciHeap<T> {
     this.compare = compareFunction || utils.defaultCompare
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSPECTION
   *****************************************************************************/
   /**
    * Returns true if the heap is empty, false otherwise - O(1)
-   * @returns {boolean}
+   * @return {boolean}
    */
   isEmpty(): boolean {
     return this.size === 0
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   INSERTION/DELETION
   *****************************************************************************/
   /**
    * Enqueues element onto the heap - O(1)
    * @param {T} element
-   * @returns {void}
+   * @return {void}
    */
   enqueue(element: T): FibonacciNode<T> {
     const newRoot = new FibonacciNode(element)
@@ -115,7 +115,7 @@ class MinFibonacciHeap<T> {
   /**
    * Dequeues the smallest element from the heap // O(logn)
    * @param {T} element
-   * @returns {void}
+   * @return {void}
    */
   dequeue(): FibonacciNode<T> | null {
     // remove smallest root of smallest tree B_k from heap
@@ -207,7 +207,7 @@ class MinFibonacciHeap<T> {
   /**
    * Deletes the given node - O(logn)
    * @param {FibonacciNode<T>} node
-   * @returns {void}
+   * @return {void}
    */
   deleteNode(node: FibonacciNode<T>): FibonacciNode<T> | null {
     // make it the smallest node in the heap so it swims up
@@ -217,12 +217,12 @@ class MinFibonacciHeap<T> {
     return this.dequeue() // O(logn)
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   READING
   *****************************************************************************/
   /**
    * Returns the smallest node in the heap, null if the heap is empty O(1)
-   * @returns {FibonacciNode<T> | null}
+   * @return {FibonacciNode<T> | null}
    */
   peek(): FibonacciNode<T> | null {
     if (!this.head) return null
@@ -230,14 +230,14 @@ class MinFibonacciHeap<T> {
     return this.minRoot
   }
 
-  /*****************************************************************************
+  /** ***************************************************************************
                                   UPDATING
   *****************************************************************************/
   /**
    * Unions supplied heap with current heap - O(1). Current implementation
    * is destructive.
    * @param {FibonacciHeap<T>} otherHeap
-   * @returns {FibonacciHeap<T>}
+   * @return {FibonacciHeap<T>}
    */
   union(otherHeap: MinFibonacciHeap<T>): MinFibonacciHeap<T> {
     const unionedHeap = new MinFibonacciHeap<T>(this.smallestValue)
@@ -260,7 +260,7 @@ class MinFibonacciHeap<T> {
   /**
    * Consolidates the current state of the heap such that only one tree exists
    * for degree k - O(t + logn)
-   * @returns {MinFibonacciHeap<T>}
+   * @return {MinFibonacciHeap<T>}
    */
   private consolidate(): FibonacciNode<T> | null {
     // 1. sort the trees according to degree with bucket sort O(t + logn)
@@ -278,8 +278,7 @@ class MinFibonacciHeap<T> {
         const treeA = degreeKTrees.pop()!
         const treeB = degreeKTrees.pop()!
 
-        const linkedTree =
-          treeA.value < treeB.value ? this.linkTrees(treeA, treeB) : this.linkTrees(treeB, treeA)
+        const linkedTree = treeA.value < treeB.value ? this.linkTrees(treeA, treeB) : this.linkTrees(treeB, treeA)
 
         sortedTrees[k + 1].push(linkedTree)
 
@@ -365,7 +364,7 @@ class MinFibonacciHeap<T> {
    * otherwise - O(1)
    * @param {FibonacciNode<T>} node
    * @param {T} newValue
-   * @returns {boolean}
+   * @return {boolean}
    */
   decreaseKey(node: FibonacciNode<T>, newValue: T): boolean {
     // if newKey >= key, don't update
