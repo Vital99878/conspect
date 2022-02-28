@@ -6,7 +6,7 @@ const DomEvent = () => {
   function doSmth(event) {
     // console.log(++count)
     event.preventDefault()
-    event.stopPropagation()
+    // event.stopPropagation()
     // event.stopImmediatePropagation()
     // console.log(event.target)
     console.log(event.currentTarget)
@@ -40,7 +40,7 @@ const DomEvent = () => {
           Child 1
           <div className={'child-2'}>
             Child 2
-            <button className={'button'} onClick={() => console.log('second event')}>
+            <button className={'child-3 button'} onClick={() => console.log('second event')}>
               Click
             </button>
           </div>
