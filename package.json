@@ -67,7 +67,7 @@
     }
   },
   "lint-staged": {
-    "*{.js, jsx, tsx}": [
+    "*{.js, jsx, tsx, .ts}": [
       "npm run format",
       "pretty-quick --staged",
       "git add"

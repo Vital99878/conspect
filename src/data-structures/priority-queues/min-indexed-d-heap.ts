@@ -30,9 +30,9 @@ class MinIndexedDHeap<T> {
   private degree: number // the degree of every node in the heap
   private sz: number // size of heap
 
-  private values: Array<T | null> // maps key indices -> values
-  public heap: number[] // maps positions in heap -> key indices
-  public pm: number[] // maps key indices -> positions in heap
+  private values: any // maps key indices -> values
+  public heap: number[] // maps positions in heap -> key indices. Здесь хранятся индексы объектов в том порядке, который нужен для того чтобы values удовлетворяли определению MinIndexedDHeap
+  public pm: { [indexOfValue: number]: any } // maps key indices -> positions in heap. p[indexOfObject] = positionInTheHeap
 
   private compare: utils.CompareFunction<T>
 
@@ -40,9 +40,9 @@ class MinIndexedDHeap<T> {
     this.degree = Math.max(2, degree) // degree must be at least 2
     this.sz = 0
 
-    this.values = []
+    this.values = {}
     this.heap = []
-    this.pm = []
+    this.pm = {}
 
     this.compare = compareFunction || utils.defaultCompare
   }
@@ -75,7 +75,10 @@ class MinIndexedDHeap<T> {
    * @return {void}
    */
   add(key: number, value: T): boolean {
-    if (this.contains(key)) return false
+    if (this.contains(key)) {
+      console.log('this.contains(key): ', this.contains(key))
+      return false
+    }
 
     this.values[key] = value // add element to value lookup first
 
@@ -115,6 +118,7 @@ class MinIndexedDHeap<T> {
   /** ***************************************************************************
                                   UPDATING
   *****************************************************************************/
+
   updateKey(key: number, value: T): boolean {
     if (!this.contains(key)) return false
     if (!this.values[key]) return false // this means key was unset, so technically it does not exist
@@ -232,7 +236,7 @@ class MinIndexedDHeap<T> {
    */
   clear(): void {
     this.values.length = 0
-    this.pm.length = 0
+    this.pm = {}
     this.heap.length = 0
     this.sz = 0
   }
@@ -285,13 +289,13 @@ class MinIndexedDHeap<T> {
    * O(dlog(n)) because in the worst case we sink the element down the entire
    * height of the tree. At each level, we have to do d comparisons to find
    * smallest child to swim down.
-   * @param {number} k
+   * @param {number} parentPosition
    * @return {void}
    */
-  private sink(k: number): void {
+  private sink(parentPosition: number): void {
     // eslint-disable-next-line
     while (true) {
-      const childrenPositions = this.getChildrenPositions(k)
+      const childrenPositions = this.getChildrenPositions(parentPosition)
 
       // get position of smallest child - O(d)
       let smallestChildPosition = childrenPositions[0] // assume left most child is smallest at first
@@ -305,28 +309,28 @@ class MinIndexedDHeap<T> {
       }
 
       const childPositionOutOfBounds = smallestChildPosition >= this.size()
-      const elementIsLessThanChild = this.lessForPositions(k, smallestChildPosition)
+      const elementIsLessThanChild = this.lessForPositions(parentPosition, smallestChildPosition)
       if (childPositionOutOfBounds || elementIsLessThanChild) break
 
-      this.swap(smallestChildPosition, k) // O(1)
-      k = smallestChildPosition // point k to child node, and we repeat loop
+      this.swap(smallestChildPosition, parentPosition) // O(1)
+      parentPosition = smallestChildPosition // point k to child node, and we repeat loop
     }
   }
 
   /**
-   * Swims an element with index k until heap invariant is satisfied - O(log_d(n))
+   * Swims an element with index childPosition until heap invariant is satisfied - O(log_d(n))
    * O(logd(n)) because in the worst case we swim the element up the entire tree
-   * @param {number} k
+   * @param {number} childPosition
    * @return {void}
    */
-  private swim(k: number): void {
-    let parentPosition = this.getParentPosition(k)
+  private swim(childPosition: number): void {
+    let parentPosition = this.getParentPosition(childPosition)
 
-    while (k > 0 && this.lessForPositions(k, parentPosition)) {
-      this.swap(parentPosition, k)
-      k = parentPosition // move k pointer up after swapping
+    while (childPosition > 0 && this.lessForPositions(childPosition, parentPosition)) {
+      this.swap(parentPosition, childPosition)
+      childPosition = parentPosition // move k pointer up after swapping
 
-      parentPosition = this.getParentPosition(k) // update parentIndex
+      parentPosition = this.getParentPosition(childPosition) // update parentIndex
     }
   }
   // O(1)
@@ -346,6 +350,7 @@ class MinIndexedDHeap<T> {
     // ====================================
     // now swap keys in actual heap
     const temp = this.heap[positionI]
+
     this.heap[positionI] = this.heap[positionJ]
     this.heap[positionJ] = temp
   }

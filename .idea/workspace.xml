@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (data structure and algo) page">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (heap Comp)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/DsAndAlgorithms-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/DsAndAlgorithms-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/data-strutures.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/data-strutures.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/data-strutures.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/data-strutures.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structures/priority-queues/min-indexed-d-heap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structures/priority-queues/min-indexed-d-heap.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/components/indexed-d-heap/IndexedDHeap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/components/indexed-d-heap/IndexedDHeap.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,24 +87,25 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\DsAndAlgorithms\components\data-strutures\components\indexed-d-heap" />
+      <recent name="W:\conspect\src\pages\DsAndAlgorithms\components\data-strutures\components" />
       <recent name="W:\conspect\src" />
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics" />
       <recent name="W:\conspect\src\helpers" />
-      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics\components" />
-      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\DsAndAlgorithms\components\data-strutures\components\indexed-d-heap" />
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics\components\domEvent" />
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\preparation" />
-      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\exercises\api" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\CreateCloser.ts" />
@@ -204,42 +203,8 @@
       <workItem from="1645948161028" duration="948000" />
       <workItem from="1645957178526" duration="371000" />
       <workItem from="1645957567301" duration="10440000" />
-      <workItem from="1646058689456" duration="610000" />
-    </task>
-    <task id="LOCAL-00111" summary="pattern design (Adapter)">
-      <created>1644411588754</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1644411588754</updated>
-    </task>
-    <task id="LOCAL-00112" summary="pattern design (Adapter)">
-      <created>1644411743625</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1644411743625</updated>
-    </task>
-    <task id="LOCAL-00113" summary="pattern design (Composite)">
-      <created>1644417079979</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1644417079979</updated>
-    </task>
-    <task id="LOCAL-00114" summary="pattern design (Todos Singleton)">
-      <created>1644420765801</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1644420765801</updated>
-    </task>
-    <task id="LOCAL-00115" summary="pattern design (Todos Singleton)">
-      <created>1644420930311</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1644420930311</updated>
+      <workItem from="1646058689456" duration="1563000" />
+      <workItem from="1646122381548" duration="11671000" />
     </task>
     <task id="LOCAL-00116" summary="pattern design (Adapter) refactor">
       <created>1644593575134</created>
@@ -549,7 +514,42 @@
       <option name="project" value="LOCAL" />
       <updated>1646058564621</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary=" (data structure and algo) page">
+      <created>1646059317650</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1646059317650</updated>
+    </task>
+    <task id="LOCAL-00161" summary=" (heap Comp)">
+      <created>1646123268427</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1646123268427</updated>
+    </task>
+    <task id="LOCAL-00162" summary=" (heap Comp)">
+      <created>1646129280151</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1646129280151</updated>
+    </task>
+    <task id="LOCAL-00163" summary=" (heap Comp)">
+      <created>1646132500167</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1646132500168</updated>
+    </task>
+    <task id="LOCAL-00164" summary=" (heap Comp)">
+      <created>1646132770387</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1646132770387</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -570,7 +570,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring (Todos) dragging style" />
     <MESSAGE value="refactoring (Todos) bad style for animation" />
     <MESSAGE value="feat (useEscapeKey)" />
     <MESSAGE value="pattern design ()" />
@@ -595,7 +594,8 @@
     <MESSAGE value=" (dom event) numbers" />
     <MESSAGE value=" (data structure)" />
     <MESSAGE value=" (data structure and algo) page" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (data structure and algo) page" />
+    <MESSAGE value=" (heap Comp)" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (heap Comp)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
