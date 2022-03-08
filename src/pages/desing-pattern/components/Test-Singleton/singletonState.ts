@@ -1,5 +1,5 @@
 export class SingletonState {
-  private static instance: any = null
+  private static instance: any = [10, 15, 20]
   static createInstance<T>(store: T[]): T[] {
     if (SingletonState.instance) {
       console.log(`%cInstance already exist! Please, use getInstance method`, 'color:tomato; font-size: 14px')
@@ -15,9 +15,11 @@ export class SingletonState {
     return SingletonState.instance
   }
   static updateState<T>(): void {
-    const newI = [...SingletonState.instance, 15]
+    const newItem = Math.floor(Math.random()*100)
+    const updated = [...SingletonState.instance, newItem]
     SingletonState.destroyInstance()
-    SingletonState.instance = newI
+    SingletonState.createInstance(updated)
+    console.log('SingletonState.instance: ', SingletonState.instance)
   }
   static destroyInstance(): void {
     if (!SingletonState.instance) {

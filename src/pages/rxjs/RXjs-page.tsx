@@ -11,18 +11,20 @@ import Loading from './components/Loading/Loading'
 import TestLoadingState from './components/Loading/TestLoadingState'
 
 const RXjsPage: FC = () => {
-  const { instanceRef } = useSingletonState()
-  console.log('i rxjs: ', instanceRef)
-  const { n } = useCloser()
+  const { instanceRef, updateInstanceRef } = useSingletonState()
+  // console.log('i rxjs: ', instanceRef)
+  const { count, } = useCloser()
+  console.log('count: ', count)
   return (
     <PageLayout pageHeading="RxJS Page">
       <div className="rxjs">
-        <TestEmpty count={n} />
         <ul>
+          {count}
           {instanceRef.map((number) => {
             return <li key={number}>{number}</li>
           })}
         </ul>
+        <button onClick={updateInstanceRef}>add new number</button>
         <Loading />
         <TestLoadingState />
         {/* <BallComponent />*/}

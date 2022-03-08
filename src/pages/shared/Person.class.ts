@@ -34,7 +34,7 @@ export class Person {
   }
 }
 
-class ITPerson extends Person {
+export class ITPerson extends Person {
   static addPerson(): void {
     this.persons.shift()
   }

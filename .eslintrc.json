@@ -31,6 +31,7 @@
     "linebreak-style": "off",
     "@typescript-eslint/ban-ts-ignore": "off",
     "space-before-function-paren": "off",
-    "valid-jsdoc": "off"
+    "valid-jsdoc": "off",
+    "no-invalid-this": "off"
   }
 }

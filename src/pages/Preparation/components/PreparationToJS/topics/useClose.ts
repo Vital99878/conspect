@@ -1,18 +1,19 @@
-import { useEffect, useState, useCallback } from 'react'
-let count = 0
+import { useState} from 'react'
+const initialCount = 0
 
 export function useCloser() {
-  function a(): void {
-    ++count
+  const [count, setCount] = useState(initialCount)
+  function inc(): void {
+    setCount((count) => ++count)
   }
 
-  function b(): void {
-    count = count * 50
+  function dec(): void {
+    setCount((count) => --count)
   }
 
-  function resetCount(): void {
-    count = 0
+  function res(): void {
+    setCount(0)
   }
 
-  return { counter1: a, counter2: b, resetCount, n: count }
+  return { inc, dec, res, count }
 }

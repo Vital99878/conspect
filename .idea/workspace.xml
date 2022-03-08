@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" (heap Comp)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" update (useSingletonState) hook">
+      <change afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/PrototypeTest.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structures/priority-queues/min-indexed-d-heap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structures/priority-queues/min-indexed-d-heap.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/components/indexed-d-heap/IndexedDHeap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/components/indexed-d-heap/IndexedDHeap.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/data-strutures.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/data-strutures.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/useClose.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/useClose.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/prototype_2.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/singletonState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/singletonState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +33,7 @@
         <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -76,6 +90,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -87,25 +102,25 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="rest.client.default.execution.environment" value="todos" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="W:\conspect\src\pages\DsAndAlgorithms\components\data-strutures\components\indexed-d-heap" />
-      <recent name="W:\conspect\src\pages\DsAndAlgorithms\components\data-strutures\components" />
+      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\preparation" />
+      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
+      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Prototype" />
+      <recent name="W:\conspect\src\pages\desing-pattern\components" />
       <recent name="W:\conspect\src" />
-      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics" />
-      <recent name="W:\conspect\src\helpers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="W:\conspect\src\pages\DsAndAlgorithms\components\data-strutures\components\indexed-d-heap" />
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics\components\domEvent" />
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\preparation" />
+      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\exercises\api" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\CreateCloser.ts" />
@@ -116,8 +131,8 @@
       <command value="npm" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.lint">
-    <configuration name="rest-api_4 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/exercises/api/rest-api_4.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.request | #1">
+    <configuration name="request | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/request.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="node.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="D:/!Загрузки/zadachi/node.js" working-dir="D:/!Загрузки/zadachi">
@@ -148,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.request | #1" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.lint" />
         <item itemvalue="Node.js.scratch.js" />
-        <item itemvalue="HTTP Request.rest-api_4 | #1" />
         <item itemvalue="Node.js.node.js" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +219,40 @@
       <workItem from="1645957178526" duration="371000" />
       <workItem from="1645957567301" duration="10440000" />
       <workItem from="1646058689456" duration="1563000" />
-      <workItem from="1646122381548" duration="11671000" />
+      <workItem from="1646117353050" duration="4220000" />
+      <workItem from="1646377349569" duration="13765000" />
+      <workItem from="1646497334303" duration="1320000" />
+      <workItem from="1646588330871" duration="598000" />
+      <workItem from="1646647211285" duration="2768000" />
+      <workItem from="1646733346733" duration="5491000" />
+    </task>
+    <task id="LOCAL-00112" summary="pattern design (Adapter)">
+      <created>1644411743625</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1644411743625</updated>
+    </task>
+    <task id="LOCAL-00113" summary="pattern design (Composite)">
+      <created>1644417079979</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1644417079979</updated>
+    </task>
+    <task id="LOCAL-00114" summary="pattern design (Todos Singleton)">
+      <created>1644420765801</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1644420765801</updated>
+    </task>
+    <task id="LOCAL-00115" summary="pattern design (Todos Singleton)">
+      <created>1644420930311</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1644420930311</updated>
     </task>
     <task id="LOCAL-00116" summary="pattern design (Adapter) refactor">
       <created>1644593575134</created>
@@ -521,35 +569,7 @@
       <option name="project" value="LOCAL" />
       <updated>1646059317650</updated>
     </task>
-    <task id="LOCAL-00161" summary=" (heap Comp)">
-      <created>1646123268427</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1646123268427</updated>
-    </task>
-    <task id="LOCAL-00162" summary=" (heap Comp)">
-      <created>1646129280151</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1646129280151</updated>
-    </task>
-    <task id="LOCAL-00163" summary=" (heap Comp)">
-      <created>1646132500167</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1646132500168</updated>
-    </task>
-    <task id="LOCAL-00164" summary=" (heap Comp)">
-      <created>1646132770387</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1646132770387</updated>
-    </task>
-    <option name="localTasksCounter" value="165" />
+    <option name="localTasksCounter" value="161" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -594,8 +614,8 @@
     <MESSAGE value=" (dom event) numbers" />
     <MESSAGE value=" (data structure)" />
     <MESSAGE value=" (data structure and algo) page" />
-    <MESSAGE value=" (heap Comp)" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (heap Comp)" />
+    <MESSAGE value=" update (useSingletonState) hook" />
+    <option name="LAST_COMMIT_MESSAGE" value=" update (useSingletonState) hook" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

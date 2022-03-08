@@ -26,8 +26,6 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
   const replaceableTodoRef = useRef<TodoType | null>(null)
   const dragPositionRef = useRef(DropPosition.before)
 
-  console.log('todoList: ', todoList)
-
   const addTodo = (newTodo: TodoType) => {
     console.log('newTodo: ', newTodo)
     setTodoList((todos) => [newTodo, ...todos])
@@ -185,7 +183,6 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
   }
 
   return {
-    // todoList,
     todoList: todoList.sort((a, b) => a.order - b.order),
     addTodo,
     deleteTodo,

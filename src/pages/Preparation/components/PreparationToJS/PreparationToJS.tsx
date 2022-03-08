@@ -1,7 +1,7 @@
 import React from 'react'
 import { multicast } from 'rxjs/operators'
 import { numbers, person, objWithSymbol } from '../../../../commonMockData'
-// import { Person } from '../../../shared/Person.class'
+import { Person, ITPerson } from '../../../shared/Person.class'
 import { topicPrototypeChain, useCloser, eventLoop, topicPromise } from './topics'
 import DomEvent from './topics/components/domEvent/domEvent'
 import topicCookie from './topics/Cookie'
@@ -15,6 +15,8 @@ const PreparationToJS: React.FC = () => {
     // console.log(`%cLoops block start`, 'color:darkgreen; font-size: 16px')
     //
     // classic loop
+
+    const itPerson = new ITPerson('R', 20, 'back')
 
     // classic for
     {
@@ -66,11 +68,11 @@ const PreparationToJS: React.FC = () => {
     //   }
     // }
     //
-    // // for in
-    // Object.defineProperty(person, 'name', { enumerable: false, value: 'Vit' }) // hide key for loop
-    //
+    // for in
+    Object.defineProperty(person, 'name', { enumerable: false, value: 'Vit' }) // hide key for loop
+
     // for (const key in person) {
-    //   // need type-guard for iterable obj
+    //   // for ts need type-guard for iterable obj
     //   if (key in person) console.log('person obj key: ', key)
     // }
     //
@@ -109,6 +111,19 @@ const PreparationToJS: React.FC = () => {
 
   // temporary
   {
+    const triangle = { a: 1, b: 2, c: 3 }
+
+    const obj = Object.create(triangle)
+    obj.color = 'red'
+
+    // eslint-disable-next-line guard-for-in
+    for (const prop in obj) {
+      // if (prop in obj) console.log(`obj.${prop} = ${obj[prop]}`)
+
+      if (obj.hasOwnProperty(prop)) {
+        console.log(`obj.${prop} = ${obj[prop]}`)
+      }
+    }
   }
 
   return (
