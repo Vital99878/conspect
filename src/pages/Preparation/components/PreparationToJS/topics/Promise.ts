@@ -1,5 +1,3 @@
-import { Url } from 'url'
-
 const topicPromise = () => {
   // Fetch
   {
@@ -31,6 +29,19 @@ const topicPromise = () => {
       return todos
     }
     // getTodos('https://jsonplaceholder.typicode.com/todos').then((todos) => console.log('todos: ', todos))
+  }
+
+  //
+  {
+    // new Promise(function (resolve, reject) {
+    //   setTimeout(() => {
+    //     throw new Error('Whoops!')
+    //   }, 1000)
+    // }).catch(alert)
+    new Promise(function (resolve, reject) {
+       // throw new Error('Whoops!')
+      reject(new Error('Whoops'))
+    }).catch((e) => console.log(e.message))
   }
 }
 

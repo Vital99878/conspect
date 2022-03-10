@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import './RXjs.module.scss'
 import { SingletonState } from '../desing-pattern/components/Test-Singleton/singletonState'
 import { useSingletonState } from '../desing-pattern/components/Test-Singleton/useSingletonState'
@@ -12,9 +12,10 @@ import TestLoadingState from './components/Loading/TestLoadingState'
 
 const RXjsPage: FC = () => {
   const { instanceRef, updateInstanceRef } = useSingletonState()
-  // console.log('i rxjs: ', instanceRef)
-  const { count, } = useCloser()
-  console.log('count: ', count)
+  const { count } = useCloser()
+  useEffect(() => {
+    console.log('update use Effect')
+  }, [instanceRef.length >=0])
   return (
     <PageLayout pageHeading="RxJS Page">
       <div className="rxjs">

@@ -3,24 +3,15 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BookmarksViewState">
+    <option name="proportionPopup" value="0.4921301" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" update (useSingletonState) hook">
-      <change afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/PrototypeTest.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" update (index.scss) create main elements style&#10; update (route css page) доделать роут">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/data-strutures.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/data-strutures/data-strutures.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/useClose.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/useClose.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/prototype_2.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/singletonState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/singletonState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestEmpty/TestEmpty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/PageLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/PageLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssFlex/CssFlex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssFlex/CssFlex.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/css-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/css-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +65,7 @@
     <scope name="src" pattern="file[ts-my-components]:src//*" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
   <component name="ProjectViewState">
@@ -91,7 +82,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/css/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -103,17 +94,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
     <property name="rest.client.default.execution.environment" value="todos" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\css\components" />
+      <recent name="W:\conspect\src\pages\css" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\preparation" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Prototype" />
-      <recent name="W:\conspect\src\pages\desing-pattern\components" />
-      <recent name="W:\conspect\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics\components\domEvent" />
@@ -224,56 +215,10 @@
       <workItem from="1646497334303" duration="1320000" />
       <workItem from="1646588330871" duration="598000" />
       <workItem from="1646647211285" duration="2768000" />
-      <workItem from="1646733346733" duration="5491000" />
-    </task>
-    <task id="LOCAL-00112" summary="pattern design (Adapter)">
-      <created>1644411743625</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1644411743625</updated>
-    </task>
-    <task id="LOCAL-00113" summary="pattern design (Composite)">
-      <created>1644417079979</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1644417079979</updated>
-    </task>
-    <task id="LOCAL-00114" summary="pattern design (Todos Singleton)">
-      <created>1644420765801</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1644420765801</updated>
-    </task>
-    <task id="LOCAL-00115" summary="pattern design (Todos Singleton)">
-      <created>1644420930311</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1644420930311</updated>
-    </task>
-    <task id="LOCAL-00116" summary="pattern design (Adapter) refactor">
-      <created>1644593575134</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1644593575134</updated>
-    </task>
-    <task id="LOCAL-00117" summary="pattern design (Command)">
-      <created>1644593938874</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1644593938874</updated>
-    </task>
-    <task id="LOCAL-00118" summary="pattern design (Command)">
-      <created>1644594500673</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1644594500673</updated>
+      <workItem from="1646733346733" duration="11078000" />
+      <workItem from="1646806433521" duration="9222000" />
+      <workItem from="1646886570201" duration="2905000" />
+      <workItem from="1646894259544" duration="16064000" />
     </task>
     <task id="LOCAL-00119" summary="pattern design (Iterable)">
       <created>1644651863832</created>
@@ -569,7 +514,56 @@
       <option name="project" value="LOCAL" />
       <updated>1646059317650</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary=" update (useSingletonState) hook">
+      <created>1646745258133</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1646745258134</updated>
+    </task>
+    <task id="LOCAL-00162" summary=" update (index.scss) create main elements style">
+      <created>1646905249077</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1646905249078</updated>
+    </task>
+    <task id="LOCAL-00163" summary=" update (index.scss) create main elements style">
+      <created>1646907979552</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1646907979552</updated>
+    </task>
+    <task id="LOCAL-00164" summary=" update (index.scss) create main elements style&#10; update (route css page)">
+      <created>1646909386599</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1646909386599</updated>
+    </task>
+    <task id="LOCAL-00165" summary=" update (index.scss) create main elements style&#10; update (route css page)">
+      <created>1646910627728</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1646910627728</updated>
+    </task>
+    <task id="LOCAL-00166" summary=" update (index.scss) create main elements style&#10; update (route css page)">
+      <created>1646918890828</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1646918890828</updated>
+    </task>
+    <task id="LOCAL-00167" summary=" update (index.scss) create main elements style&#10; update (route css page) доделать роут">
+      <created>1646920152653</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1646920152653</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -590,9 +584,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring (Todos) bad style for animation" />
-    <MESSAGE value="feat (useEscapeKey)" />
-    <MESSAGE value="pattern design ()" />
     <MESSAGE value="pattern design (State)" />
     <MESSAGE value="pattern design (Builder)" />
     <MESSAGE value="pattern design (Adapter)" />
@@ -615,7 +606,10 @@
     <MESSAGE value=" (data structure)" />
     <MESSAGE value=" (data structure and algo) page" />
     <MESSAGE value=" update (useSingletonState) hook" />
-    <option name="LAST_COMMIT_MESSAGE" value=" update (useSingletonState) hook" />
+    <MESSAGE value=" update (index.scss) create main elements style" />
+    <MESSAGE value=" update (index.scss) create main elements style&#10; update (route css page)" />
+    <MESSAGE value=" update (index.scss) create main elements style&#10; update (route css page) доделать роут" />
+    <option name="LAST_COMMIT_MESSAGE" value=" update (index.scss) create main elements style&#10; update (route css page) доделать роут" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

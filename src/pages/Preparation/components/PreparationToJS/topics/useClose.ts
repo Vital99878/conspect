@@ -1,4 +1,4 @@
-import { useState} from 'react'
+import { useState } from 'react'
 const initialCount = 0
 
 export function useCloser() {

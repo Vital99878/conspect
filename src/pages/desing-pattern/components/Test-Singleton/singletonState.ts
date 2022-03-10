@@ -11,15 +11,13 @@ export class SingletonState {
     return SingletonState.instance
   }
   static getInstance<T>(): T[] {
-    console.log('this.getInstance(): ')
+    // console.log('this.getInstance(): ')
     return SingletonState.instance
   }
-  static updateState<T>(): void {
-    const newItem = Math.floor(Math.random()*100)
-    const updated = [...SingletonState.instance, newItem]
-    SingletonState.destroyInstance()
-    SingletonState.createInstance(updated)
-    console.log('SingletonState.instance: ', SingletonState.instance)
+  static updateInstance<T>(): void {
+    const newItem = Math.floor(Math.random() * 100)
+    SingletonState.instance.push(newItem)
+    // console.log('SingletonState.instance: ', SingletonState.instance)
   }
   static destroyInstance(): void {
     if (!SingletonState.instance) {

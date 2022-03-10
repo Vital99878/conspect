@@ -107,6 +107,7 @@ const PreparationToJS: React.FC = () => {
     // topicEventLoop()
     // topicCookie()
     // exercises()
+    // topicPromise()
   }
 
   // temporary
@@ -124,6 +125,30 @@ const PreparationToJS: React.FC = () => {
         console.log(`obj.${prop} = ${obj[prop]}`)
       }
     }
+  }
+
+  {
+    const obj: any = {
+      a: 'a',
+      b: 'b',
+      c: {
+        d: 'd',
+        e: 'e',
+        h: [1, 2, 3],
+      },
+      sayA() {
+        console.log(this.a)
+      },
+    }
+
+    const shallowCopy = { ...obj }
+    const deepCopy = JSON.parse(JSON.stringify(obj))
+    obj.sayA()
+    shallowCopy.sayA()
+    obj.c.d = 'new'
+    console.log('obj: ', obj)
+    console.log('shallow Copy: ', shallowCopy)
+    console.log('deep Copy: ', deepCopy)
   }
 
   return (

@@ -1,5 +1,8 @@
-import { numbers } from '../../../../../commonMockData'
+ import { numbers } from '../../../../../commonMockData'
 import { binarySearch } from '../../../../../helpers/binarySearch'
+ type CountedKeys = {
+   [k in string]: number;
+ };
 
 export function exercises() {
   // get first sum
@@ -55,5 +58,34 @@ export function exercises() {
   // get first warmer dat
   {
     // console.log(firstWarnerDay([1, 2, 3, 1, 5, 4, 8]))
+  }
+
+  // Anogramm
+  {
+    /**
+     * 1. Считает сколько раз повторяется каждая буква  в строке
+     * 2. Counts how many times each ch repeats in the string
+     * @param string - string
+     * @return CountedKeys - { ch : number }
+     */
+
+    function countKeys(string: string): CountedKeys {
+      const result: CountedKeys = {};
+      for (const key of string) {
+        key in result ? result[key]++ : (result[key] = 0);
+      }
+      return result;
+    }
+
+    function isPalindrome (string1: string, string2: string): boolean {
+      if (string1.length !== string2.length) return false
+      const countedCh1 = countKeys(string1).toString()
+      const countedCh2 = countKeys(string2).toString()
+      return Object.is(countedCh1, countedCh2)
+    }
+
+    // console.log(isPalindrome('asdf', 'fdsa'))
+    // console.log(isPalindrome('asdf', 'dfas'))
+    // console.log(isPalindrome('asdf', 'asd'))
   }
 }

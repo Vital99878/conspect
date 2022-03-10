@@ -1,3 +1,4 @@
+@import "css/mixins";
 /*  -------------------- Reset styles --------------------  */
 html {
   font-size: 62.5%;
@@ -39,7 +40,6 @@ body {
   place-items: center;
   background-color: var(--body-bg-color);
 }
-
 #root {
   width: 100%;
   max-width: 1200px;
@@ -49,9 +49,34 @@ body {
   --main-bg-color: rgb(189, 172, 172);
   --secondary-text-color: rgb(124, 124, 124);
   --secondary-link-color: rgba(21, 48, 168, 0.521);
-  --body-bg-color: rgba(182, 216, 229, 0.856);
+  --body-bg-color: rgba(208, 208, 208, 0.85);
 }
 
+/* -------------------- Shared custom elements styles --------------------  */
+
+
+.wrapper {
+  padding: 1rem;
+}
+.button {
+}
+.card {
+  padding: 1rem;
+  font-size: 3rem;
+}
+.nav-card {
+  //margin: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  height: auto;
+  min-width: 20rem;
+  //flex-grow: 1;
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  border-radius: 4px;
+}
+.modal {
+
+}
 .my-buttons {
   display: flex;
   padding: 1rem;

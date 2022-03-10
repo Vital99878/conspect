@@ -1,12 +1,12 @@
 export class Singleton {
   private static instance: any
-  static createInstance<T>(store: T): T {
+  static createInstance<T>(initialInstance: T): T {
     if (Singleton.instance) {
       console.log(`%cInstance already exist! Please, use getInstance method`, 'color:tomato; font-size: 14px')
       // throw new Error('Instance already exist! Please, use getInstance method')
     }
     if (!Singleton.instance) {
-      Singleton.instance = store
+      Singleton.instance = initialInstance
       console.log(`%cInstance created`, 'color:green; font-size: 14px')
     }
     return Singleton.instance

@@ -5,21 +5,21 @@ import './Menu.scss'
 
 export type Pages =
   | '/'
-  | 'test'
-  | 'rxjs'
-  | 'css'
-  | 'ts'
-  | 'registration'
-  | 'design-patterns'
-  | 'preparation'
-  | 'data-structure and algorithms'
+  | '/test'
+  | '/rxjs'
+  | '/css'
+  | '/ts'
+  | '/registration'
+  | '/design-patterns'
+  | '/preparation'
+  | '/data-structure and algorithms'
 
 // export type CssListForMenu = 'cssFlex' | 'cssGrid' | 'cssPosition' | 'cssSemanticTags' | 'cssDisplay' | 'cssTags' | '/'
 // export type CssLayoutList = 'layoutBudget' | '/'
 // export type TestList = 'test' | 'testHooks' | 'testTypescript' | 'testEmptyComponent' | 'testTS' | 'testRxjs' | '/'
 export interface MenuItemType {
   label?: string
-  path: Pages
+  page: Pages
   active?: boolean
 }
 
@@ -31,13 +31,13 @@ export interface MenuItemProps {
 }
 
 export const NavigationItem: React.FC<MenuItemProps> = ({ props }) => {
-  const { label, path } = props
+  const { label, page } = props
   const history = useHistory()
-  const goToPage = () => history.push(path)
+  const goToPage = () => history.push(page)
 
   return (
     <li key={label}>
-      <NavLink to={path} onClick={goToPage}>
+      <NavLink to={page} onClick={goToPage}>
         {label}
       </NavLink>
     </li>

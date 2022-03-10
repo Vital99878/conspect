@@ -1,6 +1,7 @@
 import React, { useState, ReactElement, useRef, ChangeEvent, useEffect } from 'react'
 import './TestTS.css'
 import { TodoType, R_2 } from '../../../../components/Todos/models/index.model'
+import RXjsPage from '../../../rxjs'
 import { useAttachStyle } from './useAttachStyle'
 import { observableValue } from '../../../rxjs/components/subject/observableValue'
 import useSubject from '../../../rxjs/components/subject/hooks'
@@ -61,6 +62,7 @@ const TestTS: React.FC = () => {
   return (
     <div className="test-typescript">
       <SingletonStateComponent />
+      <RXjsPage/>
       <div ref={refElement} className="box">
         {field}
       </div>
