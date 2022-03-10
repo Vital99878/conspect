@@ -39,7 +39,7 @@ const topicPromise = () => {
     //   }, 1000)
     // }).catch(alert)
     new Promise(function (resolve, reject) {
-       // throw new Error('Whoops!')
+      // throw new Error('Whoops!')
       reject(new Error('Whoops'))
     }).catch((e) => console.log(e.message))
   }

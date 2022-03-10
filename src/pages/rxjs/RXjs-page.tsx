@@ -14,8 +14,8 @@ const RXjsPage: FC = () => {
   const { instanceRef, updateInstanceRef } = useSingletonState()
   const { count } = useCloser()
   useEffect(() => {
-    console.log('update use Effect')
-  }, [instanceRef.length >=0])
+    // console.log('update use Effect')
+  }, [instanceRef.length >= 0])
   return (
     <PageLayout pageHeading="RxJS Page">
       <div className="rxjs">

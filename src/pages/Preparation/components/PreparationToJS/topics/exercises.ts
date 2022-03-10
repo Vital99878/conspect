@@ -1,8 +1,8 @@
- import { numbers } from '../../../../../commonMockData'
+import { numbers } from '../../../../../commonMockData'
 import { binarySearch } from '../../../../../helpers/binarySearch'
- type CountedKeys = {
-   [k in string]: number;
- };
+type CountedKeys = {
+  [k in string]: number
+}
 
 export function exercises() {
   // get first sum
@@ -70,14 +70,14 @@ export function exercises() {
      */
 
     function countKeys(string: string): CountedKeys {
-      const result: CountedKeys = {};
+      const result: CountedKeys = {}
       for (const key of string) {
-        key in result ? result[key]++ : (result[key] = 0);
+        key in result ? result[key]++ : (result[key] = 0)
       }
-      return result;
+      return result
     }
 
-    function isPalindrome (string1: string, string2: string): boolean {
+    function isPalindrome(string1: string, string2: string): boolean {
       if (string1.length !== string2.length) return false
       const countedCh1 = countKeys(string1).toString()
       const countedCh2 = countKeys(string2).toString()

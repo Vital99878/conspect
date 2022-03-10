@@ -21,10 +21,9 @@ const IndexedDHeap = () => {
   add(15, 50)
   add(1, 20)
   add(5, 60)
-  // add(17, 60)
 
-  console.log('heap.heap: ', heap.heap)
-  console.log('heap.pm: ', heap.pm)
+  // console.log('heap.heap: ', heap.heap)
+  // console.log('heap.pm: ', heap.pm)
 
   const heapList = (
     <ul className={'heap'}>

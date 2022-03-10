@@ -1,4 +1,4 @@
-@import "css/mixins";
+@import 'css/mixins';
 /*  -------------------- Reset styles --------------------  */
 html {
   font-size: 62.5%;
@@ -54,7 +54,6 @@ body {
 
 /* -------------------- Shared custom elements styles --------------------  */
 
-
 .wrapper {
   padding: 1rem;
 }
@@ -75,7 +74,6 @@ body {
   border-radius: 4px;
 }
 .modal {
-
 }
 .my-buttons {
   display: flex;

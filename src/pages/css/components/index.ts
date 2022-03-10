@@ -4,5 +4,4 @@ import CssDisplay from './CssDisplay/CssDisplay'
 import CssPosition from './CssPosition/CssPosition'
 import CssTags from './CssTags/CssTags'
 import CssOther from './CssOther/CssOther'
-export {CssOther, CssTags, CssPosition, CssDisplay, CssGrid, CssFlex}
-
+export { CssOther, CssTags, CssPosition, CssDisplay, CssGrid, CssFlex }

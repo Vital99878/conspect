@@ -1,4 +1,4 @@
-import { MenuItemType } from '../../components/Navigation/Navigation'
+import {MenuItem} from '../../components/Navigation/components/types'
 
 type MainPages =
   | 'home'
@@ -12,7 +12,7 @@ type MainPages =
   | 'dsAndAlgorithms'
 
 type PagesList = {
-  [k in MainPages]: MenuItemType
+  [k in MainPages]: MenuItem
 }
 
 export const pages: PagesList = {

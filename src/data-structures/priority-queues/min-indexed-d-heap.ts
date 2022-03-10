@@ -76,7 +76,6 @@ class MinIndexedDHeap<T> {
    */
   add(key: number, value: T): boolean {
     if (this.contains(key)) {
-      console.log('this.contains(key): ', this.contains(key))
       return false
     }
 

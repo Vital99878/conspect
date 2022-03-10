@@ -1,5 +1,5 @@
 import React from 'react'
-import TestIterableObj from '../../components/Test-IterableObject/TestIterableObj'
+import TestIterableObj from '../Preparation/components/PreparationToJS/topics/components/Test-IterableObject/TestIterableObj'
 import { useWindowWidth } from '../../hooks/customHooks'
 import './test-page.scss'
 import PageLayout from '../../components/Layout/PageLayout'

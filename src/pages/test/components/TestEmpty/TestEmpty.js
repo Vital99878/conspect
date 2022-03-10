@@ -57,18 +57,6 @@ const TestEmpty = () => {
     //
     // console.log(Object.is('foo', 'bar')) // false
     // console.log(Object.is([], [])) // false
-
-    const test = { a: 1 }
-    const test2 = { a: 1 }
-
-    console.log(Object.is(test, test2)) // true
-
-    console.log(Object.is(null, null)) // true
-
-    // Специальные случаи
-    console.log(Object.is(0, -0)) // false
-    console.log(Object.is(-0, -0)) // true
-    console.log(Object.is(NaN, 0 / 0)) // true
   }
 
   return (

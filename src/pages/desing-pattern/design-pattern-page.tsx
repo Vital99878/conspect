@@ -1,25 +1,20 @@
 import React from 'react'
 import PageLayout from '../../components/Layout/PageLayout'
-import AdapterTest from './components/Test-Adapter/AdapterTest'
-import BuilderTest from './components/Test-Builder/BuilderTest'
-import CommandTest from './components/Test-Command/CommandTest'
-import CompositeTest from './components/Test-Composite/CompositeTest'
-import IteratorTest from './components/Test-Iterator/IteratorTest'
-import SingletonTest from './components/Test-Singleton/SingletonTest'
-import StateTest from './components/Test-State/StateTest'
+import NavCard from '../../components/Navigation/components/NavCard/NavCard'
+import './design-pattern-page.scss'
 
 const DesignPatternPage: React.FC = () => {
   return (
     <PageLayout pageHeading="Design patterns">
       <main className="designPattern-page">
-        {/* <SingletonTest />*/}
-        {/* <SingletonTest />*/}
-        {/* <StateTest/>*/}
-        {/* <BuilderTest/>*/}
-        {/* <AdapterTest/>*/}
-        {/* <CompositeTest/>*/}
-        {/* <CommandTest />*/}
-        <IteratorTest />
+        <NavCard title={'singleton'} desc={'desc 2'} />
+        <NavCard title={'state'} desc={'desc 2'} />
+        <NavCard title={'builder'} desc={'desc 2'} />
+        <NavCard title={'adapter'} desc={'desc 2'} />
+        <NavCard title={'composite'} desc={'desc 2'} />
+        <NavCard title={'command'} desc={'desc 2'} />
+        <NavCard title={'iterator'} desc={'desc 2'} />
+        <NavCard title={'prototype'} desc={'desc 2'} />
       </main>
     </PageLayout>
   )

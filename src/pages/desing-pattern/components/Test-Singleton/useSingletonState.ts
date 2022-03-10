@@ -14,7 +14,7 @@ export function useSingletonState() {
 
   useEffect(() => {
     setInstanceRef(SingletonState.getInstance<number>())
-  } )
+  })
 
   return { instanceRef, updateInstanceRef }
 }

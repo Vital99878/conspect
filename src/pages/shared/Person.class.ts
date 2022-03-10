@@ -46,7 +46,7 @@ export class ITPerson extends Person {
   }
   constructor(public name: string, public age: number, public it: string) {
     super(name, age) // вызывает конструктор наследуемого класса
-    super.great() // обращается напрямую к методам прототипа наследуемого класса
+    // super.great() // обращается напрямую к методам прототипа наследуемого класса
   }
   // great():void {
   //   console.log('reasing great method!')
@@ -60,9 +60,9 @@ export class ITPerson extends Person {
   }
 }
 
-const itPerson = new ITPerson('Jora IT', 20, 'front')
-const person = new Person('Ken', 20)
-const person_2 = new Person('Ken', 20)
+// const itPerson = new ITPerson('Jora IT', 20, 'front')
+// const person = new Person('Ken', 20)
+// const person_2 = new Person('Ken', 20)
 
 // Person.logClassName()
 // ITPerson.logClassName()

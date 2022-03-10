@@ -9,7 +9,7 @@ import { useSingletonState } from '../../../desing-pattern/components/Test-Singl
 
 const SingletonStateComponent: React.FC = () => {
   const { instanceRef, updateInstanceRef } = useSingletonState()
-  console.log('render')
+  // console.log('render')
   return (
     <div className="test-typescript">
       <ul>
@@ -27,7 +27,7 @@ const TestTS: React.FC = () => {
   const refElement = useRef(document.createElement('div'))
   const s = useAttachStyle(refElement.current, ['left', 'top'])
   function logAge(constructor: any, property: string, desc: PropertyDescriptor) {
-    console.log('property: ', { property, desc })
+    // console.log('property: ', { property, desc })
   }
 
   class Person {
@@ -62,7 +62,7 @@ const TestTS: React.FC = () => {
   return (
     <div className="test-typescript">
       <SingletonStateComponent />
-      <RXjsPage/>
+      <RXjsPage />
       <div ref={refElement} className="box">
         {field}
       </div>

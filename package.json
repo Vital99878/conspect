@@ -61,18 +61,17 @@
     "pretty-quick": "^3.1.0",
     "sass-loader": "7.2.0"
   },
+  "lint-staged": {
+    "*{.js, jsx, tsx, .ts}": [
+      "npm run format",
+      "pretty-quick --staged",
+      "git add"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "*{.js, jsx, tsx, .ts}": [
-      "npm run format",
-      "npm run lint",
-      "pretty-quick --staged",
-      "git add"
-    ]
   },
   "prettier": {
     "singleQuote": true,
