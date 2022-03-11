@@ -1,6 +1,6 @@
-import {MenuItem} from '../../components/Navigation/components/types'
+import { MenuItem, Pages } from '../../components/Navigation/types'
 
-type MainPages =
+export type MainPages =
   | 'home'
   | 'rxjs'
   | 'css'
@@ -11,18 +11,22 @@ type MainPages =
   | 'preparation'
   | 'dsAndAlgorithms'
 
-type PagesList = {
-  [k in MainPages]: MenuItem
+export type CssPages = 'flex' | 'greed' | 'display' | 'position'
+
+  type PagesList = {
+  [k in MainPages]: MenuItem<Pages>
 }
 
 export const pages: PagesList = {
-  home: { label: 'Home', page: '/' },
-  rxjs: { label: 'RxJS', page: '/rxjs' },
-  css: { label: 'CSS', page: '/css' },
-  test: { label: 'Tests', page: '/test' },
-  ts: { label: 'Typescript', page: '/ts' },
-  registration: { label: 'Registration', page: '/registration' },
-  designPatterns: { label: 'Design patterns', page: '/design-patterns' },
-  preparation: { label: 'Preparation to interview', page: '/preparation' },
-  dsAndAlgorithms: { label: 'data-structure and algorithms', page: '/data-structure and algorithms' },
+  home: { label: 'Home', url: '/' },
+  rxjs: { label: 'RxJS', url: '/rxjs' },
+  css: { label: 'CSS', url: '/css' },
+  test: { label: 'Tests', url: '/test' },
+  ts: { label: 'Typescript', url: '/ts' },
+  registration: { label: 'Registration', url: '/registration' },
+  designPatterns: { label: 'Design patterns', url: '/design-patterns' },
+  preparation: { label: 'Preparation to interview', url: '/preparation' },
+  dsAndAlgorithms: { label: 'data-structure and algorithms', url: '/data-structure and algorithms' },
 }
+
+

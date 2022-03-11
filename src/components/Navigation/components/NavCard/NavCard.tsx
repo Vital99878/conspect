@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouteMatch, NavLink } from 'react-router-dom'
-import { DesignPatterns, CSS, NavCardProps } from '../types'
+import { DesignPatterns, CSS, NavCardProps } from '../../types'
 
 
 /**

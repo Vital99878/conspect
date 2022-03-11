@@ -1,5 +1,5 @@
 
-.header {
+.navigation {
   background-color: #F3F3F3;
   display: flex;
   align-items: baseline;
@@ -18,9 +18,9 @@
   padding: 0;
 }
 
-.dropdown.active > .link,
+.dropdown-menu.active > .link,
 .link:hover {
-  color: black;
+  color: tomato;
 }
 
 .dropdown {
@@ -30,7 +30,8 @@
 .dropdown-menu {
   position: absolute;
   left: 0;
-  top: calc(100% + .25rem);
+  //top: calc(100% + .25rem);
+  top: calc(80%);
   background-color: white;
   padding: .75rem;
   border-radius: .25rem;
@@ -41,11 +42,18 @@
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.dropdown.active > .link + .dropdown-menu {
+.link + .dropdown-menu.active {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
+
+.link:hover + .dropdown-menu, .dropdown-menu:hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 
 .information-grid {
   display: grid;

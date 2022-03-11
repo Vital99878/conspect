@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+import DropdownMenu from '../components/Navigation/components/DropdownMenu/DropdownMenu'
 import { TestPage, RXjsPage, RegistrationPage, CssPage, PreparationPage, DesignPatternPage } from '../pages/'
 import { CssFlex, CssOther, CssTags, CssPosition, CssDisplay, CssGrid } from '../pages/css/components'
 import {
@@ -14,15 +15,17 @@ import {
 } from '../pages/desing-pattern/components'
 
 import Navigation from '../components/Navigation/Navigation'
-import {NavigationItem} from '../components/Navigation/components'
+import { NavigationItem } from '../components/Navigation/components'
 import DsAndAlgorithms from '../pages/DsAndAlgorithms'
 import { pages } from './store/adtiveMenuItemReducer'
+import { dropdownSections } from '../components/Navigation/someData'
 
 const App: React.FC = () => {
   const { home, css, test, rxjs, registration, designPatterns, preparation, dsAndAlgorithms } = pages
   return (
     <div className="App">
       <Navigation>
+        <DropdownMenu menuItem={css} sections={dropdownSections} />
         <NavigationItem props={home} />
         <NavigationItem props={css} />
         <NavigationItem props={test} />
@@ -34,31 +37,31 @@ const App: React.FC = () => {
       </Navigation>
       <Switch>
         <Route path="/" exact render={() => <h1>Home page</h1>} />
-        <Route path={`${css.page}`} exact component={CssPage} />
-        <Route path={`${test.page}`} exact component={TestPage} />
-        <Route path={`${rxjs.page}`} exact component={RXjsPage} />
-        <Route path={`${registration.page}`} exact component={RegistrationPage} />
-        <Route path={`${designPatterns.page}`} exact component={DesignPatternPage} />
-        <Route path={`${preparation.page}`} exact component={PreparationPage} />
-        <Route path={`${dsAndAlgorithms.page}`} exact component={DsAndAlgorithms} />
+        <Route path={`${css.url}`} exact component={CssPage} />
+        <Route path={`${test.url}`} exact component={TestPage} />
+        <Route path={`${rxjs.url}`} exact component={RXjsPage} />
+        <Route path={`${registration.url}`} exact component={RegistrationPage} />
+        <Route path={`${designPatterns.url}`} exact component={DesignPatternPage} />
+        <Route path={`${preparation.url}`} exact component={PreparationPage} />
+        <Route path={`${dsAndAlgorithms.url}`} exact component={DsAndAlgorithms} />
       </Switch>
       <Switch>
-        <Route path={`${css.page}/flex`} component={CssFlex} />
-        <Route path={`${css.page}/grid`} component={CssGrid} />
-        <Route path={`${css.page}/display`} component={CssDisplay} />
-        <Route path={`${css.page}/position`} component={CssPosition} />
-        <Route path={`${css.page}/tags`} component={CssTags} />
-        <Route path={`${css.page}/other`} component={CssOther} />
+        <Route path={`${css.url}/flex`} component={CssFlex} />
+        <Route path={`${css.url}/grid`} component={CssGrid} />
+        <Route path={`${css.url}/display`} component={CssDisplay} />
+        <Route path={`${css.url}/position`} component={CssPosition} />
+        <Route path={`${css.url}/tags`} component={CssTags} />
+        <Route path={`${css.url}/other`} component={CssOther} />
       </Switch>
       <Switch>
-        <Route path={`${designPatterns.page}/singleton`} component={SingletonTest} />
-        <Route path={`${designPatterns.page}/state`} component={StateTest} />
-        <Route path={`${designPatterns.page}/builder`} component={BuilderTest} />
-        <Route path={`${designPatterns.page}/adapter`} component={AdapterTest} />
-        <Route path={`${designPatterns.page}/composite`} component={CompositeTest} />
-        <Route path={`${designPatterns.page}/command`} component={CommandTest} />
-        <Route path={`${designPatterns.page}/iterator`} component={IteratorTest} />
-        <Route path={`${designPatterns.page}/prototype`} component={PrototypeTest} />
+        <Route path={`${designPatterns.url}/singleton`} component={SingletonTest} />
+        <Route path={`${designPatterns.url}/state`} component={StateTest} />
+        <Route path={`${designPatterns.url}/builder`} component={BuilderTest} />
+        <Route path={`${designPatterns.url}/adapter`} component={AdapterTest} />
+        <Route path={`${designPatterns.url}/composite`} component={CompositeTest} />
+        <Route path={`${designPatterns.url}/command`} component={CommandTest} />
+        <Route path={`${designPatterns.url}/iterator`} component={IteratorTest} />
+        <Route path={`${designPatterns.url}/prototype`} component={PrototypeTest} />
       </Switch>
     </div>
   )

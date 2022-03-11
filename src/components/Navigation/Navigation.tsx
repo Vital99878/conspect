@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navigation.scss'
-import { NavigationProps } from './components/types'
+import { NavigationProps } from './types'
 
 const Navigation: React.FC<NavigationProps> = ({ children }) => {
   return (
