@@ -7,8 +7,8 @@ const DsAndAlgorithmsPage: React.FC = () => {
   return (
     <PageLayout pageHeading="page-DsAndAlgorithms">
       <main className="page-DsAndAlgorithms">
-        <DataStrutures />
-        {/* <Algorithms />*/}
+        {/* <DataStrutures />*/}
+         <Algorithms />
       </main>
     </PageLayout>
   )

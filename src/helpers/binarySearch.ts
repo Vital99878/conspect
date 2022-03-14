@@ -1,7 +1,7 @@
 /**
  * Binary search in sorted array
  * @arr  - sorted array type string [] or number[]
- * @item  - item needed to find
+ * @item  - item looking for
  * @return - index of the found item
  */
 export function binarySearch<T>(arr: T[], item: T): number {
