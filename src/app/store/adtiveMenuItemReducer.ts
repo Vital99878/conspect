@@ -13,7 +13,7 @@ export type MainPages =
 
 export type CssPages = 'flex' | 'greed' | 'display' | 'position'
 
-  type PagesList = {
+type PagesList = {
   [k in MainPages]: MenuItem<Pages>
 }
 
@@ -28,5 +28,3 @@ export const pages: PagesList = {
   preparation: { label: 'Preparation to interview', url: '/preparation' },
   dsAndAlgorithms: { label: 'data-structure and algorithms', url: '/data-structure and algorithms' },
 }
-
-

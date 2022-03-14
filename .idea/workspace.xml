@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SHOW_STRUCTURE" value="true" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -7,9 +10,11 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" feat (DropdownMenu.tsx)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" feat (CloseButton) with rxjs. !Not working clickOutside">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/components/domEvent/domEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/components/domEvent/domEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CloseButton/close-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CloseButton/close-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +68,9 @@
     <scope name="src" pattern="file[ts-my-components]:src//*" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="selectedTabId" value="CurrentFile" />
+    <option name="sortByName" value="true" />
   </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
   <component name="ProjectViewState">
@@ -80,7 +87,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Navigation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/CloseButton" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -99,11 +106,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components\CloseButton" />
+      <recent name="W:\conspect\src\components\z_new-component" />
+      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\components\Navigation" />
       <recent name="W:\conspect\src\components\Navigation\components" />
-      <recent name="W:\conspect\src\components\Navigation\components\DropdownMenu" />
-      <recent name="W:\conspect\src\pages\desing-pattern" />
-      <recent name="W:\conspect\src\pages\css\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\components\Navigation" />
@@ -228,62 +235,8 @@
       <workItem from="1646980905873" duration="1624000" />
       <workItem from="1646982558248" duration="17946000" />
       <workItem from="1647065631953" duration="1236000" />
-    </task>
-    <task id="LOCAL-00134" summary=" (page Preparation) begin">
-      <created>1645368839900</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1645368839900</updated>
-    </task>
-    <task id="LOCAL-00135" summary=" (page Preparation) begin">
-      <created>1645369129937</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1645369129937</updated>
-    </task>
-    <task id="LOCAL-00136" summary=" (page Preparation) begin">
-      <created>1645369657264</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1645369657265</updated>
-    </task>
-    <task id="LOCAL-00137" summary=" (page Preparation) begin">
-      <created>1645370956746</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1645370956746</updated>
-    </task>
-    <task id="LOCAL-00138" summary=" (prepairTojs) begin">
-      <created>1645442346288</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1645442346289</updated>
-    </task>
-    <task id="LOCAL-00139" summary=" (prepairTojs) begin">
-      <created>1645442887869</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1645442887870</updated>
-    </task>
-    <task id="LOCAL-00140" summary=" (prepairTojs) begin">
-      <created>1645448695766</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1645448695767</updated>
-    </task>
-    <task id="LOCAL-00141" summary=" (prepairTojs) begin">
-      <created>1645455662685</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1645455662685</updated>
+      <workItem from="1647153932597" duration="4203000" />
+      <workItem from="1647237373632" duration="6801000" />
     </task>
     <task id="LOCAL-00142" summary=" (prepairTojs) begin">
       <created>1645458115491</created>
@@ -572,7 +525,63 @@
       <option name="project" value="LOCAL" />
       <updated>1647006228771</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary=" feat (DropdownMenu.tsx)">
+      <created>1647069267535</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1647069267535</updated>
+    </task>
+    <task id="LOCAL-00184" summary=" feat (CloseButton)">
+      <created>1647239837506</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1647239837506</updated>
+    </task>
+    <task id="LOCAL-00185" summary=" feat (CloseButton)">
+      <created>1647240188335</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1647240188335</updated>
+    </task>
+    <task id="LOCAL-00186" summary=" feat (CloseButton)">
+      <created>1647242696991</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1647242696991</updated>
+    </task>
+    <task id="LOCAL-00187" summary=" feat (CloseButton)">
+      <created>1647242902384</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1647242902384</updated>
+    </task>
+    <task id="LOCAL-00188" summary=" feat (CloseButton)">
+      <created>1647250757697</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1647250757697</updated>
+    </task>
+    <task id="LOCAL-00189" summary=" feat (CloseButton) with rxjs. !Not working clickOutside">
+      <created>1647252104031</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1647252104031</updated>
+    </task>
+    <task id="LOCAL-00190" summary=" feat (CloseButton) with rxjs. !Not working clickOutside">
+      <created>1647254726968</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1647254726968</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -593,9 +602,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pattern design (Todos Singleton)" />
-    <MESSAGE value="pattern design (Adapter) refactor" />
-    <MESSAGE value="pattern design (Command)" />
     <MESSAGE value="pattern design (Iterable)" />
     <MESSAGE value="object learn (Iterable)" />
     <MESSAGE value="object learn (Iterable) without typing iterators" />
@@ -618,7 +624,10 @@
     <MESSAGE value=" refactoring design-pattern-page.tsx" />
     <MESSAGE value=" refactoring design-pattern-page.tsx&#10; logs commented" />
     <MESSAGE value=" feat (DropdownMenu.tsx)" />
-    <option name="LAST_COMMIT_MESSAGE" value=" feat (DropdownMenu.tsx)" />
+    <MESSAGE value=" feat (CloseButton) with rxjs" />
+    <MESSAGE value=" feat (CloseButton)" />
+    <MESSAGE value=" feat (CloseButton) with rxjs. !Not working clickOutside" />
+    <option name="LAST_COMMIT_MESSAGE" value=" feat (CloseButton) with rxjs. !Not working clickOutside" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

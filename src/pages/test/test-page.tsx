@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
+import { modalState } from '../../components/Modal/modalState'
 import TestIterableObj from '../Preparation/components/PreparationToJS/topics/components/Test-IterableObject/TestIterableObj'
 import { useWindowWidth } from '../../hooks/customHooks'
 import './test-page.scss'
@@ -10,6 +11,7 @@ import SingletonTest from '../desing-pattern/components/Test-Singleton/Singleton
 import { useCloser } from '../Preparation/components/PreparationToJS/topics'
 import { RequiredInputWrapper } from '../registraiton/components/registration-form/components'
 import TestLoadingState from '../rxjs/components/Loading/TestLoadingState'
+import useBehaviorSubject from '../rxjs/components/subject/hooks'
 import { TestEmpty, TestTS, TestPureReact } from './components'
 import Modal from '../../components/Modal/Modal'
 import ReactDOM from 'react-dom'
@@ -20,17 +22,21 @@ type TestPropsChildren = {
 }
 
 const TestPage: React.FC<TestPropsChildren> = () => {
+  // const toggleModal = () => setIsShouldShow((isShow) => !isShow)
   // const windowWidth = useWindowWidth()
-  // console.log('root2: ', root2)
+  const { field: isShow, updateField: setIsShow } = useBehaviorSubject(modalState, true)
   return (
     <PageLayout pageHeading="Test page">
       <div className="test-components">
-        {/* {ReactDOM.createPortal(<Modal props={{ show: false }} />, document.getElementById('root') as HTMLLIElement)}*/}
+        <button onClick={() => setIsShow(true)}>show</button>
+        <button onClick={() => setIsShow(false)}>hide</button>
+        <button onClick={() => setIsShow(!isShow)}>toggle</button>
+        {ReactDOM.createPortal(<Modal />, document.getElementById('root') as HTMLLIElement)}
         {/* <TestIterableObj />*/}
-        <TestTS />
+        {/* <TestTS />*/}
         {/* <TestPureReact />*/}
         {/* <Todos />*/}
-        <TestEmpty />
+        {/* <TestEmpty />*/}
       </div>
       {/* <SingleFilter />*/}
       {/* <MultipleFilter />*/}

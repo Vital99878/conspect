@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction, useRef, useState } from 'react'
 import './TodoSettings.scss'
 import { R_2, TodoType } from '../../../../models/index.model'
-import { useOutsideClickCallback } from '../../../../../../hooks/useClickOutside'
+import { useClickOutside } from '../../../../../../hooks/useClickOutside'
 
 type Props = {
   props: {
@@ -23,7 +23,7 @@ const TodoSettings: React.FC<Props> = ({ props }) => {
     if (shouldShowMenu) setShouldShowMenu(false)
   }
 
-  useOutsideClickCallback(menuRef, hideMenu, [shouldShowMenu])
+  useClickOutside(menuRef, hideMenu, [shouldShowMenu])
 
   const button = <button onClick={() => setShouldShowMenu(true)}>Settings</button>
   const menu = (

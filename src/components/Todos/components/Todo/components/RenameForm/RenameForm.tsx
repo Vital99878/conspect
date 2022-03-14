@@ -1,7 +1,7 @@
 import React, { ChangeEvent, Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
 import { TodoType, R_2 } from '../../../../models/index.model'
 import './RenameForm.scss'
-import { useOutsideClickCallback } from '../../../../../../hooks/useClickOutside'
+import { useClickOutside } from '../../../../../../hooks/useClickOutside'
 
 type Props = {
   props: {
@@ -18,7 +18,7 @@ const RenameForm: React.FC<Props> = ({ props }) => {
 
   const [label, setLabel] = useState(todo.label)
 
-  useOutsideClickCallback(inputRef, onSubmit, [label])
+  useClickOutside(inputRef, onSubmit, [label])
 
   useEffect(() => {
     if (inputRef.current) {

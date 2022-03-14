@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import { of } from 'rxjs'
+import React from 'react'
+import './new-component.scss'
 
-const NewComponent = () => {
-  // const [data, setData] = useState<Array<number>>([])
-  // useEffect(() => {
-  //     const data$ = of([1, 2, 3])
-  //     data$.subscribe((data) => setData(data))
-  // })
+type Props = {
+  prop?: string
+  children: React.ReactElement
+}
 
-  return <div className={''}>new component</div>
+const NewComponent: React.FC<Props> = ({}) => {
+  return <div className={'new-component'}>new component</div>
 }
 
 export default NewComponent

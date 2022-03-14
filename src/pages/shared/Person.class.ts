@@ -15,8 +15,10 @@ export class Person {
   static staticMethod(): void {
     console.log('Peron\'s static Method')
   }
-  constructor(public name: string, public age: number) {
-    Person.addPerson(this)
+  private pKey = 'person protected Key'
+  protected _orientation: 'hetero' | 'gay' = 'hetero'
+  constructor(public name: string, public age: number, key: string) {
+    this.pKey = key
   }
   great(): void {
     console.log(`Hi, ia am ${this.name}`)
@@ -24,13 +26,12 @@ export class Person {
   logAge(): void {
     console.log(`My age is ${this.age}`)
   }
-  logAge_AF(): GreetFunction {
-    const af = () => console.log(`My age is ${this.age}`)
-    return af
+
+  set orientation(orientation: 'hetero' | 'gay') {
+    this._orientation = orientation
   }
-  setAge_AF(): any {
-    const af = (age: number) => (this.age = age)
-    return af
+  get orientation() {
+    return this._orientation
   }
 }
 
@@ -45,7 +46,7 @@ export class ITPerson extends Person {
     console.log('IT Peron\'s static Method')
   }
   constructor(public name: string, public age: number, public it: string) {
-    super(name, age) // вызывает конструктор наследуемого класса
+    super(name, age, 'itProtected') // вызывает конструктор наследуемого класса
     // super.great() // обращается напрямую к методам прототипа наследуемого класса
   }
   // great():void {

@@ -1,0 +1,36 @@
+.btn-close {
+  position: absolute;
+  //right: 1.6rem;
+  //top: 1.6rem;
+  right: 2vw;
+  top: 2vw;
+  width: 2rem;
+  height: 2rem;
+  //height: 3vw;
+  //width: 3vw;
+  opacity: .3;
+  display: grid;
+  place-items: center;
+  background: none;
+  border: none;
+  transition: opacity .3s ease-in;
+}
+.btn-close:hover {
+  opacity: .95;
+}
+
+.btn-close:before, .btn-close:after {
+  cursor: pointer;
+  position: absolute;
+  content: ' ';
+  height: 100%;
+  width: 1.6px;
+  background-color: #333;
+  color: tomato;
+}
+.btn-close:before {
+  transform: rotate(45deg);
+}
+.btn-close:after {
+  transform: rotate(-45deg);
+}

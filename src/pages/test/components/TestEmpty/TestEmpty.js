@@ -59,6 +59,30 @@ const TestEmpty = () => {
     // console.log(Object.is([], [])) // false
   }
 
+  {
+    class TestSetter {
+      #name
+      constructor(name) {
+        this.#name = name
+      }
+      set name(name) {
+        if (name.length < 3) {
+          console.log('to short')
+          return
+        }
+        this.#name = name
+      }
+      get name() {
+        return this.#name
+      }
+    }
+
+    const set = new TestSetter('test Private name')
+    set.name = 'abc'
+    set.name = '12'
+    console.log(set.name)
+  }
+
   return (
     <div className="testEmpty">
       <h2>Test everything</h2>

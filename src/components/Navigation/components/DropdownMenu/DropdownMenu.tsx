@@ -1,7 +1,7 @@
 import React, { useState, KeyboardEventHandler, useEffect, useRef } from 'react'
 import './DropdownMenu.scss'
 import { NavLink } from 'react-router-dom'
-import { useOutsideClickCallback } from '../../../../hooks/useClickOutside'
+import { useClickOutside } from '../../../../hooks/useClickOutside'
 import { useEscapeKey } from '../../../../hooks/useEscapeKey'
 import { DropdownSectionProps, DropdownMenuProps } from '../../types'
 
@@ -38,7 +38,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ sections, menuItem }) => {
     })
   }
   useEscapeKey(() => setIsActive(''))
-  useOutsideClickCallback(navItemRef, () => setIsActive(''))
+  useClickOutside(navItemRef, () => setIsActive(''))
 
   return (
     <li key={menuItem.label} className={'dropdown'} ref={navItemRef}>

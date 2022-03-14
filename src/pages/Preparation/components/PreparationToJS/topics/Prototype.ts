@@ -81,7 +81,7 @@ const topicPrototypeChain = () => {
     Person.prototype.constructor.prototype.great()
     Person.logClassName()
     Person.staticMethod()
-    const me = new Person('Vital', 25)
+    const me = new Person('Vital', 25, 'ff')
     const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     // console.log('numbers.__proto__: ', numbers)
 

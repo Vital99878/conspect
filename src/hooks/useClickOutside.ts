@@ -22,7 +22,7 @@ import React, { DependencyList, useEffect } from 'react'
  * @return void
  */
 
-export const useOutsideClickCallback = (
+export const useClickOutside = (
   element: React.RefObject<HTMLElement>,
   callback: (event: MouseEvent) => void,
   deps: DependencyList = []
