@@ -11,6 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (Search)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,14 +236,7 @@
       <workItem from="1647065631953" duration="1236000" />
       <workItem from="1647153932597" duration="4203000" />
       <workItem from="1647237373632" duration="6801000" />
-      <workItem from="1647325170541" duration="10769000" />
-    </task>
-    <task id="LOCAL-00151" summary=" (binarySearch) begin">
-      <created>1645797345670</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1645797345670</updated>
+      <workItem from="1647325170541" duration="11590000" />
     </task>
     <task id="LOCAL-00152" summary=" (binarySearch) numbers">
       <created>1645806290067</created>
@@ -579,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647336179028</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="  feat (Search)">
+      <created>1647336319123</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1647336319123</updated>
+    </task>
+    <option name="localTasksCounter" value="201" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />

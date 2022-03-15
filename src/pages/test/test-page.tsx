@@ -42,6 +42,9 @@ type TestPropsChildren = {
 }
 const Search: React.FC = () => {
   // todo сохранять историю запросов
+  // todo показываеть, что на странице есть поиск!
+  // todo debounce
+
   const [search, setSearch] = useState('')
   const [isShow, setIsShow] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -65,6 +68,8 @@ const Search: React.FC = () => {
   function onSubmit(evt: FormEvent) {
     evt.preventDefault()
     console.log(`Sort by ${search.trim()}`)
+    setSearch('')
+    setIsShow(false)
   }
 
   useEffect((): VoidFunction => {
