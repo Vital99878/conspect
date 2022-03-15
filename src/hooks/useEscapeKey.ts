@@ -19,6 +19,7 @@ import { DependencyList, useEffect } from 'react'
 
 export const useEscapeKey = (cb: () => void, deps: DependencyList = []): void => {
   const test = (evt: KeyboardEvent) => {
+    evt.stopPropagation()
     evt.key === 'Escape' ? cb() : null
   }
   useEffect((): VoidFunction => {

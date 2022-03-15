@@ -8,6 +8,10 @@ import React, {
   CSSProperties,
 } from 'react'
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable'
+import CharacterInformation from '../../components/hocs/withCharacter/CharacterInformation'
+import characterInformation from '../../components/hocs/withCharacter/CharacterInformation'
+import { fetchData } from '../../components/hocs/withData/characters'
+import { withData } from '../../components/hocs/withData/withData'
 import { modalState } from '../../components/Modal/modalState'
 import TestIterableObj from '../Preparation/components/PreparationToJS/topics/components/Test-IterableObject/TestIterableObj'
 import { useWindowWidth } from '../../hooks/customHooks'
@@ -91,14 +95,16 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   // const toggleModal = () => setIsShouldShow((isShow) => !isShow)
   // const windowWidth = useWindowWidth()
   const { field: isShow, updateField: setIsShow } = useBehaviorSubject(modalState, true)
+
   return (
     <PageLayout pageHeading="Test page">
       <div className="test-components" ref={testComponentsRef}>
         <Search />
-        <button onClick={() => setIsShow(true)}>show</button>
-        <button onClick={() => setIsShow(false)}>hide</button>
-        <button onClick={() => setIsShow(!isShow)}>toggle</button>
-        {ReactDOM.createPortal(<Modal />, document.getElementById('root') as HTMLLIElement)}
+        {withData(CharacterInformation, fetchData)}
+        {/* <button onClick={() => setIsShow(true)}>show</button>*/}
+        {/* <button onClick={() => setIsShow(false)}>hide</button>*/}
+        {/* <button onClick={() => setIsShow(!isShow)}>toggle</button>*/}
+        {/* {ReactDOM.createPortal(<Modal />, document.getElementById('root') as HTMLLIElement)}*/}
         {/* <TestIterableObj />*/}
         {/* <TestTS />*/}
         {/* <TestPureReact />*/}
