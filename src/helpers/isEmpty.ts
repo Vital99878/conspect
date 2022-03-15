@@ -1,3 +1,3 @@
-export function isEmpty(arr: any[]): boolean {
+export function isEmpty(arr: never[]): boolean {
   return arr.length == 0
 }
