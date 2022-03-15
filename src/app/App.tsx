@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import DropdownMenu from '../components/Navigation/components/DropdownMenu/DropdownMenu'
-import { TestPage, RXjsPage, RegistrationPage, CssPage, PreparationPage, DesignPatternPage } from '../pages/'
+import { Search, RXjsPage, RegistrationPage, CssPage, PreparationPage, DesignPatternPage } from '../pages/'
 import { CssFlex, CssOther, CssTags, CssPosition, CssDisplay, CssGrid } from '../pages/css/components'
 import {
   AdapterTest,
@@ -38,7 +38,7 @@ const App: React.FC = () => {
       <Switch>
         <Route path="/" exact render={() => <h1>Home page</h1>} />
         <Route path={`${css.url}`} exact component={CssPage} />
-        <Route path={`${test.url}`} exact component={TestPage} />
+        <Route path={`${test.url}`} exact component={Search} />
         <Route path={`${rxjs.url}`} exact component={RXjsPage} />
         <Route path={`${registration.url}`} exact component={RegistrationPage} />
         <Route path={`${designPatterns.url}`} exact component={DesignPatternPage} />

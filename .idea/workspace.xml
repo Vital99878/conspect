@@ -10,16 +10,8 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment=" feat (mergeAndSort) without obj compares&#10; feat (quickSort) without obj compares">
-      <change afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/data-for-test-algo/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/isEmpty.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/isEmpty.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/DsAndAlgorithms-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/DsAndAlgorithms-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/algorithms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/algorithms/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/mergeAndSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/algorithms/mergeAndSort.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/algorithms/quikSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/algorithms/quikSort.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/components/index.ts" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (Search)">
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,35 +234,7 @@
       <workItem from="1647065631953" duration="1236000" />
       <workItem from="1647153932597" duration="4203000" />
       <workItem from="1647237373632" duration="6801000" />
-      <workItem from="1647325170541" duration="2787000" />
-    </task>
-    <task id="LOCAL-00147" summary=" (prepairTojs) begin">
-      <created>1645609435850</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1645609435851</updated>
-    </task>
-    <task id="LOCAL-00148" summary=" (prepairTojs) begin">
-      <created>1645713543119</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1645713543119</updated>
-    </task>
-    <task id="LOCAL-00149" summary=" (prepairTojs) begin">
-      <created>1645720619758</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1645720619758</updated>
-    </task>
-    <task id="LOCAL-00150" summary=" (prepairTojs) begin">
-      <created>1645780462772</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1645780462772</updated>
+      <workItem from="1647325170541" duration="10769000" />
     </task>
     <task id="LOCAL-00151" summary=" (binarySearch) begin">
       <created>1645797345670</created>
@@ -587,7 +551,35 @@
       <option name="project" value="LOCAL" />
       <updated>1647271897772</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="  feat (quickSortObj)">
+      <created>1647328032673</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1647328032673</updated>
+    </task>
+    <task id="LOCAL-00197" summary="  feat (Search)">
+      <created>1647332480141</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1647332480141</updated>
+    </task>
+    <task id="LOCAL-00198" summary="  feat (Search)">
+      <created>1647334694007</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1647334694007</updated>
+    </task>
+    <task id="LOCAL-00199" summary="  feat (Search)">
+      <created>1647336179028</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1647336179028</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -608,8 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="object learn (Iterable) without typing iterators" />
-    <MESSAGE value="design pattern (Iterator) begin" />
     <MESSAGE value="data structure (min-binary-heap-test.ts) begin" />
     <MESSAGE value=" (SingletonStateComponent) begin" />
     <MESSAGE value=" (prepair to JS) begin" />
@@ -633,7 +623,9 @@
     <MESSAGE value=" feat (CloseButton) with rxjs. !Not working clickOutside" />
     <MESSAGE value=" feat (mergeAndSort) without obj compares" />
     <MESSAGE value=" feat (mergeAndSort) without obj compares&#10; feat (quickSort) without obj compares" />
-    <option name="LAST_COMMIT_MESSAGE" value=" feat (mergeAndSort) without obj compares&#10; feat (quickSort) without obj compares" />
+    <MESSAGE value="  feat (quickSortObj)" />
+    <MESSAGE value="  feat (Search)" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (Search)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
