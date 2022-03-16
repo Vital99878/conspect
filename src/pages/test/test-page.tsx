@@ -30,6 +30,7 @@ import { TestEmpty, TestTS, TestPureReact } from './components'
 import Modal from '../../components/Modal/Modal'
 import ReactDOM from 'react-dom'
 // import {root2} from './min-binary-heap-test'
+import {} from '../../helpers/changeOrder'
 
 const inputStyle: CSSProperties = {
   width: '60%',
@@ -89,8 +90,10 @@ const Search: React.FC = () => {
   )
 }
 
+
 const TestPage: React.FC<TestPropsChildren> = () => {
   const testComponentsRef = useRef(null)
+
 
   // const toggleModal = () => setIsShouldShow((isShow) => !isShow)
   // const windowWidth = useWindowWidth()

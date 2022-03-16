@@ -10,12 +10,10 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (withData) hoc">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (insertAfter) with order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CloseButton/close-button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CloseButton/close-button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hocs/withCharacter/CharacterInformation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withCharacter/CharacterInformation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hocs/withData/withData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withData/withData.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/changeOrder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/changeOrder.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,11 +105,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\types" />
+      <recent name="W:\conspect\src\helpers" />
       <recent name="W:\conspect\src\components\hocs\withData" />
       <recent name="W:\conspect\src\components\hocs" />
-      <recent name="W:\conspect\src\helpers" />
       <recent name="W:\conspect\src\pages\DsAndAlgorithms\components\algorithms" />
-      <recent name="W:\conspect\src\components\CloseButton" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\DsAndAlgorithms" />
@@ -239,49 +237,8 @@
       <workItem from="1647153932597" duration="4203000" />
       <workItem from="1647237373632" duration="6801000" />
       <workItem from="1647325170541" duration="15166000" />
-      <workItem from="1647434559908" duration="1124000" />
-    </task>
-    <task id="LOCAL-00154" summary=" (dom event) numbers">
-      <created>1645887672785</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1645887672785</updated>
-    </task>
-    <task id="LOCAL-00155" summary=" (dom event) numbers">
-      <created>1645900041212</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1645900041212</updated>
-    </task>
-    <task id="LOCAL-00156" summary=" (dom event) numbers">
-      <created>1645958716997</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1645958716997</updated>
-    </task>
-    <task id="LOCAL-00157" summary=" (dom event) numbers">
-      <created>1645974602570</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1645974602570</updated>
-    </task>
-    <task id="LOCAL-00158" summary=" (data structure)">
-      <created>1646053830357</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1646053830357</updated>
-    </task>
-    <task id="LOCAL-00159" summary=" (data structure and algo) page">
-      <created>1646058564620</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1646058564621</updated>
+      <workItem from="1647434559908" duration="9989000" />
+      <workItem from="1647447552189" duration="3973000" />
     </task>
     <task id="LOCAL-00160" summary=" (data structure and algo) page">
       <created>1646059317650</created>
@@ -584,7 +541,49 @@
       <option name="project" value="LOCAL" />
       <updated>1647354336038</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="  feat (Modal.scss) if modal-wrapper:hover, тогда closeButton change">
+      <created>1647435803255</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1647435803255</updated>
+    </task>
+    <task id="LOCAL-00204" summary="  feat (insertAfter) with order">
+      <created>1647441709448</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1647441709448</updated>
+    </task>
+    <task id="LOCAL-00205" summary="  feat (insertAfter) with order">
+      <created>1647445121379</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1647445121379</updated>
+    </task>
+    <task id="LOCAL-00206" summary="  feat (insertAfter) with order">
+      <created>1647448110679</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1647448110680</updated>
+    </task>
+    <task id="LOCAL-00207" summary="  feat (insertAfter) with order">
+      <created>1647448474652</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1647448474652</updated>
+    </task>
+    <task id="LOCAL-00208" summary="  feat (insertAfter) with order">
+      <created>1647450130516</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1647450130516</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -605,8 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" (page Preparation) begin" />
-    <MESSAGE value=" (prepairTojs) begin" />
     <MESSAGE value=" (binarySearch) begin" />
     <MESSAGE value=" (binarySearch) numbers" />
     <MESSAGE value=" (dom event) numbers" />
@@ -630,7 +627,9 @@
     <MESSAGE value="  feat (Modal) cursor over overlay" />
     <MESSAGE value="  feat (withCharacter) hoc copyed" />
     <MESSAGE value="  feat (withData) hoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (withData) hoc" />
+    <MESSAGE value="  feat (Modal.scss) if modal-wrapper:hover, тогда closeButton change" />
+    <MESSAGE value="  feat (insertAfter) with order" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (insertAfter) with order" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

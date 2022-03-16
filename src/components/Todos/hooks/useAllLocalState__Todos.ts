@@ -2,11 +2,12 @@ import { DropPosition, TodoStatus, TodoType } from '../models/index.model'
 import { useRef, useState } from 'react'
 
 export const initialTodos: TodoType[] = [
-  { id: 1, label: 'todo 1', status: TodoStatus.notStarted, order: 1 },
-  { id: 4, label: 'todo 4', status: TodoStatus.Doing, order: 4 },
-  { id: 5, label: 'todo 5', status: TodoStatus.Done, order: 5 },
-  { id: 2, label: 'todo 2', status: TodoStatus.Done, order: 2 },
+  { id: 0, label: 'todo 0', status: TodoStatus.notStarted, order: 0 },
+  { id: 1, label: 'todo 1', status: TodoStatus.Done, order: 1 },
+  { id: 2, label: 'todo 2', status: TodoStatus.Doing, order: 2 },
   { id: 3, label: 'todo 3', status: TodoStatus.Doing, order: 3 },
+  { id: 4, label: 'todo4', status: TodoStatus.Done, order: 4 },
+  { id: 5, label: 'todo 5', status: TodoStatus.Done, order: 5 },
 ]
 
 export type R = {
@@ -74,7 +75,7 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
   const insertDraggableBeforeTodo = (draggableOrder: number, underDraggableOrder: number) => {
     const draggingTodo = draggableTodoRef.current as TodoType
     if (draggableOrder < underDraggableOrder) {
-      if (underDraggableOrder - draggableOrder === 1) return
+      if (underDraggableOrder - draggableOrder === 0) return
       setTodoList((todos) => {
         let newOrder = draggableOrder
         return todos.map((todo) => {
