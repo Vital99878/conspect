@@ -8,18 +8,21 @@
   height: 2rem;
   //height: 3vw;
   //width: 3vw;
-  opacity: .3;
+  opacity: 0.3;
   display: grid;
   place-items: center;
   background: none;
   border: none;
-  transition: opacity .3s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 .btn-close:hover {
-  opacity: .95;
+  opacity: 0.95;
 }
-
-.btn-close:before, .btn-close:after {
+.modal-wrapper:hover .modal:not(:hover) .btn-close:not(:hover) {
+  opacity: 1;
+}
+.btn-close:before,
+.btn-close:after {
   cursor: pointer;
   position: absolute;
   content: ' ';

@@ -10,15 +10,11 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (withCharacter) hoc copyed">
-      <change afterPath="$PROJECT_DIR$/src/components/hocs/withData/Loading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hocs/withData/characters.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hocs/withData/data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hocs/withData/withData.tsx" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (withData) hoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hocs/withCharacter/Application.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CloseButton/close-button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CloseButton/close-button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hocs/withCharacter/CharacterInformation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withCharacter/CharacterInformation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hocs/withCharacter/characters.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withCharacter/characters.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hocs/withData/withData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withData/withData.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +88,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/hocs/withData" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -243,13 +239,7 @@
       <workItem from="1647153932597" duration="4203000" />
       <workItem from="1647237373632" duration="6801000" />
       <workItem from="1647325170541" duration="15166000" />
-    </task>
-    <task id="LOCAL-00153" summary=" (dom event) numbers">
-      <created>1645884549745</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1645884549745</updated>
+      <workItem from="1647434559908" duration="1124000" />
     </task>
     <task id="LOCAL-00154" summary=" (dom event) numbers">
       <created>1645887672785</created>
@@ -587,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647337186185</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="  feat (withData) hoc">
+      <created>1647354336038</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1647354336038</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -608,7 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" (prepair to JS) begin" />
     <MESSAGE value=" (page Preparation) begin" />
     <MESSAGE value=" (prepairTojs) begin" />
     <MESSAGE value=" (binarySearch) begin" />
@@ -633,7 +629,8 @@
     <MESSAGE value="  feat (Search)" />
     <MESSAGE value="  feat (Modal) cursor over overlay" />
     <MESSAGE value="  feat (withCharacter) hoc copyed" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (withCharacter) hoc copyed" />
+    <MESSAGE value="  feat (withData) hoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (withData) hoc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -100,11 +100,11 @@ const TestPage: React.FC<TestPropsChildren> = () => {
     <PageLayout pageHeading="Test page">
       <div className="test-components" ref={testComponentsRef}>
         <Search />
-        {withData(CharacterInformation, fetchData)}
-        {/* <button onClick={() => setIsShow(true)}>show</button>*/}
-        {/* <button onClick={() => setIsShow(false)}>hide</button>*/}
-        {/* <button onClick={() => setIsShow(!isShow)}>toggle</button>*/}
-        {/* {ReactDOM.createPortal(<Modal />, document.getElementById('root') as HTMLLIElement)}*/}
+        {/* {withData(CharacterInformation, fetchData)}*/}
+        <button onClick={() => setIsShow(true)}>show</button>
+        <button onClick={() => setIsShow(false)}>hide</button>
+        <button onClick={() => setIsShow(!isShow)}>toggle</button>
+        {ReactDOM.createPortal(<Modal />, document.getElementById('root') as HTMLLIElement)}
         {/* <TestIterableObj />*/}
         {/* <TestTS />*/}
         {/* <TestPureReact />*/}

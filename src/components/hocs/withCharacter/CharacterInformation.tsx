@@ -1,6 +1,4 @@
 import React from 'react'
-import { fetchData } from '../withData/characters'
-import { withData } from '../withData/withData'
 import { CharacterType } from './characters'
 import { Table, TableRow } from './Table'
 
