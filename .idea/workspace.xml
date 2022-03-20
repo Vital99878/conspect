@@ -12,8 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (insertAfter) with order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/changeOrder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/changeOrder.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/Preparation-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/Preparation-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,14 +102,14 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
     <property name="rest.client.default.execution.environment" value="todos" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="W:\conspect\src\types" />
       <recent name="W:\conspect\src\helpers" />
+      <recent name="W:\conspect\src\types" />
       <recent name="W:\conspect\src\components\hocs\withData" />
       <recent name="W:\conspect\src\components\hocs" />
       <recent name="W:\conspect\src\pages\DsAndAlgorithms\components\algorithms" />
@@ -238,14 +241,12 @@
       <workItem from="1647237373632" duration="6801000" />
       <workItem from="1647325170541" duration="15166000" />
       <workItem from="1647434559908" duration="9989000" />
-      <workItem from="1647447552189" duration="3973000" />
-    </task>
-    <task id="LOCAL-00160" summary=" (data structure and algo) page">
-      <created>1646059317650</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1646059317650</updated>
+      <workItem from="1647447552189" duration="4013000" />
+      <workItem from="1647504161318" duration="5534000" />
+      <workItem from="1647594051783" duration="1868000" />
+      <workItem from="1647667058217" duration="37000" />
+      <workItem from="1647667109796" duration="4000" />
+      <workItem from="1647764379319" duration="3506000" />
     </task>
     <task id="LOCAL-00161" summary=" update (useSingletonState) hook">
       <created>1646745258133</created>
@@ -583,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647450130516</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="  feat (insertAfter) with order">
+      <created>1647451589212</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1647451589212</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />

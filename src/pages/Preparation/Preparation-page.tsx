@@ -7,9 +7,9 @@ const PreparationPage: React.FC = () => {
   return (
     <PageLayout pageHeading="page-Preparation">
       <main className="page-Preparation">
-        {/* <PreparationToJS />*/}
+         <PreparationToJS />
         {/* <PreparationToReact />*/}
-        <PreparationToTS />
+        {/* <PreparationToTS />*/}
       </main>
     </PageLayout>
   )

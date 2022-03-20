@@ -20,7 +20,7 @@ const incOrder = <T extends WithOrder>(item: T): T => {
  * @return ordered arr[]
  */
 function insertAfter<T extends WithOrder>(currentOrder: number, draggableOrder: number, arr: T[]): T[] {
-  // todo. сперва нужно отсортировать массив по порядку.
+  arr.sort((a, b) => a.order - b.order)
   const leftPart: T[] = []
   const rightPart: T[] = []
   const movedPart: T[] = []
@@ -32,9 +32,9 @@ function insertAfter<T extends WithOrder>(currentOrder: number, draggableOrder: 
 
     for (let i = 0; i < draggableOrder; i++) leftPart.push(arr[i])
 
-    for (let i = currentOrder + 1; i < arr.length; i++) rightPart.push(arr[i])
-
     for (let i = draggableOrder + 1; i < currentOrder + 1; i++) movedPart.push(decOrder(arr[i]))
+
+    for (let i = currentOrder + 1; i < arr.length; i++) rightPart.push(arr[i])
 
     return [...leftPart, ...movedPart, draggableEl, ...rightPart]
   }

@@ -130,6 +130,8 @@ const PreparationToJS: React.FC = () => {
   {
   }
 
+  exercises()
+
   return (
     <div className="test-components">
       <DomEvent />

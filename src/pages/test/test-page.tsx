@@ -102,6 +102,7 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   return (
     <PageLayout pageHeading="Test page">
       <div className="test-components" ref={testComponentsRef}>
+        <form action="/" method={'post'}></form>
         <Search />
         {/* {withData(CharacterInformation, fetchData)}*/}
         <button onClick={() => setIsShow(true)}>show</button>
