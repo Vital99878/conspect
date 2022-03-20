@@ -7,14 +7,14 @@ type CountedKeys = {
 export function exercises() {
   // bankomat
   {
-    type Nominals = {
+    type NeedCupurs = {
       5000: number
       1000: number
       500: number
       100: number
       50: number
     }
-    type Nom = keyof Nominals
+    type Nominals = keyof NeedCupurs
     // 1. Реализовать функцию getMoney для банкомата, выдающего купюры.
     // На вход - сумма, на выходе объект с количеством купюр по каждому номиналу.
     // При этом банкомат должен выдать минимальное количество банкнот.
@@ -27,9 +27,10 @@ export function exercises() {
     // Пример: getMoney(6200, {5000:0, 1000:7, 100:5}) // return {5000: 0, 1000: 6, 100: 2}
     // P.S. не забыть модифицировать объект с номиналами.
 
-    function getMoney(amount: number, limit: Nominals): Nominals {
-      const res: Nominals = { '5000': 0, '1000': 0, '500': 0, '100': 0, '50': 0 }
-      const noms: Nom[] = [5000, 1000, 500, 100, 50]
+    function getMoney(amount: number, limit: NeedCupurs): NeedCupurs {
+      const res: NeedCupurs = { '5000': 0, '1000': 0, '500': 0, '100': 0, '50': 0 }
+      const noms: Nominals[] = [5000, 1000, 500, 100, 50]
+
       noms.forEach((nom) => {
         let needCupurs = Math.floor(amount / nom)
         if (!limit[nom]) needCupurs = 0
@@ -42,10 +43,26 @@ export function exercises() {
 
       return res
     }
+    // min max
+    {
+      function minMax(arr: number[]): [number, number] {
+        return arr.reduce(
+          (acc, item) => {
+            if (item < acc[0]) acc[0] = item
+            if (item > acc[1]) acc[1] = item
+            return acc
+          },
+          [arr[0], arr[arr.length - 1]]
+        )
+      }
+
+      console.log(minMax([1, 2, 3, 4, 5]))
+      // console.log(minMax([2334454, 5]))
+      // console.log(minMax([5]))
+    }
     // const res = getMoney(6200) // return {5000: 1, 1000: 1, 500: 0, 100: 2, 50: 0}
     const res = getMoney(6200, { '5000': 0, '1000': 7, '100': 5, '500': 0, '50': 0 }) // return {5000: 1, 1000: 1, 500: 0, 100: 2, 50: 0}
     console.log('res: ', res)
-    // console.log(5000 % 1200)
   }
 
   // get first sum

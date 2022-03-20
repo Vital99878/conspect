@@ -10,13 +10,8 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (insertAfter) with order">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/changeOrder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/changeOrder.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/Preparation-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/Preparation-page.tsx" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (isInRange) helpers">
       <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +84,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/helpers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -246,21 +241,7 @@
       <workItem from="1647594051783" duration="1868000" />
       <workItem from="1647667058217" duration="37000" />
       <workItem from="1647667109796" duration="4000" />
-      <workItem from="1647764379319" duration="3506000" />
-    </task>
-    <task id="LOCAL-00161" summary=" update (useSingletonState) hook">
-      <created>1646745258133</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1646745258134</updated>
-    </task>
-    <task id="LOCAL-00162" summary=" update (index.scss) create main elements style">
-      <created>1646905249077</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1646905249078</updated>
+      <workItem from="1647764379319" duration="8011000" />
     </task>
     <task id="LOCAL-00163" summary=" update (index.scss) create main elements style">
       <created>1646907979552</created>
@@ -591,7 +572,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647451589212</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="  feat (exercises) with order">
+      <created>1647767925695</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1647767925695</updated>
+    </task>
+    <task id="LOCAL-00211" summary="  feat (isInRange) helpers">
+      <created>1647786923090</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1647786923090</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -612,8 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" (binarySearch) begin" />
-    <MESSAGE value=" (binarySearch) numbers" />
     <MESSAGE value=" (dom event) numbers" />
     <MESSAGE value=" (data structure)" />
     <MESSAGE value=" (data structure and algo) page" />
@@ -637,7 +630,9 @@
     <MESSAGE value="  feat (withData) hoc" />
     <MESSAGE value="  feat (Modal.scss) if modal-wrapper:hover, тогда closeButton change" />
     <MESSAGE value="  feat (insertAfter) with order" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (insertAfter) with order" />
+    <MESSAGE value="  feat (exercises) with order" />
+    <MESSAGE value="  feat (isInRange) helpers" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (isInRange) helpers" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
