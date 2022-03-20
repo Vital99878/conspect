@@ -10,8 +10,10 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (isInRange) helpers">
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoring (insertAfter) with order">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/changeOrder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/changeOrder.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,42 +243,7 @@
       <workItem from="1647594051783" duration="1868000" />
       <workItem from="1647667058217" duration="37000" />
       <workItem from="1647667109796" duration="4000" />
-      <workItem from="1647764379319" duration="8011000" />
-    </task>
-    <task id="LOCAL-00163" summary=" update (index.scss) create main elements style">
-      <created>1646907979552</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1646907979552</updated>
-    </task>
-    <task id="LOCAL-00164" summary=" update (index.scss) create main elements style&#10; update (route css page)">
-      <created>1646909386599</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1646909386599</updated>
-    </task>
-    <task id="LOCAL-00165" summary=" update (index.scss) create main elements style&#10; update (route css page)">
-      <created>1646910627728</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1646910627728</updated>
-    </task>
-    <task id="LOCAL-00166" summary=" update (index.scss) create main elements style&#10; update (route css page)">
-      <created>1646918890828</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1646918890828</updated>
-    </task>
-    <task id="LOCAL-00167" summary=" update (index.scss) create main elements style&#10; update (route css page) доделать роут">
-      <created>1646920152653</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1646920152653</updated>
+      <workItem from="1647764379319" duration="9415000" />
     </task>
     <task id="LOCAL-00168" summary=" refactoring design-pattern-page.tsx">
       <created>1646924831406</created>
@@ -586,7 +553,42 @@
       <option name="project" value="LOCAL" />
       <updated>1647786923090</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="  feat (isInRange) helpers">
+      <created>1647786953387</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1647786953387</updated>
+    </task>
+    <task id="LOCAL-00213" summary="  feat (insertAfter) with order">
+      <created>1647787246012</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1647787246012</updated>
+    </task>
+    <task id="LOCAL-00214" summary="  feat (insertAfter) with order">
+      <created>1647787343084</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1647787343084</updated>
+    </task>
+    <task id="LOCAL-00215" summary="  feat (insertAfter) with order">
+      <created>1647787467653</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1647787467653</updated>
+    </task>
+    <task id="LOCAL-00216" summary="  refactoring (insertAfter) with order">
+      <created>1647787607681</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1647787607681</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -607,7 +609,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" (dom event) numbers" />
     <MESSAGE value=" (data structure)" />
     <MESSAGE value=" (data structure and algo) page" />
     <MESSAGE value=" update (useSingletonState) hook" />
@@ -629,10 +630,11 @@
     <MESSAGE value="  feat (withCharacter) hoc copyed" />
     <MESSAGE value="  feat (withData) hoc" />
     <MESSAGE value="  feat (Modal.scss) if modal-wrapper:hover, тогда closeButton change" />
-    <MESSAGE value="  feat (insertAfter) with order" />
     <MESSAGE value="  feat (exercises) with order" />
     <MESSAGE value="  feat (isInRange) helpers" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (isInRange) helpers" />
+    <MESSAGE value="  feat (insertAfter) with order" />
+    <MESSAGE value="  refactoring (insertAfter) with order" />
+    <option name="LAST_COMMIT_MESSAGE" value="  refactoring (insertAfter) with order" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

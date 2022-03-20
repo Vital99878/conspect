@@ -2,11 +2,11 @@ import { DropPosition, TodoStatus, TodoType } from '../models/index.model'
 import { useRef, useState } from 'react'
 
 export const initialTodos: TodoType[] = [
-  { id: 0, label: 'todo 0', status: TodoStatus.notStarted, order: 0 },
+  { id: 4, label: 'todo 4', status: TodoStatus.Done, order: 4 },
   { id: 1, label: 'todo 1', status: TodoStatus.Done, order: 1 },
-  { id: 2, label: 'todo 2', status: TodoStatus.Doing, order: 2 },
+  { id: 0, label: 'todo 0', status: TodoStatus.notStarted, order: 0 },
   { id: 3, label: 'todo 3', status: TodoStatus.Doing, order: 3 },
-  { id: 4, label: 'todo4', status: TodoStatus.Done, order: 4 },
+  { id: 2, label: 'todo 2', status: TodoStatus.Doing, order: 2 },
   { id: 5, label: 'todo 5', status: TodoStatus.Done, order: 5 },
 ]
 
