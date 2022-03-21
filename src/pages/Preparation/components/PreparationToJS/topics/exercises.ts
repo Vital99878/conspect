@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { numbers } from '../../../../../commonMockData'
-import { binarySearch } from '../../../../../helpers/binarySearch'
+import { binarySearch } from '../../../../../helpers'
+
 type CountedKeys = {
   [k in string]: number
 }
@@ -45,24 +47,13 @@ export function exercises() {
     }
     // min max
     {
-      function minMax(arr: number[]): [number, number] {
-        return arr.reduce(
-          (acc, item) => {
-            if (item < acc[0]) acc[0] = item
-            if (item > acc[1]) acc[1] = item
-            return acc
-          },
-          [arr[0], arr[arr.length - 1]]
-        )
-      }
-
-      console.log(minMax([1, 2, 3, 4, 5]))
+      // console.log(minMax([1, 2, 3, 4, 5]))
       // console.log(minMax([2334454, 5]))
       // console.log(minMax([5]))
     }
     // const res = getMoney(6200) // return {5000: 1, 1000: 1, 500: 0, 100: 2, 50: 0}
-    const res = getMoney(6200, { '5000': 0, '1000': 7, '100': 5, '500': 0, '50': 0 }) // return {5000: 1, 1000: 1, 500: 0, 100: 2, 50: 0}
-    console.log('res: ', res)
+    getMoney(6200, { '5000': 0, '1000': 7, '100': 5, '500': 0, '50': 0 }) // return {5000: 1, 1000: 1, 500: 0, 100: 2, 50: 0}
+    // console.log('res: ', res)
   }
 
   // get first sum
@@ -70,7 +61,7 @@ export function exercises() {
     // first variant with cash.
     // ! if arr have not sorted, at first, arr must sort
     {
-      const getSum = function (nums: number[], sum: number): number[] {
+      function getSum(nums: number[], sum: number): number[] {
         const result: number[] = []
         const cash: number[] = []
 
@@ -85,31 +76,22 @@ export function exercises() {
 
         return result
       }
-      // console.log(getSum([1, 2, 3, 4, 6], 48)) // []
-      // console.log(getSum([1, 2, 3, 6, 4], 4)) // [1,3]
-    }
-    // second variant with pointers
-    {
-      const getSum = function (nums: number[], sum: number): number[] {
-        const sortedNums = nums.sort((a, b) => a - b)
-        const result: number[] = []
-        let leftPointer = 0
-        let rightPointer = nums.length - 1
+      function getSumMap(nums: number[], sum: number): number[] {
+        let result: number[] = []
+        const map: Map<number, number> = new Map()
 
-        while (leftPointer < rightPointer) {
-          const leftNum = sortedNums[leftPointer]
-          const rightNum = sortedNums[rightPointer]
-          if (leftNum + rightNum === sum) {
-            result.push(leftNum, rightNum)
-            break
-          }
-          if (leftPointer === rightPointer) break
-          if (leftNum + rightNum < sum) ++leftPointer
-          if (leftNum + rightNum > sum) --rightPointer
-        }
+        nums.forEach((num) => {
+          if (!map.has(num)) map.set(num, num)
+          if (map.has(sum - num)) result = [num, map.get(sum - num)!]
+        })
 
         return result
       }
+      console.log(getSumMap([1, 2, 3, 4, 6], 48)) // []
+      console.log(getSumMap([1, 2, 3, 6, 4], 6)) // [1,3]
+    }
+    // second variant with pointers
+    {
       // console.log(getSum([5, 1, 6, 2, 4, 3, 5], 10)) // [4, 6]
       // console.log(getSum([5, 1, 6, 2, 3, 5], 10)) // [5,5]
     }
@@ -135,13 +117,6 @@ export function exercises() {
         key in result ? result[key]++ : (result[key] = 0)
       }
       return result
-    }
-
-    function isPalindrome(string1: string, string2: string): boolean {
-      if (string1.length !== string2.length) return false
-      const countedCh1 = countKeys(string1).toString()
-      const countedCh2 = countKeys(string2).toString()
-      return Object.is(countedCh1, countedCh2)
     }
 
     // console.log(isPalindrome('asdf', 'fdsa'))

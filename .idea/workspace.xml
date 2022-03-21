@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoring (insertAfter) with order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/changeOrder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/changeOrder.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/helpers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -243,14 +242,8 @@
       <workItem from="1647594051783" duration="1868000" />
       <workItem from="1647667058217" duration="37000" />
       <workItem from="1647667109796" duration="4000" />
-      <workItem from="1647764379319" duration="9415000" />
-    </task>
-    <task id="LOCAL-00168" summary=" refactoring design-pattern-page.tsx">
-      <created>1646924831406</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1646924831406</updated>
+      <workItem from="1647764379319" duration="9459000" />
+      <workItem from="1647841757360" duration="1124000" />
     </task>
     <task id="LOCAL-00169" summary=" refactoring design-pattern-page.tsx">
       <created>1646925865395</created>
@@ -588,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647787607681</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="  refactoring (insertAfter) with order">
+      <created>1647788365893</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1647788365893</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
