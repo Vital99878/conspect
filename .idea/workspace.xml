@@ -13,7 +13,7 @@
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (HistorySearch) circular story">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPage/utils/history.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/utils/history.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
   </component>
   <component name="ProblemsViewState">
     <option name="autoscrollToSource" value="true" />
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
     <option name="sortByName" value="true" />
   </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
@@ -86,7 +86,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$APPLICATION_CONFIG_DIR$/scratches" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -105,11 +105,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
       <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\helpers" />
       <recent name="W:\conspect\src\types" />
       <recent name="W:\conspect\src\components\hocs\withData" />
-      <recent name="W:\conspect\src\components\hocs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\DsAndAlgorithms" />
@@ -245,13 +245,6 @@
       <workItem from="1647667109796" duration="4000" />
       <workItem from="1647764379319" duration="9459000" />
       <workItem from="1647841757360" duration="14520000" />
-    </task>
-    <task id="LOCAL-00173" summary=" refactoring design-pattern-page.tsx&#10; logs commented">
-      <created>1646982628844</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1646982628845</updated>
     </task>
     <task id="LOCAL-00174" summary=" refactoring design-pattern-page.tsx&#10; logs commented">
       <created>1646984610803</created>
@@ -589,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647874344283</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="  feat (HistorySearch) circular story">
+      <created>1647874879628</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1647874879628</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
