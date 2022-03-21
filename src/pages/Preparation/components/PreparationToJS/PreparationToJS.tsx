@@ -132,6 +132,17 @@ const PreparationToJS: React.FC = () => {
   {
   }
 
+  {
+    // var x = 1
+    // function f() {
+    //   if (x === 1) {
+    //     var x = 2
+    //     console.log(x)
+    //   }
+    //   console.log(x)
+    // }
+  }
+
   exercises()
 
   return (

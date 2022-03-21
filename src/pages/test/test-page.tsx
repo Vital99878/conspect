@@ -13,6 +13,7 @@ import characterInformation from '../../components/hocs/withCharacter/CharacterI
 import { fetchData } from '../../components/hocs/withData/characters'
 import { withData } from '../../components/hocs/withData/withData'
 import { modalState } from '../../components/Modal/modalState'
+import SearchPage from '../../components/SearchPage'
 import TestIterableObj from '../Preparation/components/PreparationToJS/topics/components/Test-IterableObject/TestIterableObj'
 import { useWindowWidth } from '../../hooks/customHooks'
 import './test-page.scss'
@@ -32,68 +33,12 @@ import ReactDOM from 'react-dom'
 // import {root2} from './min-binary-heap-test'
 import {} from '../../helpers/changeOrder'
 
-const inputStyle: CSSProperties = {
-  width: '60%',
-  textAlign: 'center',
-  // padding: '2rem'
-}
-const formStyle: CSSProperties = {
-  display: 'grid',
-  placeItems: 'center',
-}
-
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode
 }
-const Search: React.FC = () => {
-  // todo сохранять историю запросов
-  // todo показываеть, что на странице есть поиск!
-  // todo debounce
-
-  const [search, setSearch] = useState('')
-  const [isShow, setIsShow] = useState(false)
-  const inputRef = useRef<HTMLInputElement>(null)
-
-  function show(evt: KeyboardEvent) {
-    if (evt.key === 'Escape') {
-      setIsShow(false)
-      return
-    }
-
-    if (evt.key.length > 1) return
-
-    if (inputRef.current) inputRef.current.focus()
-    setIsShow(true)
-  }
-
-  function typing(evt: React.ChangeEvent<HTMLInputElement>) {
-    setSearch(evt.target.value)
-  }
-
-  function onSubmit(evt: FormEvent) {
-    evt.preventDefault()
-    console.log(`Sort by ${search.trim()}`)
-    setSearch('')
-    setIsShow(false)
-  }
-
-  useEffect((): VoidFunction => {
-    document.addEventListener('keydown', show)
-    return () => document.removeEventListener('keydown', show)
-  }, [])
-
-  if (!isShow) return null
-  return (
-    <form action="" onSubmit={onSubmit} style={formStyle}>
-      <input style={inputStyle} value={search} type={'text'} onChange={typing} autoFocus={true} ref={inputRef} />
-    </form>
-  )
-}
-
 
 const TestPage: React.FC<TestPropsChildren> = () => {
   const testComponentsRef = useRef(null)
-
 
   // const toggleModal = () => setIsShouldShow((isShow) => !isShow)
   // const windowWidth = useWindowWidth()
@@ -103,7 +48,7 @@ const TestPage: React.FC<TestPropsChildren> = () => {
     <PageLayout pageHeading="Test page">
       <div className="test-components" ref={testComponentsRef}>
         <form action="/" method={'post'}></form>
-        <Search />
+        <SearchPage />
         {/* {withData(CharacterInformation, fetchData)}*/}
         <button onClick={() => setIsShow(true)}>show</button>
         <button onClick={() => setIsShow(false)}>hide</button>

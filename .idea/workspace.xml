@@ -10,9 +10,9 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoring (insertAfter) with order">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoring (SearchPage)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/exercises.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -104,11 +104,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\helpers" />
       <recent name="W:\conspect\src\types" />
       <recent name="W:\conspect\src\components\hocs\withData" />
       <recent name="W:\conspect\src\components\hocs" />
-      <recent name="W:\conspect\src\pages\DsAndAlgorithms\components\algorithms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\DsAndAlgorithms" />
@@ -243,21 +243,7 @@
       <workItem from="1647667058217" duration="37000" />
       <workItem from="1647667109796" duration="4000" />
       <workItem from="1647764379319" duration="9459000" />
-      <workItem from="1647841757360" duration="1124000" />
-    </task>
-    <task id="LOCAL-00169" summary=" refactoring design-pattern-page.tsx">
-      <created>1646925865395</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1646925865395</updated>
-    </task>
-    <task id="LOCAL-00170" summary=" refactoring design-pattern-page.tsx">
-      <created>1646926831840</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1646926831840</updated>
+      <workItem from="1647841757360" duration="11137000" />
     </task>
     <task id="LOCAL-00171" summary=" refactoring design-pattern-page.tsx">
       <created>1646927013823</created>
@@ -588,7 +574,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647788365893</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="  refactoring (exercises) getSumMap">
+      <created>1647842933322</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1647842933322</updated>
+    </task>
+    <task id="LOCAL-00219" summary="  refactoring (SearchPage)">
+      <created>1647868463927</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1647868463927</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -609,8 +609,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" (data structure)" />
-    <MESSAGE value=" (data structure and algo) page" />
     <MESSAGE value=" update (useSingletonState) hook" />
     <MESSAGE value=" update (index.scss) create main elements style" />
     <MESSAGE value=" update (index.scss) create main elements style&#10; update (route css page)" />
@@ -634,7 +632,9 @@
     <MESSAGE value="  feat (isInRange) helpers" />
     <MESSAGE value="  feat (insertAfter) with order" />
     <MESSAGE value="  refactoring (insertAfter) with order" />
-    <option name="LAST_COMMIT_MESSAGE" value="  refactoring (insertAfter) with order" />
+    <MESSAGE value="  refactoring (exercises) getSumMap" />
+    <MESSAGE value="  refactoring (SearchPage)" />
+    <option name="LAST_COMMIT_MESSAGE" value="  refactoring (SearchPage)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
