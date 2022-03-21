@@ -1,5 +1,6 @@
 import React, { useState, useRef, FormEvent, useEffect, CSSProperties } from 'react'
 import './search-page.scss'
+import { HistorySearch } from './utils/history'
 
 type Props = {
   prop?: string

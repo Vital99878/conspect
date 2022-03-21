@@ -10,9 +10,10 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoring (SearchPage)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (HistorySearch) circular story">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchPage/utils/history.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/utils/history.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,21 +244,7 @@
       <workItem from="1647667058217" duration="37000" />
       <workItem from="1647667109796" duration="4000" />
       <workItem from="1647764379319" duration="9459000" />
-      <workItem from="1647841757360" duration="11137000" />
-    </task>
-    <task id="LOCAL-00171" summary=" refactoring design-pattern-page.tsx">
-      <created>1646927013823</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1646927013823</updated>
-    </task>
-    <task id="LOCAL-00172" summary=" refactoring design-pattern-page.tsx">
-      <created>1646982462954</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1646982462955</updated>
+      <workItem from="1647841757360" duration="14520000" />
     </task>
     <task id="LOCAL-00173" summary=" refactoring design-pattern-page.tsx&#10; logs commented">
       <created>1646982628844</created>
@@ -588,7 +575,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647868463927</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="  refactoring (SearchPage) Dictionary">
+      <created>1647869617845</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1647869617845</updated>
+    </task>
+    <task id="LOCAL-00221" summary="  feat (HistorySearch) circular story">
+      <created>1647874344283</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1647874344283</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -609,8 +610,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" update (useSingletonState) hook" />
-    <MESSAGE value=" update (index.scss) create main elements style" />
     <MESSAGE value=" update (index.scss) create main elements style&#10; update (route css page)" />
     <MESSAGE value=" update (index.scss) create main elements style&#10; update (route css page) доделать роут" />
     <MESSAGE value=" refactoring design-pattern-page.tsx&#10; commented all logs" />
@@ -634,7 +633,9 @@
     <MESSAGE value="  refactoring (insertAfter) with order" />
     <MESSAGE value="  refactoring (exercises) getSumMap" />
     <MESSAGE value="  refactoring (SearchPage)" />
-    <option name="LAST_COMMIT_MESSAGE" value="  refactoring (SearchPage)" />
+    <MESSAGE value="  refactoring (SearchPage) Dictionary" />
+    <MESSAGE value="  feat (HistorySearch) circular story" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (HistorySearch) circular story" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
