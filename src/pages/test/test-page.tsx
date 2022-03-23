@@ -15,6 +15,7 @@ import { fetchData } from '../../components/hocs/withData/characters'
 import { withData } from '../../components/hocs/withData/withData'
 import { modalState } from '../../components/Modal/modalState'
 import SearchPage from '../../components/SearchPage'
+import { insertItemBeforeTarget, insertItemAfterTarget } from '../../helpers'
 import TestIterableObj from '../Preparation/components/PreparationToJS/topics/components/Test-IterableObject/TestIterableObj'
 import { useWindowWidth } from '../../hooks/customHooks'
 import './test-page.scss'
@@ -41,15 +42,20 @@ type TestPropsChildren = {
 const TestPage: React.FC<TestPropsChildren> = () => {
   const testComponentsRef = useRef(null)
 
-  // test history loop
+  // insert before test log result
   {
-    function history(arr: number[], last: number, size: number): number[] {
-      const left = numbers.slice(last).reverse()
-      const right = numbers.slice(0, last).reverse()
-      return [...left, ...right]
-    }
-
-    // console.log(history(numbers, 8, numbers.length - 1))
+    // console.log(insertItemBefore(numbers, 7, 9))
+    // console.log(insertItemBefore(numbers, 8, 0))
+    // console.log(insertItemBefore(numbers, 9, 4))
+  }
+  // insert after test log result
+  {
+    // console.log('result ', insertItemAfter(numbers, 0, 9))
+    console.log('result ', insertItemAfterTarget(numbers, 9, 3))
+    // console.log('result ', insertItemBeforeTarget(numbers, 0, 9))
+    // console.log('result ', insertItemBeforeTarget(numbers, 4, 5))
+    // console.log(insertItemBefore(numbers, 8, 0))
+    // console.log(insertItemBefore(numbers, 9, 4))
   }
   // const toggleModal = () => setIsShouldShow((isShow) => !isShow)
   // const windowWidth = useWindowWidth()

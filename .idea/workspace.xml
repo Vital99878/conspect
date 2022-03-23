@@ -10,10 +10,9 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (SearchPage) history search">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (insertItemBefore and After)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPage/utils/history.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/utils/history.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/insertItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/insertItem.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/helpers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -114,9 +113,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\helpers" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
       <recent name="W:\conspect\src\components" />
-      <recent name="W:\conspect\src\helpers" />
       <recent name="W:\conspect\src\types" />
       <recent name="W:\conspect\src\components\hocs\withData" />
     </key>
@@ -260,34 +259,6 @@
       <workItem from="1647948754959" duration="244000" />
       <workItem from="1647949605015" duration="339000" />
       <workItem from="1648014772985" duration="2347000" />
-    </task>
-    <task id="LOCAL-00176" summary=" feat (DropdownMenu.tsx)">
-      <created>1646993190595</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1646993190595</updated>
-    </task>
-    <task id="LOCAL-00177" summary=" feat (DropdownMenu.tsx)">
-      <created>1646995830600</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1646995830600</updated>
-    </task>
-    <task id="LOCAL-00178" summary=" feat (DropdownMenu.tsx)">
-      <created>1646998508085</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1646998508085</updated>
-    </task>
-    <task id="LOCAL-00179" summary=" feat (DropdownMenu.tsx)">
-      <created>1647001161085</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1647001161085</updated>
     </task>
     <task id="LOCAL-00180" summary=" feat (DropdownMenu.tsx)">
       <created>1647001228965</created>
@@ -604,7 +575,35 @@
       <option name="project" value="LOCAL" />
       <updated>1648018674128</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="  feat (SearchPage) history search">
+      <created>1648022215670</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1648022215670</updated>
+    </task>
+    <task id="LOCAL-00226" summary="  feat (insertItemBefore) history search">
+      <created>1648031756753</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1648031756753</updated>
+    </task>
+    <task id="LOCAL-00227" summary="  feat (insertItemBefore) history search">
+      <created>1648033548632</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1648033548632</updated>
+    </task>
+    <task id="LOCAL-00228" summary="  feat (insertItemBefore and After)">
+      <created>1648034219247</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1648034219247</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -652,9 +651,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" refactoring design-pattern-page.tsx&#10; commented all logs" />
-    <MESSAGE value=" refactoring design-pattern-page.tsx" />
-    <MESSAGE value=" refactoring design-pattern-page.tsx&#10; logs commented" />
     <MESSAGE value=" feat (DropdownMenu.tsx)" />
     <MESSAGE value=" feat (CloseButton) with rxjs" />
     <MESSAGE value=" feat (CloseButton)" />
@@ -677,7 +673,10 @@
     <MESSAGE value="  feat (HistorySearch) circular story" />
     <MESSAGE value="  feat (SearchPage) autocomplete" />
     <MESSAGE value="  feat (SearchPage) history search" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (SearchPage) history search" />
+    <MESSAGE value="  feat (insertItem Before and After)" />
+    <MESSAGE value="  feat (insertItemBefore) history search" />
+    <MESSAGE value="  feat (insertItemBefore and After)" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (insertItemBefore and After)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
