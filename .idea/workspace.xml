@@ -10,10 +10,9 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (insertItemBefore and After)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoring (Todo insert)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/insertItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/insertItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/helpers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Todos/components/utils" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -113,11 +112,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components\Todos\components\utils" />
       <recent name="W:\conspect\src\helpers" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
       <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\types" />
-      <recent name="W:\conspect\src\components\hocs\withData" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\DsAndAlgorithms" />
@@ -259,34 +258,6 @@
       <workItem from="1647948754959" duration="244000" />
       <workItem from="1647949605015" duration="339000" />
       <workItem from="1648014772985" duration="2347000" />
-    </task>
-    <task id="LOCAL-00180" summary=" feat (DropdownMenu.tsx)">
-      <created>1647001228965</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1647001228966</updated>
-    </task>
-    <task id="LOCAL-00181" summary=" feat (DropdownMenu.tsx)">
-      <created>1647002681815</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1647002681815</updated>
-    </task>
-    <task id="LOCAL-00182" summary=" feat (DropdownMenu.tsx)">
-      <created>1647006228771</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1647006228771</updated>
-    </task>
-    <task id="LOCAL-00183" summary=" feat (DropdownMenu.tsx)">
-      <created>1647069267535</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1647069267535</updated>
     </task>
     <task id="LOCAL-00184" summary=" feat (CloseButton)">
       <created>1647239837506</created>
@@ -603,7 +574,35 @@
       <option name="project" value="LOCAL" />
       <updated>1648034219247</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <task id="LOCAL-00229" summary="  refactoring (Todo insert)">
+      <created>1648045438637</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1648045438637</updated>
+    </task>
+    <task id="LOCAL-00230" summary="  refactoring (Todo insert)">
+      <created>1648047151325</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1648047151325</updated>
+    </task>
+    <task id="LOCAL-00231" summary="  refactoring (Todo insert)">
+      <created>1648047798265</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1648047798265</updated>
+    </task>
+    <task id="LOCAL-00232" summary="  refactoring (Todo insert)">
+      <created>1648048012787</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1648048012787</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -651,7 +650,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" feat (DropdownMenu.tsx)" />
     <MESSAGE value=" feat (CloseButton) with rxjs" />
     <MESSAGE value=" feat (CloseButton)" />
     <MESSAGE value=" feat (CloseButton) with rxjs. !Not working clickOutside" />
@@ -676,7 +674,8 @@
     <MESSAGE value="  feat (insertItem Before and After)" />
     <MESSAGE value="  feat (insertItemBefore) history search" />
     <MESSAGE value="  feat (insertItemBefore and After)" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (insertItemBefore and After)" />
+    <MESSAGE value="  refactoring (Todo insert)" />
+    <option name="LAST_COMMIT_MESSAGE" value="  refactoring (Todo insert)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

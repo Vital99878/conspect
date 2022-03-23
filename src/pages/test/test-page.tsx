@@ -51,7 +51,7 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   // insert after test log result
   {
     // console.log('result ', insertItemAfter(numbers, 0, 9))
-    console.log('result ', insertItemAfterTarget(numbers, 9, 3))
+    // console.log('result ', insertItemAfterTarget(numbers, 9, 3))
     // console.log('result ', insertItemBeforeTarget(numbers, 0, 9))
     // console.log('result ', insertItemBeforeTarget(numbers, 4, 5))
     // console.log(insertItemBefore(numbers, 8, 0))
@@ -64,17 +64,17 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   return (
     <PageLayout pageHeading="Test page">
       <div className="test-components" ref={testComponentsRef}>
-        <form action="/" method={'post'}></form>
-        <SearchPage />
-        {/* {withData(CharacterInformation, fetchData)}*/}
-        <button onClick={() => setIsShow(true)}>show</button>
-        <button onClick={() => setIsShow(false)}>hide</button>
-        <button onClick={() => setIsShow(!isShow)}>toggle</button>
-        {ReactDOM.createPortal(<Modal />, document.getElementById('root') as HTMLLIElement)}
+        {/* <form action="/" method={'post'}></form> */}
+        {/* <SearchPage /> */}
+        {/* /!* {withData(CharacterInformation, fetchData)}*!/ */}
+        {/* <button onClick={() => setIsShow(true)}>show</button> */}
+        {/* <button onClick={() => setIsShow(false)}>hide</button> */}
+        {/* <button onClick={() => setIsShow(!isShow)}>toggle</button> */}
+        {/* {ReactDOM.createPortal(<Modal />, document.getElementById('root') as HTMLLIElement)} */}
         {/* <TestIterableObj />*/}
         {/* <TestTS />*/}
         {/* <TestPureReact />*/}
-        {/* <Todos />*/}
+        <Todos />
         {/* <TestEmpty />*/}
       </div>
       {/* <SingleFilter />*/}

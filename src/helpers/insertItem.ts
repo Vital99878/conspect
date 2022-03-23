@@ -19,6 +19,7 @@ function checkIndexes(arr: any[], draggableIndex: number, targetIndex: number): 
  */
 export function insertItemBeforeTarget<T>(arr: T[], draggableIndex: number, targetIndex: number): T[] {
   checkIndexes(arr, draggableIndex, targetIndex)
+  if (draggableIndex === targetIndex) return arr
 
   const res = [...arr]
   let left: T[] = []
@@ -46,6 +47,7 @@ export function insertItemBeforeTarget<T>(arr: T[], draggableIndex: number, targ
  */
 export function insertItemAfterTarget<T>(arr: T[], draggableIndex: number, targetIndex: number): T[] {
   checkIndexes(arr, draggableIndex, targetIndex)
+  if (draggableIndex === targetIndex) return arr
 
   const res = [...arr]
   let left: T[] = []

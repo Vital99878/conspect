@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { DragAndDropData } from '../utils'
 import { RenameForm, TodoSettings, TodoStatusForm } from './components'
 import { DropPosition, R_2, TodoType } from '../../models/index.model'
 import useBehaviorSubject from '../../../../pages/rxjs/components/subject/hooks'
@@ -8,17 +9,15 @@ import ReactDOM from 'react-dom'
 type Props = {
   props: {
     todo: TodoType
+    todoIndex: number
     updateTodo: R_2['updateTodo']
     deleteTodo: R_2['deleteTodo']
-    dragTodo: R_2['dragTodo']
-    getReplaceableTodo: R_2['getReplaceableTodo']
     changeOrder: R_2['changeOrder']
-    setDragPos: R_2['setDragPos']
   }
 }
 
 const Todo: React.FC<Props> = ({ props }) => {
-  const { todo, updateTodo, deleteTodo, dragTodo, getReplaceableTodo, changeOrder, setDragPos } = props
+  const { todo, todoIndex, updateTodo, deleteTodo, changeOrder } = props
   const [shouldShowLabel, setShouldShowLabel] = useState(true)
   const { field: shouldShowMenu, updateField: setShouldShowMenu } = useBehaviorSubject(
     new BehaviorSubject(false),
@@ -26,49 +25,27 @@ const Todo: React.FC<Props> = ({ props }) => {
   )
 
   const label = shouldShowLabel && <h2 className="todo__label">{todo.label}</h2>
-  const draggingTodoRef = useRef<HTMLLIElement | null>(null)
-  const replaceableTodoRef = useRef<HTMLLIElement | null>(null)
 
-  function handleDragStart(evt: React.DragEvent<HTMLLIElement>) {
-    const draggingTodoEl = evt.target as HTMLLIElement
-    draggingTodoRef.current = draggingTodoEl
-    draggingTodoEl.classList.add('dragging')
-    dragTodo(todo)
-  }
-  function handleDragEnd() {
-    if (draggingTodoRef.current) draggingTodoRef.current.classList.remove('dragging')
-    changeOrder()
-  }
+  const dragAndDropData = DragAndDropData.getInstance()
+
   function handleDragOver(evt: React.DragEvent<HTMLLIElement>) {
     evt.preventDefault()
     const replaceableTodoEl = evt.target as HTMLLIElement
-    replaceableTodoRef.current = replaceableTodoEl
     const box = replaceableTodoEl.getBoundingClientRect()
     const halfHeight = box.height / 2
     const dropPos = evt.clientY <= box.y + halfHeight ? DropPosition.before : DropPosition.after
 
-    setDragPos(dropPos)
-    getReplaceableTodo(todo)
+    DragAndDropData.setTargetIndex(todoIndex)
+    DragAndDropData.setPos(dropPos)
   }
-  function handleDragLeave(evt: React.DragEvent<HTMLLIElement>) {
-    const todoEl = evt.target as HTMLLIElement
-    // console.log(`%celement on leave`, 'color:tomato; font-size: 14px')
-    // console.log('todoEl: ', todoEl)
-  }
-  function handleDragEnter(evt: React.DragEvent<HTMLLIElement>) {
-    const todoEl = evt.target as HTMLLIElement
-    // console.log(`%celement on enter`, 'color:tomato; font-size: 14px')
-    // console.log('todoEl: ', todoEl)
-  }
+
   return (
     <li
       id={todo.id.toString()}
       draggable={true}
-      onDragStart={handleDragStart}
+      onDragStart={() => DragAndDropData.setDraggableIndex(todoIndex)}
       onDragOver={handleDragOver}
-      onDragLeave={handleDragLeave}
-      onDragEnter={handleDragEnter}
-      onDragEnd={handleDragEnd}
+      onDragEnd={changeOrder}
       className={`todo`}
     >
       {label || <RenameForm props={{ updateTodo, setShouldShowLabel, todo, setShouldShowMenu }} />}

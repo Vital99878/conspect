@@ -1,2 +1,3 @@
 import { todosStatusCount } from './todosStatusCount'
-export { todosStatusCount }
+import DragAndDropData from './DragAndDropData'
+export { todosStatusCount, DragAndDropData }
