@@ -1,3 +1,5 @@
+import { numbers } from '../../../commonMockData'
+
 export class HistorySearch<T> {
   private history: any[]
   private writePointer = 0
@@ -6,10 +8,10 @@ export class HistorySearch<T> {
   private tail!: number
   private size!: number
 
-  constructor(size: number) {
+  constructor(size = 5) {
     this.size = size
     this.tail = size - 1
-    this.history = new Array(size).fill(undefined)
+    this.history = []
   }
 
   add(el: T): T {
@@ -17,6 +19,11 @@ export class HistorySearch<T> {
     this.writePointer = (this.writePointer + 1) % this.size
     this.readPointer = (this.readPointer + 1) % this.size
     return el
+  }
+
+  // todo see what to do with pointers
+  delete(index: number): void {
+    this.history[index] = undefined
   }
 
   logHead() {
@@ -44,7 +51,9 @@ export class HistorySearch<T> {
   }
 
   getHistory() {
-    return [...this.history]
+    const left = this.history.slice(0, this.writePointer).reverse()
+    const right = this.history.slice(this.writePointer).reverse()
+    return [...left, ...right]
   }
   logHistory() {
     console.log(this.history)

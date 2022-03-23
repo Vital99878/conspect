@@ -8,6 +8,7 @@ import React, {
   CSSProperties,
 } from 'react'
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable'
+import { numbers } from '../../commonMockData'
 import CharacterInformation from '../../components/hocs/withCharacter/CharacterInformation'
 import characterInformation from '../../components/hocs/withCharacter/CharacterInformation'
 import { fetchData } from '../../components/hocs/withData/characters'
@@ -40,7 +41,16 @@ type TestPropsChildren = {
 const TestPage: React.FC<TestPropsChildren> = () => {
   const testComponentsRef = useRef(null)
 
+  // test history loop
+  {
+    function history(arr: number[], last: number, size: number): number[] {
+      const left = numbers.slice(last).reverse()
+      const right = numbers.slice(0, last).reverse()
+      return [...left, ...right]
+    }
 
+    // console.log(history(numbers, 8, numbers.length - 1))
+  }
   // const toggleModal = () => setIsShouldShow((isShow) => !isShow)
   // const windowWidth = useWindowWidth()
   const { field: isShow, updateField: setIsShow } = useBehaviorSubject(modalState, true)
