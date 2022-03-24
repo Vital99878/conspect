@@ -1,13 +1,15 @@
 import React, { FormEvent, useState } from 'react'
+import { SingletonMethods } from '../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods'
 import { R_2, TodoStatus } from '../../models/index.model'
 import { TodosSingleton } from '../../hooks/todosSingleton'
 
 type Props = {
-  props: Pick<R_2, 'addTodo'> & { order: number }
+  props: {order: number }
 }
 
 const AddTodoForm: React.FC<Props> = ({ props }) => {
-  const { addTodo, order } = props
+  const { order } = props
+  const {addTodo} = SingletonMethods.getMethods('todos')
   const [label, setLabel] = useState('')
 
   const createTodo = (evt: FormEvent) => {

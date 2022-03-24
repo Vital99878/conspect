@@ -10,9 +10,12 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoring (Todo insert)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (SingletonMethods)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonMethods.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonMethods.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +96,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Todos/components/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -106,24 +109,24 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
     <property name="rest.client.default.execution.environment" value="todos" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
+      <recent name="W:\conspect\src\pages\test\components" />
       <recent name="W:\conspect\src\components\Todos\components\utils" />
       <recent name="W:\conspect\src\helpers" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
-      <recent name="W:\conspect\src\components" />
-      <recent name="W:\conspect\src\types" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
+      <recent name="W:\conspect\src\pages\test" />
       <recent name="W:\conspect\src\pages\DsAndAlgorithms" />
       <recent name="W:\conspect\src\components\Navigation" />
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics\components" />
-      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics\components\domEvent" />
-      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\CreateCloser.ts" />
@@ -258,27 +261,7 @@
       <workItem from="1647948754959" duration="244000" />
       <workItem from="1647949605015" duration="339000" />
       <workItem from="1648014772985" duration="2347000" />
-    </task>
-    <task id="LOCAL-00184" summary=" feat (CloseButton)">
-      <created>1647239837506</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1647239837506</updated>
-    </task>
-    <task id="LOCAL-00185" summary=" feat (CloseButton)">
-      <created>1647240188335</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1647240188335</updated>
-    </task>
-    <task id="LOCAL-00186" summary=" feat (CloseButton)">
-      <created>1647242696991</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1647242696991</updated>
+      <workItem from="1648107559433" duration="6028000" />
     </task>
     <task id="LOCAL-00187" summary=" feat (CloseButton)">
       <created>1647242902384</created>
@@ -602,7 +585,28 @@
       <option name="project" value="LOCAL" />
       <updated>1648048012787</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="  refactoring (Todo insert)">
+      <created>1648048618540</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1648048618540</updated>
+    </task>
+    <task id="LOCAL-00234" summary="  feat (SingletonMethods)">
+      <created>1648110631997</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1648110631997</updated>
+    </task>
+    <task id="LOCAL-00235" summary="  feat (SingletonMethods)">
+      <created>1648111904937</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1648111904937</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -650,7 +654,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" feat (CloseButton) with rxjs" />
     <MESSAGE value=" feat (CloseButton)" />
     <MESSAGE value=" feat (CloseButton) with rxjs. !Not working clickOutside" />
     <MESSAGE value=" feat (mergeAndSort) without obj compares" />
@@ -675,7 +678,8 @@
     <MESSAGE value="  feat (insertItemBefore) history search" />
     <MESSAGE value="  feat (insertItemBefore and After)" />
     <MESSAGE value="  refactoring (Todo insert)" />
-    <option name="LAST_COMMIT_MESSAGE" value="  refactoring (Todo insert)" />
+    <MESSAGE value="  feat (SingletonMethods)" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (SingletonMethods)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

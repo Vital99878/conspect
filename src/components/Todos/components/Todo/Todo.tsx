@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { SingletonMethods } from '../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods'
 import { DragAndDropData } from '../utils'
 import { RenameForm, TodoSettings, TodoStatusForm } from './components'
 import { DropPosition, R_2, TodoType } from '../../models/index.model'
@@ -10,14 +11,15 @@ type Props = {
   props: {
     todo: TodoType
     todoIndex: number
-    updateTodo: R_2['updateTodo']
-    deleteTodo: R_2['deleteTodo']
-    changeOrder: R_2['changeOrder']
+    // updateTodo: R_2['updateTodo']
+    // deleteTodo: R_2['deleteTodo']
+    // changeOrder: R_2['changeOrder']
   }
 }
 
 const Todo: React.FC<Props> = ({ props }) => {
-  const { todo, todoIndex, updateTodo, deleteTodo, changeOrder } = props
+  const { todo, todoIndex } = props
+  const { addTodo, deleteTodo, updateTodo, changeOrder } = SingletonMethods.getMethods('todos')
   const [shouldShowLabel, setShouldShowLabel] = useState(true)
   const { field: shouldShowMenu, updateField: setShouldShowMenu } = useBehaviorSubject(
     new BehaviorSubject(false),
@@ -48,11 +50,11 @@ const Todo: React.FC<Props> = ({ props }) => {
       onDragEnd={changeOrder}
       className={`todo`}
     >
-      {label || <RenameForm props={{ updateTodo, setShouldShowLabel, todo, setShouldShowMenu }} />}
+      {label || <RenameForm props={{ setShouldShowLabel, todo, setShouldShowMenu }} />}
       <TodoSettings
-        props={{ todo, deleteTodo, shouldShowLabel, setShouldShowLabel, shouldShowMenu, setShouldShowMenu }}
+        props={{ todo, shouldShowLabel, setShouldShowLabel, shouldShowMenu, setShouldShowMenu }}
       />
-      <TodoStatusForm props={{ todo, updateTodo }} />
+      <TodoStatusForm props={{ todo }} />
     </li>
   )
 }

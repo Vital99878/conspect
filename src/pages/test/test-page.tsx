@@ -16,6 +16,7 @@ import { withData } from '../../components/hocs/withData/withData'
 import { modalState } from '../../components/Modal/modalState'
 import SearchPage from '../../components/SearchPage'
 import { insertItemBeforeTarget, insertItemAfterTarget } from '../../helpers'
+import { SingletonMethods } from '../desing-pattern/components/Test-Singleton/SingletonMethods'
 import TestIterableObj from '../Preparation/components/PreparationToJS/topics/components/Test-IterableObject/TestIterableObj'
 import { useWindowWidth } from '../../hooks/customHooks'
 import './test-page.scss'
@@ -41,6 +42,7 @@ type TestPropsChildren = {
 
 const TestPage: React.FC<TestPropsChildren> = () => {
   const testComponentsRef = useRef(null)
+  // const {addTodo} = SingletonMethods.getMethods('todo')
 
   // insert before test log result
   {
@@ -64,6 +66,7 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   return (
     <PageLayout pageHeading="Test page">
       <div className="test-components" ref={testComponentsRef}>
+        {/* <SingletonTest/> */}
         {/* <form action="/" method={'post'}></form> */}
         {/* <SearchPage /> */}
         {/* /!* {withData(CharacterInformation, fetchData)}*!/ */}
@@ -74,7 +77,7 @@ const TestPage: React.FC<TestPropsChildren> = () => {
         {/* <TestIterableObj />*/}
         {/* <TestTS />*/}
         {/* <TestPureReact />*/}
-        <Todos />
+         <Todos />
         {/* <TestEmpty />*/}
       </div>
       {/* <SingleFilter />*/}

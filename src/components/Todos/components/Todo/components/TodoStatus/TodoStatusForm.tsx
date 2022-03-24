@@ -1,17 +1,18 @@
 import React from 'react'
+import { SingletonMethods } from '../../../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods'
 import { R_2, TodoStatus, TodoType } from '../../../../models/index.model'
 import { initialButtonsFilters } from '../../../TodosFilter/hook/useButtonsFilter'
 import { ValueMouseEvent } from '../../../../../../types/ValueMouseEvent.model'
 
 type Props = {
   props: {
-    updateTodo: R_2['updateTodo']
     todo: TodoType
   }
 }
 
 const TodoStatusForm: React.FC<Props> = ({ props }) => {
-  const { updateTodo, todo } = props
+  const { todo } = props
+  const {updateTodo} = SingletonMethods.getMethods('todos')
   const updateStatus = (evt: ValueMouseEvent<TodoStatus>) => {
     evt.preventDefault()
     const status = evt.target.value

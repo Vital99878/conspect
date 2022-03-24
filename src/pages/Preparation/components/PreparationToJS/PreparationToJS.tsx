@@ -1,7 +1,9 @@
 import React from 'react'
 import { multicast } from 'rxjs/operators'
 import { numbers, person, objWithSymbol } from '../../../../commonMockData'
+import { TodoStatus } from '../../../../components/Todos/models/index.model'
 import { isInRange } from '../../../../helpers'
+import { SingletonMethods } from '../../../desing-pattern/components/Test-Singleton/SingletonMethods'
 import { Person, ITPerson } from '../../../shared/Person.class'
 import { topicPrototypeChain, useCloser, eventLoop, topicPromise } from './topics'
 import DomEvent from './topics/components/domEvent/domEvent'
@@ -143,10 +145,14 @@ const PreparationToJS: React.FC = () => {
     // }
   }
 
-  exercises()
+  // exercises()
+
+  const {addTodo} = SingletonMethods.getMethods('todos')
+  const t = { id: 0, label: 'todo 0000', status: TodoStatus.notStarted, order: 0 }
 
   return (
     <div className="test-components">
+      <button onClick={() => addTodo( t) }>Add Todo</button>
       <DomEvent />
     </div>
   )

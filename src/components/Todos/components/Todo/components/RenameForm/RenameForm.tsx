@@ -1,11 +1,11 @@
 import React, { ChangeEvent, Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
+import { SingletonMethods } from '../../../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods'
 import { TodoType, R_2 } from '../../../../models/index.model'
 import './RenameForm.scss'
 import { useClickOutside } from '../../../../../../hooks/useClickOutside'
 
 type Props = {
   props: {
-    updateTodo: R_2['updateTodo']
     setShouldShowLabel: Dispatch<SetStateAction<boolean>>
     setShouldShowMenu: any
     todo: TodoType
@@ -13,7 +13,8 @@ type Props = {
 }
 
 const RenameForm: React.FC<Props> = ({ props }) => {
-  const { updateTodo, setShouldShowLabel, todo, setShouldShowMenu } = props
+  const { setShouldShowLabel, todo, setShouldShowMenu } = props
+  const {updateTodo} = SingletonMethods.getMethods('todos')
   const inputRef = useRef<HTMLInputElement>(null)
 
   const [label, setLabel] = useState(todo.label)

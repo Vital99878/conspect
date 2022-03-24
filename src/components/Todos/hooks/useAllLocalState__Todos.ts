@@ -1,4 +1,5 @@
 import { insertItemAfterTarget, insertItemBeforeTarget } from '../../../helpers'
+import { SingletonMethods } from '../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods'
 import { DragAndDropData } from '../components/utils'
 import { DropPosition, TodoStatus, TodoType } from '../models/index.model'
 import { useRef, useState } from 'react'
@@ -20,11 +21,13 @@ export type R = {
   changeOrder: () => void
 }
 
-export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
+export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): TodoType[] {
   const [todoList, setTodoList] = useState(todos)
 
   const addTodo = (newTodo: TodoType) => {
+    console.log('newTodo: ', newTodo)
     setTodoList((todos) => [newTodo, ...todos])
+    console.log('todoList: ', todoList)
   }
 
   const deleteTodo = (deletedTodo: TodoType) => {
@@ -56,11 +59,7 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): R {
     DragAndDropData.clearInstance()
   }
 
-  return {
-    todoList,
-    addTodo,
-    deleteTodo,
-    updateTodo,
-    changeOrder,
-  }
+  SingletonMethods.setMethods('todos', { addTodo, deleteTodo, updateTodo, changeOrder })
+
+  return todoList
 }
