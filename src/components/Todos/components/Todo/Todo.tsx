@@ -1,11 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
+import { BehaviorSubject } from 'rxjs'
 import { SingletonMethods } from '../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods'
+import useBehaviorSubject from '../../../../pages/rxjs/components/subject/hooks'
+import { DropPosition, TodoType } from '../../models/index.model'
 import { DragAndDropData } from '../utils'
 import { RenameForm, TodoSettings, TodoStatusForm } from './components'
-import { DropPosition, R_2, TodoType } from '../../models/index.model'
-import useBehaviorSubject from '../../../../pages/rxjs/components/subject/hooks'
-import { BehaviorSubject } from 'rxjs'
-import ReactDOM from 'react-dom'
 
 type Props = {
   props: {
@@ -37,6 +36,10 @@ const Todo: React.FC<Props> = ({ props }) => {
     const halfHeight = box.height / 2
     const dropPos = evt.clientY <= box.y + halfHeight ? DropPosition.before : DropPosition.after
 
+    dropPos === DropPosition.after
+      ? (replaceableTodoEl.style.transform = 'translateY(100px)')
+      : (replaceableTodoEl.style.transform = 'translateY(-100px)')
+
     DragAndDropData.setTargetIndex(todoIndex)
     DragAndDropData.setPos(dropPos)
   }
@@ -51,9 +54,7 @@ const Todo: React.FC<Props> = ({ props }) => {
       className={`todo`}
     >
       {label || <RenameForm props={{ setShouldShowLabel, todo, setShouldShowMenu }} />}
-      <TodoSettings
-        props={{ todo, shouldShowLabel, setShouldShowLabel, shouldShowMenu, setShouldShowMenu }}
-      />
+      <TodoSettings props={{ todo, shouldShowLabel, setShouldShowLabel, shouldShowMenu, setShouldShowMenu }} />
       <TodoStatusForm props={{ todo }} />
     </li>
   )

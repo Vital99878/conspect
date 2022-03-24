@@ -11,11 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (SingletonMethods)">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonMethods.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonMethods.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,14 +259,9 @@
       <workItem from="1647948754959" duration="244000" />
       <workItem from="1647949605015" duration="339000" />
       <workItem from="1648014772985" duration="2347000" />
-      <workItem from="1648107559433" duration="6028000" />
-    </task>
-    <task id="LOCAL-00187" summary=" feat (CloseButton)">
-      <created>1647242902384</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1647242902384</updated>
+      <workItem from="1648107559433" duration="6089000" />
+      <workItem from="1648117681826" duration="1026000" />
+      <workItem from="1648134277709" duration="778000" />
     </task>
     <task id="LOCAL-00188" summary=" feat (CloseButton)">
       <created>1647250757697</created>
@@ -606,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648111904937</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="  feat (SingletonMethods)">
+      <created>1648113672777</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1648113672777</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />

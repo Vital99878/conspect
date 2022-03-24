@@ -33,6 +33,7 @@
     "space-before-function-paren": "off",
     "valid-jsdoc": "off",
     "no-invalid-this": "off",
-    "no-console": "warn"
+    "no-console": "warn",
+    "operator-linebreak": "off"
   }
 }
