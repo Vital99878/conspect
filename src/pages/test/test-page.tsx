@@ -28,6 +28,7 @@ import SingletonTest from '../desing-pattern/components/Test-Singleton/Singleton
 import { useCloser } from '../Preparation/components/PreparationToJS/topics'
 import { RequiredInputWrapper } from '../registraiton/components/registration-form/components'
 import { reformatPhoneNumber } from '../registraiton/components/registration-form/utils'
+import Loading from '../rxjs/components/Loading/Loading'
 import TestLoadingState from '../rxjs/components/Loading/TestLoadingState'
 import useBehaviorSubject from '../rxjs/components/subject/hooks'
 import { TestEmpty, TestTS, TestPureReact } from './components'
@@ -66,9 +67,10 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   return (
     <PageLayout pageHeading="Test page">
       <div className="test-components" ref={testComponentsRef}>
+        <Loading/>
         {/* <SingletonTest/> */}
         {/* <form action="/" method={'post'}></form> */}
-        {/* <SearchPage /> */}
+         <SearchPage />
         {/* /!* {withData(CharacterInformation, fetchData)}*!/ */}
         {/* <button onClick={() => setIsShow(true)}>show</button> */}
         {/* <button onClick={() => setIsShow(false)}>hide</button> */}
@@ -77,7 +79,7 @@ const TestPage: React.FC<TestPropsChildren> = () => {
         {/* <TestIterableObj />*/}
         {/* <TestTS />*/}
         {/* <TestPureReact />*/}
-         <Todos />
+        {/* <Todos />*/}
         {/* <TestEmpty />*/}
       </div>
       {/* <SingleFilter />*/}

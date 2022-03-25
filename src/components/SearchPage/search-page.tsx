@@ -68,7 +68,7 @@ const SearchPage: React.FC<Props> = ({}) => {
 
   // console.log('getHistory(): ', searchHistoryRef.current.getHistory())
 
-  const historyS = search.length <= 1 && (
+  const historyS = (
     <ul className={'auto'}>
       {searchHistoryRef.current.getHistory().map((item, index) => (
         <li onClick={() => searchHistoryRef.current.delete(index)} key={item}>
@@ -79,10 +79,11 @@ const SearchPage: React.FC<Props> = ({}) => {
   )
 
   if (!isShow) return null
+
   return (
     <form action="" onSubmit={onSubmit} className={'search-page'} autoComplete={'on'}>
       <input value={search} type={'text'} onChange={typing} autoFocus={true} ref={inputRef} />
-      {historyS}
+      {search.length <= 1 && historyS}
     </form>
   )
 }

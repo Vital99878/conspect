@@ -1,15 +1,20 @@
 import React from 'react'
 import './ball..scss'
-import { usePosition } from './usePosition'
+import { usePosition, PositionPx } from './usePosition'
 
+type Props = {
+  position: PositionPx
+}
 /**
  * Компонет, который можно перетаскивать по экрану мышью (RxJS)
  */
 
-const BallComponent = (): JSX.Element => {
+const BallComponent: React.FC<Props> = ({ position }): JSX.Element => {
+  // todo memoize position
+  const cssPosition = usePosition(position)
   return (
-    <div className="ball" style={usePosition()}>
-      ball
+    <div className={'ball'} style={cssPosition}>
+      Ball 1
     </div>
   )
 }

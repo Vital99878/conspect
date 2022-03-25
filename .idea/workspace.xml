@@ -10,10 +10,16 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (SingletonMethods)">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoirng (todo) search-historypage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball..scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball..scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/usePosition.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/usePosition.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +100,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -262,13 +268,7 @@
       <workItem from="1648107559433" duration="6089000" />
       <workItem from="1648117681826" duration="1026000" />
       <workItem from="1648134277709" duration="778000" />
-    </task>
-    <task id="LOCAL-00188" summary=" feat (CloseButton)">
-      <created>1647250757697</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1647250757697</updated>
+      <workItem from="1648212706895" duration="2397000" />
     </task>
     <task id="LOCAL-00189" summary=" feat (CloseButton) with rxjs. !Not working clickOutside">
       <created>1647252104031</created>
@@ -606,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648113672777</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="  feat (todo) DragAndDrop position">
+      <created>1648209737368</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1648209737368</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -654,7 +661,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" feat (CloseButton)" />
     <MESSAGE value=" feat (CloseButton) with rxjs. !Not working clickOutside" />
     <MESSAGE value=" feat (mergeAndSort) without obj compares" />
     <MESSAGE value=" feat (mergeAndSort) without obj compares&#10; feat (quickSort) without obj compares" />
@@ -679,7 +685,8 @@
     <MESSAGE value="  feat (insertItemBefore and After)" />
     <MESSAGE value="  refactoring (Todo insert)" />
     <MESSAGE value="  feat (SingletonMethods)" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (SingletonMethods)" />
+    <MESSAGE value="  feat (todo) DragAndDrop position" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (todo) DragAndDrop position" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

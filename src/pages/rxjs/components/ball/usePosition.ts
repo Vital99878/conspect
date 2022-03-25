@@ -3,8 +3,11 @@ import { fromEvent } from 'rxjs'
 import { map, switchMap, takeUntil } from 'rxjs/operators'
 import { useEffect, useState } from 'react'
 
-export const usePosition = (): TBallPos => {
-  const [position, setPosition] = useState({ left: '150px', top: '30px' })
+export type PositionPx = { left: `${number}px`; right: `${number}px` }
+
+export const usePosition = (initialPosition: PositionPx): TBallPos => {
+  const [position, setPosition] = useState({ left: '100px', top: '300px' })
+
   useEffect(() => {
     const $up = fromEvent(document, 'mouseup')
     const $down = fromEvent(document.getElementsByClassName('ball'), 'mousedown')

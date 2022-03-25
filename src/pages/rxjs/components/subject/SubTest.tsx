@@ -12,11 +12,14 @@ const SubTest = (): JSX.Element => {
   const { field, updateField } = useSubject(observableValue, '')
   const observable$ = new BehaviorSubject(true)
   const asObservable$ = observable$.asObservable()
-  // observable$.subscribe((value) => console.log('value: ', value))
-  // asObservable$.subscribe((value) => console.log('as value: ', value + ' test!'))
 
-  observable$.next(false)
-  observable$.next(false)
+  {
+    // observable$.subscribe((value) => console.log('value: ', value))
+    // asObservable$.subscribe((value) => console.log('as value: ', value + ' test!'))
+    // observable$.next(false)
+    // observable$.next(false)
+  }
+
   return (
     <div className="subject">
       <input onChange={(evt: ChangeEvent<HTMLInputElement>) => updateField(evt.target.value)} />

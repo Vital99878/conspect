@@ -9,16 +9,12 @@ const Loading = (): JSX.Element | null => {
   const { field: loading } = useSubject(loading$, LOADING_STATUS.SUCCESS)
   const { field: text, updateField } = useSubject(observableValue, '')
 
-  useEffect(() => {
-    // console.log('text: ', text)
-  }, [text])
-
   if (loading === LOADING_STATUS.SUCCESS) {
     return (
       <div className={'loading'}>
         <div>SUCCESS</div>
         <div>{text + ' some string'}</div>
-        <button onClick={() => updateField('titititi')}></button>
+        <button onClick={() => updateField('yes')}/>
       </div>
     )
   }
