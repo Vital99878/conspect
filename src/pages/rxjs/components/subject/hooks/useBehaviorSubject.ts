@@ -1,6 +1,6 @@
 import { BehaviorSubject } from 'rxjs'
 import { useEffect, useState, useCallback } from 'react'
-type Fn<T> = (data: T) => void
+
 
 /**
  * Хук, который получает instance BehaviorSubject. Позволяет использовать состояние.

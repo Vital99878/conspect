@@ -10,17 +10,10 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (todo) DragAndDrop position">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoring (useBehaviorSubject)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/TestLoadingState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/TestLoadingState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +87,7 @@
   </component>
   <component name="ProblemsViewState">
     <option name="autoscrollToSource" value="true" />
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
     <option name="sortByName" value="true" />
   </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
@@ -112,7 +105,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -131,18 +124,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\lib" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
       <recent name="W:\conspect\src\pages\test\components" />
       <recent name="W:\conspect\src\components\Todos\components\utils" />
       <recent name="W:\conspect\src\helpers" />
-      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\learnyounode" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
       <recent name="W:\conspect\src\pages\test" />
       <recent name="W:\conspect\src\pages\DsAndAlgorithms" />
       <recent name="W:\conspect\src\components\Navigation" />
-      <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\topics\components" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\CreateCloser.ts" />
@@ -282,14 +275,8 @@
       <workItem from="1648134277709" duration="778000" />
       <workItem from="1648212706895" duration="2420000" />
       <workItem from="1648309130565" duration="808000" />
-      <workItem from="1648442858022" duration="1646000" />
-    </task>
-    <task id="LOCAL-00190" summary=" feat (CloseButton) with rxjs. !Not working clickOutside">
-      <created>1647254726968</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1647254726968</updated>
+      <workItem from="1648442858022" duration="2877000" />
+      <workItem from="1648472059143" duration="371000" />
     </task>
     <task id="LOCAL-00191" summary=" feat (CloseButton) with rxjs. !Not working clickOutside">
       <created>1647256544906</created>
@@ -627,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648215137006</updated>
     </task>
-    <option name="localTasksCounter" value="239" />
+    <task id="LOCAL-00239" summary="  refactoring (useBehaviorSubject)">
+      <created>1648444561693</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1648444561694</updated>
+    </task>
+    <option name="localTasksCounter" value="240" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -675,7 +669,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" feat (mergeAndSort) without obj compares" />
     <MESSAGE value=" feat (mergeAndSort) without obj compares&#10; feat (quickSort) without obj compares" />
     <MESSAGE value="  feat (quickSortObj)" />
     <MESSAGE value="  feat (Search)" />
@@ -700,7 +693,8 @@
     <MESSAGE value="  feat (SingletonMethods)" />
     <MESSAGE value="  refactoirng (todo) search-historypage" />
     <MESSAGE value="  feat (todo) DragAndDrop position" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (todo) DragAndDrop position" />
+    <MESSAGE value="  refactoring (useBehaviorSubject)" />
+    <option name="LAST_COMMIT_MESSAGE" value="  refactoring (useBehaviorSubject)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
