@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs'
  */
 
 const SubTest = (): JSX.Element => {
-  const { field, updateField } = useSubject(observableValue, '')
+  const [field, updateField] = useSubject(observableValue, '')
   const observable$ = new BehaviorSubject(true)
   const asObservable$ = observable$.asObservable()
 

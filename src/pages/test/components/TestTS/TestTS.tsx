@@ -23,7 +23,7 @@ const SingletonStateComponent: React.FC = () => {
 }
 
 const TestTS: React.FC = () => {
-  const { field, updateField } = useSubject(observableValue, 'initial')
+  const [field, updateField] = useSubject(observableValue, 'initial')
   const refElement = useRef(document.createElement('div'))
   const s = useAttachStyle(refElement.current, ['left', 'top'])
   function logAge(constructor: any, property: string, desc: PropertyDescriptor) {

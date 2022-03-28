@@ -1,3 +1,6 @@
+
+// noinspection ES6UnusedImports
+
 import React, {
   useState,
   useRef,
@@ -62,15 +65,15 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   }
   // const toggleModal = () => setIsShouldShow((isShow) => !isShow)
   // const windowWidth = useWindowWidth()
-  const { field: isShow, updateField: setIsShow } = useBehaviorSubject(modalState, true)
+  const [isShow, setIsShow] = useBehaviorSubject(modalState, true)
 
   return (
     <PageLayout pageHeading="Test page">
       <div className="test-components" ref={testComponentsRef}>
-        <Loading/>
+        <Loading />
         {/* <SingletonTest/> */}
         {/* <form action="/" method={'post'}></form> */}
-         <SearchPage />
+        <SearchPage />
         {/* /!* {withData(CharacterInformation, fetchData)}*!/ */}
         {/* <button onClick={() => setIsShow(true)}>show</button> */}
         {/* <button onClick={() => setIsShow(false)}>hide</button> */}

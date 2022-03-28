@@ -20,10 +20,7 @@ const Todo: React.FC<Props> = ({ props }) => {
   const { todo, todoIndex } = props
   const { addTodo, deleteTodo, updateTodo, changeOrder } = SingletonMethods.getMethods('todos')
   const [shouldShowLabel, setShouldShowLabel] = useState(true)
-  const { field: shouldShowMenu, updateField: setShouldShowMenu } = useBehaviorSubject(
-    new BehaviorSubject(false),
-    false
-  )
+  const [shouldShowMenu, setShouldShowMenu] = useBehaviorSubject(new BehaviorSubject(false), false)
 
   const label = shouldShowLabel && <h2 className="todo__label">{todo.label}</h2>
 
@@ -36,9 +33,9 @@ const Todo: React.FC<Props> = ({ props }) => {
     const halfHeight = box.height / 2
     const dropPos = evt.clientY <= box.y + halfHeight ? DropPosition.before : DropPosition.after
 
-    dropPos === DropPosition.after
-      ? (replaceableTodoEl.style.transform = 'translateY(100px)')
-      : (replaceableTodoEl.style.transform = 'translateY(-100px)')
+    // dropPos === DropPosition.after
+    //   ? (replaceableTodoEl.style.transform = 'translateY(100px)')
+    //   : (replaceableTodoEl.style.transform = 'translateY(-100px)')
 
     DragAndDropData.setTargetIndex(todoIndex)
     DragAndDropData.setPos(dropPos)

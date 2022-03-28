@@ -13,7 +13,7 @@ type Props = {
 }
 
 const Modal: React.FC<Props> = ({ isUseClickOutside = true, isUseEscapeKey = true }) => {
-  const { field: isShow, updateField: setIsShow } = useBehaviorSubject(modalState, true)
+  const [isShow, setIsShow] = useBehaviorSubject(modalState, true)
   const modalRef = useRef(null)
 
   function closeByOverlay(evt: any) {

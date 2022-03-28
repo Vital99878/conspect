@@ -10,15 +10,16 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoirng (todo) search-historypage">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (todo) DragAndDrop position">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/RXjs-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/hooks/use_all_local_state_multiple_filter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball..scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball..scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/usePosition.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/usePosition.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/TestLoadingState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/TestLoadingState.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/SubTest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,15 +75,26 @@
   <component name="HierarchyBrowserManager">
     <option name="SCOPE" value="All" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/components/Todos/components/Todo/Todo.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/test/test-page.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Modal/Modal.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Todos/Todos.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Todos/Todos.tsx" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="NamedScopeManager">
-    <scope name="src" pattern="file[ts-my-components]:src//*" />
+    <scope name="src" pattern="file[ts-my-components]:src//*||file[ts-my-components]:src/*" />
   </component>
   <component name="ProblemsViewState">
     <option name="autoscrollToSource" value="true" />
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
     <option name="sortByName" value="true" />
   </component>
   <component name="ProjectId" id="1yzbPpixANjy4tt5LnlLyRNyYPu" />
@@ -112,8 +124,8 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
     <property name="rest.client.default.execution.environment" value="todos" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -268,14 +280,9 @@
       <workItem from="1648107559433" duration="6089000" />
       <workItem from="1648117681826" duration="1026000" />
       <workItem from="1648134277709" duration="778000" />
-      <workItem from="1648212706895" duration="2397000" />
-    </task>
-    <task id="LOCAL-00189" summary=" feat (CloseButton) with rxjs. !Not working clickOutside">
-      <created>1647252104031</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1647252104031</updated>
+      <workItem from="1648212706895" duration="2420000" />
+      <workItem from="1648309130565" duration="808000" />
+      <workItem from="1648442858022" duration="1646000" />
     </task>
     <task id="LOCAL-00190" summary=" feat (CloseButton) with rxjs. !Not working clickOutside">
       <created>1647254726968</created>
@@ -613,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648209737368</updated>
     </task>
-    <option name="localTasksCounter" value="238" />
+    <task id="LOCAL-00238" summary="  feat (todo) DragAndDrop position">
+      <created>1648215137006</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1648215137006</updated>
+    </task>
+    <option name="localTasksCounter" value="239" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -661,7 +675,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" feat (CloseButton) with rxjs. !Not working clickOutside" />
     <MESSAGE value=" feat (mergeAndSort) without obj compares" />
     <MESSAGE value=" feat (mergeAndSort) without obj compares&#10; feat (quickSort) without obj compares" />
     <MESSAGE value="  feat (quickSortObj)" />
@@ -685,6 +698,7 @@
     <MESSAGE value="  feat (insertItemBefore and After)" />
     <MESSAGE value="  refactoring (Todo insert)" />
     <MESSAGE value="  feat (SingletonMethods)" />
+    <MESSAGE value="  refactoirng (todo) search-historypage" />
     <MESSAGE value="  feat (todo) DragAndDrop position" />
     <option name="LAST_COMMIT_MESSAGE" value="  feat (todo) DragAndDrop position" />
   </component>

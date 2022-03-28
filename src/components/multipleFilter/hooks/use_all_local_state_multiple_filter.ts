@@ -34,7 +34,7 @@ export function useAllLocalStateMultipleFilter(
   const [filter, setFilter] = useState<MultipleFilter>(initialFilter)
 
   // Todo При использовании filter$ рендер работает неправильно.Рендерятся все MultipleFilter при апдейте одного
-  const { field: filterStream$, updateField } = useObservableValue(filter$, initialFilter)
+  const [filterStream$, updateField] = useObservableValue(filter$, initialFilter)
 
   useEffect(() => {
     // set filter if search queries exist in the url. need to Redirect from link

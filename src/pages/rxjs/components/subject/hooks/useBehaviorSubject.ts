@@ -1,5 +1,6 @@
 import { BehaviorSubject } from 'rxjs'
 import { useEffect, useState, useCallback } from 'react'
+type Fn<T> = (data: T) => void
 
 /**
  * Хук, который получает instance BehaviorSubject. Позволяет использовать состояние.
@@ -8,16 +9,15 @@ import { useEffect, useState, useCallback } from 'react'
 export function useBehaviorSubject<T>(
   stream$: BehaviorSubject<T>,
   initialValue: T
-): { field: T; updateField(data: T): void } {
+): [field: T, updateField: (data: T) => void] {
   const [field, setFiled] = useState<T>(initialValue)
-  const updateField = useCallback((data: T) => {
-    stream$.next(data)
-  }, [])
+
+  const updateField = useCallback((data: T) => stream$.next(data), [])
 
   useEffect(() => {
     const subscription = stream$.subscribe((data: T) => setFiled(data))
     return () => subscription.unsubscribe()
   }, [])
 
-  return { field, updateField }
+  return [field, updateField]
 }
