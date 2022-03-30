@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { HistorySearch } from '../utils/history'
+import { History } from '../utils/History'
 
 type R = {
   searchHistory: string[]
@@ -8,7 +8,7 @@ type R = {
 }
 
 export function useSearchHistory(size: number): R {
-  const historyService = new HistorySearch(size)
+  const historyService = new History(size)
   const [searchHistory, setSearchHistory] = useState(historyService.getHistory())
 
   const addItem = (phrase: string) => {

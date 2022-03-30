@@ -2,7 +2,7 @@ import React, { useState, useRef, FormEvent, useEffect, CSSProperties } from 're
 import './search-page.scss'
 import testPage from '../../pages/test/test-page'
 import { useSearchHistory } from './hooks/useSeachHistory'
-import { HistorySearch } from './utils/history'
+import { HistorySearch } from './utils/SearchHistory'
 
 type Props = {
   prop?: string
@@ -14,17 +14,18 @@ type Dictionary = {
 
 const SearchPage: React.FC<Props> = ({}) => {
   const dataForAutocomplete = ['first', 'second', 'third']
-  // todo сохранять историю запросов
   // todo показываеть, что на странице есть поиск!
   // todo debounce
   const [search, setSearch] = useState('')
   const [isShow, setIsShow] = useState(false)
+  const [searchHistory, setSearchHistory] = useState<string[]>(HistorySearch.createHistory(5))
   const [autocomplete, setAutocomplete] = useState<string[]>([])
   const inputRef = useRef<HTMLInputElement>(null)
-  // const {searchHistory, addItem, deleteItem} = useSearchHistory(5)
 
   const dictionaryRef = useRef<Dictionary>({})
-  const searchHistoryRef = useRef(new HistorySearch())
+
+  HistorySearch.createHistory(5)
+  // console.log('searchHistory: ', searchHistory)
 
   function show(evt: KeyboardEvent) {
     if (evt.key === 'Escape') {
@@ -49,10 +50,13 @@ const SearchPage: React.FC<Props> = ({}) => {
 
   function onSubmit(evt: FormEvent) {
     evt.preventDefault()
+
+    HistorySearch.add(search.trim())
+    addToDict(search.trim())
+
     setSearch('')
     setIsShow(false)
-    addToDict(search.trim())
-    searchHistoryRef.current.add(search.trim())
+    setSearchHistory(HistorySearch.getHistory())
   }
 
   useEffect((): VoidFunction => {
@@ -66,24 +70,28 @@ const SearchPage: React.FC<Props> = ({}) => {
     setAutocomplete(() => dataForAutocomplete.filter((item) => item.indexOf(search) > -1))
   }, [search])
 
-  // console.log('getHistory(): ', searchHistoryRef.current.getHistory())
-
   const historyS = (
     <ul className={'auto'}>
-      {searchHistoryRef.current.getHistory().map((item, index) => (
-        <li onClick={() => searchHistoryRef.current.delete(index)} key={item}>
-          {item}
-        </li>
-      ))}
+      {searchHistory.map((item, index) => {
+        function deleteItem() {
+          HistorySearch.delete(item)
+          setSearchHistory(() =>HistorySearch.getHistory())
+        }
+        return (
+          <li key={item} className={'history-item'}>
+            <div onClick={deleteItem}>{item}</div>
+          </li>
+        )
+      })}
     </ul>
   )
 
-  if (!isShow) return null
+  // if (!isShow) return null
 
   return (
     <form action="" onSubmit={onSubmit} className={'search-page'} autoComplete={'on'}>
       <input value={search} type={'text'} onChange={typing} autoFocus={true} ref={inputRef} />
-      {search.length <= 1 && historyS}
+      {historyS}
     </form>
   )
 }

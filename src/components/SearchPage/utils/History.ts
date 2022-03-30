@@ -1,6 +1,6 @@
 import { numbers } from '../../../commonMockData'
 
-export class HistorySearch<T> {
+export class History<T> {
   private history: any[]
   private writePointer = 0
   private readPointer = 0
@@ -23,19 +23,8 @@ export class HistorySearch<T> {
 
   // todo see what to do with pointers
   delete(index: number): void {
-    this.history[index] = undefined
-  }
-
-  logHead() {
-    console.log(this.history[this.head])
-  }
-
-  logTail() {
-    console.log(this.history[this.tail])
-  }
-
-  logCurrent() {
-    console.log(this.history[this.readPointer])
+    console.log('index: ', index)
+    // this.history[index] = undefined
   }
 
   logNext() {

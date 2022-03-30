@@ -8,3 +8,14 @@
   }
 
 }
+
+.history-list {
+  width: 100%;
+}
+.history-item {
+  border: 1px gray solid;
+  border-radius: 6px;
+  min-width: 100%;
+  display: flex;
+  padding: 1rem;
+}

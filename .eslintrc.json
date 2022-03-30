@@ -34,6 +34,7 @@
     "valid-jsdoc": "off",
     "no-invalid-this": "off",
     "no-console": "warn",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "spaced-comment": "off"
   }
 }

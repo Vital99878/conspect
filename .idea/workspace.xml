@@ -10,11 +10,10 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (TestOrderPoint)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (HistorySearch)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestOrderPoint/TestOrderPoint.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestOrderPoint/TestOrderPoint.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchPage/utils/SearchHistory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/utils/SearchHistory.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/test/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/SearchPage/utils" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -125,11 +124,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components\SearchPage\utils" />
       <recent name="W:\conspect\src\pages\test\components" />
       <recent name="W:\conspect\src\lib" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
       <recent name="W:\conspect\src\components\Todos\components\utils" />
-      <recent name="W:\conspect\src\helpers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\learnyounode" />
@@ -147,7 +146,7 @@
       <command value="npm" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.format">
+  <component name="RunManager" selected="Node.js.scratch.js">
     <configuration name="request | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/request.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -186,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.scratch.js" />
         <item itemvalue="npm.format" />
         <item itemvalue="npm.lint" />
         <item itemvalue="HTTP Request.request | #1" />
         <item itemvalue="npm.start" />
-        <item itemvalue="Node.js.scratch.js" />
       </list>
     </recent_temporary>
   </component>
@@ -279,21 +278,7 @@
       <workItem from="1648442858022" duration="2877000" />
       <workItem from="1648472059143" duration="806000" />
       <workItem from="1648560826916" duration="391000" />
-      <workItem from="1648625829874" duration="9976000" />
-    </task>
-    <task id="LOCAL-00197" summary="  feat (Search)">
-      <created>1647332480141</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
-      <option name="project" value="LOCAL" />
-      <updated>1647332480141</updated>
-    </task>
-    <task id="LOCAL-00198" summary="  feat (Search)">
-      <created>1647334694007</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1647334694007</updated>
+      <workItem from="1648625829874" duration="20110000" />
     </task>
     <task id="LOCAL-00199" summary="  feat (Search)">
       <created>1647336179028</created>
@@ -624,7 +609,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648636291260</updated>
     </task>
-    <option name="localTasksCounter" value="246" />
+    <task id="LOCAL-00246" summary="  feat (TestOrderPoint)">
+      <created>1648637701304</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1648637701304</updated>
+    </task>
+    <task id="LOCAL-00247" summary="  feat (HistorySearch)">
+      <created>1648650087163</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1648650087163</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -672,7 +671,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="  feat (Search)" />
     <MESSAGE value="  feat (Modal) cursor over overlay" />
     <MESSAGE value="  feat (withCharacter) hoc copyed" />
     <MESSAGE value="  feat (withData) hoc" />
@@ -697,7 +695,8 @@
     <MESSAGE value="  refactoring (useBehaviorSubject)" />
     <MESSAGE value="  feat (create empty lib)" />
     <MESSAGE value="  feat (TestOrderPoint)" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (TestOrderPoint)" />
+    <MESSAGE value="  feat (HistorySearch)" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (HistorySearch)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
