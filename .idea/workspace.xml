@@ -10,10 +10,11 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  refactoring (useBehaviorSubject)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (TestOrderPoint)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/Loading/Loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestOrderPoint/TestOrderPoint.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestOrderPoint/TestOrderPoint.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/test/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -124,9 +125,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\test\components" />
       <recent name="W:\conspect\src\lib" />
       <recent name="W:\conspect\src\pages\desing-pattern\components\Test-Singleton" />
-      <recent name="W:\conspect\src\pages\test\components" />
       <recent name="W:\conspect\src\components\Todos\components\utils" />
       <recent name="W:\conspect\src\helpers" />
     </key>
@@ -276,49 +277,9 @@
       <workItem from="1648212706895" duration="2420000" />
       <workItem from="1648309130565" duration="808000" />
       <workItem from="1648442858022" duration="2877000" />
-      <workItem from="1648472059143" duration="371000" />
-    </task>
-    <task id="LOCAL-00191" summary=" feat (CloseButton) with rxjs. !Not working clickOutside">
-      <created>1647256544906</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1647256544907</updated>
-    </task>
-    <task id="LOCAL-00192" summary=" feat (mergeAndSort) without obj compares">
-      <created>1647268007645</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1647268007645</updated>
-    </task>
-    <task id="LOCAL-00193" summary=" feat (mergeAndSort) without obj compares">
-      <created>1647269347985</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1647269347985</updated>
-    </task>
-    <task id="LOCAL-00194" summary=" feat (mergeAndSort) without obj compares&#10; feat (quickSort) without obj compares">
-      <created>1647271661707</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1647271661707</updated>
-    </task>
-    <task id="LOCAL-00195" summary=" feat (mergeAndSort) without obj compares&#10; feat (quickSort) without obj compares">
-      <created>1647271897772</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1647271897772</updated>
-    </task>
-    <task id="LOCAL-00196" summary="  feat (quickSortObj)">
-      <created>1647328032673</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1647328032673</updated>
+      <workItem from="1648472059143" duration="806000" />
+      <workItem from="1648560826916" duration="391000" />
+      <workItem from="1648625829874" duration="9976000" />
     </task>
     <task id="LOCAL-00197" summary="  feat (Search)">
       <created>1647332480141</created>
@@ -621,7 +582,49 @@
       <option name="project" value="LOCAL" />
       <updated>1648444561694</updated>
     </task>
-    <option name="localTasksCounter" value="240" />
+    <task id="LOCAL-00240" summary="  feat (create empty lib)">
+      <created>1648472466320</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1648472466320</updated>
+    </task>
+    <task id="LOCAL-00241" summary="  feat (TestOrderPoint)">
+      <created>1648629355152</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1648629355152</updated>
+    </task>
+    <task id="LOCAL-00242" summary="  feat (TestOrderPoint)">
+      <created>1648630412030</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1648630412030</updated>
+    </task>
+    <task id="LOCAL-00243" summary="  feat (TestOrderPoint)">
+      <created>1648630861406</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1648630861406</updated>
+    </task>
+    <task id="LOCAL-00244" summary="  feat (TestOrderPoint)">
+      <created>1648631903402</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1648631903402</updated>
+    </task>
+    <task id="LOCAL-00245" summary="  feat (TestOrderPoint)">
+      <created>1648636291260</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1648636291260</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -669,8 +672,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" feat (mergeAndSort) without obj compares&#10; feat (quickSort) without obj compares" />
-    <MESSAGE value="  feat (quickSortObj)" />
     <MESSAGE value="  feat (Search)" />
     <MESSAGE value="  feat (Modal) cursor over overlay" />
     <MESSAGE value="  feat (withCharacter) hoc copyed" />
@@ -694,7 +695,9 @@
     <MESSAGE value="  refactoirng (todo) search-historypage" />
     <MESSAGE value="  feat (todo) DragAndDrop position" />
     <MESSAGE value="  refactoring (useBehaviorSubject)" />
-    <option name="LAST_COMMIT_MESSAGE" value="  refactoring (useBehaviorSubject)" />
+    <MESSAGE value="  feat (create empty lib)" />
+    <MESSAGE value="  feat (TestOrderPoint)" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (TestOrderPoint)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

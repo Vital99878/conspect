@@ -43,8 +43,7 @@ export function useAllLocalStateTodos(todos: TodoType[] = initialTodos): TodoTyp
   }
 
   const changeOrder = () => {
-    const dragAndDropData = DragAndDropData.getInstance()
-    const { draggableIndex, targetIndex, pos } = dragAndDropData
+    const { draggableIndex, targetIndex, pos } = DragAndDropData.getInstance()
 
     if (draggableIndex < 0 || targetIndex < 0) return DragAndDropData.clearInstance()
 

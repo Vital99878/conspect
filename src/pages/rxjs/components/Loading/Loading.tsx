@@ -5,22 +5,14 @@ import { loading$ } from './utils/mock/loadingState'
 import useSubject from '../subject/hooks'
 
 const Loading: React.FC = () => {
-  const [loading] = useSubject(loading$, LOADING_STATUS.SUCCESS)
+  const [loading] = useSubject(loading$, LOADING_STATUS.FAILED)
 
   if (loading === LOADING_STATUS.SUCCESS) {
-    return (
-      <div className={'loading'}>
-        <div>SUCCESS</div>
-      </div>
-    )
+    return <div className={'loading'}>SUCCESS</div>
   }
 
   if (loading === LOADING_STATUS.FAILED) {
-    return (
-      <div className={'loading'}>
-        <div>FAILED</div>
-      </div>
-    )
+    return <div className={'loading'}>Failed </div>
   }
 
   if (loading === LOADING_STATUS.PENDING) {

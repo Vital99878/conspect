@@ -18,13 +18,11 @@ type Props = {
 
 const Todo: React.FC<Props> = ({ props }) => {
   const { todo, todoIndex } = props
-  const { addTodo, deleteTodo, updateTodo, changeOrder } = SingletonMethods.getMethods('todos')
+  const { changeOrder } = SingletonMethods.getMethods('todos')
   const [shouldShowLabel, setShouldShowLabel] = useState(true)
   const [shouldShowMenu, setShouldShowMenu] = useBehaviorSubject(new BehaviorSubject(false), false)
 
   const label = shouldShowLabel && <h2 className="todo__label">{todo.label}</h2>
-
-  const dragAndDropData = DragAndDropData.getInstance()
 
   function handleDragOver(evt: React.DragEvent<HTMLLIElement>) {
     evt.preventDefault()

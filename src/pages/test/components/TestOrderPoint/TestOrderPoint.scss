@@ -1,0 +1,25 @@
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0.6px solid greenyellow;
+}
+
+.list > * {
+  font-size: 2rem;
+  margin: 0.6em 0;
+  padding: 3rem;
+  border: 1px solid #525252;
+  border-radius: 4px;
+  min-width: 30%;
+  max-width: 60%;
+  cursor: move;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
