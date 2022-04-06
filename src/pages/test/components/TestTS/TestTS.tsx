@@ -1,3 +1,4 @@
+import { type } from 'os'
 import React, { useState, ReactElement, useRef, ChangeEvent, useEffect } from 'react'
 import './TestTS.css'
 import { TodoType, R_2 } from '../../../../components/Todos/models/index.model'
@@ -23,9 +24,15 @@ const SingletonStateComponent: React.FC = () => {
 }
 
 const TestTS: React.FC = () => {
+  // keyof, typeof
+  {
+    type PersonTest = { name: string; age: number }
+    const o: PersonTest = { name: 'Vital', age: 35 }
+    const keys: keyof PersonTest = 'age'
+  }
+
   const [field, updateField] = useSubject(observableValue, 'initial')
   const refElement = useRef(document.createElement('div'))
-  const s = useAttachStyle(refElement.current, ['left', 'top'])
   function logAge(constructor: any, property: string, desc: PropertyDescriptor) {
     // console.log('property: ', { property, desc })
   }
@@ -66,7 +73,6 @@ const TestTS: React.FC = () => {
       <div ref={refElement} className="box">
         {field}
       </div>
-      <div style={s}>Attached el</div>
       <input onChange={(evt: ChangeEvent<HTMLInputElement>) => updateField(evt.target.value)} />
     </div>
   )
