@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouteMatch, NavLink } from 'react-router-dom'
 import { DesignPatterns, CSS, NavCardProps } from '../../types'
-
+import './NavCard.scss'
 /**
  * NavLink из react-router-dom, стилизованный под карточу
  */

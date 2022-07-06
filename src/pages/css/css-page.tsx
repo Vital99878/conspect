@@ -11,7 +11,7 @@ type TestPropsChildren = {
 const CssPage: React.FC<TestPropsChildren> = () => {
   return (
     <PageLayout pageHeading="CSS Topics">
-      <div className="css-page">
+      <div className="css-page flex">
         <NavCard title={'flex'} desc={'desc 2'} />
         <NavCard title={'grid'} desc={'desc 2'} />
         <NavCard title={'display'} desc={'desc 2'} />

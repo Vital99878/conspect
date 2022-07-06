@@ -1,8 +1,14 @@
 @import '../css/mixins';
+
+body {
+  color: var(--main-bg-color);
+}
 .App {
   background-color: blue;
 }
 input {
   text-align: center;
+  color: var(--secondary-link-color);
+  font-size: var(--fs-title);
 }
 /// DOMContentLoaded

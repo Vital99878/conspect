@@ -86,3 +86,7 @@ export class ITPerson extends Person {
   // obj3.setPersonAge(15)
   // obj2.logPersonAge()
 }
+
+const person = new Person('Vital', 35, 'key')
+
+person.great()
