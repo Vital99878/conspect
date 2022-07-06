@@ -1,2 +1,2 @@
-export const mockData: any = []
-export {}
+export const mockData: any = [];
+export {};

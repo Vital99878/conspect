@@ -7,15 +7,15 @@ export const range = {
       last: this.to,
       next() {
         if (this.current <= this.last) {
-          return { done: false, value: this.current++ }
+          return { done: false, value: this.current++ };
         } else {
-          return { done: true }
+          return { done: true };
         }
       },
-    }
+    };
   },
-}
+};
 
 for (const number of range) {
-  console.log('count: ', number)
+  console.log('count: ', number);
 }

@@ -1,12 +1,12 @@
-import LinkedList from '../linked-list'
-import * as utils from '../../utils'
+import LinkedList from '../linked-list';
+import * as utils from '../../utils';
 
 class Queue<T> implements Iterable<T> {
-  private list: LinkedList<T>
+  private list: LinkedList<T>;
 
   constructor(equalsFunction?: utils.EqualsFunction<T>) {
-    if (equalsFunction) this.list = new LinkedList(equalsFunction)
-    else this.list = new LinkedList()
+    if (equalsFunction) this.list = new LinkedList(equalsFunction);
+    else this.list = new LinkedList();
   }
 
   /** ***************************************************************************
@@ -16,19 +16,19 @@ class Queue<T> implements Iterable<T> {
    * Returns size of queue - O(1)
    */
   size(): number {
-    return this.list.size()
+    return this.list.size();
   }
   /**
    * Returns true if queue is empty, false otherwise - O(1)
    */
   isEmpty(): boolean {
-    return this.list.isEmpty()
+    return this.list.isEmpty();
   }
   /**
    * Deletes all elements in queue - O(1)
    */
   clear(): void {
-    this.list.clear()
+    this.list.clear();
   }
 
   /** ***************************************************************************
@@ -39,15 +39,15 @@ class Queue<T> implements Iterable<T> {
    * @param {T} element - element to be enqueued
    */
   enqueue(element: T): void {
-    this.list.addFront(element)
+    this.list.addFront(element);
   }
   /**
    * Dequeues element from queue - O(1)
    * @return {T}
    */
   dequeue(): T | null {
-    if (this.isEmpty()) return null
-    return this.list.removeBack()
+    if (this.isEmpty()) return null;
+    return this.list.removeBack();
   }
 
   /** ***************************************************************************
@@ -58,16 +58,16 @@ class Queue<T> implements Iterable<T> {
    * @return {T} - Front most element
    */
   peekFront(): T | null {
-    if (this.isEmpty()) return null
-    return this.list.peekBack()
+    if (this.isEmpty()) return null;
+    return this.list.peekBack();
   }
   /**
    * Peeks at the element at the back of the queue - O(1)
    * @return {T} - Back most element
    */
   peekBack(): T | null {
-    if (this.isEmpty()) return null
-    return this.list.peekFront()
+    if (this.isEmpty()) return null;
+    return this.list.peekFront();
   }
 
   /** ***************************************************************************
@@ -79,15 +79,15 @@ class Queue<T> implements Iterable<T> {
    * @return {boolean}
    */
   contains(element: T): boolean {
-    return this.list.contains(element)
+    return this.list.contains(element);
   }
 
   /** ***************************************************************************
                                   HELPERS
   *****************************************************************************/
   [Symbol.iterator](): Iterator<T> {
-    return this.list[Symbol.iterator]()
+    return this.list[Symbol.iterator]();
   }
 }
 
-export default Queue
+export default Queue;

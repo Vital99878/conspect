@@ -1,5 +1,5 @@
-import React from 'react'
-import './CssPosition.css'
+import React from 'react';
+import './CssPosition.css';
 
 const CssPosition: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const CssPosition: React.FC = () => {
       </div>
       <div className="sticky">Sticky</div>
     </div>
-  )
-}
+  );
+};
 
-export default CssPosition
+export default CssPosition;

@@ -1,1 +1,1 @@
-import { emailChecker, lengthChecker, phoneChecker, reformatPhoneNumber } from '../utils'
+import { emailChecker, lengthChecker, phoneChecker, reformatPhoneNumber } from '../utils';

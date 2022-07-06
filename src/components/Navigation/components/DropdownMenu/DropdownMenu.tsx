@@ -1,9 +1,9 @@
-import React, { useState, KeyboardEventHandler, useEffect, useRef } from 'react'
-import './DropdownMenu.scss'
-import { NavLink } from 'react-router-dom'
-import { useClickOutside } from '../../../../hooks/useClickOutside'
-import { useEscapeKey } from '../../../../hooks/useEscapeKey'
-import { DropdownSectionProps, DropdownMenuProps } from '../../types'
+import React, { useState, KeyboardEventHandler, useEffect, useRef } from 'react';
+import './DropdownMenu.scss';
+import { NavLink } from 'react-router-dom';
+import { useClickOutside } from '../../../../hooks/useClickOutside';
+import { useEscapeKey } from '../../../../hooks/useEscapeKey';
+import { DropdownSectionProps, DropdownMenuProps } from '../../types';
 
 /**
  * DropdownMenu with list of NavLink
@@ -20,25 +20,25 @@ const DropdownSection: React.FC<DropdownSectionProps> = ({ url: parentUrl, label
             <NavLink className={'dropdown-section link'} to={`${parentUrl}/${url}`} key={url}>
               {label}
             </NavLink>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
 const DropdownMenu: React.FC<DropdownMenuProps> = ({ sections, menuItem }) => {
-  const [isActive, setIsActive] = useState<'' | 'active'>('')
-  const navItemRef = useRef(null)
+  const [isActive, setIsActive] = useState<'' | 'active'>('');
+  const navItemRef = useRef(null);
 
   function showDropdown(): void {
     setIsActive((active) => {
-      if (active) return ''
-      return 'active'
-    })
+      if (active) return '';
+      return 'active';
+    });
   }
-  useEscapeKey(() => setIsActive(''))
-  useClickOutside(navItemRef, () => setIsActive(''))
+  useEscapeKey(() => setIsActive(''));
+  useClickOutside(navItemRef, () => setIsActive(''));
 
   return (
     <li key={menuItem.label} className={'dropdown'} ref={navItemRef}>
@@ -47,11 +47,11 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ sections, menuItem }) => {
       </NavLink>
       <div className={`dropdown-menu ${isActive} -grid`}>
         {sections.map(({ label, menuItems }) => {
-          return <DropdownSection url={menuItem.url} label={label} menuItems={menuItems} key={label} />
+          return <DropdownSection url={menuItem.url} label={label} menuItems={menuItems} key={label} />;
         })}
       </div>
     </li>
-  )
-}
+  );
+};
 
-export default DropdownMenu
+export default DropdownMenu;

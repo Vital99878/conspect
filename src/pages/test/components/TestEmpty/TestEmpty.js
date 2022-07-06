@@ -1,9 +1,9 @@
-import React, { useEffect, useReducer, useMemo } from 'react'
-import './TestEmpty.css'
-import { useCloser } from '../../../Preparation/components/PreparationToJS/topics'
+import React, { useEffect, useReducer, useMemo } from 'react';
+import './TestEmpty.css';
+import { useCloser } from '../../../Preparation/components/PreparationToJS/topics';
 
 const TestEmpty = () => {
-  const { count, inc, dec, res } = useCloser(15)
+  const { count, inc, dec, res } = useCloser(15);
 
   {
     // const obj = {
@@ -61,26 +61,26 @@ const TestEmpty = () => {
 
   {
     class TestSetter {
-      #name
+      #name;
       constructor(name) {
-        this.#name = name
+        this.#name = name;
       }
       set name(name) {
         if (name.length < 3) {
-          console.log('to short')
-          return
+          console.log('to short');
+          return;
         }
-        this.#name = name
+        this.#name = name;
       }
       get name() {
-        return this.#name
+        return this.#name;
       }
     }
 
-    const set = new TestSetter('test Private name')
-    set.name = 'abc'
-    set.name = '12'
-    console.log(set.name)
+    const set = new TestSetter('test Private name');
+    set.name = 'abc';
+    set.name = '12';
+    console.log(set.name);
   }
 
   return (
@@ -93,7 +93,7 @@ const TestEmpty = () => {
       <button onClick={() => setTimeout(af, 250)}>setTime</button>
       {/* <button onClick={bnFn}>createBindFn</button>*/}
     </div>
-  )
-}
+  );
+};
 
-export default TestEmpty
+export default TestEmpty;

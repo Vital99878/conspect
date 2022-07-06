@@ -1,17 +1,17 @@
-import React, { MouseEventHandler, useEffect } from 'react'
-import './domEvent.scss'
+import React, { MouseEventHandler, useEffect } from 'react';
+import './domEvent.scss';
 
 const DomEvent = () => {
   // let count = 0
   function doSmth(event) {
     // console.log(++count)
-    event.preventDefault()
+    event.preventDefault();
     // event.stopPropagation()
     // event.stopImmediatePropagation()
     // console.log(event.target)
-    console.log(event.currentTarget)
+    console.log(event.currentTarget);
 
-    const child2 = event.currentTarget
+    const child2 = event.currentTarget;
     // if (child2.className === 'child-2') console.log('child 2')
   }
 
@@ -37,16 +37,16 @@ const DomEvent = () => {
     // isClosest ? console.log('inner') : console.log('outside')
   }
   function checkRoot(evt, clazz) {
-    const isEl = evt.target.matches(clazz)
-    const isParent = evt.target.closest(clazz)
-    if (isEl || isParent) return
-    console.log('логика для закрытия модального окна')
+    const isEl = evt.target.matches(clazz);
+    const isParent = evt.target.closest(clazz);
+    if (isEl || isParent) return;
+    console.log('логика для закрытия модального окна');
   }
   useEffect(() => {
-    const f = (evt) => checkRoot(evt, '.child-2')
-    document.addEventListener('click', f)
-    return () => document.removeEventListener('click', f)
-  }, [])
+    const f = (evt) => checkRoot(evt, '.child-2');
+    document.addEventListener('click', f);
+    return () => document.removeEventListener('click', f);
+  }, []);
 
   return (
     <>
@@ -61,7 +61,7 @@ const DomEvent = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default DomEvent
+export default DomEvent;

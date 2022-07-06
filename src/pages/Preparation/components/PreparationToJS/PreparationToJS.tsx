@@ -1,17 +1,17 @@
-import React from 'react'
-import { multicast } from 'rxjs/operators'
-import { numbers, person, objWithSymbol } from '../../../../commonMockData'
-import { TodoStatus } from '../../../../components/Todos/models/index.model'
-import { isInRange } from '../../../../helpers'
-import { SingletonMethods } from '../../../desing-pattern/components/Test-Singleton/SingletonMethods'
-import { Person, ITPerson } from '../../../shared/Person.class'
-import { topicPrototypeChain, useCloser, eventLoop, topicPromise } from './topics'
-import DomEvent from './topics/components/domEvent/domEvent'
-import topicCookie from './topics/Cookie'
-import topicEventLoop from './topics/eventLoop'
+import React from 'react';
+import { multicast } from 'rxjs/operators';
+import { numbers, person, objWithSymbol } from '../../../../commonMockData';
+import { TodoStatus } from '../../../../components/Todos/models/index.model';
+import { isInRange } from '../../../../helpers';
+import { SingletonMethods } from '../../../desing-pattern/components/Test-Singleton/SingletonMethods';
+import { Person, ITPerson } from '../../../shared/Person.class';
+import { topicPrototypeChain, useCloser, eventLoop, topicPromise } from './topics';
+import DomEvent from './topics/components/domEvent/domEvent';
+import topicCookie from './topics/Cookie';
+import topicEventLoop from './topics/eventLoop';
 
 // import DomEvent from './topics/components/domEvent'
-import { exercises } from './topics/exercises'
+import { exercises } from './topics/exercises';
 
 const PreparationToJS: React.FC = () => {
   // Loops : classic for, for of, for in, forEach
@@ -20,7 +20,7 @@ const PreparationToJS: React.FC = () => {
     //
     // classic loop
 
-    const itPerson = new ITPerson('R', 20, 'back')
+    const itPerson = new ITPerson('R', 20, 'back');
 
     // classic for
     {
@@ -73,7 +73,7 @@ const PreparationToJS: React.FC = () => {
     // }
     //
     // for in
-    Object.defineProperty(person, 'name', { enumerable: false, value: 'Vit' }) // hide key for loop
+    Object.defineProperty(person, 'name', { enumerable: false, value: 'Vit' }); // hide key for loop
 
     // for (const key in person) {
     //   // for ts need type-guard for iterable obj
@@ -116,10 +116,10 @@ const PreparationToJS: React.FC = () => {
 
   // temporary
   {
-    const triangle = { a: 1, b: 2, c: 3 }
+    const triangle = { a: 1, b: 2, c: 3 };
 
-    const obj = Object.create(triangle)
-    obj.color = 'red'
+    const obj = Object.create(triangle);
+    obj.color = 'red';
 
     // eslint-disable-next-line guard-for-in
     for (const prop in obj) {
@@ -147,15 +147,15 @@ const PreparationToJS: React.FC = () => {
 
   // exercises()
 
-  const {addTodo} = SingletonMethods.getMethods('todos')
-  const t = { id: 0, label: 'todo 0000', status: TodoStatus.notStarted, order: 0 }
+  const { addTodo } = SingletonMethods.getMethods('todos');
+  const t = { id: 0, label: 'todo 0000', status: TodoStatus.notStarted, order: 0 };
 
   return (
     <div className="test-components">
-      <button onClick={() => addTodo( t) }>Add Todo</button>
+      <button onClick={() => addTodo(t)}>Add Todo</button>
       <DomEvent />
     </div>
-  )
-}
+  );
+};
 
-export default PreparationToJS
+export default PreparationToJS;

@@ -1,30 +1,30 @@
-import React, { useEffect, useState, useRef, useCallback, MouseEventHandler } from 'react'
-import './Modal.scss'
-import { useClickOutside } from '../../hooks/useClickOutside'
-import { useEscapeKey } from '../../hooks/useEscapeKey'
-import useBehaviorSubject from '../../pages/rxjs/components/subject/hooks'
-import CloseButton from '../CloseButton'
-import { modalState } from './modalState'
+import React, { useEffect, useState, useRef, useCallback, MouseEventHandler } from 'react';
+import './Modal.scss';
+import { useClickOutside } from '../../hooks/useClickOutside';
+import { useEscapeKey } from '../../hooks/useEscapeKey';
+import useBehaviorSubject from '../../pages/rxjs/components/subject/hooks';
+import CloseButton from '../CloseButton';
+import { modalState } from './modalState';
 
 type Props = {
-  onClose?: any
-  isUseClickOutside?: boolean
-  isUseEscapeKey?: boolean
-}
+  onClose?: any;
+  isUseClickOutside?: boolean;
+  isUseEscapeKey?: boolean;
+};
 
 const Modal: React.FC<Props> = ({ isUseClickOutside = true, isUseEscapeKey = true }) => {
-  const [isShow, setIsShow] = useBehaviorSubject(modalState, true)
-  const modalRef = useRef(null)
+  const [isShow, setIsShow] = useBehaviorSubject(modalState, true);
+  const modalRef = useRef(null);
 
   function closeByOverlay(evt: any) {
-    if (evt.target !== evt.currentTarget) return
-    setIsShow(false)
+    if (evt.target !== evt.currentTarget) return;
+    setIsShow(false);
   }
 
   // isUseClickOutside ? useClickOutside(modalRef, onClose, [isShow]) : null // !not work
-  isUseEscapeKey ? useEscapeKey(() => setIsShow(false)) : null
+  isUseEscapeKey ? useEscapeKey(() => setIsShow(false)) : null;
 
-  if (!isShow) return null
+  if (!isShow) return null;
 
   return (
     <div className={`modal-wrapper`} ref={modalRef} onClick={closeByOverlay}>
@@ -34,7 +34,7 @@ const Modal: React.FC<Props> = ({ isUseClickOutside = true, isUseEscapeKey = tru
         <CloseButton onClose={() => setIsShow(false)} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Modal
+export default Modal;

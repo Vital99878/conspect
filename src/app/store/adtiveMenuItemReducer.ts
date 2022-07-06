@@ -1,4 +1,4 @@
-import { MenuItem, Pages } from '../../components/Navigation/types'
+import { MenuItem, Pages } from '../../components/Navigation/types';
 
 export type MainPages =
   | 'home'
@@ -9,13 +9,13 @@ export type MainPages =
   | 'registration'
   | 'designPatterns'
   | 'preparation'
-  | 'dsAndAlgorithms'
+  | 'dsAndAlgorithms';
 
-export type CssPages = 'flex' | 'greed' | 'display' | 'position'
+export type CssPages = 'flex' | 'greed' | 'display' | 'position';
 
 type PagesList = {
-  [k in MainPages]: MenuItem<Pages>
-}
+  [k in MainPages]: MenuItem<Pages>;
+};
 
 export const pages: PagesList = {
   home: { label: 'Home', url: '/' },
@@ -27,4 +27,4 @@ export const pages: PagesList = {
   designPatterns: { label: 'Design patterns', url: '/design-patterns' },
   preparation: { label: 'Preparation to interview', url: '/preparation' },
   dsAndAlgorithms: { label: 'data-structure and algorithms', url: '/data-structure and algorithms' },
-}
+};

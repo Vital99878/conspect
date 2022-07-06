@@ -1,5 +1,5 @@
-import React from 'react'
-import './TestEmpty.css'
+import React from 'react';
+import './TestEmpty.css';
 // import {} from './iterableNext'
 // import {} from './iterableGenerator'
 
@@ -8,7 +8,7 @@ const TestIterableObj = () => {
     <div className="testEmpty">
       <h2>Test iterable object</h2>
     </div>
-  )
-}
+  );
+};
 
-export default TestIterableObj
+export default TestIterableObj;

@@ -1,2 +1,2 @@
-import DesignPatternPage from './design-pattern-page'
-export default DesignPatternPage
+import DesignPatternPage from './design-pattern-page';
+export default DesignPatternPage;

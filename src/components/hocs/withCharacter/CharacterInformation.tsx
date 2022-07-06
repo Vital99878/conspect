@@ -1,8 +1,8 @@
-import React from 'react'
-import { CharacterType } from './characters'
-import { Table, TableRow } from './Table'
+import React from 'react';
+import { CharacterType } from './characters';
+import { Table, TableRow } from './Table';
 
-const CharacterInformation:React.FC<CharacterType> = (character) => {
+const CharacterInformation: React.FC<CharacterType> = (character) => {
   return (
     <article>
       <header>
@@ -19,7 +19,7 @@ const CharacterInformation:React.FC<CharacterType> = (character) => {
         <TableRow heading="Total" value={character.total} />
       </Table>
     </article>
-  )
-}
+  );
+};
 
-export default CharacterInformation
+export default CharacterInformation;

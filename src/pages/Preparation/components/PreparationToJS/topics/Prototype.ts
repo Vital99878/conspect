@@ -1,4 +1,4 @@
-import { Person } from '../../../../shared/Person.class'
+import { Person } from '../../../../shared/Person.class';
 
 const topicPrototypeChain = () => {
   // class PersonClass
@@ -35,14 +35,14 @@ const topicPrototypeChain = () => {
     // console.log('Object prototype: ', Object.prototype)
     // console.log('Array prototype: ', Array.prototype)
 
-    const StringPrototype = String.prototype
-    const NumberPrototype = Number.prototype
-    const BooleanPrototype = Boolean.prototype
-    const SymbolPrototype = Symbol.prototype
-    const DateDaPrototype = Date.prototype
-    const ObjectPrototype = Object.prototype
-    const ArrayAPrototype = Array.prototype
-    const PersonPrototype = Person.prototype
+    const StringPrototype = String.prototype;
+    const NumberPrototype = Number.prototype;
+    const BooleanPrototype = Boolean.prototype;
+    const SymbolPrototype = Symbol.prototype;
+    const DateDaPrototype = Date.prototype;
+    const ObjectPrototype = Object.prototype;
+    const ArrayAPrototype = Array.prototype;
+    const PersonPrototype = Person.prototype;
     // const afn = () => console.log('arrow fn')
 
     // console.log('top prototype: ', Object.getPrototypeOf(String) === Object.getPrototypeOf(Boolean))
@@ -78,17 +78,17 @@ const topicPrototypeChain = () => {
     // console.log('It root prototype last: ', Object.prototype === Person.prototype)
 
     // console.log('Person.prototype: ', Person.prototype)
-    Person.prototype.constructor.prototype.great()
-    Person.logClassName()
-    Person.staticMethod()
-    const me = new Person('Vital', 25, 'ff')
-    const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    Person.prototype.constructor.prototype.great();
+    Person.logClassName();
+    Person.staticMethod();
+    const me = new Person('Vital', 25, 'ff');
+    const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     // console.log('numbers.__proto__: ', numbers)
 
     // console.log(me.__proto__ === Person.prototype)
     // console.log(Person.prototype.__proto__ === Object.prototype)
     // console.log(me.__proto__.__proto__ === Object.prototype)
   }
-}
+};
 
-export default topicPrototypeChain
+export default topicPrototypeChain;

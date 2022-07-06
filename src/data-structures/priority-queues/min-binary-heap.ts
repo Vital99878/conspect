@@ -1,4 +1,4 @@
-import * as utils from '../utils'
+import * as utils from '../utils';
 
 /** *****************************************************************************
  * A min binary heap implements the Priority Queue ADT. It has constant access
@@ -12,15 +12,15 @@ import * as utils from '../utils'
  ******************************************************************************/
 class MinBinaryHeap<T> {
   // a dynamic array to hold our elements
-  private heap: T[]
-  private compare: utils.CompareFunction<T>
+  private heap: T[];
+  private compare: utils.CompareFunction<T>;
 
   private heapify(): void {
-    if (this.heap.length === 0) return
+    if (this.heap.length === 0) return;
 
-    let i = Math.max(0, Math.floor(this.size() / 2) - 1)
+    let i = Math.max(0, Math.floor(this.size() / 2) - 1);
     for (; i >= 0; i--) {
-      this.sink(i)
+      this.sink(i);
     }
   }
 
@@ -44,23 +44,23 @@ class MinBinaryHeap<T> {
     while (true) {
       // get index of children
 
-      const leftChildIndex = this.getLeftChildIndex(index)
-      const rightChildIndex = this.getRightChildIndex(index)
+      const leftChildIndex = this.getLeftChildIndex(index);
+      const rightChildIndex = this.getRightChildIndex(index);
 
       // find the smallest childIndex
-      let smallestChildIndex = leftChildIndex
-      const rightChildIsSmallerThanLeft = rightChildIndex < this.size() && this.less(rightChildIndex, leftChildIndex)
-      if (rightChildIsSmallerThanLeft) smallestChildIndex = rightChildIndex
+      let smallestChildIndex = leftChildIndex;
+      const rightChildIsSmallerThanLeft = rightChildIndex < this.size() && this.less(rightChildIndex, leftChildIndex);
+      if (rightChildIsSmallerThanLeft) smallestChildIndex = rightChildIndex;
 
       // if the children indices are out of bounds or the current element is
       // less than the child, stop looping and break
-      const indexOutOfBounds = leftChildIndex >= this.size()
-      const isElementLessThanSmallestChild = this.less(index, smallestChildIndex)
-      if (indexOutOfBounds || isElementLessThanSmallestChild) break
+      const indexOutOfBounds = leftChildIndex >= this.size();
+      const isElementLessThanSmallestChild = this.less(index, smallestChildIndex);
+      if (indexOutOfBounds || isElementLessThanSmallestChild) break;
 
       // otherwise swap
-      this.swap(smallestChildIndex, index) // O(1)
-      index = smallestChildIndex // set index to child index, and we repeat loop
+      this.swap(smallestChildIndex, index); // O(1)
+      index = smallestChildIndex; // set index to child index, and we repeat loop
     }
   }
 
@@ -71,23 +71,23 @@ class MinBinaryHeap<T> {
    * @return {void}
    */
   private swim(k: number): void {
-    let parentIndex = this.getParentIndex(k)
+    let parentIndex = this.getParentIndex(k);
 
     // as long as k is positive and this.heap[k] < this.heap[parentIndex]
     while (k > 0 && this.less(k, parentIndex)) {
-      this.swap(parentIndex, k)
+      this.swap(parentIndex, k);
 
-      k = parentIndex
-      parentIndex = this.getParentIndex(k)
+      k = parentIndex;
+      parentIndex = this.getParentIndex(k);
     }
   }
 
   // O(1)
   private swap(i: number, j: number): void {
-    const temp = this.heap[i]
+    const temp = this.heap[i];
 
-    this.heap[i] = this.heap[j]
-    this.heap[j] = temp
+    this.heap[i] = this.heap[j];
+    this.heap[j] = temp;
   }
 
   /**
@@ -99,46 +99,46 @@ class MinBinaryHeap<T> {
    * @return {T}
    */
   private removeAt(indexToRemove: number): T {
-    const indexOfLastElement = this.size() - 1
+    const indexOfLastElement = this.size() - 1;
     // save the removed element so we can return it after heapifying
-    const removedElement = this.heap[indexToRemove]
+    const removedElement = this.heap[indexToRemove];
 
     // swap the removed element with the last element
-    this.swap(indexToRemove, indexOfLastElement)
+    this.swap(indexToRemove, indexOfLastElement);
     // delete the removed element!
-    this.heap.pop()
+    this.heap.pop();
 
-    if (this.heap.length === 0) return removedElement
+    if (this.heap.length === 0) return removedElement;
 
     // if last element is being removed, no need to heapify (sink/swim)
-    const lastElementIsBeingRemoved = indexToRemove === indexOfLastElement - 1
-    if (lastElementIsBeingRemoved) return removedElement
+    const lastElementIsBeingRemoved = indexToRemove === indexOfLastElement - 1;
+    if (lastElementIsBeingRemoved) return removedElement;
 
     // try sinking
-    const indexToBeHeapified = indexToRemove
-    const elementToBeHeapified = this.heap[indexToBeHeapified]
-    this.sink(indexToBeHeapified)
+    const indexToBeHeapified = indexToRemove;
+    const elementToBeHeapified = this.heap[indexToBeHeapified];
+    this.sink(indexToBeHeapified);
 
     // if sinking did not work try swimming
     if (this.heap[indexToBeHeapified] === elementToBeHeapified) {
-      this.swim(indexToBeHeapified)
+      this.swim(indexToBeHeapified);
     }
 
     // return saved value from before
-    return removedElement
+    return removedElement;
   }
 
   // O(1)
   private getLeftChildIndex(parentIndex: number): number {
-    return parentIndex * 2 + 1
+    return parentIndex * 2 + 1;
   }
   // O(1)
   private getRightChildIndex(parentIndex: number): number {
-    return parentIndex * 2 + 2
+    return parentIndex * 2 + 2;
   }
   // O(1)
   private getParentIndex(childIndex: number): number {
-    return Math.floor((childIndex - 1) / 2)
+    return Math.floor((childIndex - 1) / 2);
   }
 
   /**
@@ -147,17 +147,17 @@ class MinBinaryHeap<T> {
    * @param {number} b
    */
   private less(a: number, b: number) {
-    return this.compare(this.heap[a], this.heap[b]) < 0
+    return this.compare(this.heap[a], this.heap[b]) < 0;
   }
 
   constructor(elements?: Iterable<T>, compareFunction?: utils.CompareFunction<T>) {
-    this.heap = []
-    this.compare = compareFunction || utils.defaultCompare
+    this.heap = [];
+    this.compare = compareFunction || utils.defaultCompare;
 
     // if the client provides elements, heapify them
     if (elements) {
-      this.heap = Array.from(elements)
-      this.heapify()
+      this.heap = Array.from(elements);
+      this.heapify();
     }
   }
 
@@ -175,7 +175,7 @@ class MinBinaryHeap<T> {
    * @return {number}
    */
   size(): number {
-    return this.heap.length
+    return this.heap.length;
   }
 
   /**
@@ -183,7 +183,7 @@ class MinBinaryHeap<T> {
    * @return {boolean}
    */
   isEmpty(): boolean {
-    return this.size() == 0
+    return this.size() == 0;
   }
 
   /** ***************************************************************************
@@ -195,9 +195,9 @@ class MinBinaryHeap<T> {
    * @return {void}
    */
   add(element: T): void {
-    this.heap.push(element)
-    const indexOfLastElement = this.size() - 1
-    this.swim(indexOfLastElement)
+    this.heap.push(element);
+    const indexOfLastElement = this.size() - 1;
+    this.swim(indexOfLastElement);
   }
 
   /**
@@ -207,12 +207,12 @@ class MinBinaryHeap<T> {
    */
   remove(element: T): boolean {
     // O(n), linear scan to find elementIndex
-    const elementIndex = this.heap.findIndex((h: T) => this.compare(element, h) === 0)
+    const elementIndex = this.heap.findIndex((h: T) => this.compare(element, h) === 0);
 
-    if (elementIndex === -1) return false
+    if (elementIndex === -1) return false;
 
-    this.removeAt(elementIndex) // O(log(n))
-    return true
+    this.removeAt(elementIndex); // O(log(n))
+    return true;
   }
 
   /**
@@ -220,9 +220,9 @@ class MinBinaryHeap<T> {
    * @return {T}
    */
   removeRoot(): T | null {
-    if (this.isEmpty()) return null
+    if (this.isEmpty()) return null;
 
-    return this.removeAt(0) // O(log(n))
+    return this.removeAt(0); // O(log(n))
   }
 
   /**
@@ -230,7 +230,7 @@ class MinBinaryHeap<T> {
    * @return {void}
    */
   clear(): void {
-    this.heap.length = 0
+    this.heap.length = 0;
   }
 
   /** ***************************************************************************
@@ -241,9 +241,9 @@ class MinBinaryHeap<T> {
    * @return {T}
    */
   peekRoot(): T | null {
-    if (this.isEmpty()) return null
+    if (this.isEmpty()) return null;
 
-    return this.heap[0]
+    return this.heap[0];
   }
 
   /** ***************************************************************************
@@ -255,11 +255,11 @@ class MinBinaryHeap<T> {
    * @return {boolean}
    */
   contains(element: T): boolean {
-    return this.heap.includes(element)
+    return this.heap.includes(element);
   }
 }
 
-export default MinBinaryHeap
+export default MinBinaryHeap;
 // const n = [4, 1, 2, 3, 4, 56]
 // const n2 = [8, 7, 6, 5, 4]
 // const heap = new MinBinaryHeap(n2)

@@ -1,73 +1,73 @@
-import React, { useState, useEffect, useRef, useReducer, useMemo } from 'react'
-import { useLocalStorage } from '../../../../hooks/customHooks'
+import React, { useState, useEffect, useRef, useReducer, useMemo } from 'react';
+import { useLocalStorage } from '../../../../hooks/customHooks';
 
-import './TestPureReact.css'
+import './TestPureReact.css';
 
 class Person {
   constructor(name, age) {
-    this.name = name
-    this.age = age
+    this.name = name;
+    this.age = age;
   }
 }
 
 function reducer(state, action) {
   switch (action.type) {
     case 'increment':
-      return { count: state.count + 1 }
+      return { count: state.count + 1 };
     case 'decrement':
-      return { count: state.count - 1 }
+      return { count: state.count - 1 };
     default:
-      throw new Error()
+      throw new Error();
   }
 }
 
 const TestHooks = () => {
-  const inputRef = useRef(null)
-  const [state, dispatch] = useReducer(reducer, { count: 10 })
-  const [string, setString] = useState(() => 'initial state')
-  const [numberForSlowFunction, setNumberForSlowFunction] = useState(0)
+  const inputRef = useRef(null);
+  const [state, dispatch] = useReducer(reducer, { count: 10 });
+  const [string, setString] = useState(() => 'initial state');
+  const [numberForSlowFunction, setNumberForSlowFunction] = useState(0);
 
-  const key = 'key'
-  const [value, setValue] = useState('initialValue')
+  const key = 'key';
+  const [value, setValue] = useState('initialValue');
 
-  const [lsKey, setLsKey] = useLocalStorage('key', 'key value')
-  const intervalRef = useRef()
-  const inputRefKey = useRef(null)
-  const inputRefMemo = useRef(null)
-  const personRef = useRef({ name: 'John', age: 0 })
-  const slowResult = useMemo(() => slowFunction(numberForSlowFunction), [numberForSlowFunction])
+  const [lsKey, setLsKey] = useLocalStorage('key', 'key value');
+  const intervalRef = useRef();
+  const inputRefKey = useRef(null);
+  const inputRefMemo = useRef(null);
+  const personRef = useRef({ name: 'John', age: 0 });
+  const slowResult = useMemo(() => slowFunction(numberForSlowFunction), [numberForSlowFunction]);
 
   useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(value))
-  }, [value])
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [value]);
 
   function checkUseRef() {
-    setString(inputRef.current.value)
+    setString(inputRef.current.value);
   }
 
   function changeRefObj() {
-    personRef.current.age += 50
-    console.log(personRef.current)
+    personRef.current.age += 50;
+    console.log(personRef.current);
   }
 
   function holdInc() {
-    dispatch({ type: 'increment' })
+    dispatch({ type: 'increment' });
   }
 
   function setInt() {
     if (intervalRef.current) {
-      return
+      return;
     }
-    intervalRef.current = setInterval(holdInc, 50)
+    intervalRef.current = setInterval(holdInc, 50);
   }
 
   function slowFunction(number) {
-    let i = 0
+    let i = 0;
     for (i = 0; i <= 10_00_000_000; i++) {
-      i += 1
+      i += 1;
     }
-    console.log(`slowFunction result is ${number} ${i}`)
-    return (i - 2) * number
+    console.log(`slowFunction result is ${number} ${i}`);
+    return (i - 2) * number;
   }
 
   return (
@@ -94,8 +94,8 @@ const TestHooks = () => {
         <button
           onMouseDown={setInt}
           onMouseUp={() => {
-            clearInterval(intervalRef.current)
-            intervalRef.current = null
+            clearInterval(intervalRef.current);
+            intervalRef.current = null;
           }}
         >
           hold for increment count
@@ -117,7 +117,7 @@ const TestHooks = () => {
         ></input>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default TestHooks
+export default TestHooks;

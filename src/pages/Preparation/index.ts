@@ -1,2 +1,2 @@
-import PreparationPage from './Preparation-page'
-export default PreparationPage
+import PreparationPage from './Preparation-page';
+export default PreparationPage;

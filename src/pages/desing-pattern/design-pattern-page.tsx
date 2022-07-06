@@ -1,7 +1,7 @@
-import React from 'react'
-import PageLayout from '../../components/Layout/PageLayout'
-import NavCard from '../../components/Navigation/components/NavCard/NavCard'
-import './design-pattern-page.scss'
+import React from 'react';
+import PageLayout from '../../components/Layout/PageLayout';
+import NavCard from '../../components/Navigation/components/NavCard/NavCard';
+import './design-pattern-page.scss';
 
 const DesignPatternPage: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const DesignPatternPage: React.FC = () => {
         <NavCard title={'prototype'} desc={'desc 2'} />
       </main>
     </PageLayout>
-  )
-}
+  );
+};
 
-export default DesignPatternPage
+export default DesignPatternPage;

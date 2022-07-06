@@ -1,2 +1,2 @@
-import RegistrationPage from '../../registration-page'
-export default RegistrationPage
+import RegistrationPage from '../../registration-page';
+export default RegistrationPage;

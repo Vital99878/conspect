@@ -1,2 +1,2 @@
-import BallComponent from './ball.component'
-export default BallComponent
+import BallComponent from './ball.component';
+export default BallComponent;

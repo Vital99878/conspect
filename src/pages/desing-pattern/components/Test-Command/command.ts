@@ -10,21 +10,21 @@
  * Интерфейс Команды объявляет метод для выполнения команд.
  */
 export interface Command {
-  execute(): void
+  execute(): void;
 }
 
 /**
  * Некоторые команды способны выполнять простые операции самостоятельно.
  */
 class SimpleCommand implements Command {
-  private payload: string
+  private payload: string;
 
   constructor(payload: string) {
-    this.payload = payload
+    this.payload = payload;
   }
 
   public execute(): void {
-    console.log(`SimpleCommand: See, I can do simple things like printing (${this.payload})`)
+    console.log(`SimpleCommand: See, I can do simple things like printing (${this.payload})`);
   }
 }
 
@@ -33,14 +33,14 @@ class SimpleCommand implements Command {
  * называемым «получателями».
  */
 class ComplexCommand implements Command {
-  private receiver: Receiver
+  private receiver: Receiver;
 
   /**
    * Данные о контексте, необходимые для запуска методов получателя.
    */
-  private a: string
+  private a: string;
 
-  private b: string
+  private b: string;
 
   /**
    * Сложные команды могут принимать один или несколько объектов-получателей
@@ -48,18 +48,18 @@ class ComplexCommand implements Command {
    */
 
   constructor(receiver: Receiver, a: string, b: string) {
-    this.receiver = receiver
-    this.a = a
-    this.b = b
+    this.receiver = receiver;
+    this.a = a;
+    this.b = b;
   }
 
   /**
    * Команды могут делегировать выполнение любым методам получателя.
    */
   public execute(): void {
-    console.log('ComplexCommand: Complex stuff should be done by a receiver object.')
-    this.receiver.doSomething(this.a)
-    this.receiver.doSomethingElse(this.b)
+    console.log('ComplexCommand: Complex stuff should be done by a receiver object.');
+    this.receiver.doSomething(this.a);
+    this.receiver.doSomethingElse(this.b);
   }
 }
 
@@ -70,11 +70,11 @@ class ComplexCommand implements Command {
  */
 class Receiver {
   public doSomething(a: string): void {
-    console.log(`Receiver: Working on (${a}.)`)
+    console.log(`Receiver: Working on (${a}.)`);
   }
 
   public doSomethingElse(b: string): void {
-    console.log(`Receiver: Also working on (${b}.)`)
+    console.log(`Receiver: Also working on (${b}.)`);
   }
 }
 
@@ -83,20 +83,20 @@ class Receiver {
  * команде.
  */
 class Invoker {
-  private onStart!: Command
+  private onStart!: Command;
 
-  private onFinish!: Command
+  private onFinish!: Command;
 
   /**
    * Инициализация команд.
    */
 
   public setOnStart(command: Command): void {
-    this.onStart = command
+    this.onStart = command;
   }
 
   public setOnFinish(command: Command): void {
-    this.onFinish = command
+    this.onFinish = command;
   }
 
   /**
@@ -104,30 +104,30 @@ class Invoker {
    * Отправитель передаёт запрос получателю косвенно, выполняя команду.
    */
   public doSomethingImportant(): void {
-    console.log('Invoker: Does anybody want something done before I begin?')
+    console.log('Invoker: Does anybody want something done before I begin?');
     if (this.isCommand(this.onStart)) {
-      this.onStart.execute()
+      this.onStart.execute();
     }
 
-    console.log('Invoker: ...doing something really important...')
+    console.log('Invoker: ...doing something really important...');
 
-    console.log('Invoker: Does anybody want something done after I finish?')
+    console.log('Invoker: Does anybody want something done after I finish?');
     if (this.isCommand(this.onFinish)) {
-      this.onFinish.execute()
+      this.onFinish.execute();
     }
   }
 
   private isCommand(object: any): object is Command {
-    return object.execute !== undefined
+    return object.execute !== undefined;
   }
 }
 
 /**
  * Клиентский код может параметризовать отправителя любыми командами.
  */
-const invoker = new Invoker()
-invoker.setOnStart(new SimpleCommand('Say Hi!'))
-const receiver = new Receiver()
-invoker.setOnFinish(new ComplexCommand(receiver, 'Send email', 'Save report'))
+const invoker = new Invoker();
+invoker.setOnStart(new SimpleCommand('Say Hi!'));
+const receiver = new Receiver();
+invoker.setOnFinish(new ComplexCommand(receiver, 'Send email', 'Save report'));
 
-invoker.doSomethingImportant()
+invoker.doSomethingImportant();

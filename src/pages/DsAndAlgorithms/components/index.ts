@@ -1,2 +1,2 @@
-import DataStructures from './data-strutures/data-strutures'
-export { DataStructures }
+import DataStructures from './data-strutures/data-strutures';
+export { DataStructures };

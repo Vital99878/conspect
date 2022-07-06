@@ -1,24 +1,24 @@
 /* eslint-disable */
 // noinspection SpellCheckingInspection
 
-import { numbers } from '../../../../../commonMockData'
-import { binarySearch } from '../../../../../helpers'
+import { numbers } from '../../../../../commonMockData';
+import { binarySearch } from '../../../../../helpers';
 
 type CountedKeys = {
-  [k in string]: number
-}
+  [k in string]: number;
+};
 
 export function exercises() {
   // bankomat
   {
     type NeedCupurs = {
-      5000: number
-      1000: number
-      500: number
-      100: number
-      50: number
-    }
-    type Nominals = keyof NeedCupurs
+      5000: number;
+      1000: number;
+      500: number;
+      100: number;
+      50: number;
+    };
+    type Nominals = keyof NeedCupurs;
     // 1. Реализовать функцию getMoney для банкомата, выдающего купюры.
     // На вход - сумма, на выходе объект с количеством купюр по каждому номиналу.
     // При этом банкомат должен выдать минимальное количество банкнот.
@@ -32,25 +32,25 @@ export function exercises() {
     // P.S. не забыть модифицировать объект с номиналами.
 
     const getMoney = function (amount: number, limit: NeedCupurs): NeedCupurs {
-      const res: NeedCupurs = { '5000': 0, '1000': 0, '500': 0, '100': 0, '50': 0 }
-      const noms: Nominals[] = [5000, 1000, 500, 100, 50]
+      const res: NeedCupurs = { '5000': 0, '1000': 0, '500': 0, '100': 0, '50': 0 };
+      const noms: Nominals[] = [5000, 1000, 500, 100, 50];
 
       noms.forEach((nom) => {
-        let needCupurs = Math.floor(amount / nom)
+        let needCupurs = Math.floor(amount / nom);
 
-        if (!limit[nom]) needCupurs = 0
+        if (!limit[nom]) needCupurs = 0;
 
-        if (limit[nom]) needCupurs = needCupurs > limit[nom] ? limit[nom] : needCupurs
+        if (limit[nom]) needCupurs = needCupurs > limit[nom] ? limit[nom] : needCupurs;
 
-        res[nom] = needCupurs
-        amount = amount - nom * needCupurs
-      })
+        res[nom] = needCupurs;
+        amount = amount - nom * needCupurs;
+      });
 
-      return res
-    }
+      return res;
+    };
 
-    const res = getMoney(6200, { '5000': 0, '1000': 7, '100': 5, '500': 0, '50': 0 }) // return {5000: 1, 1000: 1, 500: 0, 100: 2, 50: 0}
-    console.log('res: ', res)
+    const res = getMoney(6200, { '5000': 0, '1000': 7, '100': 5, '500': 0, '50': 0 }); // return {5000: 1, 1000: 1, 500: 0, 100: 2, 50: 0}
+    console.log('res: ', res);
   }
 
   // get first sum
@@ -59,30 +59,30 @@ export function exercises() {
     // ! if arr have not sorted, at first, arr must sort
     {
       function getSum(nums: number[], sum: number): number[] {
-        const result: number[] = []
-        const cash: number[] = []
+        const result: number[] = [];
+        const cash: number[] = [];
 
         nums.forEach((num, index) => {
-          const secondNum = sum - num
+          const secondNum = sum - num;
           if (index === 0) {
-            cash.push(num)
-            return
+            cash.push(num);
+            return;
           }
-          if (cash.includes(secondNum)) result.push(num, secondNum)
-        })
+          if (cash.includes(secondNum)) result.push(num, secondNum);
+        });
 
-        return result
+        return result;
       }
       function getSumMap(nums: number[], sum: number): number[] {
-        let result: number[] = []
-        const map: Map<number, number> = new Map()
+        let result: number[] = [];
+        const map: Map<number, number> = new Map();
 
         nums.forEach((num) => {
-          if (!map.has(num)) map.set(num, num)
-          if (map.has(sum - num)) result = [num, map.get(sum - num)!]
-        })
+          if (!map.has(num)) map.set(num, num);
+          if (map.has(sum - num)) result = [num, map.get(sum - num)!];
+        });
 
-        return result
+        return result;
       }
       // console.log(getSumMap([1, 2, 3, 4, 6], 48)) // []
       // console.log(getSumMap([1, 2, 3, 6, 4], 6)) // [1,3]
@@ -104,11 +104,11 @@ export function exercises() {
      */
 
     function countKeys(string: string): CountedKeys {
-      const result: CountedKeys = {}
+      const result: CountedKeys = {};
       for (const key of string) {
-        key in result ? result[key]++ : (result[key] = 0)
+        key in result ? result[key]++ : (result[key] = 0);
       }
-      return result
+      return result;
     }
 
     // console.log(isPalindrome('asdf', 'fdsa'))

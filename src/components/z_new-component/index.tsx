@@ -1,2 +1,2 @@
-import NewComponent from './new-component'
-export default NewComponent
+import NewComponent from './new-component';
+export default NewComponent;

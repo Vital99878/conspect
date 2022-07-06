@@ -7,9 +7,9 @@
  */
 
 function checkIndexes(arr: any[], draggableIndex: number, targetIndex: number): never | any[] {
-  if (draggableIndex >= arr.length) throw new Error('draggableIndex must be less than arr.length')
-  if (targetIndex >= arr.length) throw new Error('targetIndex must be less than arr.length')
-  return arr
+  if (draggableIndex >= arr.length) throw new Error('draggableIndex must be less than arr.length');
+  if (targetIndex >= arr.length) throw new Error('targetIndex must be less than arr.length');
+  return arr;
 }
 
 /**
@@ -21,24 +21,24 @@ function checkIndexes(arr: any[], draggableIndex: number, targetIndex: number): 
  */
 
 export function insertItemBeforeTarget<T>(arr: T[], draggableIndex: number, targetIndex: number): T[] {
-  checkIndexes(arr, draggableIndex, targetIndex)
-  if (draggableIndex === targetIndex) return arr
+  checkIndexes(arr, draggableIndex, targetIndex);
+  if (draggableIndex === targetIndex) return arr;
 
-  const res = [...arr]
-  let left: T[] = []
-  let right: T[] = []
-  const draggableItem = res.splice(draggableIndex, 1)[0]
+  const res = [...arr];
+  let left: T[] = [];
+  let right: T[] = [];
+  const draggableItem = res.splice(draggableIndex, 1)[0];
 
   if (draggableIndex > targetIndex) {
-    left = res.slice(0, targetIndex)
-    right = res.slice(targetIndex)
+    left = res.slice(0, targetIndex);
+    right = res.slice(targetIndex);
   }
 
   if (draggableIndex < targetIndex) {
-    left = res.slice(0, targetIndex - 1)
-    right = res.slice(targetIndex - 1)
+    left = res.slice(0, targetIndex - 1);
+    right = res.slice(targetIndex - 1);
   }
-  return [...left, draggableItem, ...right]
+  return [...left, draggableItem, ...right];
 }
 
 /**
@@ -50,23 +50,23 @@ export function insertItemBeforeTarget<T>(arr: T[], draggableIndex: number, targ
  */
 
 export function insertItemAfterTarget<T>(arr: T[], draggableIndex: number, targetIndex: number): T[] {
-  checkIndexes(arr, draggableIndex, targetIndex)
-  if (draggableIndex === targetIndex) return arr
+  checkIndexes(arr, draggableIndex, targetIndex);
+  if (draggableIndex === targetIndex) return arr;
 
-  const res = [...arr]
-  let left: T[] = []
-  let right: T[] = []
-  const draggableItem = res.splice(draggableIndex, 1)[0]
+  const res = [...arr];
+  let left: T[] = [];
+  let right: T[] = [];
+  const draggableItem = res.splice(draggableIndex, 1)[0];
 
   if (draggableIndex > targetIndex) {
-    left = res.slice(0, targetIndex + 1)
-    right = res.slice(targetIndex + 1)
+    left = res.slice(0, targetIndex + 1);
+    right = res.slice(targetIndex + 1);
   }
 
   if (draggableIndex < targetIndex) {
-    left = res.slice(0, targetIndex)
-    right = res.slice(targetIndex)
+    left = res.slice(0, targetIndex);
+    right = res.slice(targetIndex);
   }
 
-  return [...left, draggableItem, ...right]
+  return [...left, draggableItem, ...right];
 }

@@ -1,23 +1,23 @@
-import React from 'react'
-import './TodosFilter.scss'
-import { R_2, TodoStatus, TodoType } from '../../models/index.model'
-import { ValueMouseEvent } from '../../../../types/ValueMouseEvent.model'
-import { ButtonFilter } from './hook/useButtonsFilter'
+import React from 'react';
+import './TodosFilter.scss';
+import { R_2, TodoStatus, TodoType } from '../../models/index.model';
+import { ValueMouseEvent } from '../../../../types/ValueMouseEvent.model';
+import { ButtonFilter } from './hook/useButtonsFilter';
 
 type Props = {
   props: {
-    buttons: ButtonFilter[]
-    toggleActiveButton: any
-  }
-}
+    buttons: ButtonFilter[];
+    toggleActiveButton: any;
+  };
+};
 
 const TodosFilter: React.FC<Props> = ({ props }) => {
-  const { buttons, toggleActiveButton } = props
+  const { buttons, toggleActiveButton } = props;
 
   return (
     <article className="todos-filter">
       {buttons.map((button) => {
-        const textContent = `${button.textContent}: ${button.statusCount}`
+        const textContent = `${button.textContent}: ${button.statusCount}`;
         return (
           <button
             key={button.value}
@@ -28,10 +28,10 @@ const TodosFilter: React.FC<Props> = ({ props }) => {
           >
             {textContent}
           </button>
-        )
+        );
       })}
     </article>
-  )
-}
+  );
+};
 
-export default TodosFilter
+export default TodosFilter;

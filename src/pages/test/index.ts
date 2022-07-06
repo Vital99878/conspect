@@ -1,2 +1,2 @@
-import Search from './test-page'
-export default Search
+import Search from './test-page';
+export default Search;

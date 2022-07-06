@@ -1,16 +1,16 @@
 export interface Hashable {
-  hashCode(): number
+  hashCode(): number;
 }
 
 export class Entry<K extends Hashable, V> {
-  hash: number
+  hash: number;
 
-  key: K
-  value: V
+  key: K;
+  value: V;
 
   constructor(key: K, value: V) {
-    this.hash = key.hashCode()
-    this.key = key
-    this.value = value
+    this.hash = key.hashCode();
+    this.key = key;
+    this.value = value;
   }
 }

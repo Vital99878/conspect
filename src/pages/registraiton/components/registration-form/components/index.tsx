@@ -1,2 +1,2 @@
-import RequiredInputWrapper from './required-Input-wrapper/RequiredInputWrapper'
-export { RequiredInputWrapper }
+import RequiredInputWrapper from './required-Input-wrapper/RequiredInputWrapper';
+export { RequiredInputWrapper };

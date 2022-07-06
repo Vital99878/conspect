@@ -1,17 +1,17 @@
-import React from 'react'
-import './Preparation-page.scss'
-import PageLayout from '../../components/Layout/PageLayout'
-import { PreparationToJS, PreparationToReact, PreparationToTS } from './components'
+import React from 'react';
+import './Preparation-page.scss';
+import PageLayout from '../../components/Layout/PageLayout';
+import { PreparationToJS, PreparationToReact, PreparationToTS } from './components';
 
 const PreparationPage: React.FC = () => {
   return (
     <PageLayout pageHeading="page-Preparation">
       <main className="page-Preparation">
-         <PreparationToJS />
+        <PreparationToJS />
         {/* <PreparationToReact />*/}
         {/* <PreparationToTS />*/}
       </main>
     </PageLayout>
-  )
-}
-export default PreparationPage
+  );
+};
+export default PreparationPage;

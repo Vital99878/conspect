@@ -1,11 +1,11 @@
-import React from 'react'
-import './close-button.scss'
+import React from 'react';
+import './close-button.scss';
 type Props = {
-  onClose: () => void
-}
+  onClose: () => void;
+};
 
-const CloseButton: React.FC<Props> = ({onClose}) => {
-  return <button className={'btn-close'} onClick={onClose}/>
-}
+const CloseButton: React.FC<Props> = ({ onClose }) => {
+  return <button className={'btn-close'} onClick={onClose} />;
+};
 
-export default CloseButton
+export default CloseButton;

@@ -1,2 +1,2 @@
-import DsAndAlgorithmsPage from './DsAndAlgorithms-page'
-export default DsAndAlgorithmsPage
+import DsAndAlgorithmsPage from './DsAndAlgorithms-page';
+export default DsAndAlgorithmsPage;

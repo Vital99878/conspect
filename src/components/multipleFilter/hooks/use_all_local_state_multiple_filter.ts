@@ -1,10 +1,10 @@
-import { ChangeEvent, useEffect, useMemo, useState } from 'react'
-import { filterToQueries, isAllCheckedOrUnchecked, queriesToFilter } from '../utils'
-import { useHistory, useLocation } from 'react-router-dom'
-import useObservableValue from '../../../pages/rxjs/components/subject/hooks'
-import { filter$ } from '../mock'
+import { ChangeEvent, useEffect, useMemo, useState } from 'react';
+import { filterToQueries, isAllCheckedOrUnchecked, queriesToFilter } from '../utils';
+import { useHistory, useLocation } from 'react-router-dom';
+import useObservableValue from '../../../pages/rxjs/components/subject/hooks';
+import { filter$ } from '../mock';
 
-export type MultipleFilter = { [key: string]: boolean }
+export type MultipleFilter = { [key: string]: boolean };
 // type Props = {
 //   filter: MultipleFilter
 // }
@@ -28,44 +28,44 @@ export function useAllLocalStateMultipleFilter(
     third: false,
   }
 ) {
-  const history = useHistory()
-  const { search } = useLocation()
+  const history = useHistory();
+  const { search } = useLocation();
   // const [lsFilter, setLSFilter] = useLocalStorage('filter', initialFilter)
-  const [filter, setFilter] = useState<MultipleFilter>(initialFilter)
+  const [filter, setFilter] = useState<MultipleFilter>(initialFilter);
 
   // Todo При использовании filter$ рендер работает неправильно.Рендерятся все MultipleFilter при апдейте одного
-  const [filterStream$, updateField] = useObservableValue(filter$, initialFilter)
+  const [filterStream$, updateField] = useObservableValue(filter$, initialFilter);
 
   useEffect(() => {
     // set filter if search queries exist in the url. need to Redirect from link
-    if (!search) return
+    if (!search) return;
     if (search) {
-      const checkedFieldsFromSearchQueries = queriesToFilter(search as `?${string}`)
-      setFilter((filter) => ({ ...filter, ...checkedFieldsFromSearchQueries }))
+      const checkedFieldsFromSearchQueries = queriesToFilter(search as `?${string}`);
+      setFilter((filter) => ({ ...filter, ...checkedFieldsFromSearchQueries }));
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     // updateField(filter)
-    const queries = filterToQueries(filter)
+    const queries = filterToQueries(filter);
     // window.history.pushState({path: `/test?${queries}`}, 'undefined');
     // history.push(`/test?${queries}`)
-  }, [filter])
+  }, [filter]);
 
   const updateFilter = (label: string): void => {
     setFilter((state) => {
-      return { ...state, ...{ [label]: !state[label] } }
-    })
-  }
+      return { ...state, ...{ [label]: !state[label] } };
+    });
+  };
   const setAllFilter = (evt: ChangeEvent<HTMLInputElement>): void => {
     setFilter((filter) => {
-      const filterKeys = Object.keys(filter)
+      const filterKeys = Object.keys(filter);
       return filterKeys.reduce<Record<string, boolean>>((acc, filterKey) => {
-        acc[filterKey] = evt.target.checked
-        return acc
-      }, {})
-    })
-  }
+        acc[filterKey] = evt.target.checked;
+        return acc;
+      }, {});
+    });
+  };
 
   return {
     filter: Object.entries(filter as { [k: string]: boolean }),
@@ -73,5 +73,5 @@ export function useAllLocalStateMultipleFilter(
     setAllFilter,
     ...isAllCheckedOrUnchecked(filter),
     filterStream$,
-  }
+  };
 }

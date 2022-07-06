@@ -1,5 +1,5 @@
-import React from 'react'
-import './CssTags.scss'
+import React from 'react';
+import './CssTags.scss';
 
 const CssTags: React.FC = () => {
   // const image = import('../../img/pet.jpeg')
@@ -13,7 +13,7 @@ const CssTags: React.FC = () => {
         <figcaption>Image label - The Pulpit Rock, Norway.</figcaption>
       </figure>
     </section>
-  )
-}
+  );
+};
 
-export default CssTags
+export default CssTags;

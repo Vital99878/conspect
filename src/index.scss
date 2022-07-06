@@ -50,7 +50,7 @@ body {
   --secondary-text-color: rgb(124, 124, 124);
   --secondary-link-color: rgba(21, 48, 168, 0.521);
   --body-bg-color: rgba(208, 208, 208, 0.85);
-  --fs-title: 10rem
+  --fs-title: 10rem;
 }
 
 /* -------------------- Shared custom elements styles --------------------  */
@@ -91,7 +91,6 @@ h2 {
   text-align: center;
 }
 
-
 /* general */
 
 .flex {
@@ -116,13 +115,13 @@ h2 {
 }
 
 .sr-only {
-position: absolute; 
-width: 1px;
-height: 1px;
-padding: 0;
-margin: -1px; 
-overflow: hidden;
-clip: rect(0, 0, 0, 0);
-white-space: nowrap; /* added line */
-border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
 }

@@ -1,2 +1,2 @@
-import { Required } from './required'
-export type { Required }
+import { Required } from './required';
+export type { Required };

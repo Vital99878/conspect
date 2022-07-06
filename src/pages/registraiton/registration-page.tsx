@@ -1,6 +1,6 @@
-import React from 'react'
-import PageLayout from '../../components/Layout/PageLayout'
-import { RegistrationForm } from './components/registration-form'
+import React from 'react';
+import PageLayout from '../../components/Layout/PageLayout';
+import { RegistrationForm } from './components/registration-form';
 
 const RegistrationPage: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const RegistrationPage: React.FC = () => {
         <RegistrationForm />
       </main>
     </PageLayout>
-  )
-}
+  );
+};
 
-export default RegistrationPage
+export default RegistrationPage;

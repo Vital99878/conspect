@@ -1,6 +1,6 @@
-import React from 'react'
-import './CssFlex.scss'
-import PageLayout from '../../../../components/Layout/PageLayout'
+import React from 'react';
+import './CssFlex.scss';
+import PageLayout from '../../../../components/Layout/PageLayout';
 
 const CssFlex: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const CssFlex: React.FC = () => {
         <div className="flex-item">flex item 1</div>
       </div>
     </PageLayout>
-  )
-}
+  );
+};
 
-export default CssFlex
+export default CssFlex;

@@ -4,30 +4,30 @@ const topicPromise = () => {
     fetch('https://jsonplaceholder.typicode.com/todoss')
       .then((response) => {
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`)
-        } else return response.json()
+          throw new Error(`HTTP error! status: ${response.status}`);
+        } else return response.json();
       })
       .then((todos) => console.log('todos: ', todos))
-      .catch((e) => console.log(e.message))
+      .catch((e) => console.log(e.message));
   }
 
   // Promise
   {
     const delay = function (ms: number) {
-      return new Promise((resolve, reject) => setTimeout(resolve, ms))
-    }
+      return new Promise((resolve, reject) => setTimeout(resolve, ms));
+    };
     const promise = new Promise(function (resolve, reject) {
-      setTimeout(() => resolve('done!'), 1000)
-    })
+      setTimeout(() => resolve('done!'), 1000);
+    });
   }
 
   // Await
   {
     const getTodos = async function (url: string) {
-      const response = await fetch(url)
-      const todos = await response.json()
-      return todos
-    }
+      const response = await fetch(url);
+      const todos = await response.json();
+      return todos;
+    };
     // getTodos('https://jsonplaceholder.typicode.com/todos').then((todos) => console.log('todos: ', todos))
   }
 
@@ -40,9 +40,9 @@ const topicPromise = () => {
     // }).catch(alert)
     new Promise(function (resolve, reject) {
       // throw new Error('Whoops!')
-      reject(new Error('Whoops'))
-    }).catch((e) => console.log(e.message))
+      reject(new Error('Whoops'));
+    }).catch((e) => console.log(e.message));
   }
-}
+};
 
-export default topicPromise
+export default topicPromise;

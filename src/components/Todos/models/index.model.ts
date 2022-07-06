@@ -1,4 +1,4 @@
-import { useAllLocalStateTodos } from '../hooks/useAllLocalState__Todos'
+import { useAllLocalStateTodos } from '../hooks/useAllLocalState__Todos';
 
 export enum DropPosition {
   before = 'before',
@@ -11,10 +11,10 @@ export enum TodoStatus {
 }
 
 export type TodoType = {
-  id: number
-  label: string
-  status: TodoStatus
-  order: number
-}
+  id: number;
+  label: string;
+  status: TodoStatus;
+  order: number;
+};
 
-export type R_2 = ReturnType<typeof useAllLocalStateTodos>
+export type R_2 = ReturnType<typeof useAllLocalStateTodos>;

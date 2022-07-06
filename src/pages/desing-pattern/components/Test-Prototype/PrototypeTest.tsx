@@ -1,5 +1,5 @@
-import React from 'react'
-import '../../../../index.scss'
+import React from 'react';
+import '../../../../index.scss';
 
 export const PrototypeTest: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ export const PrototypeTest: React.FC = () => {
         <button onClick={() => console.log('')}>Request 2 from object</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PrototypeTest
+export default PrototypeTest;

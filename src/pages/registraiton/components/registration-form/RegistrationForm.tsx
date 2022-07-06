@@ -1,7 +1,7 @@
-import React from 'react'
-import './registration-form.scss'
-import RequiredMessage from './components/requiredMessage/RequiredMessage'
-import { useRegistrationFormStateLogic } from './hooks/useRegistrationFormStateLogic'
+import React from 'react';
+import './registration-form.scss';
+import RequiredMessage from './components/requiredMessage/RequiredMessage';
+import { useRegistrationFormStateLogic } from './hooks/useRegistrationFormStateLogic';
 
 /**
  * @description Форма регистрации с валидаыцией данных перед отправкой на сервер.
@@ -23,7 +23,7 @@ const RegistrationForm: React.FC = () => {
     requiredLastNameProps,
     requiredPhoneProps,
     requiredEmailProps,
-  } = useRegistrationFormStateLogic()
+  } = useRegistrationFormStateLogic();
 
   return (
     <form className="registrationForm" onSubmit={onSubmit}>
@@ -51,7 +51,7 @@ const RegistrationForm: React.FC = () => {
         Submit
       </button>
     </form>
-  )
-}
+  );
+};
 
-export default RegistrationForm
+export default RegistrationForm;

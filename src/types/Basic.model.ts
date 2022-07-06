@@ -1,14 +1,11 @@
 export interface JSON {
-  value: string
+  value: string;
 }
 
 export interface Primitive {
-  value: string
+  value: string;
 }
 
-export type Object = Record<string, any>
+export type Object = Record<string, any>;
 
-export type Timestamp = number
-
-
-
+export type Timestamp = number;

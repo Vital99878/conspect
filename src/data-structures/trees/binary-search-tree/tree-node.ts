@@ -1,17 +1,17 @@
 class TreeNode<T> {
-  value: T
+  value: T;
 
-  left: TreeNode<T> | null
-  right: TreeNode<T> | null
-  parent: TreeNode<T> | null
+  left: TreeNode<T> | null;
+  right: TreeNode<T> | null;
+  parent: TreeNode<T> | null;
 
   constructor(value: T, parent: TreeNode<T> | null) {
-    this.value = value
+    this.value = value;
 
-    this.left = null
-    this.right = null
-    this.parent = parent
+    this.left = null;
+    this.right = null;
+    this.parent = parent;
   }
 }
 
-export default TreeNode
+export default TreeNode;

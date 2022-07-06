@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState, CSSProperties } from 'react';
 import './test-page.scss';
-import { Simulate } from 'react-dom/test-utils'
-import { numbers } from '../../commonMockData'
+import { Simulate } from 'react-dom/test-utils';
+import { numbers } from '../../commonMockData';
 
 import PageLayout from '../../components/Layout/PageLayout';
 import SearchPage from '../../components/SearchPage';
@@ -10,7 +10,7 @@ import Todos from '../../components/Todos/Todos';
 import { initialTodos } from '../../components/Todos/hooks/todosSingleton';
 import { TestOrderPoint } from './components';
 import { useAttachStyle } from './components/TestTS/useAttachStyle';
-import contextMenu = Simulate.contextMenu
+import contextMenu = Simulate.contextMenu;
 
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode;
@@ -49,12 +49,13 @@ function TestUseAttachHook() {
 const TestPage: React.FC<TestPropsChildren> = () => {
   const [data, setData] = useState('');
   const obj = useRef(data);
-
+  const objj = useRef(data);
+  const objjj = useRef(data);
 
   useEffect(() => {
     if (obj.current !== data) {
       console.log('render update obj');
-      obj.current = data
+      obj.current = data;
     }
   });
 

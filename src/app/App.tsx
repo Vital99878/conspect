@@ -1,8 +1,8 @@
-import React from 'react'
-import { Route, Switch } from 'react-router-dom'
-import DropdownMenu from '../components/Navigation/components/DropdownMenu/DropdownMenu'
-import { Search, RXjsPage, RegistrationPage, CssPage, PreparationPage, DesignPatternPage } from '../pages/'
-import { CssFlex, CssOther, CssTags, CssPosition, CssDisplay, CssGrid } from '../pages/css/components'
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import DropdownMenu from '../components/Navigation/components/DropdownMenu/DropdownMenu';
+import { Search, RXjsPage, RegistrationPage, CssPage, PreparationPage, DesignPatternPage } from '../pages/';
+import { CssFlex, CssOther, CssTags, CssPosition, CssDisplay, CssGrid } from '../pages/css/components';
 import {
   AdapterTest,
   CommandTest,
@@ -12,16 +12,16 @@ import {
   SingletonTest,
   StateTest,
   BuilderTest,
-} from '../pages/desing-pattern/components'
+} from '../pages/desing-pattern/components';
 
-import Navigation from '../components/Navigation/Navigation'
-import { NavigationItem } from '../components/Navigation/components'
-import DsAndAlgorithms from '../pages/DsAndAlgorithms'
-import { pages } from './store/adtiveMenuItemReducer'
-import { dropdownSections } from '../components/Navigation/someData'
+import Navigation from '../components/Navigation/Navigation';
+import { NavigationItem } from '../components/Navigation/components';
+import DsAndAlgorithms from '../pages/DsAndAlgorithms';
+import { pages } from './store/adtiveMenuItemReducer';
+import { dropdownSections } from '../components/Navigation/someData';
 
 const App: React.FC = () => {
-  const { home, css, test, rxjs, registration, designPatterns, preparation, dsAndAlgorithms } = pages
+  const { home, css, test, rxjs, registration, designPatterns, preparation, dsAndAlgorithms } = pages;
   return (
     <div className="App">
       <Navigation>
@@ -64,6 +64,6 @@ const App: React.FC = () => {
         <Route path={`${designPatterns.url}/prototype`} component={PrototypeTest} />
       </Switch>
     </div>
-  )
-}
-export default App
+  );
+};
+export default App;

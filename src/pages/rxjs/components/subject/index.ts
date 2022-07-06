@@ -1,2 +1,2 @@
-import SubTest from './SubTest'
-export default SubTest
+import SubTest from './SubTest';
+export default SubTest;

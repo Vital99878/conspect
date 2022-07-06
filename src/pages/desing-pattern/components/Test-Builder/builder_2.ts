@@ -11,9 +11,9 @@
  * Продуктов.
  */
 export interface Builder {
-  producePartA(): void
-  producePartB(): void
-  producePartC(): void
+  producePartA(): void;
+  producePartB(): void;
+  producePartC(): void;
 }
 
 /**
@@ -21,9 +21,9 @@ export interface Builder {
  * Продуктов.
  */
 export interface Product {
-  a?: string
-  b?: string
-  c?: string
+  a?: string;
+  b?: string;
+  c?: string;
 }
 
 /**
@@ -32,33 +32,33 @@ export interface Product {
  * вариантов Строителей, реализованных по-разному.
  */
 export class ConcreteBuilder1 implements Builder {
-  private product: Product = {}
+  private product: Product = {};
 
   /**
    * Новый экземпляр строителя должен содержать пустой объект продукта,
    * который используется в дальнейшей сборке.
    */
   constructor() {
-    this.reset()
+    this.reset();
   }
 
   public reset(): void {
-    this.product = {}
+    this.product = {};
   }
 
   /**
    * Все этапы производства работают с одним и тем же экземпляром продукта.
    */
   public producePartA(): void {
-    this.product = { a: 'Part A1' }
+    this.product = { a: 'Part A1' };
   }
 
   public producePartB(): void {
-    this.product = { ...this.product, b: 'Part B1' }
+    this.product = { ...this.product, b: 'Part B1' };
   }
 
   public producePartC(): void {
-    this.product = { ...this.product, c: 'Part C1' }
+    this.product = { ...this.product, c: 'Part C1' };
   }
 
   /**
@@ -78,9 +78,9 @@ export class ConcreteBuilder1 implements Builder {
    */
 
   public getProduct(): Product {
-    const result = this.product
-    this.reset()
-    return result
+    const result = this.product;
+    this.reset();
+    return result;
   }
 }
 
@@ -107,7 +107,7 @@ export class ConcreteBuilder1 implements Builder {
  * так как клиент может напрямую управлять строителями.
  */
 export class Director {
-  private builder!: Builder
+  private builder!: Builder;
 
   /**
    * Директор работает с любым экземпляром строителя, который передаётся ему
@@ -116,7 +116,7 @@ export class Director {
    */
 
   public setBuilder(builder: Builder): void {
-    this.builder = builder
+    this.builder = builder;
   }
 
   /**
@@ -124,12 +124,12 @@ export class Director {
    * шаги построения.
    */
   public buildMinimalViableProduct(): void {
-    this.builder.producePartA()
+    this.builder.producePartA();
   }
 
   public buildFullFeaturedProduct(): void {
-    this.builder.producePartA()
-    this.builder.producePartB()
-    this.builder.producePartC()
+    this.builder.producePartA();
+    this.builder.producePartB();
+    this.builder.producePartC();
   }
 }

@@ -1,27 +1,27 @@
-import LinkedList from '../sequences/linked-list'
-import { Entry, Hashable } from './entry'
+import LinkedList from '../sequences/linked-list';
+import { Entry, Hashable } from './entry';
 
 // Code is based off William Fiset's implementation
 class HashTableSeparateChaining<K extends Hashable, V> {
-  private DEFAULT_CAPACITY = 3
+  private DEFAULT_CAPACITY = 3;
 
-  private table: Array<LinkedList<Entry<K, V>>>
+  private table: Array<LinkedList<Entry<K, V>>>;
 
-  private sz: number
-  private capacity: number
-  private maxLoadFactor: number
-  private threshold: number
+  private sz: number;
+  private capacity: number;
+  private maxLoadFactor: number;
+  private threshold: number;
 
   constructor(capacity: number, maxLoadFactor: number) {
-    if (capacity < 0) throw new Error('Illegal capacity')
-    if (maxLoadFactor <= 0) throw new Error('Illegal maxLoadFactor')
+    if (capacity < 0) throw new Error('Illegal capacity');
+    if (maxLoadFactor <= 0) throw new Error('Illegal maxLoadFactor');
 
-    this.sz = 0
-    this.capacity = Math.max(this.DEFAULT_CAPACITY, capacity)
-    this.maxLoadFactor = maxLoadFactor
-    this.threshold = Math.trunc(this.capacity * this.maxLoadFactor)
+    this.sz = 0;
+    this.capacity = Math.max(this.DEFAULT_CAPACITY, capacity);
+    this.maxLoadFactor = maxLoadFactor;
+    this.threshold = Math.trunc(this.capacity * this.maxLoadFactor);
 
-    this.table = new Array(this.capacity)
+    this.table = new Array(this.capacity);
   }
 
   /** ***************************************************************************
@@ -32,7 +32,7 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * @return {number}
    */
   size(): number {
-    return this.sz
+    return this.sz;
   }
 
   /**
@@ -40,7 +40,7 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * @return {boolean}
    */
   isEmpty(): boolean {
-    return this.size() === 0
+    return this.size() === 0;
   }
 
   /**
@@ -48,8 +48,8 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * @return {void}
    */
   clear(): void {
-    this.table.length = 0
-    this.sz = 0
+    this.table.length = 0;
+    this.sz = 0;
   }
 
   /**
@@ -58,8 +58,8 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * @return {boolean}
    */
   containsKey(key: K): boolean {
-    const bucketIndex = this.normalizeIndex(key.hashCode())
-    return this.bucketSeekEntry(bucketIndex, key) !== null
+    const bucketIndex = this.normalizeIndex(key.hashCode());
+    return this.bucketSeekEntry(bucketIndex, key) !== null;
   }
 
   /**
@@ -67,13 +67,13 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * @return {Array<K>}
    */
   keys(): Array<K> {
-    const keys: Array<K> = []
+    const keys: Array<K> = [];
 
     for (const bucket of this.table) {
-      if (bucket !== undefined) for (const entry of bucket) keys.push(entry.key)
+      if (bucket !== undefined) for (const entry of bucket) keys.push(entry.key);
     }
 
-    return keys
+    return keys;
   }
 
   /**
@@ -81,13 +81,13 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * @return {Array<K>}
    */
   values(): Array<V> {
-    const values: Array<V> = []
+    const values: Array<V> = [];
 
     for (const bucket of this.table) {
-      if (bucket !== undefined) for (const entry of bucket) values.push(entry.value)
+      if (bucket !== undefined) for (const entry of bucket) values.push(entry.value);
     }
 
-    return values
+    return values;
   }
 
   /** ***************************************************************************
@@ -99,12 +99,12 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * @return {V | null}
    */
   get(key: K): V | null {
-    const bucketIndex = this.normalizeIndex(key.hashCode())
+    const bucketIndex = this.normalizeIndex(key.hashCode());
 
-    const entry = this.bucketSeekEntry(bucketIndex, key)
-    if (entry !== null) return entry.value
+    const entry = this.bucketSeekEntry(bucketIndex, key);
+    if (entry !== null) return entry.value;
 
-    return null
+    return null;
   }
 
   /**
@@ -114,10 +114,10 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * @return {V | null}
    */
   set(key: K, value: V): V | null {
-    const entry = new Entry<K, V>(key, value)
-    const bucketIndex = this.normalizeIndex(key.hashCode())
+    const entry = new Entry<K, V>(key, value);
+    const bucketIndex = this.normalizeIndex(key.hashCode());
 
-    return this.bucketInsertEntry(bucketIndex, entry)
+    return this.bucketInsertEntry(bucketIndex, entry);
   }
 
   /**
@@ -126,8 +126,8 @@ class HashTableSeparateChaining<K extends Hashable, V> {
    * @return {V | null}
    */
   delete(key: K): V | null {
-    const bucketIndex = this.normalizeIndex(key.hashCode())
-    return this.bucketDeleteEntry(bucketIndex, key)
+    const bucketIndex = this.normalizeIndex(key.hashCode());
+    return this.bucketDeleteEntry(bucketIndex, key);
   }
 
   /** ***************************************************************************
@@ -136,75 +136,75 @@ class HashTableSeparateChaining<K extends Hashable, V> {
   // Converts a hash to an index by stripping the negative
   // sign and maps the hash to domain of [0, capacity]
   private normalizeIndex(hash: number): number {
-    return (hash & 0x7fffffff) % this.capacity
+    return (hash & 0x7fffffff) % this.capacity;
   }
 
   private bucketInsertEntry(bucketIndex: number, entry: Entry<K, V>): V | null {
-    const bucket = this.table[bucketIndex]
+    const bucket = this.table[bucketIndex];
 
-    if (bucket === undefined) this.table[bucketIndex] = new LinkedList<Entry<K, V>>()
+    if (bucket === undefined) this.table[bucketIndex] = new LinkedList<Entry<K, V>>();
 
-    const entryAlreadyExists = this.bucketSeekEntry(bucketIndex, entry.key)
+    const entryAlreadyExists = this.bucketSeekEntry(bucketIndex, entry.key);
 
     if (!entryAlreadyExists) {
-      bucket.addBack(entry)
-      this.sz += 1
+      bucket.addBack(entry);
+      this.sz += 1;
 
-      if (this.sz > this.threshold) this.resizeTable()
+      if (this.sz > this.threshold) this.resizeTable();
 
-      return null // use null to indicate no previous entry
+      return null; // use null to indicate no previous entry
     } else {
-      const oldValue = entryAlreadyExists.value
-      entryAlreadyExists.value = entry.value
+      const oldValue = entryAlreadyExists.value;
+      entryAlreadyExists.value = entry.value;
 
-      return oldValue
+      return oldValue;
     }
   }
 
   private bucketDeleteEntry(bucketIndex: number, key: K): V | null {
-    const entry = this.bucketSeekEntry(bucketIndex, key)
+    const entry = this.bucketSeekEntry(bucketIndex, key);
 
-    if (entry === null) return null
+    if (entry === null) return null;
 
     // o/w, entry with key, key exists in the bucket so remove it
-    const bucket = this.table[bucketIndex]
-    bucket.remove(entry)
+    const bucket = this.table[bucketIndex];
+    bucket.remove(entry);
 
-    this.sz -= 1
+    this.sz -= 1;
 
-    return entry.value
+    return entry.value;
   }
 
   private bucketSeekEntry(bucketIndex: number, key: K): Entry<K, V> | null {
-    const bucket = this.table[bucketIndex]
+    const bucket = this.table[bucketIndex];
 
-    if (bucket === undefined) return null
+    if (bucket === undefined) return null;
 
-    for (const entry of bucket) if (entry.key === key) return entry
+    for (const entry of bucket) if (entry.key === key) return entry;
 
-    return null
+    return null;
   }
 
   private resizeTable(): void {
-    this.capacity *= 2
-    this.threshold = Math.trunc(this.capacity * this.maxLoadFactor)
+    this.capacity *= 2;
+    this.threshold = Math.trunc(this.capacity * this.maxLoadFactor);
 
-    const newTable: Array<LinkedList<Entry<K, V>>> = new Array(this.capacity)
+    const newTable: Array<LinkedList<Entry<K, V>>> = new Array(this.capacity);
 
     for (const bucket of this.table) {
       if (bucket !== undefined) {
         for (const entry of bucket) {
-          const newBucketIndex = this.normalizeIndex(entry.hash)
+          const newBucketIndex = this.normalizeIndex(entry.hash);
 
-          const newBucket = newTable[newBucketIndex]
+          const newBucket = newTable[newBucketIndex];
 
-          if (!newBucket) newTable[newBucketIndex] = new LinkedList<Entry<K, V>>()
+          if (!newBucket) newTable[newBucketIndex] = new LinkedList<Entry<K, V>>();
 
-          newBucket.addBack(entry)
+          newBucket.addBack(entry);
         }
       }
     }
   }
 }
 
-export default HashTableSeparateChaining
+export default HashTableSeparateChaining;

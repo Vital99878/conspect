@@ -1,11 +1,11 @@
-import React from 'react'
-import '../../../../index.scss'
-import { Context, Done, Doing } from './state_2'
+import React from 'react';
+import '../../../../index.scss';
+import { Context, Done, Doing } from './state_2';
 
 export const STateTest = () => {
-  const stateDone = new Done('state Done')
-  const stateDoing = new Doing('state Doing')
-  const objWithState = new Context(stateDone)
+  const stateDone = new Done('state Done');
+  const stateDoing = new Doing('state Doing');
+  const objWithState = new Context(stateDone);
 
   return (
     <div className="StateTest">
@@ -16,7 +16,7 @@ export const STateTest = () => {
         <button onClick={() => objWithState.method_2()}>Request 2 from object</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default STateTest
+export default STateTest;

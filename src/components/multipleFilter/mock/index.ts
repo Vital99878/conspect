@@ -1,4 +1,4 @@
-import { BehaviorSubject } from 'rxjs'
+import { BehaviorSubject } from 'rxjs';
 
 export const items = [
   {
@@ -25,12 +25,12 @@ export const items = [
     label: '5',
     categories: ['first', 'third'],
   },
-]
+];
 
 export const initialFilter = {
   first: false,
   second: false,
   third: false,
-}
+};
 
-export const filter$ = new BehaviorSubject(initialFilter)
+export const filter$ = new BehaviorSubject(initialFilter);

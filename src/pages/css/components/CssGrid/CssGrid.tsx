@@ -1,5 +1,5 @@
-import React from 'react'
-import './CssGrid.scss'
+import React from 'react';
+import './CssGrid.scss';
 
 const CssGrid: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const CssGrid: React.FC = () => {
       <div className="grid-item">grid item 5</div>
       <div className="grid-item">grid item 6</div>
     </div>
-  )
-}
+  );
+};
 
-export default CssGrid
+export default CssGrid;

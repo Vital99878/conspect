@@ -5,6 +5,6 @@ export declare function SubTest({
   field,
   updateField,
 }: {
-  field: string
-  updateField: (text: string) => void
-}): JSX.Element
+  field: string;
+  updateField: (text: string) => void;
+}): JSX.Element;

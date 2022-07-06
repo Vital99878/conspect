@@ -1,7 +1,7 @@
-import React from 'react'
-import './MultipleFilter.scss'
-import CheckBoxItem from './components/CheckBoxItem/CheckBoxItem'
-import { useAllLocalStateMultipleFilter } from './hooks/use_all_local_state_multiple_filter'
+import React from 'react';
+import './MultipleFilter.scss';
+import CheckBoxItem from './components/CheckBoxItem/CheckBoxItem';
+import { useAllLocalStateMultipleFilter } from './hooks/use_all_local_state_multiple_filter';
 
 /**
  * Фильтр, который позволяет выбрать несколько значений для фильтрации.
@@ -9,9 +9,9 @@ import { useAllLocalStateMultipleFilter } from './hooks/use_all_local_state_mult
  */
 
 const MultipleFilter: React.FC = () => {
-  const { filter, updateFilter, setAllFilter, isAllChecked } = useAllLocalStateMultipleFilter()
+  const { filter, updateFilter, setAllFilter, isAllChecked } = useAllLocalStateMultipleFilter();
 
-  const checkboxes = filter.map((filter) => <CheckBoxItem key={filter[0]} item={filter} updateFilter={updateFilter} />)
+  const checkboxes = filter.map((filter) => <CheckBoxItem key={filter[0]} item={filter} updateFilter={updateFilter} />);
 
   return (
     <form className="singleFilter">
@@ -21,7 +21,7 @@ const MultipleFilter: React.FC = () => {
         All
       </label>
     </form>
-  )
-}
+  );
+};
 
-export default MultipleFilter
+export default MultipleFilter;

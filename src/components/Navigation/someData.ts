@@ -1,5 +1,5 @@
-import { CssPages } from '../../app/store/adtiveMenuItemReducer'
-import { NavigationProps, DropdownSection } from './types'
+import { CssPages } from '../../app/store/adtiveMenuItemReducer';
+import { NavigationProps, DropdownSection } from './types';
 
 const sectionFlex: DropdownSection<CssPages> = {
   label: 'flex section',
@@ -18,6 +18,6 @@ const sectionFlex: DropdownSection<CssPages> = {
       label: 'display',
     },
   ],
-}
+};
 
-export const dropdownSections: DropdownSection<CssPages>[] = [sectionFlex]
+export const dropdownSections: DropdownSection<CssPages>[] = [sectionFlex];

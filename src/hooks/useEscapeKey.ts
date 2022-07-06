@@ -1,4 +1,4 @@
-import { DependencyList, useEffect } from 'react'
+import { DependencyList, useEffect } from 'react';
 
 /**
  * @example
@@ -19,11 +19,11 @@ import { DependencyList, useEffect } from 'react'
 
 export const useEscapeKey = (cb: () => void, deps: DependencyList = []): void => {
   const test = (evt: KeyboardEvent) => {
-    evt.stopPropagation()
-    evt.key === 'Escape' ? cb() : null
-  }
+    evt.stopPropagation();
+    evt.key === 'Escape' ? cb() : null;
+  };
   useEffect((): VoidFunction => {
-    document.addEventListener('keydown', test)
-    return () => document.removeEventListener('keydown', test)
-  }, deps)
-}
+    document.addEventListener('keydown', test);
+    return () => document.removeEventListener('keydown', test);
+  }, deps);
+};

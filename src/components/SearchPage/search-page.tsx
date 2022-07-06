@@ -1,90 +1,90 @@
-import React, { useState, useRef, FormEvent, useEffect, CSSProperties } from 'react'
-import './search-page.scss'
-import testPage from '../../pages/test/test-page'
-import { useSearchHistory } from './hooks/useSeachHistory'
-import { HistorySearch } from './utils/SearchHistory'
+import React, { useState, useRef, FormEvent, useEffect, CSSProperties } from 'react';
+import './search-page.scss';
+import testPage from '../../pages/test/test-page';
+import { useSearchHistory } from './hooks/useSeachHistory';
+import { HistorySearch } from './utils/SearchHistory';
 
 type Props = {
-  prop?: string
-  children?: React.ReactElement
-}
+  prop?: string;
+  children?: React.ReactElement;
+};
 type Dictionary = {
-  [k in string]: boolean
-}
+  [k in string]: boolean;
+};
 
 const SearchPage: React.FC<Props> = ({}) => {
-  const dataForAutocomplete = ['first', 'second', 'third']
+  const dataForAutocomplete = ['first', 'second', 'third'];
   // todo показываеть, что на странице есть поиск!
   // todo debounce
-  const [search, setSearch] = useState('')
-  const [isShow, setIsShow] = useState(false)
-  const [searchHistory, setSearchHistory] = useState<string[]>(HistorySearch.createHistory(5))
-  const [autocomplete, setAutocomplete] = useState<string[]>([])
-  const inputRef = useRef<HTMLInputElement>(null)
+  const [search, setSearch] = useState('');
+  const [isShow, setIsShow] = useState(false);
+  const [searchHistory, setSearchHistory] = useState<string[]>(HistorySearch.createHistory(5));
+  const [autocomplete, setAutocomplete] = useState<string[]>([]);
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  const dictionaryRef = useRef<Dictionary>({})
+  const dictionaryRef = useRef<Dictionary>({});
 
-  HistorySearch.createHistory(5)
+  HistorySearch.createHistory(5);
   // console.log('searchHistory: ', searchHistory)
 
   function show(evt: KeyboardEvent) {
     if (evt.key === 'Escape') {
-      setIsShow(false)
-      return
+      setIsShow(false);
+      return;
     }
 
-    if (evt.key.length > 1) return
+    if (evt.key.length > 1) return;
 
-    if (inputRef.current) inputRef.current.focus()
-    setIsShow(true)
+    if (inputRef.current) inputRef.current.focus();
+    setIsShow(true);
   }
 
   function typing(evt: React.ChangeEvent<HTMLInputElement>) {
-    setSearch(() => evt.target.value)
+    setSearch(() => evt.target.value);
   }
 
   function addToDict(fraze: string) {
-    if (dictionaryRef.current[fraze]) return
-    dictionaryRef.current[fraze] = true
+    if (dictionaryRef.current[fraze]) return;
+    dictionaryRef.current[fraze] = true;
   }
 
   function onSubmit(evt: FormEvent) {
-    evt.preventDefault()
+    evt.preventDefault();
 
-    HistorySearch.add(search.trim())
-    addToDict(search.trim())
+    HistorySearch.add(search.trim());
+    addToDict(search.trim());
 
-    setSearch('')
-    setIsShow(false)
-    setSearchHistory(HistorySearch.getHistory())
+    setSearch('');
+    setIsShow(false);
+    setSearchHistory(HistorySearch.getHistory());
   }
 
   useEffect((): VoidFunction => {
-    document.addEventListener('keydown', show)
-    return () => document.removeEventListener('keydown', show)
-  }, [])
+    document.addEventListener('keydown', show);
+    return () => document.removeEventListener('keydown', show);
+  }, []);
 
   // autocomplete
   useEffect(() => {
-    if (!search) return setAutocomplete([])
-    setAutocomplete(() => dataForAutocomplete.filter((item) => item.indexOf(search) > -1))
-  }, [search])
+    if (!search) return setAutocomplete([]);
+    setAutocomplete(() => dataForAutocomplete.filter((item) => item.indexOf(search) > -1));
+  }, [search]);
 
   const historyS = (
     <ul className={'auto'}>
       {searchHistory.map((item, index) => {
         function deleteItem() {
-          HistorySearch.delete(item)
-          setSearchHistory(() =>HistorySearch.getHistory())
+          HistorySearch.delete(item);
+          setSearchHistory(() => HistorySearch.getHistory());
         }
         return (
           <li key={item} className={'history-item'}>
             <div onClick={deleteItem}>{item}</div>
           </li>
-        )
+        );
       })}
     </ul>
-  )
+  );
 
   // if (!isShow) return null
 
@@ -93,7 +93,7 @@ const SearchPage: React.FC<Props> = ({}) => {
       <input value={search} type={'text'} onChange={typing} autoFocus={true} ref={inputRef} />
       {historyS}
     </form>
-  )
-}
+  );
+};
 
-export default SearchPage
+export default SearchPage;

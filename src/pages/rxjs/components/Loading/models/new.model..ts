@@ -1,1 +1,1 @@
-export type NewModel = 'new model'
+export type NewModel = 'new model';

@@ -9,7 +9,7 @@
  */
 export class Target {
   public request(): string {
-    return 'Target: The default target\'s behavior.'
+    return 'Target: The default target\'s behavior.';
   }
 }
 
@@ -20,7 +20,7 @@ export class Target {
  */
 class Adaptee {
   public specificRequest(): string {
-    return '.eetpadA eht fo roivaheb laicepS'
+    return '.eetpadA eht fo roivaheb laicepS';
   }
 }
 
@@ -29,16 +29,16 @@ class Adaptee {
  * интерфейсом.
  */
 class Adapter extends Target {
-  private adaptee: Adaptee
+  private adaptee: Adaptee;
 
   constructor(adaptee: Adaptee) {
-    super()
-    this.adaptee = adaptee
+    super();
+    this.adaptee = adaptee;
   }
 
   public request(): string {
-    const result = this.adaptee.specificRequest().split('').reverse().join('')
-    return `Adapter: (TRANSLATED) ${result}`
+    const result = this.adaptee.specificRequest().split('').reverse().join('');
+    return `Adapter: (TRANSLATED) ${result}`;
   }
 }
 

@@ -1,4 +1,4 @@
 export type Required = {
-  isRequired: boolean
-  textContent: string
-}
+  isRequired: boolean;
+  textContent: string;
+};

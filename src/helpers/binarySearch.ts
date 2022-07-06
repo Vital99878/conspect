@@ -5,19 +5,19 @@
  * @return - index of the found item
  */
 export function binarySearch<T>(arr: T[], item: T): number {
-  let minPointer = 0
-  let maxPointer = arr.length
-  let middlePointer = Math.floor((minPointer + maxPointer) / 2)
+  let minPointer = 0;
+  let maxPointer = arr.length;
+  let middlePointer = Math.floor((minPointer + maxPointer) / 2);
 
   while (true) {
-    if (arr[middlePointer] === item) break
+    if (arr[middlePointer] === item) break;
     if (minPointer === maxPointer) {
-      middlePointer = -1
-      break
+      middlePointer = -1;
+      break;
     }
-    if (arr[middlePointer] < item) minPointer = ++middlePointer
-    if (arr[middlePointer] > item) maxPointer = --middlePointer
+    if (arr[middlePointer] < item) minPointer = ++middlePointer;
+    if (arr[middlePointer] > item) maxPointer = --middlePointer;
   }
 
-  return middlePointer
+  return middlePointer;
 }

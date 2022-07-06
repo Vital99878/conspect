@@ -1,14 +1,14 @@
-import React from 'react'
-import './Layout.scss'
-import { useHistory } from 'react-router-dom'
+import React from 'react';
+import './Layout.scss';
+import { useHistory } from 'react-router-dom';
 
 type LayoutProps = {
-  pageHeading?: string
-  children: React.ReactElement
-  Footer?: React.Component | React.ReactElement
-  Header?: React.Component | React.ReactElement
-  isGoBack?: boolean
-}
+  pageHeading?: string;
+  children: React.ReactElement;
+  Footer?: React.Component | React.ReactElement;
+  Header?: React.Component | React.ReactElement;
+  isGoBack?: boolean;
+};
 // const initialLayoutProps: Exclude<LayoutProps, 'children'> = {
 //   Header: null,
 //   Footer: null,
@@ -21,9 +21,9 @@ type LayoutProps = {
  */
 
 const GoBackButton: React.FC = () => {
-  const history = useHistory()
-  return <button onClick={history.goBack}>go back </button>
-}
+  const history = useHistory();
+  return <button onClick={history.goBack}>go back </button>;
+};
 
 const PageLayout: React.FC<LayoutProps> = ({
   children,
@@ -32,8 +32,8 @@ const PageLayout: React.FC<LayoutProps> = ({
   Header = null,
   isGoBack = false,
 }) => {
-  const PageHeading = pageHeading ? <h1>{pageHeading}</h1> : null
-  const Content = children
+  const PageHeading = pageHeading ? <h1>{pageHeading}</h1> : null;
+  const Content = children;
 
   return (
     <>
@@ -43,7 +43,7 @@ const PageLayout: React.FC<LayoutProps> = ({
       {Content}
       {Footer}
     </>
-  )
-}
+  );
+};
 
-export default PageLayout
+export default PageLayout;

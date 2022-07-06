@@ -11,9 +11,9 @@
  * Продуктов.
  */
 export interface Builder {
-  producePartA(): void
-  producePartB(): void
-  producePartC(): void
+  producePartA(): void;
+  producePartB(): void;
+  producePartC(): void;
 }
 
 /**
@@ -22,33 +22,33 @@ export interface Builder {
  * вариантов Строителей, реализованных по-разному.
  */
 export class ConcreteBuilder1 implements Builder {
-  private product!: Product1
+  private product!: Product1;
 
   /**
    * Новый экземпляр строителя должен содержать пустой объект продукта,
    * который используется в дальнейшей сборке.
    */
   constructor() {
-    this.reset()
+    this.reset();
   }
 
   public reset(): void {
-    this.product = new Product1()
+    this.product = new Product1();
   }
 
   /**
    * Все этапы производства работают с одним и тем же экземпляром продукта.
    */
   public producePartA(): void {
-    this.product.parts.push('Part A1')
+    this.product.parts.push('Part A1');
   }
 
   public producePartB(): void {
-    this.product.parts.push('Part B1')
+    this.product.parts.push('Part B1');
   }
 
   public producePartC(): void {
-    this.product.parts.push('Part C1')
+    this.product.parts.push('Part C1');
   }
 
   /**
@@ -68,9 +68,9 @@ export class ConcreteBuilder1 implements Builder {
    */
 
   public getProduct(): Product1 {
-    const result = this.product
-    this.reset()
-    return result
+    const result = this.product;
+    this.reset();
+    return result;
   }
 }
 
@@ -83,10 +83,10 @@ export class ConcreteBuilder1 implements Builder {
  * строителей могут не всегда следовать одному и тому же интерфейсу.
  */
 export class Product1 {
-  public parts: string[] = []
+  public parts: string[] = [];
 
   public listParts(): void {
-    console.log(`Product parts: ${this.parts.join(', ')}\n`)
+    console.log(`Product parts: ${this.parts.join(', ')}\n`);
   }
 }
 
@@ -97,7 +97,7 @@ export class Product1 {
  * так как клиент может напрямую управлять строителями.
  */
 export class Director {
-  private builder!: Builder
+  private builder!: Builder;
 
   /**
    * Директор работает с любым экземпляром строителя, который передаётся ему
@@ -106,7 +106,7 @@ export class Director {
    */
 
   public setBuilder(builder: Builder): void {
-    this.builder = builder
+    this.builder = builder;
   }
 
   /**
@@ -114,12 +114,12 @@ export class Director {
    * шаги построения.
    */
   public buildMinimalViableProduct(): void {
-    this.builder.producePartA()
+    this.builder.producePartA();
   }
 
   public buildFullFeaturedProduct(): void {
-    this.builder.producePartA()
-    this.builder.producePartB()
-    this.builder.producePartC()
+    this.builder.producePartA();
+    this.builder.producePartB();
+    this.builder.producePartC();
   }
 }

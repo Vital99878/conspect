@@ -1,2 +1,2 @@
-import IndexedDHeap from './IndexedDHeap'
-export { IndexedDHeap }
+import IndexedDHeap from './IndexedDHeap';
+export { IndexedDHeap };

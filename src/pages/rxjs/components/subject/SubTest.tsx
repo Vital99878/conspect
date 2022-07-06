@@ -1,17 +1,17 @@
-import React, { ChangeEvent } from 'react'
-import './Subject..scss'
-import useSubject from './hooks'
-import { observableValue } from './observableValue'
-import { BehaviorSubject } from 'rxjs'
+import React, { ChangeEvent } from 'react';
+import './Subject..scss';
+import useSubject from './hooks';
+import { observableValue } from './observableValue';
+import { BehaviorSubject } from 'rxjs';
 
 /**
  * Компонет для тестирования Observable value
  */
 
 const SubTest = (): JSX.Element => {
-  const [field, updateField] = useSubject(observableValue, '')
-  const observable$ = new BehaviorSubject(true)
-  const asObservable$ = observable$.asObservable()
+  const [field, updateField] = useSubject(observableValue, '');
+  const observable$ = new BehaviorSubject(true);
+  const asObservable$ = observable$.asObservable();
 
   {
     // observable$.subscribe((value) => console.log('value: ', value))
@@ -26,7 +26,7 @@ const SubTest = (): JSX.Element => {
       <button onClick={() => updateField('button click')}>subject</button>
       <p>{field}</p>
     </div>
-  )
-}
+  );
+};
 
-export default SubTest
+export default SubTest;

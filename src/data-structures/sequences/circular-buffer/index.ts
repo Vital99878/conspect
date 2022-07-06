@@ -1,1 +1,1 @@
-export { default } from './circular-buffer'
+export { default } from './circular-buffer';

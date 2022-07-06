@@ -1,2 +1,2 @@
-import { NewModel } from './new.model.'
-export type { NewModel }
+import { NewModel } from './new.model.';
+export type { NewModel };

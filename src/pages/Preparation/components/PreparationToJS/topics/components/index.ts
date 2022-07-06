@@ -1,2 +1,2 @@
-import domEvent from './domEvent/domEvent'
-export { domEvent }
+import domEvent from './domEvent/domEvent';
+export { domEvent };

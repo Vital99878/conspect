@@ -1,5 +1,5 @@
-import React from 'react'
-import '../../../../index.scss'
+import React from 'react';
+import '../../../../index.scss';
 // import {} from './iterator'
 // import {} from './iterator_2'
 
@@ -16,7 +16,7 @@ export const IteratorTest: React.FC = () => {
         <button onClick={() => console.log('')}>reverse</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default IteratorTest
+export default IteratorTest;

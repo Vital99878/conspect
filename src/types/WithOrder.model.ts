@@ -1,3 +1,3 @@
 export type WithOrder = {
-  order: number
-}
+  order: number;
+};

@@ -1,5 +1,5 @@
-import React from 'react'
-import './CssDisplay.scss'
+import React from 'react';
+import './CssDisplay.scss';
 
 const CssDisplay: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const CssDisplay: React.FC = () => {
       </p>
       <a>link to next </a>
     </div>
-  )
-}
+  );
+};
 
-export default CssDisplay
+export default CssDisplay;

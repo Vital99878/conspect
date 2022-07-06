@@ -1,4 +1,4 @@
-import React, { DependencyList, useEffect } from 'react'
+import React, { DependencyList, useEffect } from 'react';
 
 /**
  * @example
@@ -30,12 +30,12 @@ export const useClickOutside = (
   useEffect((): VoidFunction => {
     const outsideClickHandler = (event: MouseEvent): void => {
       if (element.current instanceof Node && event.target instanceof Node && !element.current.contains(event.target)) {
-        callback(event)
+        callback(event);
       }
-    }
+    };
 
-    document.addEventListener('click', outsideClickHandler)
+    document.addEventListener('click', outsideClickHandler);
 
-    return (): void => document.removeEventListener('click', outsideClickHandler)
-  }, deps)
-}
+    return (): void => document.removeEventListener('click', outsideClickHandler);
+  }, deps);
+};

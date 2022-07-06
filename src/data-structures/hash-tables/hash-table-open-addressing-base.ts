@@ -1,39 +1,39 @@
-import { Hashable } from './entry'
+import { Hashable } from './entry';
 
 // Code is based off William Fiset's implementation
 abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
-  private DEFAULT_CAPACITY = 7
+  private DEFAULT_CAPACITY = 7;
 
   // Special marker token used to indicate the deletion of a key-value pair
-  protected TOMBSTONE: K = new Object() as K
+  protected TOMBSTONE: K = new Object() as K;
 
-  protected keyList: Array<K>
-  protected valueList: Array<V | null>
+  protected keyList: Array<K>;
+  protected valueList: Array<V | null>;
 
-  protected capacity: number
-  protected maxLoadFactor: number
-  protected threshold: number
+  protected capacity: number;
+  protected maxLoadFactor: number;
+  protected threshold: number;
 
-  protected modificationCount: number
-  protected usedBuckets: number // counts total number of used buckets (including tombstones)
-  protected keyCount: number // number of unique keys in hash table
+  protected modificationCount: number;
+  protected usedBuckets: number; // counts total number of used buckets (including tombstones)
+  protected keyCount: number; // number of unique keys in hash table
 
   constructor(capacity: number, maxLoadFactor: number) {
-    if (capacity < 0) throw new Error('Illegal capacity')
-    if (maxLoadFactor <= 0) throw new Error('Illegal maxLoadFactor')
+    if (capacity < 0) throw new Error('Illegal capacity');
+    if (maxLoadFactor <= 0) throw new Error('Illegal maxLoadFactor');
 
-    this.capacity = Math.max(this.DEFAULT_CAPACITY, capacity)
-    this.maxLoadFactor = maxLoadFactor
-    this.adjustCapacity()
+    this.capacity = Math.max(this.DEFAULT_CAPACITY, capacity);
+    this.maxLoadFactor = maxLoadFactor;
+    this.adjustCapacity();
 
-    this.threshold = Math.trunc(this.capacity * this.maxLoadFactor)
-    this.modificationCount = 0
+    this.threshold = Math.trunc(this.capacity * this.maxLoadFactor);
+    this.modificationCount = 0;
 
-    this.usedBuckets = 0
-    this.keyCount = 0
+    this.usedBuckets = 0;
+    this.keyCount = 0;
 
-    this.keyList = new Array<K>(this.capacity)
-    this.valueList = new Array<V>(this.capacity)
+    this.keyList = new Array<K>(this.capacity);
+    this.valueList = new Array<V>(this.capacity);
   }
 
   /** ***************************************************************************
@@ -42,14 +42,14 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
   // These three methods are used to dictate how the probing is to actually
   // occur for whatever open addressing scheme you are implementing.
 
-  abstract setupProbing(key: K): void
+  abstract setupProbing(key: K): void;
 
   // Adjusts the capacity of the hash table after it's been made larger.
   // This is important to be able to override because the size of the hashtable
   // controls the functionality of the probing function.
-  abstract adjustCapacity(): void
+  abstract adjustCapacity(): void;
 
-  abstract probe(x: number): number
+  abstract probe(x: number): number;
 
   /** ***************************************************************************
                                             INSPECTION
@@ -59,7 +59,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {number}
    */
   size(): number {
-    return this.keyCount
+    return this.keyCount;
   }
 
   /**
@@ -67,7 +67,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {number}
    */
   isEmpty(): boolean {
-    return this.size() === 0
+    return this.size() === 0;
   }
 
   /**
@@ -75,7 +75,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {number}
    */
   getCapacity(): number {
-    return this.capacity
+    return this.capacity;
   }
 
   /**
@@ -83,12 +83,12 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {void}
    */
   clear(): void {
-    this.keyList.length = 0
-    this.valueList.length = 0
+    this.keyList.length = 0;
+    this.valueList.length = 0;
 
-    this.usedBuckets = 0
-    this.keyCount = 0
-    this.modificationCount += 1
+    this.usedBuckets = 0;
+    this.keyCount = 0;
+    this.modificationCount += 1;
   }
 
   /**
@@ -97,7 +97,7 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {boolean}
    */
   containsKey(key: K): boolean {
-    return this.get(key) !== null
+    return this.get(key) !== null;
   }
 
   /**
@@ -105,13 +105,13 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {Array<K>}
    */
   keys(): Array<K> {
-    const keys: Array<K> = []
+    const keys: Array<K> = [];
 
     for (const key of this.keyList) {
-      if (key && key !== this.TOMBSTONE) keys.push(key)
+      if (key && key !== this.TOMBSTONE) keys.push(key);
     }
 
-    return keys
+    return keys;
   }
 
   /**
@@ -119,13 +119,13 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {Array<K>}
    */
   values(): Array<V> {
-    const values: Array<V> = []
+    const values: Array<V> = [];
 
     for (let i = 0; i < this.keyList.length; i++) {
-      if (this.keyList[i] && this.keyList[i] !== this.TOMBSTONE) values.push(values[i])
+      if (this.keyList[i] && this.keyList[i] !== this.TOMBSTONE) values.push(values[i]);
     }
 
-    return values
+    return values;
   }
 
   /** ***************************************************************************
@@ -137,17 +137,17 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {V | null}
    */
   get(key: K): V | null {
-    let output: V | null = null
+    let output: V | null = null;
 
-    this.setupProbing(key)
+    this.setupProbing(key);
 
-    const offset = this.normalizeIndex(key.hashCode())
+    const offset = this.normalizeIndex(key.hashCode());
 
     for (let i = offset, j = -1, x = 1; ; i = this.normalizeIndex(offset + this.probe(x++))) {
       // Ignore deleted cells, but record where the first index
       // of a deleted cell is found to perform lazy relocation later.
       if (this.keyList[i] === this.TOMBSTONE) {
-        if (j === -1) j = i
+        if (j === -1) j = i;
       } else if (this.keyList[i] !== null) {
         // we found a match
         if (this.keyList[i] === key) {
@@ -158,22 +158,22 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
 
           if (j !== -1) {
             // send the key value pair to index j
-            this.keyList[j] = this.keyList[i]
-            this.valueList[j] = this.valueList[i]
+            this.keyList[j] = this.keyList[i];
+            this.valueList[j] = this.valueList[i];
 
             // delete key value pair at index i
-            this.keyList[i] = this.TOMBSTONE
-            this.valueList[i] = null
-            output = this.valueList[j]
-            break
+            this.keyList[i] = this.TOMBSTONE;
+            this.valueList[i] = null;
+            output = this.valueList[j];
+            break;
           } else {
-            output = this.valueList[i]
+            output = this.valueList[i];
           }
         }
       }
     }
 
-    return output
+    return output;
   }
 
   /**
@@ -183,64 +183,64 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {V | null}
    */
   set(key: K, value: V | null): V | null {
-    let output: V | null = null
+    let output: V | null = null;
 
-    if (this.usedBuckets >= this.threshold) this.resizeTable()
+    if (this.usedBuckets >= this.threshold) this.resizeTable();
 
-    this.setupProbing(key)
+    this.setupProbing(key);
 
-    const offset = this.normalizeIndex(key.hashCode())
+    const offset = this.normalizeIndex(key.hashCode());
 
     // start at the original hash value and probe until we find our key or null
     for (let i = offset, j = -1, x = 1; ; i = this.normalizeIndex(offset + this.probe(x++))) {
       // if the current slow was previously deleted
       if (this.keyList[i] === this.TOMBSTONE) {
-        if (j === -1) j = i
+        if (j === -1) j = i;
       } else if (this.keyList[i] !== null) {
         // the key we're trying to insert already exists in the hash table, so update with the new
         // value
         if (this.keyList[i] === key) {
-          const oldValue = this.valueList[i]
+          const oldValue = this.valueList[i];
 
           if (j === -1) {
-            this.valueList[i] = value
+            this.valueList[i] = value;
           } else {
-            this.keyList[i] = this.TOMBSTONE
-            this.valueList[i] = null
+            this.keyList[i] = this.TOMBSTONE;
+            this.valueList[i] = null;
 
-            this.keyList[j] = key
-            this.valueList[j] = value
+            this.keyList[j] = key;
+            this.valueList[j] = value;
           }
 
-          this.modificationCount += 1
-          output = oldValue
-          break
+          this.modificationCount += 1;
+          output = oldValue;
+          break;
         }
 
         // current slot is empty so an insertion can occur
       } else {
         if (j === -1) {
-          this.usedBuckets += 1
-          this.keyCount += 1
+          this.usedBuckets += 1;
+          this.keyCount += 1;
 
-          this.keyList[i] = key
-          this.valueList[i] = value
+          this.keyList[i] = key;
+          this.valueList[i] = value;
 
           // previously seen bucket. Instead of inserting the new element at i where the null element
           // is insert it where the deleted token was found.
         } else {
-          this.keyCount += 1
-          this.keyList[j] = key
-          this.valueList[j] = value
+          this.keyCount += 1;
+          this.keyList[j] = key;
+          this.valueList[j] = value;
         }
 
-        this.modificationCount += 1
-        output = null
-        break
+        this.modificationCount += 1;
+        output = null;
+        break;
       }
     }
 
-    return output
+    return output;
   }
 
   /**
@@ -249,34 +249,34 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
    * @return {V | null}
    */
   delete(key: K): V | null {
-    let output: V | null = null
+    let output: V | null = null;
 
-    this.setupProbing(key)
+    this.setupProbing(key);
 
-    const offset = this.normalizeIndex(key.hashCode())
+    const offset = this.normalizeIndex(key.hashCode());
 
     for (let i = offset, x = 1; ; i = this.normalizeIndex(offset + this.probe((x += 1)))) {
       // ignore tombstones
-      if (this.keyList[i] === this.TOMBSTONE) continue
+      if (this.keyList[i] === this.TOMBSTONE) continue;
 
       if (this.keyList[i] === null) {
-        output = null
-        break
+        output = null;
+        break;
       }
 
       // key is indeed in hash table
       if (this.keyList[i] === key) {
-        const oldValue = this.valueList[i]
+        const oldValue = this.valueList[i];
 
-        this.keyList[i] = this.TOMBSTONE
-        this.valueList[i] = null
+        this.keyList[i] = this.TOMBSTONE;
+        this.valueList[i] = null;
 
-        this.modificationCount -= 1
-        this.keyCount -= 1
+        this.modificationCount -= 1;
+        this.keyCount -= 1;
       }
     }
 
-    return output
+    return output;
   }
 
   /** ***************************************************************************
@@ -285,40 +285,40 @@ abstract class HashTableOpenAddressingBase<K extends Hashable, V> {
   // Converts a hash to an index by stripping the negative
   // sign and maps the hash to domain of [0, capacity]
   protected normalizeIndex(hash: number): number {
-    return (hash & 0x7fffffff) % this.capacity
+    return (hash & 0x7fffffff) % this.capacity;
   }
 
   protected increaseCapacity(): void {
-    this.capacity = this.capacity * 2 + 1
+    this.capacity = this.capacity * 2 + 1;
   }
 
   protected gcd(a: number, b: number): number {
-    if (b === 0) return a
-    return this.gcd(a, a % b)
+    if (b === 0) return a;
+    return this.gcd(a, a % b);
   }
 
   // double size of hash table
   private resizeTable(): void {
-    this.increaseCapacity()
-    this.adjustCapacity()
+    this.increaseCapacity();
+    this.adjustCapacity();
 
-    this.threshold = Math.trunc(this.capacity * this.maxLoadFactor)
+    this.threshold = Math.trunc(this.capacity * this.maxLoadFactor);
 
-    const oldKeyList = this.keyList
-    this.keyList = []
+    const oldKeyList = this.keyList;
+    this.keyList = [];
 
-    const oldValueList = this.valueList
-    this.valueList = []
+    const oldValueList = this.valueList;
+    this.valueList = [];
 
-    this.keyCount = 0
-    this.usedBuckets = 0
+    this.keyCount = 0;
+    this.usedBuckets = 0;
 
     for (let i = 0; i < oldKeyList.length; i++) {
       if (oldKeyList[i] && oldKeyList[i] !== this.TOMBSTONE) {
-        this.set(oldKeyList[i], oldValueList[i])
+        this.set(oldKeyList[i], oldValueList[i]);
       }
     }
   }
 }
 
-export default HashTableOpenAddressingBase
+export default HashTableOpenAddressingBase;

@@ -1,14 +1,14 @@
-import { Subject } from 'rxjs'
+import { Subject } from 'rxjs';
 
 export abstract class Service implements IService {
-  protected unsubscribe$: Subject<void> = new Subject()
+  protected unsubscribe$: Subject<void> = new Subject();
 
   destroy(): void {
-    this.unsubscribe$.next()
-    this.unsubscribe$.complete()
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
   }
 }
 
 export interface IService {
-  destroy(): void
+  destroy(): void;
 }

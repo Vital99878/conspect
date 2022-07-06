@@ -12,17 +12,17 @@
  * Состояниями для передачи Контекста другому Состоянию.
  */
 export abstract class State {
-  protected context!: Context
+  protected context!: Context;
 
   constructor(public name: string) {}
 
   public setContext(context: Context): void {
-    this.context = context
+    this.context = context;
   }
 
-  public abstract handle1(): void
+  public abstract handle1(): void;
 
-  public abstract handle2(): void
+  public abstract handle2(): void;
 }
 
 /**
@@ -34,26 +34,26 @@ export class Context {
   /**
    * @type {State} Ссылка на текущее состояние Контекста.
    */
-  public state: State
+  public state: State;
   public setState(state: State): void {
-    console.log(`%cSet state to S${state.name}`, 'color:green; font-size: 14px')
-    this.state = state
-    this.state.setContext(this)
+    console.log(`%cSet state to S${state.name}`, 'color:green; font-size: 14px');
+    this.state = state;
+    this.state.setContext(this);
   }
 
   constructor(state: State) {
-    this.state = state
+    this.state = state;
   }
 
   /**
    * Контекст делегирует часть своего поведения текущему объекту Состояния.
    */
   public request1(): void {
-    this.state.handle1()
+    this.state.handle1();
   }
 
   public request2(): void {
-    this.state.handle2()
+    this.state.handle2();
   }
 }
 
@@ -63,21 +63,21 @@ export class Context {
  */
 export class ConcreteState_A extends State {
   public handle1(): void {
-    console.log(`%cConcrete State A handles request 1.`, 'color:green; font-size: 14px')
+    console.log(`%cConcrete State A handles request 1.`, 'color:green; font-size: 14px');
   }
 
   public handle2(): void {
-    console.log(`%cConcrete State A handles request 2.`, 'color:green; font-size: 14px')
+    console.log(`%cConcrete State A handles request 2.`, 'color:green; font-size: 14px');
   }
 }
 
 export class ConcreteState_B extends State {
   public handle1(): void {
-    console.log(`%cConcrete State B handles request 1.`, 'color:green; font-size: 14px')
+    console.log(`%cConcrete State B handles request 1.`, 'color:green; font-size: 14px');
   }
 
   public handle2(): void {
-    console.log(`%cConcrete State B handles request 2.`, 'color:green; font-size: 14px')
+    console.log(`%cConcrete State B handles request 2.`, 'color:green; font-size: 14px');
   }
 }
 

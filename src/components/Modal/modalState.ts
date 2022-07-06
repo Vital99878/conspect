@@ -1,3 +1,3 @@
-import { BehaviorSubject } from 'rxjs'
+import { BehaviorSubject } from 'rxjs';
 
-export const modalState: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false)
+export const modalState: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);

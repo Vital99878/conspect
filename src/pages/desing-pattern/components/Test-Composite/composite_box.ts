@@ -10,56 +10,56 @@
  * сложных объектов структуры.
  */
 abstract class Box {
-  abstract price: number
+  abstract price: number;
 
-  protected parent!: Box
+  protected parent!: Box;
 
   public setParent(parent: Box | null) {
-    if (parent) this.parent = parent
+    if (parent) this.parent = parent;
   }
 
   public getParent(): Box {
-    return this.parent
+    return this.parent;
   }
 
-  public abstract add(component: Box): void
+  public abstract add(component: Box): void;
 
-  public abstract remove(component: Box): void
+  public abstract remove(component: Box): void;
 
-  public abstract isComposite(): boolean
+  public abstract isComposite(): boolean;
 
-  public abstract cost(): number
+  public abstract cost(): number;
 }
 
 export class MainBox extends Box {
-  price: number
+  price: number;
   constructor(price: number) {
-    super()
-    this.price = price
+    super();
+    this.price = price;
   }
-  protected children: Box[] = []
+  protected children: Box[] = [];
 
   public add(component: Box): void {
-    this.children.push(component)
+    this.children.push(component);
   }
 
   public remove(component: Box): void {
-    const componentIndex = this.children.indexOf(component)
-    this.children.splice(componentIndex, 1)
+    const componentIndex = this.children.indexOf(component);
+    this.children.splice(componentIndex, 1);
 
-    component.setParent(null)
+    component.setParent(null);
   }
 
   public isComposite(): boolean {
-    return true
+    return true;
   }
 
   public cost(): number {
-    if (!this.children.length) return this.price
-    const results = []
+    if (!this.children.length) return this.price;
+    const results = [];
     for (const child of this.children) {
-      results.push(child.cost())
+      results.push(child.cost());
     }
-    return results.reduce((acc, number) => acc + number, 0) + this.price
+    return results.reduce((acc, number) => acc + number, 0) + this.price;
   }
 }
