@@ -11,24 +11,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (basic types)">
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/components/NavCard/NavCard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useCssTheme.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/rxjs/components/filter/FilterRxjs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/rxjs/components/filter/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/review/js/ts/customMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/review/js/ts/tallyItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/review/js/ts/uniq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/test.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/components/NavCard/NavCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/NavCard/NavCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hocs/withCharacter/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withCharacter/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hocs/withData/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withData/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structures/sequences/linked-list/linked-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structures/sequences/linked-list/linked-list.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssDisplay/CssDisplay.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssDisplay/CssDisplay.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssFlex/CssFlex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssFlex/CssFlex.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssGrid/CssGrid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssGrid/CssGrid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssOther/CssOther.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssOther/CssOther.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssTags/CssTags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssTags/CssTags.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/css-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/css-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/utils/lengthChecker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/utils/lengthChecker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/usePosition.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/usePosition.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/Adapter-Test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/Adapter-Test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Builder/BuilderTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Builder/BuilderTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Composite/CompositeTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Composite/CompositeTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/IteratorTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/IteratorTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/PrototypeTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/PrototypeTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-State/StateTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-State/StateTest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +133,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hooks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/style" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -141,18 +151,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\style" />
       <recent name="W:\conspect\src\hooks" />
       <recent name="W:\conspect\src\review\js\ts" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\style" />
       <recent name="W:\conspect\src\components\Navigation\components\NavCard" />
-      <recent name="W:\conspect\src\types" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\style" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\settings" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\temp" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\mock" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\utils" />
-      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\conspect" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\CreateCloser.ts" />
@@ -163,7 +173,7 @@
       <command value="npm" />
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.uniq.js">
+  <component name="RunManager" selected="npm.lint">
     <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api/rest-api.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -176,11 +186,11 @@
     <configuration name="uniq.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/review/js/ts/uniq.js" working-dir="$PROJECT_DIR$/src/review/js/ts">
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start" />
+        <script value="lint" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -188,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.lint" />
         <item itemvalue="Node.js.uniq.js" />
         <item itemvalue="Node.js.tallyItems.js" />
         <item itemvalue="Node.js.customMap.js" />
         <item itemvalue="HTTP Request.rest-api | #1" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -303,21 +313,9 @@
       <workItem from="1655367002636" duration="5236000" />
       <workItem from="1656426933017" duration="1875000" />
       <workItem from="1657014791058" duration="1265000" />
-      <workItem from="1657093086014" duration="4210000" />
-    </task>
-    <task id="LOCAL-00208" summary="  feat (insertAfter) with order">
-      <created>1647450130516</created>
-      <option name="number" value="00208" />
-      <option name="presentableId" value="LOCAL-00208" />
-      <option name="project" value="LOCAL" />
-      <updated>1647450130516</updated>
-    </task>
-    <task id="LOCAL-00209" summary="  feat (insertAfter) with order">
-      <created>1647451589212</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1647451589212</updated>
+      <workItem from="1657093086014" duration="5092000" />
+      <workItem from="1657291230220" duration="1931000" />
+      <workItem from="1657346892474" duration="1602000" />
     </task>
     <task id="LOCAL-00210" summary="  feat (exercises) with order">
       <created>1647767925695</created>
@@ -648,7 +646,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649258413531</updated>
     </task>
-    <option name="localTasksCounter" value="257" />
+    <task id="LOCAL-00257" summary="  feat (basic types)">
+      <created>1657134042668</created>
+      <option name="number" value="00257" />
+      <option name="presentableId" value="LOCAL-00257" />
+      <option name="project" value="LOCAL" />
+      <updated>1657134042668</updated>
+    </task>
+    <task id="LOCAL-00258" summary="  feat (basic types)">
+      <created>1657134210816</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1657134210816</updated>
+    </task>
+    <option name="localTasksCounter" value="259" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -696,7 +708,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="  feat (withCharacter) hoc copyed" />
     <MESSAGE value="  feat (withData) hoc" />
     <MESSAGE value="  feat (Modal.scss) if modal-wrapper:hover, тогда closeButton change" />
     <MESSAGE value="  feat (exercises) with order" />
@@ -721,7 +732,8 @@
     <MESSAGE value="  feat (TestOrderPoint)" />
     <MESSAGE value="  feat (HistorySearch)" />
     <MESSAGE value="  feat (useAttachStyle)" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (useAttachStyle)" />
+    <MESSAGE value="  feat (basic types)" />
+    <option name="LAST_COMMIT_MESSAGE" value="  feat (basic types)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

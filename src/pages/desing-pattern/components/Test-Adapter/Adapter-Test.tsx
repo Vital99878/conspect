@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../index.scss';
+import '../../../../style/index.scss';
 import { TargetA, TargetB, Adapter_AtoB } from './adapter_2';
 import { LightningToMicroUSBAdapter, IPhone7 } from './phoneAdapter';
 

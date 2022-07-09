@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../index.scss';
+import '../../../../style/index.scss';
 // import {} from './iterator'
 // import {} from './iterator_2'
 

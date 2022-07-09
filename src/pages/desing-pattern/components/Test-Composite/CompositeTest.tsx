@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../index.scss';
+import '../../../../style/index.scss';
 import { MainBox } from './composite_box';
 
 export const CompositeTest: React.FC = () => {

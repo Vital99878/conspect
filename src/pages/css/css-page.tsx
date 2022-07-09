@@ -1,6 +1,6 @@
 import React from 'react';
 import './css-page.scss';
-import '../../index.scss';
+import '../../style/index.scss';
 import PageLayout from '../../components/Layout/PageLayout';
 import NavCard from '../../components/Navigation/components/NavCard/NavCard';
 

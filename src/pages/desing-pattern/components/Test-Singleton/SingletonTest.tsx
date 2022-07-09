@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect } from 'react';
 import { TodoStatus } from '../../../../components/Todos/models/index.model';
 import { Singleton } from './singleton';
-import '../../../../index.scss';
+import '../../../../style/index.scss';
 import { SingletonMethods } from './SingletonMethods';
 import { useSingletonMethods } from './useSingletonMethods';
 

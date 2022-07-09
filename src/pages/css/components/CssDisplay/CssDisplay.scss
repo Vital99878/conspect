@@ -1,4 +1,4 @@
-@import '../../../../css/mixins';
+@import './src/style/mixins';
 .display {
   background-color: blanchedalmond;
   @include borderWithRadius;

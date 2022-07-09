@@ -13,7 +13,7 @@ export class Person {
     console.log(this.name);
   }
   static staticMethod(): void {
-    console.log('Peron\'s static Method');
+    console.log('Peron static Method');
   }
   private pKey = 'person protected Key';
   protected _orientation: 'hetero' | 'gay' = 'hetero';
@@ -43,7 +43,7 @@ export class ITPerson extends Person {
     console.log(this.length);
   }
   static staticMethodITPerson(): void {
-    console.log('IT Peron\'s static Method');
+    console.log('');
   }
   constructor(public name: string, public age: number, public it: string) {
     super(name, age, 'itProtected'); // вызывает конструктор наследуемого класса
@@ -88,5 +88,3 @@ export class ITPerson extends Person {
 }
 
 const person = new Person('Vital', 35, 'key');
-
-person.great();

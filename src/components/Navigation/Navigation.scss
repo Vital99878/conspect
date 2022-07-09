@@ -1,4 +1,4 @@
-@import '../../css/mixins';
+@import './src/style/mixins';
 .menu {
   // border: 0.4px solid rgb(146, 146, 146);
   display: flex;
@@ -17,7 +17,11 @@
   }
   .active {
     transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
-    color: rgba(128, 8, 8, 0.884);
+    //color: rgba(128, 8, 8, 0.884);
+    color: var(--main-bg-color);
+  }
+  .active:hover {
+    color: var(--main-bg-color);
   }
   a:hover {
     border-bottom: 1px solid rgba(61, 61, 61, 0.712);
