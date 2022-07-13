@@ -34,6 +34,31 @@
   }
 }
 
+.item {
+  position: relative;
+  //padding-inline: 1em;
+  input {
+    padding: 1rem;
+    min-height: 4rem;
+    //margin-top: -1rem;
+  }
+
+  label {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    //font-size: 1em;
+    border: none;
+    transition: all 0.4s;
+  }
+}
+input:focus + label {
+  transform: translateY(-150%);
+  transition: all 0.4s;
+}
 .requiredMessage {
   color: tomato;
   text-align: left;

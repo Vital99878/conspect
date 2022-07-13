@@ -27,14 +27,14 @@ const RegistrationForm: React.FC = () => {
 
   return (
     <form className="registrationForm" onSubmit={onSubmit}>
-      <label>
-        First name
-        <input type="text" required value={firstName} onChange={onChangeFirstName} />
+      <div className={'item'}>
+        <input type="text" required value={firstName} id={'firstName'} onChange={onChangeFirstName} />
+        <label>First name</label>
         <RequiredMessage className={'requiredMessage'} props={requiredFirstNameProps} />
-      </label>
+      </div>
       <label>
         Last name
-        <input type="text" value={lastName} onChange={onChangeLastName} />
+        <input type="text" value={lastName} onChange={onChangeLastName} placeholder={'Last name'}/>
         <RequiredMessage className={'requiredMessage'} props={requiredLastNameProps} />
       </label>
       <label>

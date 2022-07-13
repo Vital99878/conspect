@@ -11,16 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (basic types)">
-      <change afterPath="$PROJECT_DIR$/src/style/test.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hocs/withCharacter/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withCharacter/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hocs/withData/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withData/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structures/sequences/linked-list/linked-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structures/sequences/linked-list/linked-list.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssDisplay/CssDisplay.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssDisplay/CssDisplay.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssFlex/CssFlex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssFlex/CssFlex.scss" afterDir="false" />
@@ -28,17 +22,14 @@
       <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssOther/CssOther.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssOther/CssOther.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssTags/CssTags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssTags/CssTags.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/css-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/css-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/Adapter-Test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/Adapter-Test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Builder/BuilderTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Builder/BuilderTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Composite/CompositeTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Composite/CompositeTest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/IteratorTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/IteratorTest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/PrototypeTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/PrototypeTest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-State/StateTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-State/StateTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/RegistrationForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/RegistrationForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/components/requiredMessage/RequiredMessage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/components/requiredMessage/RequiredMessage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/registration-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/registration-form.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,5 +1,4 @@
 import React from 'react';
-import './RequiredMessage.scss';
 
 type Props = {
   props?: {
