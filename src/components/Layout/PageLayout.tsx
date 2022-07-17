@@ -1,10 +1,10 @@
-import React from 'react';
-import './Layout.scss';
-import { useHistory } from 'react-router-dom';
+import React from 'react'
+import { useHistory } from 'react-router-dom'
+import './Layout.scss'
 
 type LayoutProps = {
   pageHeading?: string;
-  children: React.ReactElement;
+  children: React.ReactElement | React.Component;
   Footer?: React.Component | React.ReactElement;
   Header?: React.Component | React.ReactElement;
   isGoBack?: boolean;
@@ -33,14 +33,13 @@ const PageLayout: React.FC<LayoutProps> = ({
   isGoBack = false,
 }) => {
   const PageHeading = pageHeading ? <h1>{pageHeading}</h1> : null;
-  const Content = children;
 
   return (
     <>
       {Header}
       {PageHeading}
       {isGoBack && <GoBackButton />}
-      {Content}
+      {children}
       {Footer}
     </>
   );

@@ -10,26 +10,10 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  feat (basic types)">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  Breadcrumbs temp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssDisplay/CssDisplay.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssDisplay/CssDisplay.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssFlex/CssFlex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssFlex/CssFlex.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssGrid/CssGrid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssGrid/CssGrid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssOther/CssOther.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssOther/CssOther.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssTags/CssTags.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssTags/CssTags.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/css-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/css-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Composite/CompositeTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Composite/CompositeTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/IteratorTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Iterator/IteratorTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/PrototypeTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Prototype/PrototypeTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/RegistrationForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/RegistrationForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/components/requiredMessage/RequiredMessage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/components/requiredMessage/RequiredMessage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/registration-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/registration-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shared/Person.class.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +25,8 @@
       <list>
         <option value="HTTP Request" />
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -124,7 +108,7 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/style" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -142,11 +126,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\style" />
       <recent name="W:\conspect\src\hooks" />
       <recent name="W:\conspect\src\review\js\ts" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\style" />
-      <recent name="W:\conspect\src\components\Navigation\components\NavCard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\style" />
@@ -307,34 +291,8 @@
       <workItem from="1657093086014" duration="5092000" />
       <workItem from="1657291230220" duration="1931000" />
       <workItem from="1657346892474" duration="1602000" />
-    </task>
-    <task id="LOCAL-00210" summary="  feat (exercises) with order">
-      <created>1647767925695</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1647767925695</updated>
-    </task>
-    <task id="LOCAL-00211" summary="  feat (isInRange) helpers">
-      <created>1647786923090</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1647786923090</updated>
-    </task>
-    <task id="LOCAL-00212" summary="  feat (isInRange) helpers">
-      <created>1647786953387</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1647786953387</updated>
-    </task>
-    <task id="LOCAL-00213" summary="  feat (insertAfter) with order">
-      <created>1647787246012</created>
-      <option name="number" value="00213" />
-      <option name="presentableId" value="LOCAL-00213" />
-      <option name="project" value="LOCAL" />
-      <updated>1647787246012</updated>
+      <workItem from="1657777547722" duration="1300000" />
+      <workItem from="1658039250123" duration="5146000" />
     </task>
     <task id="LOCAL-00214" summary="  feat (insertAfter) with order">
       <created>1647787343084</created>
@@ -651,7 +609,35 @@
       <option name="project" value="LOCAL" />
       <updated>1657134210816</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="  input label over the text">
+      <created>1657714928382</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1657714928382</updated>
+    </task>
+    <task id="LOCAL-00260" summary="  Breadcrumbs temp">
+      <created>1658043113329</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1658043113329</updated>
+    </task>
+    <task id="LOCAL-00261" summary="  Breadcrumbs temp">
+      <created>1658043960896</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1658043960896</updated>
+    </task>
+    <task id="LOCAL-00262" summary="  Breadcrumbs temp">
+      <created>1658043996529</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1658043996529</updated>
+    </task>
+    <option name="localTasksCounter" value="263" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -659,6 +645,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -671,7 +660,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="ts" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -699,8 +688,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="  feat (withData) hoc" />
-    <MESSAGE value="  feat (Modal.scss) if modal-wrapper:hover, тогда closeButton change" />
     <MESSAGE value="  feat (exercises) with order" />
     <MESSAGE value="  feat (isInRange) helpers" />
     <MESSAGE value="  feat (insertAfter) with order" />
@@ -724,7 +711,9 @@
     <MESSAGE value="  feat (HistorySearch)" />
     <MESSAGE value="  feat (useAttachStyle)" />
     <MESSAGE value="  feat (basic types)" />
-    <option name="LAST_COMMIT_MESSAGE" value="  feat (basic types)" />
+    <MESSAGE value="  input label over the text" />
+    <MESSAGE value="  Breadcrumbs temp" />
+    <option name="LAST_COMMIT_MESSAGE" value="  Breadcrumbs temp" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

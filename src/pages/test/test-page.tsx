@@ -1,15 +1,7 @@
-import React, { useRef, useEffect, useState, CSSProperties } from 'react';
-import './test-page.scss';
-import { Simulate } from 'react-dom/test-utils';
-import { numbers } from '../../commonMockData';
-
+import React, { useRef, useEffect, useState } from 'react';
 import PageLayout from '../../components/Layout/PageLayout';
-import SearchPage from '../../components/SearchPage';
-import { TodoType, TodoStatus } from '../../components/Todos/models/index.model';
-import Todos from '../../components/Todos/Todos';
-import { initialTodos } from '../../components/Todos/hooks/todosSingleton';
-import { TestOrderPoint } from './components';
 import { useAttachStyle } from './components/TestTS/useAttachStyle';
+import './test-page.scss';
 
 
 type TestPropsChildren = {

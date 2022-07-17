@@ -1,8 +1,7 @@
-import React, { useState, useRef, FormEvent, useEffect, CSSProperties } from 'react';
-import './search-page.scss';
-import testPage from '../../pages/test/test-page';
-import { useSearchHistory } from './hooks/useSeachHistory';
+import React, { useState, useRef, FormEvent, useEffect } from 'react';
+import Breadcrumbs from '../Breadcrumbs';
 import { HistorySearch } from './utils/SearchHistory';
+import './search-page.scss';
 
 type Props = {
   prop?: string;
@@ -90,6 +89,7 @@ const SearchPage: React.FC<Props> = ({}) => {
 
   return (
     <form action="" onSubmit={onSubmit} className={'search-page'} autoComplete={'on'}>
+      <Breadcrumbs />
       <input value={search} type={'text'} onChange={typing} autoFocus={true} ref={inputRef} />
       {historyS}
     </form>

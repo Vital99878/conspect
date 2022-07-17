@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Breadcrumbs from '../components/Breadcrumbs'
 import DropdownMenu from '../components/Navigation/components/DropdownMenu/DropdownMenu';
 import { Search, RXjsPage, RegistrationPage, CssPage, PreparationPage, DesignPatternPage } from '../pages/';
 import { CssFlex, CssOther, CssTags, CssPosition, CssDisplay, CssGrid } from '../pages/css/components';
@@ -15,7 +16,7 @@ import {
 } from '../pages/desing-pattern/components';
 
 import Navigation from '../components/Navigation/Navigation';
-import { NavigationItem } from '../components/Navigation/components';
+import { NavItem } from '../components/Navigation/components';
 import DsAndAlgorithms from '../pages/DsAndAlgorithms';
 import { pages } from './store/adtiveMenuItemReducer';
 import { dropdownSections } from '../components/Navigation/someData';
@@ -26,15 +27,16 @@ const App: React.FC = () => {
     <div className="App">
       <Navigation>
         <DropdownMenu menuItem={css} sections={dropdownSections} />
-        <NavigationItem props={home} />
-        <NavigationItem props={css} />
-        <NavigationItem props={test} />
-        <NavigationItem props={rxjs} />
-        <NavigationItem props={registration} />
-        <NavigationItem props={designPatterns} />
-        <NavigationItem props={preparation} />
-        <NavigationItem props={dsAndAlgorithms} />
+        <NavItem props={home} />
+        <NavItem props={css} />
+        <NavItem props={test} />
+        <NavItem props={rxjs} />
+        <NavItem props={registration} />
+        <NavItem props={designPatterns} />
+        <NavItem props={preparation} />
+        <NavItem props={dsAndAlgorithms} />
       </Navigation>
+      <Breadcrumbs />
       <Switch>
         <Route path="/" exact render={() => <h1>Home page</h1>} />
         <Route path={`${css.url}`} exact component={CssPage} />

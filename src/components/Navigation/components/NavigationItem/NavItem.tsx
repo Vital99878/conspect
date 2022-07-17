@@ -1,12 +1,12 @@
 import React from 'react';
-import { useRouteMatch, NavLink, useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { MenuItemProps } from '../../types';
 
 /**
  * NavLink из react-router-dom, стилизованный под карточу
  */
 
-export const NavigationItem: React.FC<MenuItemProps> = ({ props }) => {
+export const NavItem: React.FC<MenuItemProps> = ({ props }) => {
   const { label, url } = props;
   const history = useHistory();
   const goToPage = () => history.push(url);
@@ -19,4 +19,4 @@ export const NavigationItem: React.FC<MenuItemProps> = ({ props }) => {
     </li>
   );
 };
-export default NavigationItem;
+export default NavItem;
