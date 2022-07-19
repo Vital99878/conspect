@@ -1,4 +1,4 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import { Action, ThunkAction, configureStore } from '@reduxjs/toolkit';
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 // export type AppDispatch = typeof store.dispatch

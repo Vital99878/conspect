@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../../style/index.scss';
-import { Director, ConcreteBuilder1 } from './builder_2';
+import { ConcreteBuilder1, Director } from './builder_2';
 
 export const BuilderTest = () => {
   const director = new Director();

@@ -1,9 +1,9 @@
 import {
-  lengthChecker,
   emailChecker,
-  validateEmail,
+  formatPhoneNumber,
+  lengthChecker,
   phoneChecker,
   reformatPhoneNumber,
-  formatPhoneNumber,
+  validateEmail,
 } from './lengthChecker';
 export { lengthChecker, emailChecker, validateEmail, phoneChecker, reformatPhoneNumber, formatPhoneNumber };

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Todos.scss';
 import { SingletonMethods } from '../../pages/desing-pattern/components/Test-Singleton/SingletonMethods';
 import AbsolutePositionMenu from '../WraperComponent-HiddenButton/AbsolutePositionMenu';
-import { Todo, AddTodoForm, TodosFilter } from './components';
+import { AddTodoForm, Todo, TodosFilter } from './components';
 import { useAllLocalStateTodos } from './hooks/useAllLocalState__Todos';
 import { initialButtonsFilters } from './components/TodosFilter/hook/useButtonsFilter';
 import { initialTodos } from './hooks/useAllLocalState__Todos';

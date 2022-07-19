@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../../style/index.scss';
-import { Invoker, SimpleCommand, Receiver, ComplexCommand, Command } from './command_2';
+import { Command, ComplexCommand, Invoker, Receiver, SimpleCommand } from './command_2';
 
 export const CommandTest: React.FC = () => {
   // example 1

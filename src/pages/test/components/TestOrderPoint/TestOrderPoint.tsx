@@ -1,9 +1,9 @@
-import React, { useState, SetStateAction, Dispatch } from 'react';
+import React, { Dispatch, SetStateAction, useState } from 'react';
 import PageLayout from '../../../../components/Layout/PageLayout';
 import { DragAndDropData } from '../../../../components/Todos/components/utils';
 import { DropPosition } from '../../../../components/Todos/models/index.model';
 import './TestOrderPoint.scss';
-import { insertItemBeforeTarget, insertItemAfterTarget } from '../../../../helpers';
+import { insertItemAfterTarget, insertItemBeforeTarget } from '../../../../helpers';
 
 type Item = {
   label: string;

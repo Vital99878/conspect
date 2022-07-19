@@ -1,4 +1,4 @@
-import { TodoType, TodoStatus } from '../models/index.model';
+import { TodoStatus, TodoType } from '../models/index.model';
 import todos from '../Todos';
 
 export const initialTodos: TodoType[] = [

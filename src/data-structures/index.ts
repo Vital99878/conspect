@@ -1,21 +1,21 @@
 import LinkedList from './sequences/linked-list';
 import Stack from './sequences/stack';
-import { Queue, Deque } from './sequences/queue';
+import { Deque, Queue } from './sequences/queue';
 import CircularBuffer from './sequences/circular-buffer';
 import {
-  MinBinaryHeap,
-  MinDHeap,
-  MinIndexedDHeap,
-  MinBinomialHeap,
   LazyMinBinomialHeap,
+  MinBinaryHeap,
+  MinBinomialHeap,
+  MinDHeap,
   MinFibonacciHeap,
+  MinIndexedDHeap,
 } from './priority-queues';
-import { BinarySearchTree, AVLTree, BTree, RedBlackTree } from './trees';
+import { AVLTree, BTree, BinarySearchTree, RedBlackTree } from './trees';
 import {
-  HashTableSeparateChaining,
+  HashTableDoubleHashing,
   HashTableLinearProbing,
   HashTableQuadraticProbing,
-  HashTableDoubleHashing,
+  HashTableSeparateChaining,
 } from './hash-tables';
 
 const Collections = {

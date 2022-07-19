@@ -2,17 +2,17 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Breadcrumbs from '../components/Breadcrumbs'
 import DropdownMenu from '../components/Navigation/components/DropdownMenu/DropdownMenu';
-import { Search, RXjsPage, RegistrationPage, CssPage, PreparationPage, DesignPatternPage } from '../pages/';
-import { CssFlex, CssOther, CssTags, CssPosition, CssDisplay, CssGrid } from '../pages/css/components';
+import { CssPage, DesignPatternPage, PreparationPage, RXjsPage, RegistrationPage, Search } from '../pages/';
+import { CssDisplay, CssFlex, CssGrid, CssOther, CssPosition, CssTags } from '../pages/css/components';
 import {
   AdapterTest,
+  BuilderTest,
   CommandTest,
   CompositeTest,
   IteratorTest,
   PrototypeTest,
   SingletonTest,
   StateTest,
-  BuilderTest,
 } from '../pages/desing-pattern/components';
 
 import Navigation from '../components/Navigation/Navigation';
@@ -33,7 +33,6 @@ const App: React.FC = () => {
         <NavItem props={rxjs} />
         <NavItem props={registration} />
         <NavItem props={designPatterns} />
-        <NavItem props={preparation} />
         <NavItem props={dsAndAlgorithms} />
       </Navigation>
       <Breadcrumbs />

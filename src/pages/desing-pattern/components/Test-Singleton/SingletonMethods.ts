@@ -1,4 +1,4 @@
-import { TodoType, TodoStatus } from '../../../../components/Todos/models/index.model';
+import { TodoStatus, TodoType } from '../../../../components/Todos/models/index.model';
 
 // type M = {
 //   name: string,

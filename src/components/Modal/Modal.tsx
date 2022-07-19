@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useCallback, MouseEventHandler } from 'react';
+import React, { MouseEventHandler, useCallback, useEffect, useRef, useState } from 'react';
 import './Modal.scss';
 import { useClickOutside } from '../../hooks/useClickOutside';
 import { useEscapeKey } from '../../hooks/useEscapeKey';

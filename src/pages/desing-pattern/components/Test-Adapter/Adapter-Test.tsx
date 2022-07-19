@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../../style/index.scss';
-import { TargetA, TargetB, Adapter_AtoB } from './adapter_2';
-import { LightningToMicroUSBAdapter, IPhone7 } from './phoneAdapter';
+import { Adapter_AtoB, TargetA, TargetB } from './adapter_2';
+import { IPhone7, LightningToMicroUSBAdapter } from './phoneAdapter';
 
 export const AdapterTest: React.FC = () => {
   // example 1

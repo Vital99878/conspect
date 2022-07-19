@@ -1,4 +1,14 @@
 .breadcrumbs {
   //background-color: lightblue;
   border-radius: var(--borderRadius);
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    padding: 0;
+    fill: green;
+  }
 }

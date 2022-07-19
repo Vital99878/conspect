@@ -1,6 +1,6 @@
 import React from 'react';
 import './ball..scss';
-import { usePosition, PositionPx } from './usePosition';
+import { PositionPx, usePosition } from './usePosition';
 
 type Props = {
   position: PositionPx;

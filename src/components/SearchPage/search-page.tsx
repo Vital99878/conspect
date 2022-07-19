@@ -1,4 +1,4 @@
-import React, { useState, useRef, FormEvent, useEffect } from 'react';
+import React, { FormEvent, useEffect, useRef, useState } from 'react';
 import Breadcrumbs from '../Breadcrumbs';
 import { HistorySearch } from './utils/SearchHistory';
 import './search-page.scss';

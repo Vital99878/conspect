@@ -1,4 +1,4 @@
-import { CSSProperties, useEffect, useState, RefObject, useLayoutEffect } from 'react';
+import { CSSProperties, RefObject, useEffect, useLayoutEffect, useState } from 'react';
 
 function updateTranslate(position: Position): Pick<CSSProperties, 'transform'> {
   let translateCssProp: Pick<CSSProperties, 'transform'> = {};

@@ -1,6 +1,6 @@
 import React from 'react';
 import PageLayout from '../../../../components/Layout/PageLayout';
-import { Person, ITPerson } from '../../../shared/Person.class';
+import { ITPerson, Person } from '../../../shared/Person.class';
 
 const PreparationToTS: React.FC = () => {
   // Closer

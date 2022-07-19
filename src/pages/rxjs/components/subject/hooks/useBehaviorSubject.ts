@@ -1,5 +1,5 @@
 import { BehaviorSubject } from 'rxjs';
-import { useEffect, useState, useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 /**
  * Хук, который получает instance BehaviorSubject. Позволяет использовать состояние.

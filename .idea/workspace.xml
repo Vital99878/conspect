@@ -11,9 +11,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  Breadcrumbs temp">
+      <change afterPath="$PROJECT_DIR$/src/hoc/withNumber/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withNumber/withNumber.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withNumber/withNumber.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/PageLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/PageLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/components/NavCard/NavCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/NavCard/NavCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/someData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/someData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/todosSingleton.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/todosSingleton.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hocs/withCharacter/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withCharacter/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hocs/withData/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withData/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hocs/withData/withData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withData/withData.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structures/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structures/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structures/sequences/linked-list/linked-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structures/sequences/linked-list/linked-list.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/DsAndAlgorithms-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/DsAndAlgorithms-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToTS/PreparationToTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToTS/PreparationToTS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/Adapter-Test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/Adapter-Test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Builder/BuilderTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Builder/BuilderTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonMethods.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonMethods.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-State/StateTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-State/StateTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/RxJS_ForTestOnly/RxJS_ForTestOnly.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/RxJS_ForTestOnly/RxJS_ForTestOnly.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestOrderPoint/TestOrderPoint.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestOrderPoint/TestOrderPoint.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/useAttachStyle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/useAttachStyle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +68,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -107,12 +151,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="eslint.code.style.apply.dismiss" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hoc/withNumber" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.eslint" value="W:\conspect\node_modules\eslint" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -120,17 +166,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\hoc\withNumber" />
       <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\style" />
       <recent name="W:\conspect\src\hooks" />
       <recent name="W:\conspect\src\review\js\ts" />
-      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\style" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\style" />
@@ -292,14 +338,11 @@
       <workItem from="1657291230220" duration="1931000" />
       <workItem from="1657346892474" duration="1602000" />
       <workItem from="1657777547722" duration="1300000" />
-      <workItem from="1658039250123" duration="5146000" />
-    </task>
-    <task id="LOCAL-00214" summary="  feat (insertAfter) with order">
-      <created>1647787343084</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1647787343084</updated>
+      <workItem from="1658039250123" duration="8958000" />
+      <workItem from="1658075252379" duration="296000" />
+      <workItem from="1658075562711" duration="372000" />
+      <workItem from="1658123304280" duration="1896000" />
+      <workItem from="1658207395284" duration="7668000" />
     </task>
     <task id="LOCAL-00215" summary="  feat (insertAfter) with order">
       <created>1647787467653</created>
@@ -637,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658043996529</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary="  Breadcrumbs temp">
+      <created>1658044472045</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1658044472045</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />

@@ -17,8 +17,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "downlevelIteration": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
   },
   "include": ["src"],
-  "types": ["resize-observer-browser"]
+  "types": ["resize-observer-browser"],
 }

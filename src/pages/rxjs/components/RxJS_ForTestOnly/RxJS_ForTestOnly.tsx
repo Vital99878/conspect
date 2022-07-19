@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useEffect } from 'react';
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import './RxJS_ForTestOnly.css';
 import { useSubscribe } from './hooks/useSubscribe';
 import { fromEvent } from 'rxjs';

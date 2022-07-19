@@ -1,8 +1,12 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PageLayout from '../../components/Layout/PageLayout';
-import { useAttachStyle } from './components/TestTS/useAttachStyle';
 import './test-page.scss';
+import WithNumber from '../../hoc/withNumber'
+import { useAttachStyle } from './components/TestTS/useAttachStyle';
 
+function SomeComponent () {
+  return <div>Some Component</div>
+}
 
 type TestPropsChildren = {
   children?: React.ReactNode[] | React.ReactNode;
@@ -60,9 +64,10 @@ const TestPage: React.FC<TestPropsChildren> = () => {
   }
 
   return (
-    <PageLayout pageHeading="Test page">
-      <button onClick={onChangeName}>change name</button>
-    </PageLayout>
+    <div >
+      <WithNumber title={'title'} step={1} Comp={SomeComponent}/>
+      <WithNumber title={'title 2'} step={2} Comp={SomeComponent}/>
+    </div>
   );
 };
 

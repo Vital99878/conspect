@@ -1,9 +1,9 @@
-import React, { useState, KeyboardEventHandler, useEffect, useRef } from 'react';
+import React, { KeyboardEventHandler, useEffect, useRef, useState } from 'react';
 import './DropdownMenu.scss';
 import { NavLink } from 'react-router-dom';
 import { useClickOutside } from '../../../../hooks/useClickOutside';
 import { useEscapeKey } from '../../../../hooks/useEscapeKey';
-import { DropdownSectionProps, DropdownMenuProps } from '../../types';
+import { DropdownMenuProps, DropdownSectionProps } from '../../types';
 
 /**
  * DropdownMenu with list of NavLink

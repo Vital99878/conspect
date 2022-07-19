@@ -1,5 +1,5 @@
 import { CssPages } from '../../app/store/adtiveMenuItemReducer';
-import { NavigationProps, DropdownSection } from './types';
+import { DropdownSection, NavigationProps } from './types';
 
 const sectionFlex: DropdownSection<CssPages> = {
   label: 'flex section',

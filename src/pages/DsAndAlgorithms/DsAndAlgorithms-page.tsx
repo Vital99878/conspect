@@ -2,7 +2,7 @@ import React from 'react';
 import './DsAndAlgorithms-page.scss';
 import PageLayout from '../../components/Layout/PageLayout';
 import { DataStructures } from './components';
-import { mergeAndSort, quickSort, quickSortObj, binarySearch } from './algorithms';
+import { binarySearch, mergeAndSort, quickSort, quickSortObj } from './algorithms';
 import { arrWithOrders } from './data-for-test-algo';
 
 const DsAndAlgorithmsPage: React.FC = () => {
