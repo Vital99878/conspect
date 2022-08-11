@@ -10,54 +10,14 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="  Breadcrumbs temp">
-      <change afterPath="$PROJECT_DIR$/src/hoc/withNumber/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/withNumber/withNumber.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/withNumber/withNumber.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="WithNumber temp">
+      <change afterPath="$PROJECT_DIR$/declarations.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useSort.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/utils.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/BtnIcon/ButtonIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/Modal/Modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/Svg/SvgIcon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/PageLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/PageLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/DropdownMenu/DropdownMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/components/NavCard/NavCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/components/NavCard/NavCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/someData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/someData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/Todos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/hooks/todosSingleton.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/hooks/todosSingleton.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hocs/withCharacter/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withCharacter/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hocs/withData/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withData/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hocs/withData/withData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hocs/withData/withData.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/multipleFilter/test/index.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structures/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structures/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structures/sequences/linked-list/linked-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structures/sequences/linked-list/linked-list.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/DsAndAlgorithms-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DsAndAlgorithms/DsAndAlgorithms-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/PreparationToJS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToTS/PreparationToTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToTS/PreparationToTS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/Adapter-Test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/Adapter-Test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Adapter/adapter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Builder/BuilderTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Builder/BuilderTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Command/CommandTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonMethods.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/SingletonMethods.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-Singleton/useSingletonState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-State/StateTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/components/Test-State/StateTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registraiton/components/registration-form/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/RxJS_ForTestOnly/RxJS_ForTestOnly.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/RxJS_ForTestOnly/RxJS_ForTestOnly.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/ball/ball.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestOrderPoint/TestOrderPoint.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestOrderPoint/TestOrderPoint.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/TestTS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/components/TestTS/useAttachStyle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/components/TestTS/useAttachStyle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,6 +303,7 @@
       <workItem from="1658075562711" duration="372000" />
       <workItem from="1658123304280" duration="1896000" />
       <workItem from="1658207395284" duration="7668000" />
+      <workItem from="1660234167947" duration="1941000" />
     </task>
     <task id="LOCAL-00215" summary="  feat (insertAfter) with order">
       <created>1647787467653</created>

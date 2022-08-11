@@ -1,0 +1,152 @@
+@import "test";
+
+/*  -------------------- Reset styles --------------------  */
+html {
+  font-size: 62.5%;
+  /* line-height: 1.4em; */
+  color: var(--secondary-text-color);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+a {
+  color: var(--secondary-link-color);
+  text-decoration: none;
+}
+a,
+p,
+span {
+  /*font-size: 1rem;*/
+}
+
+/* -------------------- Main styles --------------------  */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: var(--body-bg-color);
+}
+#root {
+  width: 100%;
+  max-width: 1200px;
+  /* padding: 1em 1.6em; */
+}
+:root {
+
+  --borderRadius: 8px;
+  --main-bg-color: rgb(108, 223, 108);
+  --secondary-text-color: rgb(124, 124, 124);
+  --secondary-link-color: rgba(21, 48, 168, 0.521);
+  --body-bg-color: rgba(208, 208, 208, 0.85);
+  --fs-title: 10rem;
+  --color-scheme: dark light;
+}
+
+
+/* Включение при смене темы в системе windows */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: rgb(114, 113, 113);
+    --body-bg-color: rgba(69, 69, 69, 0.93)
+  }
+}
+
+
+
+
+
+/* -------------------- Shared custom elements styles --------------------  */
+
+.wrapper {
+  padding: 1rem;
+}
+.button {
+}
+.card {
+  padding: 1rem;
+  font-size: 3rem;
+}
+.nav-card {
+  //margin: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  height: auto;
+  min-width: 20rem;
+  //flex-grow: 1;
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  border-radius: 4px;
+}
+.modal {
+}
+.my-buttons {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+
+  > * {
+    padding: 0.6rem;
+    font-size: 1.6vh;
+    //border-radius: 2px;
+  }
+}
+h2 {
+  text-align: center;
+}
+
+/* general */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+.flow {
+  display: flex;
+  flex-direction: column;
+}
+.flow-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+//.flow > *:where(:not(:first-child)) {
+//  margin-top: var(--flow-space, 1rem);
+//  outline: 1px solid red;
+//}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
