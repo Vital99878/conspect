@@ -17,12 +17,16 @@ const Arrow = () => {
   );
 };
 
+/**
+ * @description компонент работает от текущего url через withRouter
+ */
+
 const Breadcrumbs = ({ history, location }: RouteComponentProps) => {
   function isHome(path: string): boolean {
     return path === '/';
   }
 
-  function isLastItem(arr: any[], index: number): boolean {
+  function isLastItem<T>(arr: T[], index: number): boolean {
     return index === arr.length - 1;
   }
 

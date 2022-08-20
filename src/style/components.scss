@@ -1,0 +1,59 @@
+
+/* ---------------- Button start ---------------- */
+.button {
+  padding: 1em 2em;
+  cursor: pointer;
+}
+.button:hover {
+  padding: 1em 2em;
+}
+.button:disabled {
+  padding: 1em 2em;
+}
+//  button variants
+.button-empty {
+  border: none;
+  background: none;
+}
+.button-filled {
+}
+.button-outline {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+/* ---------------- Button end ---------------- */
+
+/* ---------------- Link start todo ---------------- */
+.link {
+}
+.link:hover {
+}
+.link:disabled {
+}
+//  link variants
+.link-empty {
+}
+.link-filled {
+}
+.link-outline {
+}
+
+/* ---------------- Link end todo ---------------- */
+
+/* ----------------Input start ---------------- */
+.input {
+}
+.input:hover {
+}
+.input:disabled {
+}
+//  input variants
+.input-empty {
+}
+.input-filled {
+}
+.input-outline {
+}
+
+/* ----------------Input end  ---------------- */

@@ -9,7 +9,7 @@
     "plugin:import/typescript",
     "google"
   ],
-  "parser": "@typescript-eslint/parser",
+//  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -17,7 +17,7 @@
     "ecmaVersion": 2015,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks"],
+  "plugins": ["react",  "prettier", "react-hooks"],
   "rules": {
     "camelcase": "off",
     "require-jsdoc": "off",
@@ -45,6 +45,8 @@
         "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
         "allowSeparatedGroups": true
       }
-    ]
+    ],
+    // disable the rule for all files
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 }
