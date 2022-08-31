@@ -1,6 +1,7 @@
 import React from 'react';
 import './css-page.scss';
 import '../../style/index.scss';
+import CommandPanel from '../../components/ActionPanel'
 import PageLayout from '../../components/Layout/PageLayout';
 import NavCard from '../../components/Navigation/components/NavCard/NavCard';
 

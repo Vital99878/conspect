@@ -1,0 +1,16 @@
+.actionPanel {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  max-width: 20rem;
+  transform: translateX(-50%);
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  color: darkblue;
+  opacity: 60%;
+  text-align: center;
+}
+.actionPane:focus-visible {
+  border: .6px solid lightgray;
+  border-radius: 8px;
+}

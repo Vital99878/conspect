@@ -10,12 +10,14 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="useAction.ts temp">
-      <change afterPath="$PROJECT_DIR$/src/hooks/useAction.ts" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="task bricks Button type">
+      <change afterPath="$PROJECT_DIR$/src/components/ActionPanel/ActionPanel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ActionPanel/CommandPanel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ActionPanel/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/briks/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/briks/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumbs/Breadcrumbs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useAction.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useAction.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/css-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/css-page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +115,7 @@
     <property name="eslint.code.style.apply.dismiss" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hooks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -131,10 +133,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\hooks" />
       <recent name="W:\conspect\src\style" />
       <recent name="W:\conspect\src\hoc\withNumber" />
-      <recent name="W:\conspect\src\components" />
       <recent name="W:\conspect\src\review\js\ts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -306,14 +308,7 @@
       <workItem from="1661252457255" duration="1926000" />
       <workItem from="1661352343472" duration="44000" />
       <workItem from="1661884725018" duration="421000" />
-      <workItem from="1661933984047" duration="1927000" />
-    </task>
-    <task id="LOCAL-00216" summary="  refactoring (insertAfter) with order">
-      <created>1647787607681</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1647787607681</updated>
+      <workItem from="1661933984047" duration="6236000" />
     </task>
     <task id="LOCAL-00217" summary="  refactoring (insertAfter) with order">
       <created>1647788365893</created>
@@ -651,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661009443235</updated>
     </task>
-    <option name="localTasksCounter" value="265" />
+    <task id="LOCAL-00265" summary="task bricks Button type">
+      <created>1661935940913</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1661935940913</updated>
+    </task>
+    <option name="localTasksCounter" value="266" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -725,9 +727,9 @@
     <MESSAGE value="  feat (basic types)" />
     <MESSAGE value="  input label over the text" />
     <MESSAGE value="  Breadcrumbs temp" />
-    <MESSAGE value="task bricks Button type" />
     <MESSAGE value="useAction.ts temp" />
-    <option name="LAST_COMMIT_MESSAGE" value="useAction.ts temp" />
+    <MESSAGE value="task bricks Button type" />
+    <option name="LAST_COMMIT_MESSAGE" value="task bricks Button type" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
