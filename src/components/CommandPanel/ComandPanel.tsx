@@ -1,5 +1,5 @@
 import React, { FormEvent, useEffect, useRef, useState } from 'react';
-import './ActionPanel.scss';
+import './ComandPanel.scss';
 import { useClickOutside } from '../../hooks/useClickOutside';
 
 /**

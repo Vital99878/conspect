@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import CommandPanel from '../components/ActionPanel'
 import Breadcrumbs from '../components/Breadcrumbs'
 import DropdownMenu from '../components/Navigation/components/DropdownMenu/DropdownMenu';
 import { CssPage, DesignPatternPage, PreparationPage, RXjsPage, RegistrationPage, Search } from '../pages/';
@@ -26,7 +25,6 @@ const App: React.FC = () => {
   const { home, css, test, rxjs, registration, designPatterns, preparation, dsAndAlgorithms } = pages;
   return (
     <div className="App">
-      <CommandPanel />
       <Navigation>
         <DropdownMenu menuItem={css} sections={dropdownSections} />
         <NavItem props={home} />

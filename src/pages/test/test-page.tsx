@@ -3,6 +3,7 @@ import Button from '../../briks/Button';
 import WithNumber from '../../hoc/withNumber';
 import { useAttachStyle } from './components/TestTS/useAttachStyle';
 import './test-page.scss';
+import DomEvent from '../Preparation/components/PreparationToJS/topics/components/domEvent/domEvent';
 
 function SomeComponent() {
   return <div>Some Component</div>;
@@ -65,10 +66,8 @@ const TestPage: React.FC<TestPropsChildren> = () => {
 
   return (
     <div>
-      <WithNumber title={'title'} step={1} Comp={SomeComponent} />
-      <WithNumber title={'title 2'} step={2} Comp={SomeComponent} />
       <Button onClick={() => console.log('')} empty >
-
+          <DomEvent />
       </Button>
     </div>
   );

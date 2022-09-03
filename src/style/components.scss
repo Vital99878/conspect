@@ -1,25 +1,55 @@
+.button {
+  // todo change clr to hsl
+  --clr-btn-bg: green;
+  --clr-btn-text: #181818;
+  --clr-btn-text-outline: #f1f1f1;
+
+}
 
 /* ---------------- Button start ---------------- */
 .button {
   padding: 1em 2em;
+  border-radius: 4px;
   cursor: pointer;
+  background: var(--clr-btn-bg);
+  color: var(--clr-btn-text-primary);
+
 }
 .button:hover {
-  padding: 1em 2em;
+  background: var(--clr-btn-bg);
+  color: var(--clr-btn-text-primary);
+
+}
+.button:focus {
+  background: var(--clr-btn-bg);
+  color: var(--clr-btn-text-primary);
+  border: 1px solid var(--clr-btn-border);
 }
 .button:disabled {
-  padding: 1em 2em;
+  background: var(--clr-btn-bg);
+  color: var(--clr-btn-text-primary);
+  border: 1px solid var(--clr-btn-border);
+  cursor: unset;
 }
-//  button variants
-.button-empty {
-  border: none;
-  background: none;
-}
-.button-filled {
-}
+
+//  button Outline variant
 .button-outline {
-  border: 1px solid lightgray;
-  border-radius: 4px;
+  background: none;
+  border: 1px solid var(--clr-btn-bg);
+}
+.button-outline:hover {
+  background: var(--clr-btn-bg);
+  color: var(--clr-btn-text-outline)
+
+}
+.button-outline:focus {
+  background: var(--clr-btn-bg);
+  color: var(--clr-btn-text-outline)
+}
+.button-outline:disabled {
+  background: var(--clr-btn-bg);
+  color: var(--clr-btn-text-outline);
+  cursor: unset;
 }
 
 /* ---------------- Button end ---------------- */
@@ -29,11 +59,13 @@
 }
 .link:hover {
 }
+.link:focus {
+}
+.link:visited {
+}
 .link:disabled {
 }
 //  link variants
-.link-empty {
-}
 .link-filled {
 }
 .link-outline {
@@ -57,3 +89,22 @@
 }
 
 /* ----------------Input end  ---------------- */
+
+/* ----------------Need some words start  ---------------- */
+//outline-primary
+//outline-secondary
+//outline-success
+//outline-warning
+//outline-danger
+//outline-info
+//outline-light
+//outline-dark
+//secondary
+//tertiary
+
+//--clr-btn-bg-primary: green;
+//--clr-btn-bg-secondary: green;
+//--clr-btn-bg-tertiary: green;
+
+
+/* ----------------Need some words end  ---------------- */

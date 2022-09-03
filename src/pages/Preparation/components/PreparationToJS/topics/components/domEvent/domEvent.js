@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useEffect } from 'react';
+import React, { MouseEventHandler, useEffect, useRef } from 'react';
 import './domEvent.scss';
 
 const DomEvent = () => {
@@ -15,52 +15,48 @@ const DomEvent = () => {
     // if (child2.className === 'child-2') console.log('child 2')
   }
 
-  // useEffect(() => {
-  //   const child1 = document.querySelector('.child-1')
-  //   const child2 = document.querySelector('.child-2')
-  //   const button = document.querySelector('.button')
-  //   // console.log('child2: ', child2)
-  //   child1.addEventListener('click', doSmth, {
-  //     capture: false,
-  //   })
-  //   child2.addEventListener('click', doSmth, {
-  //     capture: false,
-  //   })
-  //   button.addEventListener('click', doSmth, {
-  //     capture: false,
-  //   })
-  // }, [])
-
   function doOutside(event) {
     // console.log('event.currentTarget: ', event.currentTarget)
     // const isClosest = button.closest('.root')
     // isClosest ? console.log('inner') : console.log('outside')
   }
+
   function checkRoot(evt, clazz) {
     const isEl = evt.target.matches(clazz);
     const isParent = evt.target.closest(clazz);
     if (isEl || isParent) return;
-    console.log('логика для закрытия модального окна');
   }
+
   useEffect(() => {
     const f = (evt) => checkRoot(evt, '.child-2');
     document.addEventListener('click', f);
     return () => document.removeEventListener('click', f);
   }, []);
 
+  const rootRef = useRef(null);
+
+  function getRootEl(evt) {
+    // console.log('evt.currentTarget.offsetTop: ', evt.currentTarget.offsetTop)
+    const currentEl = evt.currentTarget;
+    // console.log('document.body.clientHeight: ', document.body.clientHeight)
+    const isParent = evt.target.closest('.root');
+    console.log('Parent clientHeight: ', isParent.clientHeight);
+    // console.log('currentEl: ', 'currentEl.offsetHeight: ', currentEl.offsetHeight);
+  }
+
   return (
-    <>
+    <div>
       <h2>Dowm Events</h2>
-      <div className="root">
+      <div className="root" ref={rootRef}>
         root div
         <div className={'child-1'}>
           Child 1
-          <div className={'child-2'} onClick={doOutside}>
-            Child 2<button className={'child-3 button'}>Click</button>
+          <div className={'child-2'} onClick={getRootEl}>
+            Child 2
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
