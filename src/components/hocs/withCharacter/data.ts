@@ -4939,7 +4939,7 @@ export default [
     total: 111,
   },
   {
-    name: 'Ra\'s Al Ghul',
+    name: "Ra's Al Ghul",
     alignment: 'bad',
     intelligence: 100,
     strength: 28,

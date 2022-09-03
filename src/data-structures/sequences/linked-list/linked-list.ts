@@ -329,7 +329,7 @@ class LinkedList<T> implements Iterable<T> {
 
     return this;
   }
-  * [Symbol.iterator](): Iterator<T> {
+  *[Symbol.iterator](): Iterator<T> {
     if (!this.list) return;
 
     let cur: LinkedListNode<T> | null;

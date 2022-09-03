@@ -1,6 +1,6 @@
-import './Layout.scss'
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import './Layout.scss';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 type LayoutProps = {
   pageHeading?: string;

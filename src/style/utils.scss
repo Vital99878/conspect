@@ -1,4 +1,4 @@
-@import "test";
+@import 'test';
 
 /*  -------------------- Reset styles --------------------  */
 html {
@@ -47,7 +47,6 @@ body {
   /* padding: 1em 1.6em; */
 }
 :root {
-
   --borderRadius: 8px;
   --main-bg-color: rgb(108, 223, 108);
   --secondary-text-color: rgb(124, 124, 124);
@@ -57,18 +56,13 @@ body {
   --color-scheme: dark light;
 }
 
-
 /* Включение при смене темы в системе windows */
 @media (prefers-color-scheme: dark) {
   :root {
     --main-bg-color: rgb(114, 113, 113);
-    --body-bg-color: rgba(69, 69, 69, 0.93)
+    --body-bg-color: rgba(69, 69, 69, 0.93);
   }
 }
-
-
-
-
 
 /* -------------------- Shared custom elements styles --------------------  */
 

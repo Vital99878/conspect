@@ -24,8 +24,8 @@ type InitialState = Record<Sort, boolean> & { sorted: any[] };
 const initialState: InitialState = {
   'asc key 1': false,
   'desc key 1': false,
-  'noSort': false,
-  'sorted': [],
+  noSort: false,
+  sorted: [],
 };
 
 function reducer(state = initialState, action: Action) {

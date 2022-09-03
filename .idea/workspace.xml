@@ -10,17 +10,8 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="CommandPanel.tsx temp">
-      <change afterPath="$PROJECT_DIR$/src/helpers/findParend.ts" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="component css button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActionPanel/ActionPanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommandPanel/ComandPanel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActionPanel/ActionPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommandPanel/ComandPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActionPanel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommandPanel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/components/domEvent/domEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/components/domEvent/domEvent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/components/domEvent/domEvent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Preparation/components/PreparationToJS/topics/components/domEvent/domEvent.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/components/CssPosition/CssPosition.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/components/CssPosition/CssPosition.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/css-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/css-page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components.scss" afterDir="false" />
     </list>
@@ -315,21 +306,7 @@
       <workItem from="1661884725018" duration="421000" />
       <workItem from="1661933984047" duration="6236000" />
       <workItem from="1662126405724" duration="1135000" />
-      <workItem from="1662211540444" duration="4621000" />
-    </task>
-    <task id="LOCAL-00217" summary="  refactoring (insertAfter) with order">
-      <created>1647788365893</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1647788365893</updated>
-    </task>
-    <task id="LOCAL-00218" summary="  refactoring (exercises) getSumMap">
-      <created>1647842933322</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1647842933322</updated>
+      <workItem from="1662211540444" duration="8635000" />
     </task>
     <task id="LOCAL-00219" summary="  refactoring (SearchPage)">
       <created>1647868463927</created>
@@ -660,7 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661935940913</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="component css button">
+      <created>1662231113654</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1662231113655</updated>
+    </task>
+    <task id="LOCAL-00267" summary="component css button">
+      <created>1662234893969</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1662234893969</updated>
+    </task>
+    <option name="localTasksCounter" value="268" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -711,7 +702,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="  feat (insertAfter) with order" />
     <MESSAGE value="  refactoring (insertAfter) with order" />
     <MESSAGE value="  refactoring (exercises) getSumMap" />
     <MESSAGE value="  refactoring (SearchPage)" />
@@ -736,7 +726,8 @@
     <MESSAGE value="  Breadcrumbs temp" />
     <MESSAGE value="useAction.ts temp" />
     <MESSAGE value="task bricks Button type" />
-    <option name="LAST_COMMIT_MESSAGE" value="task bricks Button type" />
+    <MESSAGE value="component css button" />
+    <option name="LAST_COMMIT_MESSAGE" value="component css button" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

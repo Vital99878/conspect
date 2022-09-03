@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Breadcrumbs from '../components/Breadcrumbs'
+import Breadcrumbs from '../components/Breadcrumbs';
 import DropdownMenu from '../components/Navigation/components/DropdownMenu/DropdownMenu';
 import { CssPage, DesignPatternPage, PreparationPage, RXjsPage, RegistrationPage, Search } from '../pages/';
 import { CssDisplay, CssFlex, CssGrid, CssOther, CssPosition, CssTags } from '../pages/css/components';

@@ -1,5 +1,5 @@
 .withNumber {
-  --clr-green: #10BF6A;
+  --clr-green: #10bf6a;
   position: relative;
   display: flex;
   margin-left: 1rem;
@@ -12,7 +12,6 @@
 }
 
 .withNumber {
-
   &--stepStatus {
     display: flex;
     flex-direction: column;
@@ -27,14 +26,14 @@
     place-items: center;
     padding: 0;
     width: 2.4rem;
-    height:2.4rem;
-    background-color: var(--clr-green);;
+    height: 2.4rem;
+    background-color: var(--clr-green);
     border-radius: 50%;
   }
 
   &--line {
     margin-top: -1px;
-    width: .4rem;
+    width: 0.4rem;
     height: max-content;
     color: var(--clr-green);
     background-color: var(--clr-green);
