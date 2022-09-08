@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction, useRef, useState } from 'react';
 import './TodoSettings.scss';
-import { SingletonMethods } from '../../../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods';
+import { SingletonMethods } from '../../../../../../desing-pattern/components/Test-Singleton/SingletonMethods';
 import { R_2, TodoType } from '../../../../models/index.model';
 import { useClickOutside } from '../../../../../../hooks/useClickOutside';
 

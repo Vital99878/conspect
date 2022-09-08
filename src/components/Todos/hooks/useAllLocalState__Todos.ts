@@ -1,5 +1,5 @@
 import { insertItemAfterTarget, insertItemBeforeTarget } from '../../../helpers';
-import { SingletonMethods } from '../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods';
+import { SingletonMethods } from '../../../desing-pattern/components/Test-Singleton/SingletonMethods';
 import { DragAndDropData } from '../components/utils';
 import { DropPosition, TodoStatus, TodoType } from '../models/index.model';
 import { useRef, useState } from 'react';

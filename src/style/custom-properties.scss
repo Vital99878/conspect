@@ -1,0 +1,35 @@
+/* -------------------- Colors __ start --------------------  */
+:root {
+  --clr-black: 36, 40, 43;
+  --clr-white: 255, 255, 255;
+  --clr-base-green: 26, 158, 50;
+  --clr-base-grey: 77, 77, 77;
+
+  // Text and icons
+  --clr-text-primary: rgba(var(--clr-black), 0.96);
+  --clr-text-secondary: rgba(var(--clr-black), 0.56);
+  --clr-text-tertiary: rgba(var(--clr-black), 0.28);
+  --clr-text-typeset-text: rgba(var(--clr-black), 0.8);
+
+  --clr-link-primary-bg-link: rgba(var(--clr-base-green), 0.76);
+  --clr-link-primary-bg-hover: rgba(var(--clr-base-green), 0.86);
+  --clr-link-primary-bg-active: rgba(var(--clr-base-green), 0.96);
+  --clr-link-primary-bg-visited: rgba(var(--clr-base-green), 0.76);
+  --clr-link-primary-bg-disabled: rgba(var(--clr-base-green), 0.46);
+
+  --clr-link-secondary: rgba(var(--clr-black), 0.56);
+  --clr-link-tertiary: rgba(var(--clr-black), 0.28);
+  --clr-link-typeset-text: rgba(var(--clr-black), 0.8);
+
+  --clr-text-accent: #108e26;
+
+  // accent
+  --clr-accent-success: #1a9e32;
+  --clr-accent-warning: #f55d05;
+  --clr-accent-error: #ff293e;
+
+  // card
+  --clr-bg-card: #ffffff;
+}
+
+/* -------------------- Colors __ end  --------------------  */

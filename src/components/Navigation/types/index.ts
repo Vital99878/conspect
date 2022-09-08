@@ -13,6 +13,7 @@ export type Pages =
   | '/registration'
   | '/design-patterns'
   | '/preparation'
+  | '/components'
   | '/data-structure and algorithms';
 
 export type DesignPatterns =
@@ -23,6 +24,7 @@ export type DesignPatterns =
   | 'composite'
   | 'command'
   | 'iterator'
+  | 'abstractFactory'
   | 'prototype';
 
 export type CSS = 'flex' | 'grid' | 'display' | 'position' | 'tags' | 'other';

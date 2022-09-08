@@ -1,5 +1,5 @@
 import React, { FormEvent, useState } from 'react';
-import { SingletonMethods } from '../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods';
+import { SingletonMethods } from '../../../../desing-pattern/components/Test-Singleton/SingletonMethods';
 import { R_2, TodoStatus } from '../../models/index.model';
 import { TodosSingleton } from '../../hooks/todosSingleton';
 

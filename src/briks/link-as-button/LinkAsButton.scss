@@ -1,0 +1,83 @@
+.asButton {
+  font-size: 1.4rem;
+  min-width: 6rem;
+  padding: 0.4em 1em;
+  border-radius: 6px;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  border: 1px solid;
+  outline: none;
+}
+
+.link-primary {
+  border-color: transparent;
+  color: rgba(var(--clr-white), 0.96);
+}
+.link-primary:link {
+  background-color: var(--clr-link-primary-bg-link);
+}
+.link-primary:hover,
+.link-primary:focus-visible {
+  background-color: var(--clr-link-primary-bg-hover);
+}
+.link-primary:active {
+  background-color: var(--clr-link-primary-bg-active);
+}
+.link-primary:visited {
+  background-color: var(--clr-link-primary-bg-visited) !important;
+}
+.link-primary-disabled {
+  background-color: var(--clr-link-primary-bg-disabled) !important;
+  color: rgba(var(--clr-white), 0.6) !important;
+  cursor: context-menu;
+}
+
+.link-secondary {
+  color: rgba(var(--clr-black), 0.96);
+}
+.link-secondary:link {
+  border-color: rgba(var(--clr-base-grey), 0.46);
+}
+.link-secondary:hover {
+  border-color: rgba(var(--clr-base-grey), 0.76);
+}
+.link-secondary:focus-visible {
+  border-color: rgba(var(--clr-base-grey), 76);
+}
+.link-secondary:active {
+  border-color: rgba(var(--clr-base-grey), 0.96);
+}
+.link-secondary:visited {
+  border-color: rgba(var(--clr-base-grey), 0.96);
+}
+.link-secondary-disabled {
+  border-color: rgba(var(--clr-base-grey), 0.46) !important;
+  color: rgba(var(--clr-black), 0.46) !important;
+  cursor: context-menu;
+}
+
+.link-transparent {
+  border-color: transparent;
+  color: rgba(var(--clr-black), 0.96);
+}
+.link-transparent:link {
+  background: transparent;
+}
+.link-transparent:hover {
+  background: rgba(var(--clr-black), 0.26);
+}
+.link-transparent:focus-visible {
+  background: rgba(var(--clr-black), 0.26);
+}
+.link-transparent:active {
+  background: rgba(var(--clr-black), 0.46);
+}
+.link-transparent:visited {
+  background: rgba(var(--clr-black), 0.66);
+}
+.link-transparent-disabled {
+  background-color: transparent !important;
+  color: rgba(var(--clr-black), 0.46);
+  cursor: context-menu;
+}

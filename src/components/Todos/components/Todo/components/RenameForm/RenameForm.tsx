@@ -1,5 +1,5 @@
 import React, { ChangeEvent, Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
-import { SingletonMethods } from '../../../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods';
+import { SingletonMethods } from '../../../../../../desing-pattern/components/Test-Singleton/SingletonMethods';
 import { R_2, TodoType } from '../../../../models/index.model';
 import './RenameForm.scss';
 import { useClickOutside } from '../../../../../../hooks/useClickOutside';

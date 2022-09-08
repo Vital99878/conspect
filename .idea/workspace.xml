@@ -10,10 +10,15 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="component css button">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="link primary">
+      <change afterPath="$PROJECT_DIR$/src/briks/link-as-button/LinkAsButton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/briks/link-as-button/LinkAsButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/briks/types/linkAsButton.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/adtiveMenuItemReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/adtiveMenuItemReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/custom-properties.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/custom-properties.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +116,7 @@
     <property name="eslint.code.style.apply.dismiss" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/helpers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/briks/types" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -129,18 +134,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="W:\conspect\src\helpers" />
-      <recent name="W:\conspect\src\components" />
-      <recent name="W:\conspect\src\hooks" />
+      <recent name="W:\conspect\src\briks\types" />
+      <recent name="W:\conspect\src\briks\link-as-button" />
+      <recent name="W:\conspect\src\pages\components" />
+      <recent name="W:\conspect\src\desing-pattern\components" />
       <recent name="W:\conspect\src\style" />
-      <recent name="W:\conspect\src\hoc\withNumber" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\pages\" />
+      <recent name="W:\conspect\src\pages\desing-pattern" />
+      <recent name="W:\conspect\src" />
       <recent name="W:\conspect\src\style" />
       <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\settings" />
-      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\temp" />
-      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\mock" />
-      <recent name="C:\Users\Office\AppData\Roaming\JetBrains\WebStorm2021.3\scratches\utils" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="W:\conspect\src\pages\Preparation\components\PreparationToJS\CreateCloser.ts" />
@@ -306,21 +311,10 @@
       <workItem from="1661884725018" duration="421000" />
       <workItem from="1661933984047" duration="6236000" />
       <workItem from="1662126405724" duration="1135000" />
-      <workItem from="1662211540444" duration="8635000" />
-    </task>
-    <task id="LOCAL-00219" summary="  refactoring (SearchPage)">
-      <created>1647868463927</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1647868463927</updated>
-    </task>
-    <task id="LOCAL-00220" summary="  refactoring (SearchPage) Dictionary">
-      <created>1647869617845</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1647869617845</updated>
+      <workItem from="1662211540444" duration="8719000" />
+      <workItem from="1662459466439" duration="8817000" />
+      <workItem from="1662623994125" duration="7162000" />
+      <workItem from="1662716487328" duration="8437000" />
     </task>
     <task id="LOCAL-00221" summary="  feat (HistorySearch) circular story">
       <created>1647874344283</created>
@@ -651,7 +645,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662234893969</updated>
     </task>
-    <option name="localTasksCounter" value="268" />
+    <task id="LOCAL-00268" summary="component css button">
+      <created>1662235140118</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1662235140118</updated>
+    </task>
+    <task id="LOCAL-00269" summary="move files and add AbstractFactoryTest.tsx">
+      <created>1662660549379</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1662660549379</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -702,9 +710,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="  refactoring (insertAfter) with order" />
-    <MESSAGE value="  refactoring (exercises) getSumMap" />
-    <MESSAGE value="  refactoring (SearchPage)" />
     <MESSAGE value="  refactoring (SearchPage) Dictionary" />
     <MESSAGE value="  feat (HistorySearch) circular story" />
     <MESSAGE value="  feat (SearchPage) autocomplete" />
@@ -727,7 +732,10 @@
     <MESSAGE value="useAction.ts temp" />
     <MESSAGE value="task bricks Button type" />
     <MESSAGE value="component css button" />
-    <option name="LAST_COMMIT_MESSAGE" value="component css button" />
+    <MESSAGE value="move files and add AbstractFactoryTest.tsx" />
+    <MESSAGE value="page components for show" />
+    <MESSAGE value="link primary" />
+    <option name="LAST_COMMIT_MESSAGE" value="link primary" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

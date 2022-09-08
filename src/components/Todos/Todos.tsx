@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Todos.scss';
-import { SingletonMethods } from '../../pages/desing-pattern/components/Test-Singleton/SingletonMethods';
+import { SingletonMethods } from '../../desing-pattern/components/Test-Singleton/SingletonMethods';
 import AbsolutePositionMenu from '../WraperComponent-HiddenButton/AbsolutePositionMenu';
 import { AddTodoForm, Todo, TodosFilter } from './components';
 import { useAllLocalStateTodos } from './hooks/useAllLocalState__Todos';

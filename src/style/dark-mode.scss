@@ -1,0 +1,17 @@
+/* --------------------  Text and icons color start --------------------  */
+.dark {
+  // Text and icons
+  --clr-black: var(--clr-white);
+  --clr-text-accent: #1A9E32;
+
+  // accent
+  --clr-text-success: #1A9E32; // не меняется
+  --clr-text-warning: #FA6D20;
+  --clr-text-error: #FF4255;
+
+  // card
+  --clr-bg-card: rgba(242, 245, 247, 0.06);
+}
+
+/* -------------------- Text and icons color end --------------------  */
+

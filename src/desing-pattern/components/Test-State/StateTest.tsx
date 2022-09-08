@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../style/index.scss';
+import '../../../style/index.scss';
 import { Context, Doing, Done } from './state_2';
 
 export const STateTest = () => {

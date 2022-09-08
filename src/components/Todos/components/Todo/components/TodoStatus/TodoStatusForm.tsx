@@ -1,5 +1,5 @@
 import React from 'react';
-import { SingletonMethods } from '../../../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods';
+import { SingletonMethods } from '../../../../../../desing-pattern/components/Test-Singleton/SingletonMethods';
 import { R_2, TodoStatus, TodoType } from '../../../../models/index.model';
 import { initialButtonsFilters } from '../../../TodosFilter/hook/useButtonsFilter';
 import { ValueMouseEvent } from '../../../../../../types/ValueMouseEvent.model';

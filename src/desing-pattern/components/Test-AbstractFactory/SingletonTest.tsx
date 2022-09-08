@@ -1,9 +1,9 @@
 import React, { useEffect, useLayoutEffect } from 'react';
-import { TodoStatus } from '../../../../components/Todos/models/index.model';
-import { Singleton } from './singleton';
-import '../../../../style/index.scss';
+import { TodoStatus } from '../../../components/Todos/models/index.model';
 import { SingletonMethods } from './SingletonMethods';
 import { useSingletonMethods } from './useSingletonMethods';
+import '../../../style/index.scss';
+import {Singleton} from '../Test-Singleton/singleton';
 
 const t = { id: Math.random(), label: 'todo 5', status: TodoStatus.Done, order: 5 };
 

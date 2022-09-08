@@ -3,7 +3,7 @@ import { multicast } from 'rxjs/operators';
 import { numbers, objWithSymbol, person } from '../../../../commonMockData';
 import { TodoStatus } from '../../../../components/Todos/models/index.model';
 import { isInRange } from '../../../../helpers';
-import { SingletonMethods } from '../../../desing-pattern/components/Test-Singleton/SingletonMethods';
+import { SingletonMethods } from '../../../../desing-pattern/components/Test-Singleton/SingletonMethods';
 import { ITPerson, Person } from '../../../shared/Person.class';
 import { eventLoop, topicPromise, topicPrototypeChain, useCloser } from './topics';
 import DomEvent from './topics/components/domEvent/domEvent';

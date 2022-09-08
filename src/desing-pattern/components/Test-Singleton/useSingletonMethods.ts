@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { initialTodos } from '../../../../components/Todos/hooks/useAllLocalState__Todos';
-import { TodoType } from '../../../../components/Todos/models/index.model';
+import { initialTodos } from '../../../components/Todos/hooks/useAllLocalState__Todos';
+import { TodoType } from '../../../components/Todos/models/index.model';
 import { SingletonMethods } from './SingletonMethods';
 
 export function useSingletonMethods(todos: TodoType[] = initialTodos) {

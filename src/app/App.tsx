@@ -5,24 +5,25 @@ import DropdownMenu from '../components/Navigation/components/DropdownMenu/Dropd
 import { CssPage, DesignPatternPage, PreparationPage, RXjsPage, RegistrationPage, Search } from '../pages/';
 import { CssDisplay, CssFlex, CssGrid, CssOther, CssPosition, CssTags } from '../pages/css/components';
 import {
+  AbstractFactoryTest,
   AdapterTest,
   BuilderTest,
   CommandTest,
   CompositeTest,
   IteratorTest,
-  PrototypeTest,
   SingletonTest,
   StateTest,
-} from '../pages/desing-pattern/components';
+} from '../desing-pattern/components';
 
 import Navigation from '../components/Navigation/Navigation';
 import { NavItem } from '../components/Navigation/components';
 import DsAndAlgorithms from '../pages/DsAndAlgorithms';
 import { pages } from './store/adtiveMenuItemReducer';
 import { dropdownSections } from '../components/Navigation/someData';
+import ButtonsAndLinks from '../pages/buttons-and-links';
 
 const App: React.FC = () => {
-  const { home, css, test, rxjs, registration, designPatterns, preparation, dsAndAlgorithms } = pages;
+  const { home, css, test, rxjs, registration, designPatterns, preparation, dsAndAlgorithms, components } = pages;
   return (
     <div className="App">
       <Navigation>
@@ -34,6 +35,7 @@ const App: React.FC = () => {
         <NavItem props={registration} />
         <NavItem props={designPatterns} />
         <NavItem props={dsAndAlgorithms} />
+        <NavItem props={components} />
       </Navigation>
       <Breadcrumbs />
       <Switch>
@@ -53,6 +55,7 @@ const App: React.FC = () => {
         <Route path={`${css.url}/position`} component={CssPosition} />
         <Route path={`${css.url}/tags`} component={CssTags} />
         <Route path={`${css.url}/other`} component={CssOther} />
+        <Route path={`${components.url}`} component={ButtonsAndLinks} />
       </Switch>
       <Switch>
         <Route path={`${designPatterns.url}/singleton`} component={SingletonTest} />
@@ -62,7 +65,8 @@ const App: React.FC = () => {
         <Route path={`${designPatterns.url}/composite`} component={CompositeTest} />
         <Route path={`${designPatterns.url}/command`} component={CommandTest} />
         <Route path={`${designPatterns.url}/iterator`} component={IteratorTest} />
-        <Route path={`${designPatterns.url}/prototype`} component={PrototypeTest} />
+        <Route path={`${designPatterns.url}/prototype`} component={AbstractFactoryTest} />
+        <Route path={`${designPatterns.url}/abstractFactory`} component={AbstractFactoryTest} />
       </Switch>
     </div>
   );

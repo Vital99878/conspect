@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../style/index.scss';
+import '../../../style/index.scss';
 import { ConcreteBuilder1, Director } from './builder_2';
 
 export const BuilderTest = () => {

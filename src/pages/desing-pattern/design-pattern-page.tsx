@@ -15,6 +15,7 @@ const DesignPatternPage: React.FC = () => {
         <NavCard title={'command'} desc={'desc 2'} />
         <NavCard title={'iterator'} desc={'desc 2'} />
         <NavCard title={'prototype'} desc={'desc 2'} />
+        <NavCard title={'abstractFactory'} desc={'desc 2'} />
       </main>
     </PageLayout>
   );

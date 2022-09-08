@@ -1,3 +1,10 @@
+.testPage {
+  background-color: var(--clr-black-primary);
+  span {
+    color: var(--clr-white-typeset-text);
+  }
+}
+
 .test-components {
   width: 100%;
   max-width: 1240px;

@@ -9,7 +9,8 @@ export type MainPages =
   | 'registration'
   | 'designPatterns'
   | 'preparation'
-  | 'dsAndAlgorithms';
+  | 'dsAndAlgorithms'
+  | 'components';
 
 export type CssPages = 'flex' | 'greed' | 'display' | 'position';
 
@@ -26,5 +27,6 @@ export const pages: PagesList = {
   registration: { label: 'Registration', url: '/registration' },
   designPatterns: { label: 'Design patterns', url: '/design-patterns' },
   preparation: { label: 'Preparation to interview', url: '/preparation' },
+  components: { label: 'components', url: '/components' },
   dsAndAlgorithms: { label: 'data-structure and algorithms', url: '/data-structure and algorithms' },
 };

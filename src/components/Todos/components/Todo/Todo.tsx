@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BehaviorSubject } from 'rxjs';
-import { SingletonMethods } from '../../../../pages/desing-pattern/components/Test-Singleton/SingletonMethods';
+import { SingletonMethods } from '../../../../desing-pattern/components/Test-Singleton/SingletonMethods';
 import useBehaviorSubject from '../../../../pages/rxjs/components/subject/hooks';
 import { DropPosition, TodoType } from '../../models/index.model';
 import { DragAndDropData } from '../utils';
