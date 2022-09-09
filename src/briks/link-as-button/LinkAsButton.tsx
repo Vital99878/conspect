@@ -20,7 +20,7 @@ export default function LinkAsButton(props: PropsWithChildren<Props>) {
       className={clsx(
         className,
         'asButton',
-        primary && 'link-primary',
+        primary && !disabled && 'link-primary',
         primary && disabled && 'link-primary-disabled',
         secondary && 'link-secondary',
         secondary && disabled && 'link-secondary-disabled',

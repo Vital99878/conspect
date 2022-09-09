@@ -1,12 +1,13 @@
 .asButton {
   font-size: 1.4rem;
   min-width: 6rem;
+  max-width: 100%;
   padding: 0.4em 1em;
   border-radius: 6px;
   display: grid;
   text-align: center;
   place-items: center;
-  border: 1px solid;
+  border: 1.2px solid transparent; // бордер у всех один, чтобы разные виды кнопок по высоте были одинаковые
   outline: none;
 }
 
@@ -40,7 +41,7 @@
   border-color: rgba(var(--clr-base-grey), 0.46);
 }
 .link-secondary:hover {
-  border-color: rgba(var(--clr-base-grey), 0.76);
+  border-color: rgba(var(--clr-base-grey), 0.56);
 }
 .link-secondary:focus-visible {
   border-color: rgba(var(--clr-base-grey), 76);
@@ -65,13 +66,13 @@
   background: transparent;
 }
 .link-transparent:hover {
-  background: rgba(var(--clr-black), 0.26);
+  background: rgba(var(--clr-black), 0.10);
 }
 .link-transparent:focus-visible {
   background: rgba(var(--clr-black), 0.26);
 }
 .link-transparent:active {
-  background: rgba(var(--clr-black), 0.46);
+  background: rgba(var(--clr-black), 0.20);
 }
 .link-transparent:visited {
   background: rgba(var(--clr-black), 0.66);
