@@ -10,15 +10,9 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="link primary">
-      <change afterPath="$PROJECT_DIR$/src/briks/link-as-button/LinkAsButton.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/briks/link-as-button/LinkAsButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/briks/types/linkAsButton.ts" afterDir="false" />
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="link as button with plus icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/adtiveMenuItemReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/adtiveMenuItemReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/custom-properties.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/custom-properties.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,63 +308,7 @@
       <workItem from="1662211540444" duration="8719000" />
       <workItem from="1662459466439" duration="8817000" />
       <workItem from="1662623994125" duration="7162000" />
-      <workItem from="1662716487328" duration="8437000" />
-    </task>
-    <task id="LOCAL-00221" summary="  feat (HistorySearch) circular story">
-      <created>1647874344283</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1647874344283</updated>
-    </task>
-    <task id="LOCAL-00222" summary="  feat (HistorySearch) circular story">
-      <created>1647874879628</created>
-      <option name="number" value="00222" />
-      <option name="presentableId" value="LOCAL-00222" />
-      <option name="project" value="LOCAL" />
-      <updated>1647874879628</updated>
-    </task>
-    <task id="LOCAL-00223" summary="  feat (SearchPage) autocomplete">
-      <created>1647878752373</created>
-      <option name="number" value="00223" />
-      <option name="presentableId" value="LOCAL-00223" />
-      <option name="project" value="LOCAL" />
-      <updated>1647878752373</updated>
-    </task>
-    <task id="LOCAL-00224" summary="  feat (SearchPage) history search">
-      <created>1648018674128</created>
-      <option name="number" value="00224" />
-      <option name="presentableId" value="LOCAL-00224" />
-      <option name="project" value="LOCAL" />
-      <updated>1648018674128</updated>
-    </task>
-    <task id="LOCAL-00225" summary="  feat (SearchPage) history search">
-      <created>1648022215670</created>
-      <option name="number" value="00225" />
-      <option name="presentableId" value="LOCAL-00225" />
-      <option name="project" value="LOCAL" />
-      <updated>1648022215670</updated>
-    </task>
-    <task id="LOCAL-00226" summary="  feat (insertItemBefore) history search">
-      <created>1648031756753</created>
-      <option name="number" value="00226" />
-      <option name="presentableId" value="LOCAL-00226" />
-      <option name="project" value="LOCAL" />
-      <updated>1648031756753</updated>
-    </task>
-    <task id="LOCAL-00227" summary="  feat (insertItemBefore) history search">
-      <created>1648033548632</created>
-      <option name="number" value="00227" />
-      <option name="presentableId" value="LOCAL-00227" />
-      <option name="project" value="LOCAL" />
-      <updated>1648033548632</updated>
-    </task>
-    <task id="LOCAL-00228" summary="  feat (insertItemBefore and After)">
-      <created>1648034219247</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1648034219247</updated>
+      <workItem from="1662716487328" duration="13580000" />
     </task>
     <task id="LOCAL-00229" summary="  refactoring (Todo insert)">
       <created>1648045438637</created>
@@ -659,7 +597,63 @@
       <option name="project" value="LOCAL" />
       <updated>1662660549379</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="move files and add AbstractFactoryTest.tsx">
+      <created>1662725030567</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1662725030567</updated>
+    </task>
+    <task id="LOCAL-00271" summary="link as button">
+      <created>1662725406182</created>
+      <option name="number" value="00271" />
+      <option name="presentableId" value="LOCAL-00271" />
+      <option name="project" value="LOCAL" />
+      <updated>1662725406182</updated>
+    </task>
+    <task id="LOCAL-00272" summary="link as button">
+      <created>1662725790602</created>
+      <option name="number" value="00272" />
+      <option name="presentableId" value="LOCAL-00272" />
+      <option name="project" value="LOCAL" />
+      <updated>1662725790602</updated>
+    </task>
+    <task id="LOCAL-00273" summary="link as button with plus icon">
+      <created>1662728090285</created>
+      <option name="number" value="00273" />
+      <option name="presentableId" value="LOCAL-00273" />
+      <option name="project" value="LOCAL" />
+      <updated>1662728090285</updated>
+    </task>
+    <task id="LOCAL-00274" summary="link as button with plus icon">
+      <created>1662729494308</created>
+      <option name="number" value="00274" />
+      <option name="presentableId" value="LOCAL-00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1662729494308</updated>
+    </task>
+    <task id="LOCAL-00275" summary="link as button with plus icon">
+      <created>1662729724091</created>
+      <option name="number" value="00275" />
+      <option name="presentableId" value="LOCAL-00275" />
+      <option name="project" value="LOCAL" />
+      <updated>1662729724091</updated>
+    </task>
+    <task id="LOCAL-00276" summary="link as button with plus icon">
+      <created>1662730074129</created>
+      <option name="number" value="00276" />
+      <option name="presentableId" value="LOCAL-00276" />
+      <option name="project" value="LOCAL" />
+      <updated>1662730074129</updated>
+    </task>
+    <task id="LOCAL-00277" summary="link as button with plus icon">
+      <created>1662730296063</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1662730296063</updated>
+    </task>
+    <option name="localTasksCounter" value="278" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -710,9 +704,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="  refactoring (SearchPage) Dictionary" />
-    <MESSAGE value="  feat (HistorySearch) circular story" />
-    <MESSAGE value="  feat (SearchPage) autocomplete" />
     <MESSAGE value="  feat (SearchPage) history search" />
     <MESSAGE value="  feat (insertItem Before and After)" />
     <MESSAGE value="  feat (insertItemBefore) history search" />
@@ -732,10 +723,13 @@
     <MESSAGE value="useAction.ts temp" />
     <MESSAGE value="task bricks Button type" />
     <MESSAGE value="component css button" />
-    <MESSAGE value="move files and add AbstractFactoryTest.tsx" />
     <MESSAGE value="page components for show" />
     <MESSAGE value="link primary" />
-    <option name="LAST_COMMIT_MESSAGE" value="link primary" />
+    <MESSAGE value="link primary, secondary, transparent" />
+    <MESSAGE value="move files and add AbstractFactoryTest.tsx" />
+    <MESSAGE value="link as button" />
+    <MESSAGE value="link as button with plus icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="link as button with plus icon" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

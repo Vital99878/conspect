@@ -1,4 +1,5 @@
 import { LinkProps } from 'react-router-dom';
+import fn = jest.fn;
 
 interface LinkPrimary {
   primary: true;
@@ -18,4 +19,8 @@ interface LinkTransparent {
 
 type LinkVariant = LinkPrimary | LinkSecondary | LinkTransparent;
 
-export type LinkAsButton = LinkProps & {disabled?: boolean} & LinkVariant;
+/**
+ * @description Выглядит как кнопка.
+ */
+
+export type LinkAsButton = LinkProps & {disabled?: boolean, hasIcon?: boolean} & LinkVariant;

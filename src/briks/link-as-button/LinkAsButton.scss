@@ -1,14 +1,14 @@
 .asButton {
   font-size: 1.4rem;
-  min-width: 6rem;
+  min-width: max-content;
   max-width: 100%;
-  padding: 0.4em 1em;
+  padding: 0.4em 1.5em;
   border-radius: 6px;
   display: grid;
-  text-align: center;
   place-items: center;
   border: 1.2px solid transparent; // бордер у всех один, чтобы разные виды кнопок по высоте были одинаковые
   outline: none;
+  text-align: center;
 }
 
 .link-primary {
@@ -82,3 +82,15 @@
   color: rgba(var(--clr-black), 0.46);
   cursor: context-menu;
 }
+
+.linkWithIcon {
+  display: flex;
+  align-items: center;
+}
+
+.linkWithIcon__icon {
+  margin-bottom: -.2rem;
+  margin-right: 1rem;
+}
+
+

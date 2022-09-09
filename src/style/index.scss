@@ -143,3 +143,10 @@ h2 {
   white-space: nowrap; /* added line */
   border: 0;
 }
+
+
+@media screen and( max-width: 600px){
+  html {
+    font-size: 50%;
+  }
+}
