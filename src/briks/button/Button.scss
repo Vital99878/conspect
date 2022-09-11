@@ -1,7 +1,6 @@
 .btn {
   font-size: 1.4rem;
   min-width: max-content;
-  max-width: 100%;
   padding: 0.4em 1.5em;
   border-radius: 6px;
   display: grid;
@@ -9,6 +8,9 @@
   border: 1.2px solid transparent; // бордер у всех один, чтобы разные виды кнопок по высоте были одинаковые
   outline: none;
   text-align: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .btn-primary {
@@ -23,9 +25,7 @@
 .btn-primary:active {
   background-color: var(--clr-link-primary-bg-active);
 }
-
-.btn-primary:disabled,
-.btn-primary[disabled] {
+.btn-primary:disabled {
   background-color: var(--clr-link-primary-bg-disabled) !important;
   color: rgba(var(--clr-white), 0.6) !important;
   cursor: context-menu;
@@ -33,10 +33,11 @@
 }
 
 .btn-secondary {
+  border-color: rgba(var(--clr-base-grey), 0.46);
   color: rgba(var(--clr-black), 0.96);
 }
 .btn-secondary:hover {
-  border-color: rgba(var(--clr-base-grey), 0.56);
+  border-color: rgba(var(--clr-base-grey), 0.86);
 }
 .btn-secondary:focus-visible {
   border-color: rgba(var(--clr-base-grey), 96);
@@ -57,12 +58,11 @@
 .btn-transparent:link {
   background: transparent;
 }
-.btn-transparent:hover {
+.btn-transparent:hover,
+.btn-transparent:focus {
   background: rgba(var(--clr-black), 0.1);
 }
-.btn-transparent:focus-visible {
-  background: rgba(var(--clr-black), 0.26);
-}
+
 .btn-transparent:active {
   background: rgba(var(--clr-black), 0.2);
 }

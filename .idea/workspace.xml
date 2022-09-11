@@ -10,8 +10,10 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="link as button with plus icon">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="create button with variants">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/briks/button/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/briks/button/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/briks/link-as-button/LinkAsButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/briks/link-as-button/LinkAsButton.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +74,6 @@
     <setting file="file://$PROJECT_DIR$/src/pages/test/test-page.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Todos/components/Todo/components/RenameForm/RenameForm.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/pages/rxjs/components/subject/hooks/useBehaviorSubject.ts" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/briks/Button.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Todos/hooks/useAllLocalState__Todos.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Modal/Modal.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/SearchPage/search-page.tsx" root0="FORCE_HIGHLIGHTING" />
@@ -110,7 +111,7 @@
     <property name="eslint.code.style.apply.dismiss" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/briks/types" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/briks" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -122,17 +123,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\briks" />
       <recent name="W:\conspect\src\briks\types" />
       <recent name="W:\conspect\src\briks\link-as-button" />
       <recent name="W:\conspect\src\pages\components" />
       <recent name="W:\conspect\src\desing-pattern\components" />
-      <recent name="W:\conspect\src\style" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\" />
@@ -308,35 +309,8 @@
       <workItem from="1662211540444" duration="8719000" />
       <workItem from="1662459466439" duration="8817000" />
       <workItem from="1662623994125" duration="7162000" />
-      <workItem from="1662716487328" duration="13580000" />
-    </task>
-    <task id="LOCAL-00229" summary="  refactoring (Todo insert)">
-      <created>1648045438637</created>
-      <option name="number" value="00229" />
-      <option name="presentableId" value="LOCAL-00229" />
-      <option name="project" value="LOCAL" />
-      <updated>1648045438637</updated>
-    </task>
-    <task id="LOCAL-00230" summary="  refactoring (Todo insert)">
-      <created>1648047151325</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
-      <option name="project" value="LOCAL" />
-      <updated>1648047151325</updated>
-    </task>
-    <task id="LOCAL-00231" summary="  refactoring (Todo insert)">
-      <created>1648047798265</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
-      <option name="project" value="LOCAL" />
-      <updated>1648047798265</updated>
-    </task>
-    <task id="LOCAL-00232" summary="  refactoring (Todo insert)">
-      <created>1648048012787</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1648048012787</updated>
+      <workItem from="1662716487328" duration="14816000" />
+      <workItem from="1662876741690" duration="7157000" />
     </task>
     <task id="LOCAL-00233" summary="  refactoring (Todo insert)">
       <created>1648048618540</created>
@@ -653,7 +627,35 @@
       <option name="project" value="LOCAL" />
       <updated>1662730296063</updated>
     </task>
-    <option name="localTasksCounter" value="278" />
+    <task id="LOCAL-00278" summary="link as button with plus icon">
+      <created>1662730470372</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1662730470372</updated>
+    </task>
+    <task id="LOCAL-00279" summary="refactoring and create button">
+      <created>1662879241985</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1662879241985</updated>
+    </task>
+    <task id="LOCAL-00280" summary="refactoring and create button">
+      <created>1662879938069</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1662879938069</updated>
+    </task>
+    <task id="LOCAL-00281" summary="create button with variants">
+      <created>1662880941993</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1662880941993</updated>
+    </task>
+    <option name="localTasksCounter" value="282" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -704,8 +706,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="  feat (SearchPage) history search" />
-    <MESSAGE value="  feat (insertItem Before and After)" />
     <MESSAGE value="  feat (insertItemBefore) history search" />
     <MESSAGE value="  feat (insertItemBefore and After)" />
     <MESSAGE value="  refactoring (Todo insert)" />
@@ -729,7 +729,9 @@
     <MESSAGE value="move files and add AbstractFactoryTest.tsx" />
     <MESSAGE value="link as button" />
     <MESSAGE value="link as button with plus icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="link as button with plus icon" />
+    <MESSAGE value="refactoring and create button" />
+    <MESSAGE value="create button with variants" />
+    <option name="LAST_COMMIT_MESSAGE" value="create button with variants" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
