@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Button from '../../briks/Button';
 import WithNumber from '../../hoc/withNumber';
 import { useAttachStyle } from './components/TestTS/useAttachStyle';
 import './test-page.scss';

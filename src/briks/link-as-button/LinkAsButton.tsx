@@ -1,11 +1,11 @@
 import React, { PropsWithChildren } from 'react';
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
-import { LinkAsButton as Props } from '../types/linkAsButton';
+import { LinkAsButtonProps as Props } from '../types/LinkAsButtonProps';
 import './LinkAsButton.scss';
 
 export default function LinkAsButton(props: PropsWithChildren<Props>) {
-  const { primary, secondary, transparent, disabled, className, children, onClick, hasIcon, ...other } = props;
+  const { primary, secondary, transparent, disabled, className, children, onClick, hasPlus, ...other } = props;
 
   function handleClick(evt: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     if (disabled) {
@@ -30,7 +30,7 @@ export default function LinkAsButton(props: PropsWithChildren<Props>) {
       {...other}
       onClick={handleClick}
     >
-      {!hasIcon ? (
+      {!hasPlus ? (
         props.children
       ) : (
         <div className={'linkWithIcon'}>

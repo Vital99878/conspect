@@ -1,0 +1,86 @@
+.btn {
+  font-size: 1.4rem;
+  min-width: max-content;
+  max-width: 100%;
+  padding: 0.4em 1.5em;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  border: 1.2px solid transparent; // бордер у всех один, чтобы разные виды кнопок по высоте были одинаковые
+  outline: none;
+  text-align: center;
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: rgba(var(--clr-white), 0.96);
+  background-color: var(--clr-link-primary-bg-link);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--clr-link-primary-bg-hover);
+}
+.btn-primary:active {
+  background-color: var(--clr-link-primary-bg-active);
+}
+
+.btn-primary:disabled,
+.btn-primary[disabled] {
+  background-color: var(--clr-link-primary-bg-disabled) !important;
+  color: rgba(var(--clr-white), 0.6) !important;
+  cursor: context-menu;
+  color: tomato;
+}
+
+.btn-secondary {
+  color: rgba(var(--clr-black), 0.96);
+}
+.btn-secondary:hover {
+  border-color: rgba(var(--clr-base-grey), 0.56);
+}
+.btn-secondary:focus-visible {
+  border-color: rgba(var(--clr-base-grey), 96);
+}
+.btn-secondary:active {
+  border-color: rgba(var(--clr-base-grey), 0.96);
+}
+.btn-secondary:disabled {
+  border-color: rgba(var(--clr-base-grey), 0.46) !important;
+  color: rgba(var(--clr-black), 0.46) !important;
+  cursor: context-menu;
+}
+
+.btn-transparent {
+  border-color: transparent;
+  color: rgba(var(--clr-black), 0.96);
+}
+.btn-transparent:link {
+  background: transparent;
+}
+.btn-transparent:hover {
+  background: rgba(var(--clr-black), 0.1);
+}
+.btn-transparent:focus-visible {
+  background: rgba(var(--clr-black), 0.26);
+}
+.btn-transparent:active {
+  background: rgba(var(--clr-black), 0.2);
+}
+.btn-transparent:visited {
+  background: rgba(var(--clr-black), 0.66);
+}
+.btn-transparent:disabled {
+  background-color: transparent !important;
+  color: rgba(var(--clr-black), 0.46);
+  cursor: context-menu;
+}
+
+.btnWithIcon {
+  display: flex;
+  align-items: center;
+}
+
+.btnWithIcon__icon {
+  margin-bottom: -0.2rem;
+  margin-right: 1rem;
+}
