@@ -1,0 +1,23 @@
+:root {
+  // Link
+
+  --clr-link-primary-bg-link: rgba(var(--clr-base-green), 0.76);
+  --clr-link-primary-bg-hover: rgba(var(--clr-base-green), 0.86);
+  --clr-link-primary-bg-active: rgba(var(--clr-base-green), 0.96);
+  --clr-link-primary-bg-visited: rgba(var(--clr-base-green), 0.76);
+  --clr-link-primary-bg-disabled: rgba(var(--clr-base-green), 0.46);
+
+  --clr-link-secondary-border-link: rgba(var(--clr-base-black), 0.36);
+  --clr-link-secondary-border-hover: rgba(var(--clr-base-black), 0.56);
+  --clr-link-secondary-border-active: rgba(var(--clr-base-black), 0.8);
+  --clr-link-secondary-border-visited: rgba(var(--clr-base-black), 0.86);
+  --clr-link-secondary-border-disabled: rgba(var(--clr-base-black), 0.16);
+  --clr-link-secondarytext-disabled: rgba(var(--clr-base-black), 0.16);
+
+  --clr-link-transparent-border-hover: rgba(var(--clr-base-black), 0.36);
+  --clr-link-transparent-border-active: rgba(var(--clr-base-black), 0.42);
+  --clr-link-transparent-border-visited: rgba(var(--clr-base-black), 0.56);
+  --clr-link-transparent-text-link: rgba(var(--clr-base-white), 0.66);
+  --clr-link-transparent-text-disabled: rgba(var(--clr-base-white), 0.3);
+
+}

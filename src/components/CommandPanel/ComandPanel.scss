@@ -1,14 +1,15 @@
 .commandPanel {
   position: fixed;
-  top: 10%;
-  left: 50%;
+  top: 4%;
+  right: 50px;
   max-width: 20rem;
   transform: translateX(-50%);
   border: 1px solid lightgray;
   border-radius: 4px;
-  color: darkblue;
+  color: darkgreen;
   opacity: 60%;
   text-align: center;
+  outline: none;
 }
 .actionPane:focus-visible {
   border: 0.6px solid lightgray;

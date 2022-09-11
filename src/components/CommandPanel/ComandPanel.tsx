@@ -1,6 +1,7 @@
 import React, { FormEvent, useEffect, useRef, useState } from 'react';
-import './ComandPanel.scss';
 import { useClickOutside } from '../../hooks/useClickOutside';
+import { enableDarkMode, enableLightMode } from '../../hooks/useCssTheme';
+import './ComandPanel.scss';
 
 /**
  * @description Командная панель для вызова функций через сокращения.
@@ -29,8 +30,14 @@ export default function CommandPanel() {
   }
 
   function handleAction() {
-    if (value === 'la') console.log('change lang fn');
-    if (value === 'th') console.log('change theme fn');
+    if (value === 'en') return console.log('change lang to en');
+    if (value === 'ru') console.log('change lang to ru');
+    if (value === 'd') {
+      return enableDarkMode();
+    }
+    if (value === 'l') {
+      return enableLightMode();
+    }
   }
 
   useEffect(() => {
@@ -51,7 +58,7 @@ export default function CommandPanel() {
   return (
     <form onSubmit={onSubmit}>
       <input
-        className={'actionPanel'}
+        className={'commandPanel'}
         ref={inputRef}
         autoComplete={'on'}
         value={value}

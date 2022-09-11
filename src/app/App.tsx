@@ -21,11 +21,13 @@ import DsAndAlgorithms from '../pages/DsAndAlgorithms';
 import { pages } from './store/adtiveMenuItemReducer';
 import { dropdownSections } from '../components/Navigation/someData';
 import ButtonsAndLinks from '../pages/buttons-and-links';
+import CommandPanel from '../components/CommandPanel';
 
 const App: React.FC = () => {
   const { home, css, test, rxjs, registration, designPatterns, preparation, dsAndAlgorithms, components } = pages;
   return (
     <div className="App">
+      <CommandPanel />
       <Navigation>
         <DropdownMenu menuItem={css} sections={dropdownSections} />
         <NavItem props={home} />
