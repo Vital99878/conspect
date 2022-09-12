@@ -79,7 +79,7 @@ export default function Select() {
           )}
           {optionsList.map((option, index) => (
             <li
-              className={'select__options__item'}
+              className={clsx('select__options__item', selectedOption === index && 'select__options__item--selected')}
               id={option}
               role="option"
               aria-selected={selectedOption == index}

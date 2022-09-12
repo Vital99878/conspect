@@ -20,4 +20,10 @@
   --clr-link-transparent-text-link: rgba(var(--clr-base-white), 0.66);
   --clr-link-transparent-text-disabled: rgba(var(--clr-base-white), 0.3);
 
+  // Custom select
+  --clr-select-bg: hsl(var(--clr-hsl-zero), 0%, 100%); // white
+  --clr-select-arrow: hsl(var(--clr-hsl-zero), 0%, 50%); // grey
+  --clr-select-option-text: hsl(var(--clr-hsl-zero), 0%, 0%); // black
+  --clr-select-option-text-disabled: hsl(var(--clr-hsl-zero), 0%, 40%);
+  --clr-select-option-hover: hsl(var(--clr-hsl-zero), 0%, 80%);
 }
