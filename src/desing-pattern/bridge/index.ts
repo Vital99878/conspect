@@ -5,7 +5,7 @@ export interface UIToolkit {
 }
 
 abstract class UIElement {
-  constructor(public toolkit: UIToolkit) {}
+  protected constructor(public toolkit: UIToolkit) {}
   abstract render(): void;
 }
 
@@ -43,6 +43,7 @@ class TextToolkit implements UIToolkit {
   drawText(text: string): void {}
 }
 
+// client code
 let svgToolkit = new SvgToolkit();
 let textToolkit = new TextToolkit();
 

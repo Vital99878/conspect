@@ -22,6 +22,7 @@ import { pages } from './store/adtiveMenuItemReducer';
 import { dropdownSections } from '../components/Navigation/someData';
 import ButtonsAndLinks from '../pages/buttons-and-links';
 import CommandPanel from '../components/CommandPanel';
+import FlyweightTest from '../desing-pattern/components/Test-Flyweight/FlyweightTest';
 
 const App: React.FC = () => {
   const { home, css, test, rxjs, registration, designPatterns, preparation, dsAndAlgorithms, components } = pages;
@@ -69,6 +70,7 @@ const App: React.FC = () => {
         <Route path={`${designPatterns.url}/iterator`} component={IteratorTest} />
         <Route path={`${designPatterns.url}/prototype`} component={AbstractFactoryTest} />
         <Route path={`${designPatterns.url}/abstractFactory`} component={AbstractFactoryTest} />
+        <Route path={`${designPatterns.url}/flyweight`} component={FlyweightTest} />
       </Switch>
     </div>
   );

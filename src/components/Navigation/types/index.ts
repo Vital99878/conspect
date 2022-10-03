@@ -25,7 +25,9 @@ export type DesignPatterns =
   | 'command'
   | 'iterator'
   | 'abstractFactory'
-  | 'prototype';
+  | 'prototype'
+  | 'flyweight'
+  | 'bridge';
 
 export type CSS = 'flex' | 'grid' | 'display' | 'position' | 'tags' | 'other';
 

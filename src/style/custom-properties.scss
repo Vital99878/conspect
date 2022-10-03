@@ -1,3 +1,5 @@
+@import "colors-hsl-base";
+
 /* -------------------- Colors __ start --------------------  */
 :root {
   --clr-base-black: 36, 40, 43;
@@ -5,13 +7,6 @@
   --clr-base-green: 26, 158, 50;
   --clr-base-blue: 50, 150, 255;
   --clr-base-grey: 77, 77, 77;
-
-  --clr-hsl-zero: 0;
-  --clr-light: 80;
-  --clr-darker: 40;
-  --clr-dark: 20;
-  --color1-normal: hsl(var(--clr-hsl-black), 0%, 90%);
-
 
   // Text and icons
   --clr-text-primary: rgba(var(--clr-base-black), 0.96);
@@ -28,6 +23,8 @@
 
   // accent
   --clr-accent-success: #1a9e32;
+  --clr-accent-success-light: rgba(25, 158, 50, 0);
+
   --clr-accent-warning: #f55d05;
   --clr-accent-error: #ff293e;
 

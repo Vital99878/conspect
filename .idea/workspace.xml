@@ -10,10 +10,22 @@
     <option name="proportionPopup" value="0.4921301" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="Custom select">
+    <list default="true" id="a69997d6-834e-44f9-95eb-d4cc0b48154f" name="Changes" comment="add example bridge">
+      <change afterPath="$PROJECT_DIR$/src/components/Snowflake/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/desing-pattern/components/Test-Flyweight/FlyweightTest.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/desing-pattern/components/Test-Flyweight/FlyweightTest.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/desing-pattern/flyweight/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/snowflake/snowflake-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/snowflake/snowflake-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/snowflake/snowflake-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/colors-hsl-base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/briks/select/Select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/briks/select/Select.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/briks/select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/briks/select/Select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/desing-pattern/bridge/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/desing-pattern/bridge/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/desing-pattern/design-pattern-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/custom-properties.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/custom-properties.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +122,7 @@
     <property name="eslint.code.style.apply.dismiss" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/style" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/image/snowflake" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -122,17 +134,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="W:\conspect\node_modules\prettier" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\conspect\src\image\snowflake" />
+      <recent name="W:\conspect\src\desing-pattern\components" />
+      <recent name="W:\conspect\src\desing-pattern" />
       <recent name="W:\conspect\src\style" />
       <recent name="W:\conspect\src\briks" />
-      <recent name="W:\conspect\src\briks\types" />
-      <recent name="W:\conspect\src\briks\link-as-button" />
-      <recent name="W:\conspect\src\pages\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="W:\conspect\src\pages\" />
@@ -310,13 +322,10 @@
       <workItem from="1662623994125" duration="7162000" />
       <workItem from="1662716487328" duration="14816000" />
       <workItem from="1662876741690" duration="7157000" />
-    </task>
-    <task id="LOCAL-00235" summary="  feat (SingletonMethods)">
-      <created>1648111904937</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
-      <option name="project" value="LOCAL" />
-      <updated>1648111904937</updated>
+      <workItem from="1664090670323" duration="2398000" />
+      <workItem from="1664534899439" duration="1866000" />
+      <workItem from="1664808718858" duration="2969000" />
+      <workItem from="1664816819081" duration="5435000" />
     </task>
     <task id="LOCAL-00236" summary="  feat (SingletonMethods)">
       <created>1648113672777</created>
@@ -654,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662889794877</updated>
     </task>
-    <option name="localTasksCounter" value="284" />
+    <task id="LOCAL-00284" summary="add example bridge">
+      <created>1664091222646</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1664091222647</updated>
+    </task>
+    <option name="localTasksCounter" value="285" />
     <option name="clearContext" value="false" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
@@ -705,7 +721,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="  refactoring (Todo insert)" />
     <MESSAGE value="  feat (SingletonMethods)" />
     <MESSAGE value="  refactoirng (todo) search-historypage" />
     <MESSAGE value="  feat (todo) DragAndDrop position" />
@@ -730,7 +745,8 @@
     <MESSAGE value="create button with variants" />
     <MESSAGE value="update command panel" />
     <MESSAGE value="link light, dark themes" />
-    <option name="LAST_COMMIT_MESSAGE" value="link light, dark themes" />
+    <MESSAGE value="add example bridge" />
+    <option name="LAST_COMMIT_MESSAGE" value="add example bridge" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
